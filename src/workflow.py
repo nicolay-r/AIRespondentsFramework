@@ -4,7 +4,6 @@ from typing import Literal
 
 from dotenv import load_dotenv
 
-from src.formatter import SubmissionPredictionFormatter
 from src.pipelines import ZeroShotPipeline
 from src.providers.openai_client import OpenAIClient
 
@@ -27,15 +26,12 @@ def run(*, split: Literal["train", "test"] = "test"):
     data = dataset.load()
     client = OpenAIClient()
     pipeline = ZeroShotPipeline(client)
-    formatter = SubmissionPredictionFormatter()
 
     items = list(dataset.iter_pipeline_items(data, split=split))
-    predictions = [
-        formatter.format(
-            item,
-            parse_label(pipeline.apply(item)["output"], item.labels),
-        )
-        for item in items
-    ]
+    results = []
+    for item in items:
+        result = pipeline.apply(item)
+        result["output"] = parse_label(result["output"], item.labels)
+        results.append(result)
 
-    return data, pipeline, items, predictions, client.model
+    return data, pipeline, items, results, client.model

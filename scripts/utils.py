@@ -10,9 +10,9 @@ from src.pipelines.zero_shot import ZeroShotPipeline
 
 def write_submission(
     output_dir: Path,
-    predictions: list[dict[str, str]],
     *,
     items: Iterable[PipelineItem],
+    results: Iterable[dict[str, object]],
     example_prompts: dict[str, str],
     model: str,
 ) -> list[Path]:
@@ -20,19 +20,26 @@ def write_submission(
     method_dir = output_dir / "method"
     method_dir.mkdir(parents=True, exist_ok=True)
 
-    predictions_df = pd.DataFrame(predictions)
-    predictions_df.to_csv(output_dir / "predictions.csv", index=False)
-
+    prediction_rows = []
     feature_rows = []
     seen_questions: set[str] = set()
-    for item in items:
+    for item, result in zip(items, results):
+        prediction_rows.append(
+            {
+                "respondent_id": item.respondent_id,
+                "question_id": item.question_id,
+                "prediction": result["output"],
+            }
+        )
         if item.question_id in seen_questions:
             continue
         seen_questions.add(item.question_id)
-        for code in item.features:
+        for code in result["features"]:
             feature_rows.append(
                 {"question_id": item.question_id, "feature_variable_code": code}
             )
+
+    pd.DataFrame(prediction_rows).to_csv(output_dir / "predictions.csv", index=False)
     pd.DataFrame(feature_rows).to_csv(output_dir / "features.csv", index=False)
 
     (method_dir / "prompts.jsonl").write_text(
