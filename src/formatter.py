@@ -1,8 +1,7 @@
 from abc import ABC, abstractmethod
-from collections.abc import Iterable
 from typing import Any
 
-from src.pipelines.base import Pipeline, PipelineItem
+from src.pipelines.base import PipelineItem
 
 
 class PredictionFormatter(ABC):
@@ -19,11 +18,3 @@ class SubmissionPredictionFormatter(PredictionFormatter):
             "question_id": item.question_id,
             "prediction": prediction,
         }
-
-
-def collect_predictions(
-    pipeline: Pipeline,
-    items: Iterable[PipelineItem],
-    formatter: PredictionFormatter,
-) -> list[Any]:
-    return [formatter.format(item, pipeline.apply(item)) for item in items]
