@@ -31,7 +31,10 @@ def run(*, split: Literal["train", "test"] = "test"):
 
     items = list(dataset.iter_pipeline_items(data, split=split))
     predictions = [
-        formatter.format(item, parse_label(pipeline.apply(item), item.labels))
+        formatter.format(
+            item,
+            parse_label(pipeline.apply(item)["output"], item.labels),
+        )
         for item in items
     ]
 

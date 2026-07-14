@@ -12,14 +12,13 @@ from src.workflow import run
 
 if __name__ == "__main__":
 
-    data, pipeline, items, predictions, model = run(split="test")
+    _, pipeline, items, predictions, model = run(split="test")
     prompts = example_prompts_for(pipeline, items)
 
     written = write_submission(
         OUTPUT_DIR,
         predictions,
-        chosen_features=data.chosen_features,
-        feature_questions=data.feature_questions,
+        items=items,
         example_prompts=prompts,
         model=model,
     )

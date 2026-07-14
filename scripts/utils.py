@@ -12,8 +12,7 @@ def write_submission(
     output_dir: Path,
     predictions: list[dict[str, str]],
     *,
-    chosen_features: dict[str, tuple[str, ...] | None],
-    feature_questions: dict[str, str],
+    items: Iterable[PipelineItem],
     example_prompts: dict[str, str],
     model: str,
 ) -> list[Path]:
@@ -25,11 +24,14 @@ def write_submission(
     predictions_df.to_csv(output_dir / "predictions.csv", index=False)
 
     feature_rows = []
-    for question_id, codes in chosen_features.items():
-        resolved = tuple(feature_questions) if codes is None else codes
-        for code in resolved:
+    seen_questions: set[str] = set()
+    for item in items:
+        if item.question_id in seen_questions:
+            continue
+        seen_questions.add(item.question_id)
+        for code in item.features:
             feature_rows.append(
-                {"question_id": question_id, "feature_variable_code": code}
+                {"question_id": item.question_id, "feature_variable_code": code}
             )
     pd.DataFrame(feature_rows).to_csv(output_dir / "features.csv", index=False)
 
@@ -48,7 +50,7 @@ def write_submission(
     )
     (method_dir / "method.md").write_text(
         f"Zero-shot pipeline using {model} via Nebius API. "
-        "All allowed respondent features are included when chosen_features is None. "
+        "All allowed respondent features are included in the respondent profile. "
         "Temperature 0; model output is parsed to the target label set.\n",
         encoding="utf-8",
     )

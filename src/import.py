@@ -27,7 +27,6 @@ class LoadedData:
     targets: dict[str, TargetQuestion]
     feature_questions: dict[str, str]
     value_maps: dict[str, dict[str, str]]
-    chosen_features: dict[str, tuple[str, ...] | None]
 
 
 def load() -> LoadedData:
@@ -52,17 +51,12 @@ def load() -> LoadedData:
             labels=tuple(group.sort_values("option")["label"].tolist()),
         )
 
-    chosen_features = {
-        question_id: None for question_id in targets
-    }
-
     return LoadedData(
         train=_dataframe_to_respondents(train_df),
         test=_dataframe_to_respondents(test_df),
         targets=targets,
         feature_questions=feature_questions,
         value_maps=value_maps,
-        chosen_features=chosen_features,
     )
 
 
@@ -74,17 +68,19 @@ def iter_pipeline_items(
     respondents = data.train if split == "train" else data.test
     for respondent_id, row in respondents.items():
         for question_id, target in data.targets.items():
+            history, features = _build_history(
+                row,
+                None,
+                data.feature_questions,
+                data.value_maps,
+            )
             yield PipelineItem(
                 respondent_id=respondent_id,
                 question_id=question_id,
                 question=target.question,
                 labels=target.labels,
-                history=_build_history(
-                    row,
-                    data.chosen_features[question_id],
-                    data.feature_questions,
-                    data.value_maps,
-                ),
+                history=history,
+                features=list(features),
             )
 
 
@@ -112,9 +108,7 @@ def _resolve_feature_codes(
     feature_codes: tuple[str, ...] | None,
     feature_questions: dict[str, str],
 ) -> tuple[str, ...]:
-    if feature_codes is None:
-        return tuple(feature_questions)
-    return feature_codes
+    return tuple(feature_questions) if feature_codes is None else feature_codes
 
 
 def _build_history(
@@ -122,7 +116,7 @@ def _build_history(
     feature_codes: tuple[str, ...] | None,
     feature_questions: dict[str, str],
     value_maps: dict[str, dict[str, str]],
-) -> dict[str, str | None]:
+) -> tuple[dict[str, str | None], tuple[str, ...]]:
     codes = _resolve_feature_codes(feature_codes, feature_questions)
 
     history: dict[str, str | None] = {}
@@ -132,7 +126,7 @@ def _build_history(
             history[feature_questions.get(code, code)] = None
         else:
             history[feature_questions.get(code, code)] = answer
-    return history
+    return history, codes
 
 
 def _dataframe_to_respondents(df: pd.DataFrame) -> dict[str, dict[str, object]]:

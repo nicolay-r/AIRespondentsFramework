@@ -9,6 +9,7 @@ class PipelineItem:
     question: str
     labels: tuple[str, ...]
     history: dict[str, str | None]
+    features: list[str]
 
 
 class Pipeline(ABC):
@@ -18,5 +19,5 @@ class Pipeline(ABC):
         """Return a prompt for a prepared item."""
 
     @abstractmethod
-    def apply(self, item: PipelineItem) -> str:
-        """Return one prediction label for a prepared item."""
+    def apply(self, item: PipelineItem) -> dict[str, object]:
+        """Return model output and the feature codes used for the item."""

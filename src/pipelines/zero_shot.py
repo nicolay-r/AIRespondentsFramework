@@ -25,5 +25,8 @@ class ZeroShotPipeline(Pipeline):
         )
         return "\n".join(lines)
 
-    def apply(self, item: PipelineItem) -> str:
-        return self._client.infer(self.build_prompt(item))
+    def apply(self, item: PipelineItem) -> dict[str, object]:
+        return {
+            "output": self._client.infer(self.build_prompt(item)),
+            "features": item.features,
+        }
