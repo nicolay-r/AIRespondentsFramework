@@ -3,11 +3,13 @@ from __future__ import annotations
 from collections.abc import Callable
 
 from src.pipelines.base import Pipeline, PipelineItem, parse_label
+from src.providers.openai_client import OpenAIClient
 
 
 class ZeroShotPipeline(Pipeline):
-    def __init__(self, predict: Callable[[str], str] | None = None) -> None:
-        self._predict = predict
+    
+    def __init__(self, client: OpenAIClient) -> None:
+        self._client = client
 
     def build_prompt(self, item: PipelineItem) -> str:
         lines = [
@@ -29,5 +31,5 @@ class ZeroShotPipeline(Pipeline):
 
     def apply(self, item: PipelineItem) -> str:
         prompt = self.build_prompt(item)
-        raw = self._predict(prompt) if self._predict else item.labels[0]
+        raw = self._client.infer(prompt)
         return parse_label(raw, item.labels)
