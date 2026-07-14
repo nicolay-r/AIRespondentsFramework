@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class HistoryEntry:
+class FeatureEntry:
     code: str
     question: str
     answer: str | None
@@ -15,7 +15,7 @@ class PipelineItem:
     question_id: str
     question: str
     labels: tuple[str, ...]
-    history: tuple[HistoryEntry, ...]
+    history: tuple[FeatureEntry, ...]
 
 
 class Pipeline(ABC):

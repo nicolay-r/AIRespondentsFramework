@@ -7,7 +7,7 @@ from typing import Literal
 import pandas as pd
 from datasets import load_dataset
 
-from src.pipelines.base import HistoryEntry, PipelineItem
+from src.pipelines.base import FeatureEntry, PipelineItem
 
 REPO = "oxford-llms/ai-respondents-challenge"
 
@@ -115,13 +115,13 @@ def _build_history(
     feature_codes: tuple[str, ...] | None,
     feature_questions: dict[str, str],
     value_maps: dict[str, dict[str, str]],
-) -> tuple[HistoryEntry, ...]:
+) -> tuple[FeatureEntry, ...]:
     codes = _resolve_feature_codes(feature_codes, feature_questions)
 
-    history: list[HistoryEntry] = []
+    history: list[FeatureEntry] = []
     for code in codes:
         history.append(
-            HistoryEntry(
+            FeatureEntry(
                 code=code,
                 question=feature_questions.get(code, code),
                 answer=decode_feature(row, code, value_maps),
