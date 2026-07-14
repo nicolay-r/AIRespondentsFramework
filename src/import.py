@@ -7,7 +7,7 @@ from typing import Literal
 import pandas as pd
 from datasets import load_dataset
 
-from src.pipelines.base import PipelineItem
+from src.pipelines.base import HistoryEntry, PipelineItem
 
 REPO = "oxford-llms/ai-respondents-challenge"
 
@@ -68,7 +68,7 @@ def iter_pipeline_items(
     respondents = data.train if split == "train" else data.test
     for respondent_id, row in respondents.items():
         for question_id, target in data.targets.items():
-            history, features = _build_history(
+            history = _build_history(
                 row,
                 None,
                 data.feature_questions,
@@ -80,7 +80,6 @@ def iter_pipeline_items(
                 question=target.question,
                 labels=target.labels,
                 history=history,
-                features=list(features),
             )
 
 
@@ -116,17 +115,19 @@ def _build_history(
     feature_codes: tuple[str, ...] | None,
     feature_questions: dict[str, str],
     value_maps: dict[str, dict[str, str]],
-) -> tuple[dict[str, str | None], tuple[str, ...]]:
+) -> tuple[HistoryEntry, ...]:
     codes = _resolve_feature_codes(feature_codes, feature_questions)
 
-    history: dict[str, str | None] = {}
+    history: list[HistoryEntry] = []
     for code in codes:
-        answer = decode_feature(row, code, value_maps)
-        if answer is None:
-            history[feature_questions.get(code, code)] = None
-        else:
-            history[feature_questions.get(code, code)] = answer
-    return history, codes
+        history.append(
+            HistoryEntry(
+                code=code,
+                question=feature_questions.get(code, code),
+                answer=decode_feature(row, code, value_maps),
+            )
+        )
+    return tuple(history)
 
 
 def _dataframe_to_respondents(df: pd.DataFrame) -> dict[str, dict[str, object]]:

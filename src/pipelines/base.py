@@ -3,13 +3,19 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
+class HistoryEntry:
+    code: str
+    question: str
+    answer: str | None
+
+
+@dataclass(frozen=True)
 class PipelineItem:
     respondent_id: str
     question_id: str
     question: str
     labels: tuple[str, ...]
-    history: dict[str, str | None]
-    features: list[str]
+    history: tuple[HistoryEntry, ...]
 
 
 class Pipeline(ABC):

@@ -13,8 +13,9 @@ class ZeroShotPipeline(Pipeline):
             "",
             "Respondent profile:",
         ]
-        for question, answer in item.history.items():
-            lines.append(f"- {question}: {answer if answer is not None else 'Unknown'}")
+        for entry in item.history:
+            answer = entry.answer if entry.answer is not None else "Unknown"
+            lines.append(f"- {entry.question}: {answer}")
 
         lines.extend(
             [
@@ -28,5 +29,5 @@ class ZeroShotPipeline(Pipeline):
     def apply(self, item: PipelineItem) -> dict[str, object]:
         return {
             "output": self._client.infer(self.build_prompt(item)),
-            "features": item.features,
+            "features": [entry.code for entry in item.history],
         }
