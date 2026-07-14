@@ -1,5 +1,6 @@
 import importlib
 
+from src.formatter import SubmissionPredictionFormatter, collect_predictions
 from src.pipelines import ZeroShotPipeline
 
 dataset = importlib.import_module("src.import")
@@ -8,16 +9,10 @@ dataset = importlib.import_module("src.import")
 def main() -> None:
     data = dataset.load()
     pipeline = ZeroShotPipeline()
+    formatter = SubmissionPredictionFormatter()
 
-    predictions = []
-    for item in dataset.iter_pipeline_items(data, split="test"):
-        predictions.append(
-            {
-                "respondent_id": item.respondent_id,
-                "question_id": item.question_id,
-                "prediction": pipeline.apply(item),
-            }
-        )
+    items = dataset.iter_pipeline_items(data, split="test")
+    predictions = collect_predictions(pipeline, items, formatter)
 
     print(f"generated {len(predictions)} predictions")
 
