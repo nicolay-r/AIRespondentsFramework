@@ -1,9 +1,11 @@
 import importlib
+from concurrent.futures import ThreadPoolExecutor
 from typing import Literal
 
 from tqdm import tqdm
 
 from src.pipelines import ZeroShotPipeline
+from src.pipelines.base import PipelineItem
 from src.providers.openai_client import OpenAIClient
 
 dataset = importlib.import_module("src.import")
@@ -17,16 +19,25 @@ def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
     return labels[0]
 
 
-def run(*, split: Literal["train", "test"] = "test", limit: int | None = None):
+def _predict_job(job: tuple[ZeroShotPipeline, PipelineItem]) -> dict[str, object]:
+    pipeline, item = job
+    result = pipeline.apply(item)
+    result["output"] = parse_label(result["output"], item.labels)
+    return result
+
+
+def run(*, split: Literal["train", "test"] = "test", limit: int | None = None, workers: int = 100):
     data = dataset.load()
     client = OpenAIClient()
     pipeline = ZeroShotPipeline(client)
 
     items = list(dataset.iter_pipeline_items(data, split=split))[:limit]
-    results = []
-    for item in tqdm(items, desc="predicting" "(limit: %s)" % limit if limit else ""):
-        result = pipeline.apply(item)
-        result["output"] = parse_label(result["output"], item.labels)
-        results.append(result)
+    jobs = [(pipeline, item) for item in items]
+    desc = f"predicting (limit: {limit})" if limit else "predicting"
+
+    with ThreadPoolExecutor(workers) as pool:
+        results = list(
+            tqdm(pool.map(_predict_job, jobs), total=len(jobs), desc=desc)
+        )
 
     return data, pipeline, items, results, client.model
