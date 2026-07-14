@@ -13,8 +13,6 @@ from src.pipelines.base import PipelineItem
 
 REPO = "oxford-llms/ai-respondents-challenge"
 
-DEFAULT_FEATURES = ("Q260", "Q262", "Q275", "Q273", "Q288", "Q173")
-
 
 @dataclass(frozen=True)
 class TargetQuestion:
@@ -31,7 +29,7 @@ class LoadedData:
     targets: dict[str, TargetQuestion]
     feature_questions: dict[str, str]
     value_maps: dict[str, dict[str, str]]
-    chosen_features: dict[str, tuple[str, ...]]
+    chosen_features: dict[str, tuple[str, ...] | None]
 
 
 def load() -> LoadedData:
@@ -57,7 +55,7 @@ def load() -> LoadedData:
         )
 
     chosen_features = {
-        question_id: DEFAULT_FEATURES for question_id in targets
+        question_id: None for question_id in targets
     }
 
     return LoadedData(
@@ -112,14 +110,25 @@ def decode_feature(
     return value_maps[variable].get(code_key, code_key)
 
 
+def _resolve_feature_codes(
+    feature_codes: tuple[str, ...] | None,
+    feature_questions: dict[str, str],
+) -> tuple[str, ...]:
+    if feature_codes is None:
+        return tuple(feature_questions)
+    return feature_codes
+
+
 def _build_history(
     row: dict[str, object],
-    feature_codes: tuple[str, ...],
+    feature_codes: tuple[str, ...] | None,
     feature_questions: dict[str, str],
     value_maps: dict[str, dict[str, str]],
 ) -> dict[str, str | None]:
+    codes = _resolve_feature_codes(feature_codes, feature_questions)
+
     history: dict[str, str | None] = {}
-    for code in feature_codes:
+    for code in codes:
         answer = decode_feature(row, code, value_maps)
         if answer is None:
             history[feature_questions.get(code, code)] = None
