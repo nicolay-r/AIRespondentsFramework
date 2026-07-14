@@ -1,28 +1,27 @@
 import importlib
 from pathlib import Path
+from typing import Literal
 
 from dotenv import load_dotenv
 
 from src.formatter import SubmissionPredictionFormatter, collect_predictions
 from src.pipelines import ZeroShotPipeline
+from src.providers.openai_client import OpenAIClient
 
 dataset = importlib.import_module("src.import")
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
-def main() -> None:
+def run(*, split: Literal["train", "test"] = "test"):
     load_dotenv(PROJECT_ROOT / ".env")
 
     data = dataset.load()
-    pipeline = ZeroShotPipeline()
+    client = OpenAIClient()
+    pipeline = ZeroShotPipeline(client)
     formatter = SubmissionPredictionFormatter()
 
-    items = dataset.iter_pipeline_items(data, split="test")
+    items = list(dataset.iter_pipeline_items(data, split=split))
     predictions = collect_predictions(pipeline, items, formatter)
 
-    print(f"generated {len(predictions)} predictions")
-
-
-if __name__ == "__main__":
-    main()
+    return data, pipeline, items, predictions, client.model
