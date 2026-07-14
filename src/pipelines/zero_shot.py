@@ -1,4 +1,4 @@
-from src.pipelines.base import Pipeline, PipelineItem, parse_label
+from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
 
 
@@ -26,6 +26,4 @@ class ZeroShotPipeline(Pipeline):
         return "\n".join(lines)
 
     def apply(self, item: PipelineItem) -> str:
-        prompt = self.build_prompt(item)
-        raw = self._client.infer(prompt)
-        return parse_label(raw, item.labels)
+        return self._client.infer(self.build_prompt(item))

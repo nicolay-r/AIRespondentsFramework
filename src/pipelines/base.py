@@ -20,11 +20,3 @@ class Pipeline(ABC):
     @abstractmethod
     def apply(self, item: PipelineItem) -> str:
         """Return one prediction label for a prepared item."""
-
-
-def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
-    text = raw.strip()
-    for label in labels:
-        if text == label or label.lower() in text.lower():
-            return label
-    return labels[0]
