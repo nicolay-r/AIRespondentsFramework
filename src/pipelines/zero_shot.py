@@ -1,7 +1,3 @@
-from __future__ import annotations
-
-from collections.abc import Callable
-
 from src.pipelines.base import Pipeline, PipelineItem, parse_label
 from src.providers.openai_client import OpenAIClient
 

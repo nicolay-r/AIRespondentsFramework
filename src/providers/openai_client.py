@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import os
 
 from openai import OpenAI
@@ -7,9 +5,9 @@ from openai import OpenAI
 
 class OpenAIClient:
 
-    _instance: OpenAIClient | None = None
+    _instance: "OpenAIClient | None" = None
 
-    def __new__(cls) -> OpenAIClient:
+    def __new__(cls) -> "OpenAIClient":
         if cls._instance is None:
             cls._instance = super().__new__(cls)
             cls._instance._initialized = False

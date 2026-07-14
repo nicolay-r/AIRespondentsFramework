@@ -1,7 +1,5 @@
 """Dev-dataset examples for PipelineItem generation from labeled train rows."""
 
-from __future__ import annotations
-
 import importlib
 import json
 import sys
