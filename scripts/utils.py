@@ -7,7 +7,7 @@ import pandas as pd
 
 from scripts.run_extract_pipeline_input import DevExample
 from src.pipelines.base import PipelineItem
-from src.pipelines.zero_shot import ZeroShotPipeline
+from src.pipelines.prompt_based import ZeroShotPipeline
 
 
 def write_submission(
