@@ -8,7 +8,7 @@ class OpenAIClient:
     def __init__(
         self,
         *,
-        max_retries: int = 100,
+        max_retries: int = 20,
         model: str,
         base_url: str,
     ) -> None:
@@ -21,7 +21,6 @@ class OpenAIClient:
             base_url=base_url,
             api_key=api_key,
             max_retries=max_retries,
-            timeout=2,
         )
 
     def infer(self, prompt: str) -> str:
