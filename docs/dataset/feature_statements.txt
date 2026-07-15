@@ -1,0 +1,1197 @@
+# code	response_code	statement
+Q1	1	Family is very important to me.
+Q1	2	Family is rather important to me.
+Q1	3	Family is not very important to me.
+Q1	4	Family is not important to me.
+Q2	1	Friends are very important in my life.
+Q2	2	Friends are rather important to me.
+Q2	3	Friends are not very important to me.
+Q2	4	Friends are not important to me.
+Q3	1	Leisure time is very important to me.
+Q3	2	Leisure time is rather important to me.
+Q3	3	Leisure time is not very important to me.
+Q3	4	Leisure time is not important to me.
+Q4	1	Politics is very important in my life.
+Q4	2	Politics is rather important to me.
+Q4	3	Politics is not very important to me.
+Q4	4	Politics is not at all important to me.
+Q5	1	Work is very important in my life.
+Q5	2	Work is rather important to me.
+Q5	3	Work is not very important to me.
+Q5	4	Work is not important at all to me.
+Q6	1	Religion is very important in my life.
+Q6	2	Religion is rather important to me.
+Q6	3	Religion is not very important to me.
+Q6	4	Religion is not important to me.
+Q7	1	I think good manners are important for kids to learn
+Q7	2	I don't think manners are that important for kids
+Q8	1	I think independence is important
+Q8	2	I don't think independence is important
+Q9	1	I think hard work is important for kids to learn.
+Q9	2	I don't think hard work is so important for kids.
+Q10	1	I think responsibility is important for kids to learn
+Q10	2	I don't think responsibility is that important for kids
+Q11	1	I think imagination is important for kids to learn at home.
+Q11	2	I don't think imagination is so important for kids to learn at home.
+Q12	1	I think tolerance is important to learn at home.
+Q12	2	I don't think tolerance is so important at home.
+Q13	1	I think thrift is important for kids to learn
+Q13	2	I don't think thrift is so important for kids
+Q14	1	I think determination is important for kids to learn.
+Q14	2	I don't think determination is so important for kids.
+Q15	1	I think faith is important for kids to learn at home.
+Q15	2	I don't think faith is so important for kids to learn.
+Q16	1	I think unselfishness is important for kids to learn
+Q16	2	I don't think unselfishness is so important
+Q18	1	I prefer not to live near drug addicts.
+Q18	2	I don't mind living near drug addicts.
+Q19	1	I prefer neighbors of the same race.
+Q19	2	I'm fine with neighbors of any race.
+Q20	1	I prefer not to have AIDS patients as neighbors.
+Q20	2	I don't mind having AIDS patients as neighbors.
+Q21	1	I prefer not to have immigrant neighbors.
+Q21	2	I'm fine with immigrant neighbors.
+Q23	1	I prefer neighbors of the same religion.
+Q23	2	I'm fine with neighbors of any religion.
+Q24	1	I prefer not to live near heavy drinkers.
+Q24	2	I don't mind heavy drinkers as neighbors.
+Q25	1	I prefer not to live near unmarried couples.
+Q25	2	I'm okay with unmarried couples as neighbors.
+Q26	1	I prefer neighbors who speak my language.
+Q26	2	I'm fine with neighbors who speak differently.
+Q27	1	Making my parents proud is a top goal.
+Q27	2	I want to make my parents proud.
+Q27	3	Making parents proud isn't a goal.
+Q27	4	I don't aim to make parents proud.
+Q28	1	I believe working mothers harm their children.
+Q28	2	I think working mothers hurt their kids.
+Q28	3	I don't think working mothers harm kids.
+Q28	4	I believe working mothers don't harm kids.
+Q29	1	I strongly believe men make better leaders.
+Q29	2	I think men make better leaders.
+Q29	3	I don't think men make better leaders.
+Q29	4	I strongly believe men don't make better leaders.
+Q30	1	I strongly believe a university education is more important for boys.
+Q30	2	I think a university education is more important for boys.
+Q30	3	I don't think university education importance differs by gender.
+Q30	4	I strongly believe university education importance is equal for both genders.
+Q31	1	I think men make better executives.
+Q31	2	I think men are better executives.
+Q31	3	I don't think men are better executives.
+Q31	4	I strongly believe women are equally or better executives.
+Q32	1	I find being a housewife very fulfilling.
+Q32	2	I find being a housewife fulfilling.
+Q32	3	I don't find being a housewife fulfilling.
+Q32	4	I don't find being a housewife fulfilling at all.
+Q35	1	I think unequal incomes cause problems
+Q35	2	I agree unequal incomes cause problems
+Q35	3	I'm neutral on income effects
+Q35	4	I don't think unequal incomes cause problems
+Q35	5	I strongly believe incomes don't cause problems
+Q36	1	I strongly believe gay couples make great parents.
+Q36	2	I believe gay couples make great parents.
+Q36	3	I'm neutral on gay couples as parents.
+Q36	4	I don't think gay couples make great parents.
+Q36	5	I strongly doubt gay couples make great parents.
+Q37	1	I strongly believe having kids is a social duty.
+Q37	2	I think having kids is a social duty.
+Q37	3	I'm neutral on having kids as a duty.
+Q37	4	I don't think having kids is a duty.
+Q37	5	I strongly disagree having kids is a duty.
+Q38	1	I strongly believe I must care for my parents.
+Q38	2	I believe I should care for my parents.
+Q38	3	I'm neutral about caring for my parents.
+Q38	4	I don't think I should care for my parents.
+Q38	5	I strongly disagree with caring for my parents.
+Q39	1	I think idleness breeds laziness.
+Q39	2	I believe idleness can lead to laziness.
+Q39	3	I'm neutral on the matter.
+Q39	4	I don't think idleness causes laziness.
+Q39	5	I strongly disagree idleness causes laziness.
+Q40	1	I strongly believe work is a duty to society.
+Q40	2	I believe work is a duty to society.
+Q40	3	I'm neutral about work being a duty.
+Q40	4	I don't think work is a duty.
+Q40	5	I strongly disagree work is a duty.
+Q41	1	I prioritize work above all else.
+Q41	2	I think work should come first.
+Q41	3	I'm neutral on this issue.
+Q41	4	I don't think work should always come first.
+Q41	5	I strongly believe spare time matters more.
+Q42	1	I believe society needs radical change.
+Q42	2	I support gradual societal reform.
+Q42	3	I defend our current society.
+Q43	1	I think less work is a good thing
+Q43	2	I wouldn't mind less work
+Q43	3	I think less work is a bad thing
+Q44	1	I think tech advancement is a good thing.
+Q44	2	I don't mind more tech development.
+Q44	3	I think tech advancement is a bad thing.
+Q45	1	I think tech advancement is a good thing.
+Q45	2	I don't mind more tech development.
+Q45	3	I think tech advancement is a bad thing.
+Q46	1	I am very happy
+Q46	2	I am quite happy
+Q46	3	I am not very happy
+Q46	4	I am not at all happy
+Q47	1	I'm in very good health.
+Q47	2	I'm in good health.
+Q47	3	My health is fair.
+Q47	4	I'm in poor health.
+Q47	5	I'm in very poor health.
+Q48	1	I have no freedom of choice
+Q48	2	I have no freedom of choice
+Q48	3	I have a little control
+Q48	4	I have a little control
+Q48	5	I have some control
+Q48	6	I have some control
+Q48	7	I have a lot of control
+Q48	8	I have a lot of control
+Q48	9	I have a great deal of control
+Q48	10	I have a great deal of control
+Q49	1	I'm completely dissatisfied with my life.
+Q49	2	I'm very dissatisfied with my life.
+Q49	3	I'm fairly dissatisfied with my life.
+Q49	4	I'm fairly dissatisfied with my life.
+Q49	5	I'm neutral about my life.
+Q49	6	I'm fairly satisfied with my life.
+Q49	7	I'm fairly satisfied with my life.
+Q49	8	I'm very satisfied with my life.
+Q49	9	I'm very satisfied with my life.
+Q49	10	I'm completely satisfied with my life.
+Q50	1	I'm completely dissatisfied with my finances.
+Q50	2	I'm very dissatisfied with my finances.
+Q50	3	I'm fairly dissatisfied with my finances.
+Q50	4	I'm fairly dissatisfied with my finances.
+Q50	5	I'm neutral about my finances.
+Q50	6	I'm fairly satisfied with my finances.
+Q50	7	I'm fairly satisfied with my finances.
+Q50	8	I'm very satisfied with my finances.
+Q50	9	I'm very satisfied with my finances.
+Q50	10	I'm completely satisfied with my finances.
+Q51	1	I often go without enough food to eat.
+Q51	2	I sometimes go without enough food.
+Q51	3	I rarely go without enough food.
+Q51	4	I never go without enough food.
+Q52	1	I often feel unsafe from crime at home.
+Q52	2	I sometimes feel unsafe from crime at home.
+Q52	3	I rarely feel unsafe from crime at home.
+Q52	4	I never feel unsafe from crime at home.
+Q53	1	I often go without needed medicine
+Q53	2	I sometimes go without needed medicine
+Q53	3	I rarely go without needed medicine
+Q53	4	I never go without needed medicine
+Q54	1	I often go without a cash income.
+Q54	2	I sometimes go without a cash income.
+Q54	3	I rarely go without a cash income.
+Q54	4	I never go without a cash income.
+Q55	1	I often go without safe shelter.
+Q55	2	I sometimes lack safe shelter.
+Q55	3	I rarely lack safe shelter.
+Q55	4	I never lack safe shelter.
+Q56	1	I'm better off than my parents were.
+Q56	2	I'm worse off than my parents.
+Q56	3	I'm about the same as my parents.
+Q57	1	I trust most people
+Q57	2	I'm careful around others
+Q58	1	I trust my family completely
+Q58	2	I trust my family somewhat
+Q58	3	I don't trust my family much
+Q58	4	I don't trust my family at all
+Q59	1	I trust my neighborhood completely
+Q59	2	I trust my neighborhood somewhat
+Q59	3	I do not trust my neighborhood much
+Q59	4	I do not trust my neighborhood
+Q60	1	I trust people I know completely.
+Q60	2	I trust people I know somewhat.
+Q60	3	I don't trust people I know much.
+Q60	4	I don't trust people I know.
+Q61	1	I trust people I meet completely.
+Q61	2	I trust people somewhat.
+Q61	3	I don't trust people very much.
+Q61	4	I don't trust people at all.
+Q62	1	I trust people of another religion completely.
+Q62	2	I trust people of another religion somewhat.
+Q62	3	I do not trust people of another religion very much.
+Q62	4	I do not trust people of another religion at all.
+Q63	1	I trust people of other nationalities completely.
+Q63	2	I trust people of other nationalities somewhat.
+Q63	3	I do not trust people of other nationalities very much.
+Q63	4	I do not trust people of other nationalities at all.
+Q64	1	I have a great deal of confidence in churches.
+Q64	2	I have quite a lot of confidence in churches.
+Q64	3	I have not very much confidence in churches.
+Q64	4	I have no confidence in churches.
+Q65	1	I have a great deal of confidence
+Q65	2	I have quite a lot of confidence
+Q65	3	I have not very much confidence
+Q65	4	I have no confidence at all
+Q66	1	I have a great deal of confidence in the press.
+Q66	2	I have quite a lot of confidence in the press.
+Q66	3	I have not very much confidence in the press.
+Q66	4	I have no confidence in the press.
+Q67	1	I have a great deal of confidence in TV.
+Q67	2	I have quite a lot of confidence in TV.
+Q67	3	I have not very much confidence in TV.
+Q67	4	I have no confidence in TV.
+Q68	1	I have a great deal of confidence in labour unions.
+Q68	2	I have quite a lot of confidence in labour unions.
+Q68	3	I have not very much confidence in labour unions.
+Q68	4	I have no confidence in labour unions.
+Q69	1	I have a great deal of confidence in police.
+Q69	2	I have quite a lot of confidence in police.
+Q69	3	I have not very much confidence in police.
+Q69	4	I have no confidence in police.
+Q70	1	I have a great deal of confidence in courts.
+Q70	2	I have quite a lot of confidence in courts.
+Q70	3	I have not very much confidence in courts.
+Q70	4	I have no confidence in courts.
+Q71	1	I have a great deal of confidence in government.
+Q71	2	I have quite a lot of confidence in government.
+Q71	3	I have not very much confidence in government.
+Q71	4	I have no confidence in government.
+Q72	1	I have a great deal of confidence in political parties.
+Q72	2	I have quite a lot of confidence in parties.
+Q72	3	I don't have much confidence in political parties.
+Q72	4	I have no confidence in political parties.
+Q74	1	I have a great deal of confidence
+Q74	2	I have quite a lot of confidence
+Q74	3	I have not very much confidence
+Q74	4	I have no confidence at all
+Q75	1	I have a great deal of confidence in universities.
+Q75	2	I have quite a lot of confidence in universities.
+Q75	3	I have not very much confidence in universities.
+Q75	4	I have no confidence in universities.
+Q76	1	I have a great deal of confidence in elections.
+Q76	2	I have quite a lot of confidence in elections.
+Q76	3	I have not very much confidence in elections.
+Q76	4	I have no confidence in elections.
+Q77	1	I have a great deal of confidence
+Q77	2	I have quite a lot of confidence
+Q77	3	I have not very much confidence
+Q77	4	I have no confidence at all
+Q78	1	I have a great deal of confidence in banks.
+Q78	2	I have quite a lot of confidence in banks.
+Q78	3	I have not very much confidence in banks.
+Q78	4	I have no confidence in banks.
+Q79	1	I have a great deal of confidence
+Q79	2	I have quite a lot of confidence
+Q79	3	I have not very much confidence
+Q79	4	I have no confidence at all
+Q80	1	I have a great deal of confidence in women's organizations.
+Q80	2	I have quite a lot of confidence in women's organizations.
+Q80	3	I have not very much confidence in women's organizations.
+Q80	4	I have no confidence in women's organizations.
+Q81	1	I have a great deal of confidence
+Q81	2	I have quite a lot of confidence
+Q81	3	I have not very much confidence
+Q81	4	I have no confidence at all
+Q82	1	I have a great deal of confidence
+Q82	2	I have quite a lot of confidence
+Q82	3	I have not very much confidence
+Q82	4	I have no confidence at all
+Q83	1	I have a great deal of confidence in the UN.
+Q83	2	I have quite a lot of confidence in the UN.
+Q83	3	I have not very much confidence in the UN.
+Q83	4	I have no confidence in the UN.
+Q84	1	I have a great deal of confidence in the IMF.
+Q84	2	I have quite a lot of confidence in the IMF.
+Q84	3	I have not very much confidence in the IMF.
+Q84	4	I have no confidence in the IMF.
+Q85	1	I have a great deal of confidence in ICC.
+Q85	2	I have quite a lot of confidence in ICC.
+Q85	3	I have not very much confidence in ICC.
+Q85	4	I have no confidence in ICC.
+Q86	1	I have a great deal of confidence in NATO.
+Q86	2	I have quite a lot of confidence in NATO.
+Q86	3	I have not very much confidence in NATO.
+Q86	4	I have no confidence in NATO.
+Q87	1	I have a great deal of confidence in the WB.
+Q87	2	I have quite a lot of confidence in the WB.
+Q87	3	I have not very much confidence in the WB.
+Q87	4	I have no confidence in the WB.
+Q88	1	I have a great deal of confidence in WHO.
+Q88	2	I have quite a lot of confidence in WHO.
+Q88	3	I have not very much confidence in WHO.
+Q88	4	I have no confidence in WHO.
+Q89	1	I have a great deal of confidence in WTO.
+Q89	2	I have quite a lot of confidence in WTO.
+Q89	3	I have not very much confidence in WTO.
+Q89	4	I have no confidence in WTO.
+Q90	1	I prioritize effectiveness in international organizations.
+Q90	2	I mostly prioritize effectiveness.
+Q90	3	I somewhat prioritize effectiveness.
+Q90	4	I lean towards effectiveness.
+Q90	5	I believe in a balanced approach.
+Q90	6	I lean towards democracy.
+Q90	7	I somewhat prioritize democracy.
+Q90	8	I mostly prioritize democracy.
+Q90	9	I almost fully prioritize democracy.
+Q90	10	I prioritize democracy above all.
+Q91	1	I am from France.
+Q91	2	I am from China.
+Q91	3	I am from India.
+Q92	1	I think IMF headquarters are in Washington DC
+Q92	2	I believe IMF is based in London
+Q92	3	I say IMF headquarters are in Geneva
+Q93	1	I'm concerned about climate change.
+Q93	2	I fight for human rights.
+Q93	3	I oppose destroying historic monuments.
+Q94	0	I don't belong to a church
+Q94	1	I'm an inactive church member
+Q94	2	I'm an active church member
+Q95	0	I don't belong to a sports team.
+Q95	1	I'm an inactive team member.
+Q95	2	I'm an active team member.
+Q96	0	I don't belong to any organization.
+Q96	1	I'm an inactive member.
+Q96	2	I'm an active member.
+Q97	0	I'm not a labour union member
+Q97	1	I'm an inactive union member
+Q97	2	I'm an active union member
+Q98	0	I'm not a member of a party
+Q98	1	I'm an inactive party member
+Q98	2	I'm an active party member
+Q99	0	I don't belong to an environmental organization.
+Q99	1	I'm an inactive environmental organization member.
+Q99	2	I'm an active environmental organization member.
+Q100	0	I'm not a member
+Q100	1	I'm an inactive member
+Q100	2	I'm an active member
+Q101	0	I'm not a member
+Q101	1	I'm an inactive member
+Q101	2	I'm an active member
+Q102	0	I don't belong to a consumer organization
+Q102	1	I'm an inactive member
+Q102	2	I'm an active member
+Q103	0	I don't belong to a self-help group
+Q103	1	I'm an inactive member
+Q103	2	I'm an active member
+Q104	0	I don't belong to a women's group
+Q104	1	I'm an inactive member of a women's group
+Q104	2	I'm an active member of a women's group
+Q105	0	I don't belong to another organization
+Q105	1	I'm an inactive member
+Q105	2	I'm an active member
+Q106	1	I believe incomes should be more equal.
+Q106	2	I think incomes should be more equal.
+Q106	3	I lean towards income equality.
+Q106	4	I slightly favor income equality.
+Q106	5	I prefer a balanced approach.
+Q106	6	I support a middle ground.
+Q106	7	I lean towards income differences.
+Q106	8	I slightly favor income differences.
+Q106	9	I believe in larger income differences.
+Q106	10	I think larger differences are necessary.
+Q107	1	I think private ownership should increase
+Q107	2	I think private ownership should increase
+Q107	3	I lean toward private ownership
+Q107	4	I lean toward private ownership
+Q107	5	I prefer a balanced approach
+Q107	6	I prefer a balanced approach
+Q107	7	I lean toward government ownership
+Q107	8	I lean toward government ownership
+Q107	9	I think government ownership should increase
+Q107	10	I think government ownership should increase
+Q108	1	I think government should provide for everyone
+Q108	2	I think government should provide for everyone
+Q108	3	I lean towards government responsibility
+Q108	4	I lean towards government responsibility
+Q108	5	I believe in a balanced approach
+Q108	6	I believe in a balanced approach
+Q108	7	I lean towards individual responsibility
+Q108	8	I lean towards individual responsibility
+Q108	9	I think people should provide for themselves
+Q108	10	I think people should provide for themselves
+Q109	1	I think competition is good.
+Q109	2	I believe competition is good.
+Q109	3	I lean toward competition being good.
+Q109	4	I slightly think competition is good.
+Q109	5	I see competition as balanced.
+Q109	6	Competition is both good and bad to me.
+Q109	7	I lean toward competition being harmful.
+Q109	8	I slightly think competition is harmful.
+Q109	9	I think competition is harmful.
+Q109	10	I believe competition is harmful.
+Q110	1	I believe hard work brings a better life
+Q110	2	I believe hard work brings a better life
+Q110	3	I lean towards hard work
+Q110	4	I lean towards hard work
+Q110	5	I think it's balanced
+Q110	6	I think it's balanced
+Q110	7	I lean towards luck and connections
+Q110	8	I lean towards luck and connections
+Q110	9	I think luck and connections matter more
+Q110	10	I think luck and connections matter more
+Q111	1	I prioritize protecting the environment.
+Q111	2	I prioritize economic growth.
+Q111	3	I have a different view.
+Q113	1	I believe none are corrupt
+Q113	2	I think few are corrupt
+Q113	3	I believe most are corrupt
+Q113	4	I think all are corrupt
+Q114	1	I believe no executives are corrupt.
+Q114	2	I think few executives are corrupt.
+Q114	3	I believe most executives are corrupt.
+Q114	4	I think all executives are corrupt.
+Q115	1	I believe none are corrupt
+Q115	2	I think few are corrupt
+Q115	3	I believe most are corrupt
+Q115	4	I think all are corrupt
+Q116	1	I believe none are corrupt
+Q116	2	I think few are corrupt
+Q116	3	I believe most are corrupt
+Q116	4	I think all are corrupt
+Q117	1	I believe no journalists are corrupt.
+Q117	2	I think few journalists are corrupt.
+Q117	3	I believe most journalists are corrupt.
+Q117	4	I think all journalists are corrupt.
+Q118	1	I never pay bribes for services.
+Q118	2	I rarely pay bribes for services.
+Q118	3	I frequently pay bribes for services.
+Q118	4	I always pay bribes for services.
+Q119	0	I'm unsure
+Q119	1	I think women are less corrupt
+Q119	2	I think women are less corrupt
+Q119	3	I don't think women are less corrupt
+Q119	4	I think women are just as corrupt
+Q120	1	I see no risk of accountability for bribery.
+Q120	2	I think there's low risk of accountability.
+Q120	3	I believe accountability risk is relatively low.
+Q120	4	I perceive a moderate risk of accountability.
+Q120	5	I think the risk of accountability is moderate.
+Q120	6	I see a moderate level of accountability risk.
+Q120	7	I believe the risk of accountability is high.
+Q120	8	I think there's a high risk of accountability.
+Q120	9	I perceive a very high risk of accountability.
+Q120	10	I believe accountability risk is extremely high.
+Q121	1	I think immigrants have a rather bad impact.
+Q121	2	I think immigrants have a quite bad impact.
+Q121	3	I think immigrants have a neutral impact.
+Q121	4	I think immigrants have a quite good impact.
+Q121	5	I think immigrants have a very good impact.
+Q122	0	I don't think immigrants fill useful jobs.
+Q122	1	I'm unsure about immigrants' job roles.
+Q122	2	I believe immigrants fill useful jobs.
+Q123	0	I don't think immigrants strengthen diversity.
+Q123	1	I'm unsure about immigrants' impact.
+Q123	2	I believe immigrants strengthen diversity.
+Q124	0	I don't think immigrants increase crime
+Q124	1	I'm unsure about immigrants and crime
+Q124	2	I believe immigrants increase crime
+Q125	0	I don't think we should give asylum
+Q125	1	I'm unsure about asylum for refugees
+Q125	2	I believe we should give asylum
+Q126	0	I don't think immigrants increase terrorism risks.
+Q126	1	I'm unsure about immigrants and terrorism.
+Q126	2	I believe immigrants increase terrorism risks.
+Q127	0	I don't think the country should help
+Q127	1	I'm unsure about helping the poor
+Q127	2	I think the country should help
+Q128	0	I don't think immigrants increase unemployment.
+Q128	1	I'm unsure about immigrants' impact on unemployment.
+Q128	2	I believe immigrants increase unemployment.
+Q129	0	I don't think immigrants lead to social conflict.
+Q129	1	I'm unsure about immigrants causing social conflict.
+Q129	2	I believe immigrants lead to social conflict.
+Q130	1	I welcome anyone who wants to come work here.
+Q130	2	I think jobs should be available before letting people come.
+Q130	3	I believe strict limits on foreigners are necessary.
+Q130	4	I don't think people from other countries should come here.
+Q131	1	I feel very secure
+Q131	2	I feel quite secure
+Q131	3	I don't feel very secure
+Q131	4	I feel not at all secure
+Q132	1	Robberies occur very frequently in my neighborhood.
+Q132	2	Robberies happen quite frequently in my area.
+Q132	3	Robberies don't happen frequently here.
+Q132	4	Robberies never happen in my neighborhood.
+Q133	1	I see alcohol consumed in streets very frequently.
+Q133	2	I see alcohol consumed in streets quite frequently.
+Q133	3	I rarely see alcohol consumed in streets.
+Q133	4	I never see alcohol consumed in streets.
+Q134	1	Police interfere with my life very frequently.
+Q134	2	Police interfere with my life quite frequently.
+Q134	3	Police rarely interfere with my life.
+Q134	4	Police never interfere with my life.
+Q135	1	I see racist behavior very frequently
+Q135	2	I see racist behavior quite frequently
+Q135	3	I rarely see racist behavior
+Q135	4	I never see racist behavior
+Q136	1	I see drug sales in my neighborhood very frequently.
+Q136	2	I see drug sales in my neighborhood quite frequently.
+Q136	3	I rarely see drug sales in my neighborhood.
+Q136	4	I never see drug sales in my neighborhood.
+Q137	1	I see street violence often.
+Q137	2	I see fights quite often.
+Q137	3	I rarely see fights.
+Q137	4	I never see fights.
+Q138	1	I experience sexual harassment very frequently
+Q138	2	I see sexual harassment quite often
+Q138	3	Sexual harassment is rare for me
+Q138	4	I never see sexual harassment
+Q139	1	I avoid carrying much money for security reasons.
+Q139	2	I don't avoid carrying money for security reasons.
+Q140	1	I avoid nights out due to security concerns.
+Q140	2	I don't avoid nights out for security reasons.
+Q141	1	I carry a weapon for security
+Q141	2	I don't carry a weapon
+Q142	1	I'm very worried about my job security.
+Q142	2	I'm greatly concerned about my job prospects.
+Q142	3	I'm not very worried about my job.
+Q142	4	I'm not worried about my job at all.
+Q143	1	I'm very worried about my kids' education
+Q143	2	I'm greatly concerned about my kids' education
+Q143	3	I'm not very worried about my kids' education
+Q143	4	I'm not worried about my kids' education
+Q144	1	I was a victim of a crime this year.
+Q144	2	I wasn't a crime victim this year.
+Q145	1	I had a family member victimized by crime.
+Q145	2	No family member was a crime victim.
+Q146	1	I'm very worried about war involving my country.
+Q146	2	I'm greatly worried about war involving my country.
+Q146	3	I'm not very worried about war.
+Q146	4	I'm not worried about war at all.
+Q147	1	I'm very worried about a terrorist attack.
+Q147	2	I'm greatly worried about a terrorist attack.
+Q147	3	I'm not very worried about a terrorist attack.
+Q147	4	I'm not worried about a terrorist attack.
+Q149	1	I prioritize freedom.
+Q149	2	I prioritize equality.
+Q150	1	I prioritize freedom.
+Q150	2	I prioritize security.
+Q151	1	I would fight for my country.
+Q151	2	I would not fight for my country.
+Q152	1	I prioritize economic growth.
+Q152	2	I value strong defence forces.
+Q152	3	I want a greater say.
+Q152	4	I care about environmental beauty.
+Q153	1	I prioritize economic growth.
+Q153	2	I value strong national defence.
+Q153	3	I want a greater public say.
+Q153	4	I care about environmental beauty.
+Q154	1	I prioritize maintaining order in the nation.
+Q154	2	I want more say in government decisions.
+Q154	3	I focus on fighting rising prices.
+Q154	4	I value protecting freedom of speech.
+Q155	1	I prioritize maintaining order in the nation.
+Q155	2	I want more say in government decisions.
+Q155	3	I fight against rising prices.
+Q155	4	I value protecting freedom of speech.
+Q156	1	I prioritize a stable economy.
+Q156	2	I value a humane society.
+Q156	3	I believe ideas surpass money.
+Q156	4	I fight against crime.
+Q157	1	I prioritize a stable economy.
+Q157	2	I value a humane society.
+Q157	3	I believe ideas surpass money.
+Q157	4	I fight against crime.
+Q158	1	I think science hurts our lives.
+Q158	2	I think science hurts our lives.
+Q158	3	Science somewhat hurts our lives.
+Q158	4	Science somewhat hurts our lives.
+Q158	5	Science somewhat helps my life.
+Q158	6	Science somewhat helps my life.
+Q158	7	I think science helps our lives.
+Q158	8	I think science helps our lives.
+Q158	9	I think science greatly helps us.
+Q158	10	I think science greatly helps us.
+Q159	1	I don't think science helps the next generation.
+Q159	2	I don't think science helps the next generation.
+Q159	3	Science somewhat hinders the next generation.
+Q159	4	Science somewhat hinders the next generation.
+Q159	5	Science somewhat helps the next generation.
+Q159	6	Science somewhat helps the next generation.
+Q159	7	Science helps the next generation.
+Q159	8	Science helps the next generation.
+Q159	9	Science greatly helps the next generation.
+Q159	10	Science greatly helps the next generation.
+Q160	1	I completely disagree with that statement.
+Q160	2	I completely disagree with that statement.
+Q160	3	I somewhat disagree with that statement.
+Q160	4	I somewhat disagree with that statement.
+Q160	5	I somewhat agree with that statement.
+Q160	6	I somewhat agree with that statement.
+Q160	7	I agree with that statement.
+Q160	8	I agree with that statement.
+Q160	9	I completely agree with that statement.
+Q160	10	I completely agree with that statement.
+Q161	1	I completely disagree science breaks down morals.
+Q161	2	I completely disagree science breaks down morals.
+Q161	3	I somewhat disagree science breaks down morals.
+Q161	4	I somewhat disagree science breaks down morals.
+Q161	5	I somewhat agree science breaks down morals.
+Q161	6	I somewhat agree science breaks down morals.
+Q161	7	I agree science breaks down morals.
+Q161	8	I agree science breaks down morals.
+Q161	9	I completely agree science breaks down morals.
+Q161	10	I completely agree science breaks down morals.
+Q162	1	I strongly need science in daily life
+Q162	2	I strongly need science in daily life
+Q162	3	I somewhat need science daily
+Q162	4	I somewhat need science daily
+Q162	5	I somewhat don't need science
+Q162	6	I somewhat don't need science
+Q162	7	I don't need science
+Q162	8	I don't need science
+Q162	9	Science is not important to me
+Q162	10	Science is not important to me
+Q163	1	I think the world is much worse off
+Q163	2	I think the world is much worse off
+Q163	3	I think the world is somewhat worse off
+Q163	4	I think the world is somewhat worse off
+Q163	5	I think the world is somewhat better off
+Q163	6	I think the world is somewhat better off
+Q163	7	I think the world is better off
+Q163	8	I think the world is better off
+Q163	9	I think the world is much better off
+Q163	10	I think the world is much better off
+Q164	1	God is not important in my life.
+Q164	2	God is not important in my life.
+Q164	3	God has little importance in my life.
+Q164	4	God has little importance in my life.
+Q164	5	God is moderately important to me.
+Q164	6	God is moderately important to me.
+Q164	7	God is important in my life.
+Q164	8	God is important in my life.
+Q164	9	God is very important to me.
+Q164	10	God is very important to me.
+Q165	1	I believe in God.
+Q165	2	I don't believe in God.
+Q166	1	I believe in life after death.
+Q166	2	I don't believe in life after death.
+Q167	1	I believe in Hell.
+Q167	2	I don't believe in Hell.
+Q168	1	I believe in Heaven.
+Q168	2	I don't believe in Heaven.
+Q169	1	I always believe religion over science.
+Q169	2	I usually side with religion.
+Q169	3	I don't always agree with religion.
+Q169	4	I never prioritize religion over science.
+Q170	1	My religion is the only acceptable one.
+Q170	2	I prefer my own religion.
+Q170	3	Other religions are acceptable too.
+Q170	4	All religions are equally acceptable.
+Q171	1	I attend services more than once a week.
+Q171	2	I attend services once a week.
+Q171	3	I attend services once a month.
+Q171	4	I attend only on special holy days.
+Q171	5	I attend services once a year.
+Q171	6	I attend less often than that.
+Q171	7	I never attend services.
+Q173	1	I am a religious person
+Q173	2	I am not religious
+Q173	3	I am an atheist
+Q174	1	I follow religious norms and ceremonies.
+Q174	2	I do good to other people.
+Q175	1	I believe religion is about life after death.
+Q175	2	I think religion is about this life.
+Q176	1	I completely agree moral rules are hard to decide
+Q176	2	I completely agree moral rules are hard to decide
+Q176	3	I somewhat agree moral rules are hard to decide
+Q176	4	I somewhat agree moral rules are hard to decide
+Q176	5	I neither agree nor disagree on moral rules
+Q176	6	I neither agree nor disagree on moral rules
+Q176	7	I somewhat disagree moral rules are hard to decide
+Q176	8	I somewhat disagree moral rules are hard to decide
+Q176	9	I completely disagree moral rules are hard to decide
+Q176	10	I completely disagree moral rules are hard to decide
+Q177	1	I never claim benefits I'm not entitled to.
+Q177	2	I never claim benefits I'm not entitled to.
+Q177	3	I rarely claim benefits I'm not entitled to.
+Q177	4	I rarely claim benefits I'm not entitled to.
+Q177	5	I sometimes claim benefits I'm not entitled to.
+Q177	6	I sometimes claim benefits I'm not entitled to.
+Q177	7	I often claim benefits I'm not entitled to.
+Q177	8	I often claim benefits I'm not entitled to.
+Q177	9	I always claim benefits I'm not entitled to.
+Q177	10	I always claim benefits I'm not entitled to.
+Q178	1	I never find fare evasion justifiable
+Q178	2	I never find fare evasion justifiable
+Q178	3	I rarely find fare evasion justifiable
+Q178	4	I rarely find fare evasion justifiable
+Q178	5	I sometimes find fare evasion justifiable
+Q178	6	I sometimes find fare evasion justifiable
+Q178	7	I often find fare evasion justifiable
+Q178	8	I often find fare evasion justifiable
+Q178	9	I always find fare evasion justifiable
+Q178	10	I always find fare evasion justifiable
+Q179	1	I never think stealing is justifiable.
+Q179	2	I never think stealing is justifiable.
+Q179	3	I rarely think stealing is justifiable.
+Q179	4	I rarely think stealing is justifiable.
+Q179	5	I sometimes think stealing is justifiable.
+Q179	6	I sometimes think stealing is justifiable.
+Q179	7	I often think stealing is justifiable.
+Q179	8	I often think stealing is justifiable.
+Q179	9	I always think stealing is justifiable.
+Q179	10	I always think stealing is justifiable.
+Q180	1	I never think cheating on taxes is justifiable.
+Q180	2	I never think cheating on taxes is justifiable.
+Q180	3	I rarely think cheating on taxes is justifiable.
+Q180	4	I rarely think cheating on taxes is justifiable.
+Q180	5	I sometimes think cheating on taxes is justifiable.
+Q180	6	I sometimes think cheating on taxes is justifiable.
+Q180	7	I often think cheating on taxes is justifiable.
+Q180	8	I often think cheating on taxes is justifiable.
+Q180	9	I always think cheating on taxes is justifiable.
+Q180	10	I always think cheating on taxes is justifiable.
+Q181	1	I never think bribes are justifiable.
+Q181	2	I never think bribes are justifiable.
+Q181	3	I rarely think bribes are justifiable.
+Q181	4	I rarely think bribes are justifiable.
+Q181	5	I sometimes think bribes are justifiable.
+Q181	6	I sometimes think bribes are justifiable.
+Q181	7	I often think bribes are justifiable.
+Q181	8	I often think bribes are justifiable.
+Q181	9	I always think bribes are justifiable.
+Q181	10	I always think bribes are justifiable.
+Q182	1	I never think homosexuality is justifiable
+Q182	2	I never think homosexuality is justifiable
+Q182	3	I rarely think homosexuality is justifiable
+Q182	4	I rarely think homosexuality is justifiable
+Q182	5	I sometimes think homosexuality is justifiable
+Q182	6	I sometimes think homosexuality is justifiable
+Q182	7	I often think homosexuality is justifiable
+Q182	8	I often think homosexuality is justifiable
+Q182	9	I always think homosexuality is justifiable
+Q182	10	I always think homosexuality is justifiable
+Q183	1	I never think prostitution is justifiable.
+Q183	2	I never think prostitution is justifiable.
+Q183	3	I rarely think prostitution is justifiable.
+Q183	4	I rarely think prostitution is justifiable.
+Q183	5	I sometimes think prostitution is justifiable.
+Q183	6	I sometimes think prostitution is justifiable.
+Q183	7	I often think prostitution is justifiable.
+Q183	8	I often think prostitution is justifiable.
+Q183	9	I always think prostitution is justifiable.
+Q183	10	I always think prostitution is justifiable.
+Q184	1	I believe abortion is never justifiable.
+Q184	2	I believe abortion is never justifiable.
+Q184	3	I think abortion is rarely justifiable.
+Q184	4	I think abortion is rarely justifiable.
+Q184	5	I believe abortion is sometimes justifiable.
+Q184	6	I believe abortion is sometimes justifiable.
+Q184	7	I think abortion is often justifiable.
+Q184	8	I think abortion is often justifiable.
+Q184	9	I believe abortion is always justifiable.
+Q184	10	I believe abortion is always justifiable.
+Q185	1	I believe divorce is never justifiable.
+Q185	2	I think divorce is never justified.
+Q185	3	I feel divorce is rarely justifiable.
+Q185	4	Divorce is rarely justified in my view.
+Q185	5	I think divorce is sometimes justifiable.
+Q185	6	Divorce is sometimes justified to me.
+Q185	7	I believe divorce is often justifiable.
+Q185	8	Divorce is often justified, I think.
+Q185	9	I believe divorce is always justifiable.
+Q185	10	Divorce is always justified, in my opinion.
+Q187	1	I think suicide is never justifiable.
+Q187	2	I think suicide is never justifiable.
+Q187	3	I think suicide is rarely justifiable.
+Q187	4	I think suicide is rarely justifiable.
+Q187	5	I think suicide is sometimes justifiable.
+Q187	6	I think suicide is sometimes justifiable.
+Q187	7	I think suicide is often justifiable.
+Q187	8	I think suicide is often justifiable.
+Q187	9	I think suicide is always justifiable.
+Q187	10	I think suicide is always justifiable.
+Q188	1	I believe euthanasia is never justifiable.
+Q188	2	I believe euthanasia is never justifiable.
+Q188	3	I think euthanasia is rarely justifiable.
+Q188	4	I think euthanasia is rarely justifiable.
+Q188	5	I believe euthanasia is sometimes justifiable.
+Q188	6	I believe euthanasia is sometimes justifiable.
+Q188	7	I think euthanasia is often justifiable.
+Q188	8	I think euthanasia is often justifiable.
+Q188	9	I believe euthanasia is always justifiable.
+Q188	10	I believe euthanasia is always justifiable.
+Q189	1	I never think beating a wife is justifiable.
+Q189	2	I never think beating a wife is justifiable.
+Q189	3	I think beating a wife is rarely justifiable.
+Q189	4	I think beating a wife is rarely justifiable.
+Q189	5	I think beating a wife is sometimes justifiable.
+Q189	6	I think beating a wife is sometimes justifiable.
+Q189	7	I think beating a wife is often justifiable.
+Q189	8	I think beating a wife is often justifiable.
+Q189	9	I think beating a wife is always justifiable.
+Q189	10	I think beating a wife is always justifiable.
+Q190	1	I never think beating children is justifiable.
+Q190	2	I never think beating children is justifiable.
+Q190	3	I think beating children is rarely justifiable.
+Q190	4	I think beating children is rarely justifiable.
+Q190	5	I think beating children is sometimes justifiable.
+Q190	6	I think beating children is sometimes justifiable.
+Q190	7	I think beating children is often justifiable.
+Q190	8	I think beating children is often justifiable.
+Q190	9	I think beating children is always justifiable.
+Q190	10	I think beating children is always justifiable.
+Q191	1	I never think violence is justifiable.
+Q191	2	I never think violence is justifiable.
+Q191	3	I think violence is rarely justifiable.
+Q191	4	I think violence is rarely justifiable.
+Q191	5	I think violence is sometimes justifiable.
+Q191	6	I think violence is sometimes justifiable.
+Q191	7	I think violence is often justifiable.
+Q191	8	I think violence is often justifiable.
+Q191	9	I think violence is always justifiable.
+Q191	10	I think violence is always justifiable.
+Q192	1	I never think terrorism is justifiable.
+Q192	2	I never think terrorism is justifiable.
+Q192	3	I think terrorism is rarely justifiable.
+Q192	4	I think terrorism is rarely justifiable.
+Q192	5	I think terrorism is sometimes justifiable.
+Q192	6	I think terrorism is sometimes justifiable.
+Q192	7	I think terrorism is often justifiable.
+Q192	8	I think terrorism is often justifiable.
+Q192	9	I think terrorism is always justifiable.
+Q192	10	I think terrorism is always justifiable.
+Q193	1	I never think casual sex is justifiable.
+Q193	2	I never think casual sex is justifiable.
+Q193	3	I rarely think casual sex is justifiable.
+Q193	4	I rarely think casual sex is justifiable.
+Q193	5	I sometimes think casual sex is justifiable.
+Q193	6	I sometimes think casual sex is justifiable.
+Q193	7	I often think casual sex is justifiable.
+Q193	8	I often think casual sex is justifiable.
+Q193	9	I always think casual sex is justifiable.
+Q193	10	I always think casual sex is justifiable.
+Q194	1	I never think violence is justifiable.
+Q194	2	I never think violence is justifiable.
+Q194	3	I think violence is rarely justifiable.
+Q194	4	I think violence is rarely justifiable.
+Q194	5	I think violence is sometimes justifiable.
+Q194	6	I think violence is sometimes justifiable.
+Q194	7	I think violence is often justifiable.
+Q194	8	I think violence is often justifiable.
+Q194	9	I think violence is always justifiable.
+Q194	10	I think violence is always justifiable.
+Q195	1	I believe the death penalty is never justifiable.
+Q195	2	I believe the death penalty is never justifiable.
+Q195	3	I think the death penalty is rarely justifiable.
+Q195	4	I think the death penalty is rarely justifiable.
+Q195	5	I believe the death penalty is sometimes justifiable.
+Q195	6	I believe the death penalty is sometimes justifiable.
+Q195	7	I think the death penalty is often justifiable.
+Q195	8	I think the death penalty is often justifiable.
+Q195	9	I believe the death penalty is always justifiable.
+Q195	10	I believe the death penalty is always justifiable.
+Q196	1	I support government video surveillance in public areas.
+Q196	2	I likely support government video surveillance in public areas.
+Q196	3	I likely oppose government video surveillance in public areas.
+Q196	4	I oppose government video surveillance in public areas.
+Q197	1	I think the government should monitor all online activity.
+Q197	2	I probably support government Internet monitoring.
+Q197	3	I probably oppose government Internet monitoring.
+Q197	4	I think the government should not monitor online activity.
+Q198	1	I think the government should collect info without my knowledge.
+Q198	2	I probably support government collecting info without my knowledge.
+Q198	3	I probably don't think the government should collect info without my knowledge.
+Q198	4	I don't think the government should collect info without my knowledge.
+Q199	1	I'm very interested in politics.
+Q199	2	I'm somewhat interested in politics.
+Q199	3	I'm not very interested in politics.
+Q199	4	I'm not at all interested in politics.
+Q200	1	I frequently discuss politics with friends.
+Q200	2	I occasionally discuss politics with friends.
+Q200	3	I never discuss politics with friends.
+Q202	1	I watch TV news daily.
+Q202	2	I watch TV news weekly.
+Q202	3	I watch TV news monthly.
+Q202	4	I rarely watch TV news.
+Q202	5	I never watch TV news.
+Q203	1	I use radio news daily.
+Q203	2	I use radio news weekly.
+Q203	3	I use radio news monthly.
+Q203	4	I use radio news rarely.
+Q203	5	I never use radio news.
+Q204	1	I use my mobile daily for information.
+Q204	2	I check news weekly on my mobile.
+Q204	3	I use my mobile monthly for updates.
+Q204	4	I rarely use my mobile for news.
+Q204	5	I never use my mobile for news.
+Q205	1	I use email daily for information.
+Q205	2	I use email weekly for information.
+Q205	3	I use email monthly for information.
+Q205	4	I use email less than monthly.
+Q205	5	I never use email for information.
+Q206	1	I use the internet daily for information.
+Q206	2	I use the internet weekly.
+Q206	3	I use the internet monthly.
+Q206	4	I use the internet less than monthly.
+Q206	5	I never use the internet for information.
+Q207	1	I use social media daily for information.
+Q207	2	I use social media weekly for information.
+Q207	3	I use social media monthly for information.
+Q207	4	I use social media less than monthly.
+Q207	5	I never use social media for information.
+Q208	1	I discuss news daily with friends or colleagues.
+Q208	2	I talk news weekly with friends or colleagues.
+Q208	3	I discuss news monthly with friends or colleagues.
+Q208	4	I rarely discuss news with friends or colleagues.
+Q208	5	I never discuss news with friends or colleagues.
+Q210	1	I have joined a boycott before.
+Q210	2	I might join a boycott.
+Q210	3	I would never join a boycott.
+Q211	1	I have attended a peaceful demonstration.
+Q211	2	I might attend a peaceful demonstration.
+Q211	3	I would never attend a demonstration.
+Q212	1	I have participated in an unofficial strike.
+Q212	2	I might participate in an unofficial strike.
+Q212	3	I would never participate in an unofficial strike.
+Q213	1	I have donated to a political group
+Q213	2	I might donate to a cause
+Q213	3	I would never donate to a campaign
+Q214	1	I have contacted a government official.
+Q214	2	I might contact a government official.
+Q214	3	I would never contact a government official.
+Q215	1	I have encouraged others to take political action.
+Q215	2	I might encourage others to take action.
+Q215	3	I would never encourage political action.
+Q216	1	I have encouraged others to vote.
+Q216	2	I might encourage others to vote.
+Q216	3	I would never encourage others to vote.
+Q217	1	I've used the internet for political information.
+Q217	2	I might search online for politics.
+Q217	3	I'd never search online for politics.
+Q218	1	I have signed an online petition.
+Q218	2	I might sign an online petition.
+Q218	3	I would never sign an online petition.
+Q219	1	I have encouraged others to take political action online.
+Q219	2	I might encourage others to take political action online.
+Q219	3	I would never encourage political action online.
+Q220	1	I have used the internet to organize political activities.
+Q220	2	I might use the internet for political organizing.
+Q220	3	I would never use the internet for political organizing.
+Q221	1	I always vote in local elections.
+Q221	2	I usually vote in local elections.
+Q221	3	I never vote in local elections.
+Q221	4	I am not allowed to vote.
+Q222	1	I always vote in national elections.
+Q222	2	I usually vote in national elections.
+Q222	3	I never vote in national elections.
+Q222	4	I am not allowed to vote.
+Q224	1	I think votes are counted fairly very often.
+Q224	2	I believe votes are counted fairly often.
+Q224	3	I think votes are rarely counted fairly.
+Q224	4	I don't think votes are ever counted fairly.
+Q225	1	I see opposition candidates blocked very often.
+Q225	2	I see opposition candidates blocked fairly often.
+Q225	3	I rarely see opposition candidates blocked.
+Q225	4	I never see opposition candidates blocked.
+Q226	1	I think TV news often favors the governing party.
+Q226	2	I think TV news fairly often favors the governing party.
+Q226	3	I think TV news rarely favors the governing party.
+Q226	4	I think TV news never favors the governing party.
+Q228	1	I think journalists provide fair coverage very often.
+Q228	2	I think journalists provide fair coverage fairly often.
+Q228	3	I think journalists rarely provide fair coverage.
+Q228	4	I think journalists never provide fair coverage.
+Q229	1	I think election officials are fair very often.
+Q229	2	I think election officials are fairly often fair.
+Q229	3	I think election officials are not often fair.
+Q229	4	I think election officials are never fair.
+Q230	1	I think rich people buy elections very often.
+Q230	2	I believe rich people buy elections fairly often.
+Q230	3	I think rich people rarely buy elections.
+Q230	4	I don't think rich people buy elections.
+Q231	1	I'm threatened with violence at polls very often.
+Q231	2	I'm fairly often threatened with violence at polls.
+Q231	3	I'm not often threatened with violence at polls.
+Q231	4	I'm never threatened with violence at polls.
+Q232	1	I often see genuine choices in elections.
+Q232	2	I fairly often see genuine choices.
+Q232	3	I rarely see genuine choices.
+Q232	4	I never see genuine choices.
+Q233	1	I see women having equal opportunities very often.
+Q233	2	I see women having equal opportunities fairly often.
+Q233	3	I rarely see women having equal opportunities.
+Q233	4	I never see women having equal opportunities.
+Q234	1	Honest elections are very important to me.
+Q234	2	Honest elections are rather important to me.
+Q234	3	Honest elections are not very important to me.
+Q234	4	Honest elections are not important to me.
+Q234A	1	I have a great deal of say in government.
+Q234A	2	I have a lot of say in government.
+Q234A	3	I have some say in government.
+Q234A	4	I have very little say in government.
+Q234A	5	I have no say in government.
+Q235	1	I think a strong leader is very good.
+Q235	2	I think a strong leader is fairly good.
+Q235	3	I think a strong leader is fairly bad.
+Q235	4	I think a strong leader is very bad.
+Q236	1	I think experts make better decisions than the government.
+Q236	2	I think experts make fairly good decisions.
+Q236	3	I think experts make fairly bad decisions.
+Q236	4	I think experts make very bad decisions.
+Q237	1	I think army rule is very good.
+Q237	2	I think army rule is fairly good.
+Q237	3	I think army rule is fairly bad.
+Q237	4	I think army rule is very bad.
+Q238	1	I think democracy is very good.
+Q238	2	I think democracy is fairly good.
+Q238	3	I think democracy is fairly bad.
+Q238	4	I think democracy is very bad.
+Q239	1	I think a religious law system is very good.
+Q239	2	I think a religious law system is fairly good.
+Q239	3	I think a religious law system is bad.
+Q239	4	I think a religious law system is very bad.
+Q240	1	I hold far left political views.
+Q240	2	I hold far left political views.
+Q240	3	I identify as left-leaning.
+Q240	4	I identify as left-leaning.
+Q240	5	I am centered in my views.
+Q240	6	I am centered in my views.
+Q240	7	I lean to the right.
+Q240	8	I lean to the right.
+Q240	9	I hold far right views.
+Q240	10	I hold far right views.
+Q241	0	I think taxing the rich is against democracy
+Q241	1	I don't think it's essential
+Q241	2	I don't think it's essential
+Q241	3	It's somewhat unimportant to me
+Q241	4	It's somewhat unimportant to me
+Q241	5	I think it's moderately essential
+Q241	6	I think it's moderately essential
+Q241	7	I think it's essential
+Q241	8	I think it's essential
+Q241	9	I think it's very essential
+Q241	10	I think it's very essential
+Q243	0	I think free elections are against democracy
+Q243	1	I don't think elections are essential at all
+Q243	2	I don't think elections are very essential
+Q243	3	I think elections are somewhat unimportant
+Q243	4	I think elections are somewhat important
+Q243	5	I think elections are important
+Q243	6	I think elections are very important
+Q243	7	I think elections are very important
+Q243	8	I think elections are extremely important
+Q243	9	I think elections are extremely important
+Q243	10	I think elections are absolutely essential
+Q244	0	I think state aid contradicts democracy
+Q244	1	I don't think state aid is essential
+Q244	2	I think state aid is not very essential
+Q244	3	I think state aid is somewhat unimportant
+Q244	4	I think state aid is somewhat important
+Q244	5	I think state aid is important
+Q244	6	I think state aid is very important
+Q244	7	I think state aid is very important
+Q244	8	I think state aid is extremely important
+Q244	9	I think state aid is extremely important
+Q244	10	I think state aid is absolutely essential
+Q245	0	I believe army takeover is against democracy
+Q245	1	I don't think army takeover is essential
+Q245	2	I think army takeover is not very essential
+Q245	3	I find army takeover somewhat unimportant
+Q245	4	I think army takeover is somewhat important
+Q245	5	I believe army takeover is important
+Q245	6	I think army takeover is very important
+Q245	7	I think army takeover is very important
+Q245	8	I think army takeover is extremely important
+Q245	9	I think army takeover is extremely important
+Q245	10	I think army takeover is absolutely essential
+Q246	0	I think democracy opposes civil rights
+Q246	1	I don't think civil rights are essential
+Q246	2	I think civil rights are not very essential
+Q246	3	I find civil rights somewhat unimportant
+Q246	4	I think civil rights are somewhat important
+Q246	5	I think civil rights are important
+Q246	6	I think civil rights are very important
+Q246	7	I think civil rights are very important
+Q246	8	I think civil rights are extremely important
+Q246	9	I think civil rights are extremely important
+Q246	10	I think civil rights are absolutely essential
+Q247	0	I think income equality is against democracy
+Q247	1	I don't think income equality is essential
+Q247	2	Income equality is not very important to me
+Q247	3	I find income equality somewhat unimportant
+Q247	4	I think income equality is somewhat important
+Q247	5	I believe income equality is important
+Q247	6	Income equality is very important to me
+Q247	7	I consider income equality very important
+Q247	8	I think income equality is extremely important
+Q247	9	Income equality is extremely important to me
+Q247	10	I believe income equality is absolutely essential
+Q248	0	I think obeying rulers is against democracy
+Q248	1	I don't think obeying rulers is essential
+Q248	2	I don't think obeying rulers is very important
+Q248	3	I think obeying rulers is somewhat unimportant
+Q248	4	I think obeying rulers is somewhat important
+Q248	5	I think obeying rulers is important
+Q248	6	I think obeying rulers is very important
+Q248	7	I think obeying rulers is very important
+Q248	8	I think obeying rulers is extremely important
+Q248	9	I think obeying rulers is extremely important
+Q248	10	I think obeying rulers is absolutely essential
+Q249	0	I think democracy opposes women's equal rights.
+Q249	1	I don't think equal rights are necessary.
+Q249	2	I don't think equal rights are very important.
+Q249	3	I find equal rights somewhat unimportant.
+Q249	4	I think equal rights are somewhat important.
+Q249	5	I think equal rights are important.
+Q249	6	I think equal rights are very important.
+Q249	7	I think equal rights are very important.
+Q249	8	I think equal rights are extremely important.
+Q249	9	I think equal rights are extremely important.
+Q249	10	I think equal rights are absolutely essential.
+Q250	1	Democracy is not important to me.
+Q250	2	Democracy is not important to me.
+Q250	3	Democracy is somewhat unimportant to me.
+Q250	4	Democracy is somewhat unimportant to me.
+Q250	5	Democracy is neutral to me.
+Q250	6	Democracy is neutral to me.
+Q250	7	Democracy is somewhat important to me.
+Q250	8	Democracy is somewhat important to me.
+Q250	9	Democracy is very important to me.
+Q250	10	Democracy is very important to me.
+Q251	1	I think this country is not democratic.
+Q251	2	I think this country is not democratic.
+Q251	3	I see this country as somewhat undemocratic.
+Q251	4	I see this country as somewhat undemocratic.
+Q251	5	I'm neutral about the democracy here.
+Q251	6	I'm neutral about the democracy here.
+Q251	7	I think this country is somewhat democratic.
+Q251	8	I think this country is somewhat democratic.
+Q251	9	I believe this country is very democratic.
+Q251	10	I believe this country is very democratic.
+Q252	1	I'm not satisfied with my country's political system.
+Q252	2	I'm not satisfied with my country's politics.
+Q252	3	I'm somewhat dissatisfied with the system.
+Q252	4	I'm a bit dissatisfied with politics.
+Q252	5	I'm neutral about the political system.
+Q252	6	I have mixed feelings about politics.
+Q252	7	I'm somewhat satisfied with the system.
+Q252	8	I'm fairly satisfied with politics.
+Q252	9	I'm very satisfied with my country's politics.
+Q252	10	I'm extremely satisfied with the system.
+Q253	1	I see a great deal of respect for human rights.
+Q253	2	I see fairly much respect for human rights.
+Q253	3	I see little respect for human rights.
+Q253	4	I see no respect for human rights.
+Q254	1	I'm very proud of my nationality
+Q254	2	I'm quite proud of my nationality
+Q254	3	I'm not very proud of my nationality
+Q254	4	I'm not at all proud of my nationality
+Q254	5	I'm not a national of this country
+Q255	1	I feel very close to my village, town or city.
+Q255	2	I feel close to my village, town or city.
+Q255	3	I don't feel very close to my village, town or city.
+Q255	4	I don't feel close to my village, town or city at all.
+Q256	1	I feel very close to my region.
+Q256	2	I feel close to my region.
+Q256	3	I don't feel very close to my region.
+Q256	4	I don't feel close to my region.
+Q257	1	I feel very close to my country.
+Q257	2	I feel close to my country.
+Q257	3	I don't feel very close to my country.
+Q257	4	I don't feel close to my country at all.
+Q258	1	I feel very close to my continent.
+Q258	2	I feel close to my continent.
+Q258	3	I don't feel very close to my continent.
+Q258	4	I don't feel close to my continent.
+Q259	1	I feel very close to the World.
+Q259	2	I feel close to the World.
+Q259	3	I don't feel very close to the World.
+Q259	4	I don't feel close to the World.
+Q260	1	I identify as male.
+Q260	2	I identify as female.
