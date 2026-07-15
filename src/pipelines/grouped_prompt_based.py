@@ -59,16 +59,8 @@ class GroupedPromptBasedPipeline(Pipeline):
             return None
         return self._statements.get((entry.code, entry.answer))
 
-    def build_prompt(self, item: PipelineItem) -> str:
-        lines = [
-            "You are answering a survey question as the described respondent.",
-            "",
-            f"Question: {item.question}",
-            f"Answer with exactly one of: {', '.join(item.labels)}",
-            "",
-            "Respondent profile:",
-        ]
-
+    def _profile_lines(self, item: PipelineItem) -> list[str]:
+        lines: list[str] = []
         for entry in item.history:
             if entry.answer is None:
                 continue
@@ -77,11 +69,52 @@ class GroupedPromptBasedPipeline(Pipeline):
                 lines.append(f"- {statement}")
             else:
                 lines.append(f"- {entry.question}: {entry.answer}")
+        return lines
 
+    def _used_feature_codes(self, item: PipelineItem) -> list[str]:
+        return [
+            entry.code
+            for entry in item.history
+            if entry.answer is not None
+        ]
+
+    def build_summary_prompt(self, item: PipelineItem) -> str:
+        lines = [
+            "Select facts from the respondent profile that are relevant to "
+            "answering the survey question below.",
+            "",
+            "Pick only the relevant facts. Keep them close to the original "
+            "wording; do not invent details or over-interpret.",
+            "",
+            f"Question: {item.question}",
+            "",
+            "Respondent profile:",
+            *self._profile_lines(item),
+            "",
+            "Write a short bullet list of the selected facts only.",
+        ]
         return "\n".join(lines)
 
+    def build_answer_prompt(self, item: PipelineItem, summary: str) -> str:
+        lines = [
+            "You are answering a survey question as the described respondent.",
+            "",
+            "Relevant information about the respondent:",
+            summary.strip(),
+            "",
+            f"Question: {item.question}",
+            f"Answer with exactly one of: {', '.join(item.labels)}",
+        ]
+        return "\n".join(lines)
+
+    def build_prompt(self, item: PipelineItem) -> str:
+        return self.build_summary_prompt(item)
+
     def apply(self, item: PipelineItem) -> dict[str, object]:
+        summary = self._client.infer(self.build_summary_prompt(item))
+        answer = self._client.infer(self.build_answer_prompt(item, summary))
         return {
-            "output": self._client.infer(self.build_prompt(item)),
-            "features": [entry.code for entry in item.history],
+            "output": answer,
+            "summary": summary,
+            "features": self._used_feature_codes(item),
         }
