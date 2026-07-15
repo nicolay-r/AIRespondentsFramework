@@ -37,11 +37,24 @@ if __name__ == "__main__":
     )
 
     print(f"wrote dev evaluation to {OUTPUT_DIR}/")
-    print(
-        f"accuracy: {scores['correct']}/{scores['scored']} "
-        f"({scores['accuracy']:.1%})"
-        if scores["accuracy"] is not None
-        else "accuracy: n/a"
-    )
+    if scores["skill"] is not None:
+        print(f"skill: {scores['skill']:.3f}")
+    else:
+        print("skill: n/a")
+    if scores["alignment"] is not None:
+        print(f"alignment: {scores['alignment']:.3f}")
+    else:
+        print("alignment: n/a")
+    if scores["f1_macro"] is not None:
+        print(f"f1_macro: {scores['f1_macro']:.3f}")
+    else:
+        print("f1_macro: n/a")
+    if scores["accuracy"] is not None:
+        print(
+            f"accuracy: {scores['correct']}/{scores['scored']} "
+            f"({scores['accuracy']:.1%})"
+        )
+    else:
+        print("accuracy: n/a")
     for path in written:
         print(f"  {path.relative_to(OUTPUT_DIR)}")
