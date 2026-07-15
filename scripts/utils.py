@@ -8,7 +8,7 @@ from sklearn.metrics import f1_score
 
 from scripts.run_extract_pipeline_input import DevExample
 from src.pipelines.base import PipelineItem
-from src.pipelines.prompt_based import ZeroShotPipeline
+from src.pipelines.prompt_based import PromptBasedPipeline
 
 
 def write_submission(
@@ -69,7 +69,7 @@ def write_submission(
 
 
 def example_prompts_for(
-    pipeline: ZeroShotPipeline,
+    pipeline: PromptBasedPipeline,
     items: Iterable[PipelineItem],
 ) -> dict[str, str]:
     prompts: dict[str, str] = {}

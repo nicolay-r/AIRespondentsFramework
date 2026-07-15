@@ -2,7 +2,7 @@ from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
 
 
-class ZeroShotPipeline(Pipeline):
+class PromptBasedPipeline(Pipeline):
     
     def __init__(self, client: OpenAIClient) -> None:
         self._client = client

@@ -4,8 +4,8 @@ from typing import Literal, cast
 
 from tqdm import tqdm
 
-from src.pipelines import ZeroShotPipeline
-from src.pipelines.base import PipelineItem
+from src.pipelines import PromptBasedPipeline
+from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
 
 dataset = importlib.import_module("src.import")
@@ -19,7 +19,7 @@ def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
     return labels[0]
 
 
-def _predict_job(job: tuple[ZeroShotPipeline, PipelineItem]) -> dict[str, object]:
+def _predict_job(job: tuple[Pipeline, PipelineItem]) -> dict[str, object]:
     pipeline, item = job
     result = pipeline.apply(item)
     result["output"] = parse_label(result["output"], item.labels)
@@ -27,7 +27,7 @@ def _predict_job(job: tuple[ZeroShotPipeline, PipelineItem]) -> dict[str, object
 
 
 def _run_jobs(
-    jobs: list[tuple[ZeroShotPipeline, PipelineItem]],
+    jobs: list[tuple[Pipeline, PipelineItem]],
     *,
     workers: int,
     desc: str,
@@ -55,7 +55,7 @@ def run_on_items(
         base_url="https://api.studio.nebius.com/v1/"
     )
 
-    pipeline = ZeroShotPipeline(client)
+    pipeline = PromptBasedPipeline(client)
 
     jobs = [(pipeline, item) for item in items]
     results = _run_jobs(jobs, workers=workers, desc=desc)
