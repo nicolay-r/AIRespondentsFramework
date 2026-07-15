@@ -7,8 +7,7 @@ import pandas as pd
 from sklearn.metrics import f1_score
 
 from scripts.run_extract_pipeline_input import DevExample
-from src.pipelines.base import PipelineItem
-from src.pipelines.prompt_based import PromptBasedPipeline
+from src.pipelines.base import Pipeline, PipelineItem
 
 
 def write_submission(
@@ -69,7 +68,7 @@ def write_submission(
 
 
 def example_prompts_for(
-    pipeline: PromptBasedPipeline,
+    pipeline: Pipeline,
     items: Iterable[PipelineItem],
 ) -> dict[str, str]:
     prompts: dict[str, str] = {}
