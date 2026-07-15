@@ -9,8 +9,8 @@ class OpenAIClient:
         self,
         *,
         max_retries: int = 20,
-        model: str = "meta-llama/Llama-3.3-70B-Instruct",
-        base_url: str = "https://api.studio.nebius.com/v1/",
+        model: str,
+        base_url: str,
     ) -> None:
         api_key = os.environ.get("NEBIUS_API_KEY")
         if not api_key:
