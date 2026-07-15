@@ -1195,3 +1195,902 @@ Q259	3	I don't feel very close to the World.
 Q259	4	I don't feel close to the World.
 Q260	1	I identify as male.
 Q260	2	I identify as female.
+Q263	1	I was born in this country
+Q263	2	I am an immigrant
+Q264	1	My mother is not an immigrant.
+Q264	2	My mother is an immigrant.
+Q265	1	My father is not an immigrant.
+Q265	2	My father is an immigrant.
+Q266	4	I was born in Afghanistan.
+Q266	8	I was born in Albania.
+Q266	12	I was born in Algeria.
+Q266	16	I was born in American Samoa.
+Q266	20	I was born in Andorra.
+Q266	24	I was born in Angola.
+Q266	28	I was born in Antigua.
+Q266	31	I was born in Azerbaijan.
+Q266	32	I was born in Argentina.
+Q266	36	I was born in Australia.
+Q266	40	I was born in Austria.
+Q266	44	I was born in Bahamas.
+Q266	48	I was born in Bahrain.
+Q266	50	I was born in Bangladesh.
+Q266	51	I was born in Armenia.
+Q266	52	I was born in Barbados.
+Q266	56	I was born in Belgium.
+Q266	68	I was born in Bolivia.
+Q266	70	I was born in Bosnia Herzegovina.
+Q266	76	I was born in Brazil.
+Q266	92	I was born in Virgin Islands (British).
+Q266	100	I was born in Bulgaria.
+Q266	104	I was born in Myanmar.
+Q266	108	I was born in Burundi.
+Q266	112	I was born in Belarus.
+Q266	116	I was born in Cambodia.
+Q266	124	I was born in Canada.
+Q266	144	I was born in Sri Lanka.
+Q266	148	I was born in Chad.
+Q266	152	I was born in Chile.
+Q266	156	I was born in China.
+Q266	158	I was born in Taiwan ROC.
+Q266	170	I was born in Colombia.
+Q266	184	I was born in Cook Islands.
+Q266	188	I was born in Costa Rica.
+Q266	191	I was born in Croatia.
+Q266	192	I was born in Cuba.
+Q266	196	I was born in Cyprus.
+Q266	203	I was born in Czech Rep..
+Q266	208	I was born in Denmark.
+Q266	212	I was born in Dominica.
+Q266	214	I was born in Dominican Rep..
+Q266	218	I was born in Ecuador.
+Q266	222	I was born in El Salvador.
+Q266	231	I was born in Ethiopia.
+Q266	233	I was born in Estonia.
+Q266	234	I was born in Faroe Islands.
+Q266	238	I was born in Falkland Islands (Malvinas).
+Q266	246	I was born in Finland.
+Q266	250	I was born in France.
+Q266	268	I was born in Georgia.
+Q266	270	I was born in Gambia.
+Q266	275	I was born in Palestine.
+Q266	276	I was born in Germany.
+Q266	278	I was born in German Democratic Republic (former country).
+Q266	288	I was born in Ghana.
+Q266	292	I was born in Gibraltar.
+Q266	300	I was born in Greece.
+Q266	304	I was born in Greenland.
+Q266	316	I was born in Guam.
+Q266	320	I was born in Guatemala.
+Q266	324	I was born in Guinea.
+Q266	328	I was born in Guyana.
+Q266	332	I was born in Haiti.
+Q266	340	I was born in Honduras.
+Q266	344	I was born in Hong Kong SAR.
+Q266	348	I was born in Hungary.
+Q266	352	I was born in Iceland.
+Q266	356	I was born in India.
+Q266	360	I was born in Indonesia.
+Q266	364	I was born in Iran.
+Q266	368	I was born in Iraq.
+Q266	372	I was born in Ireland.
+Q266	376	I was born in Israel.
+Q266	380	I was born in Italy.
+Q266	384	I was born in Côte d'Ivoire.
+Q266	388	I was born in Jamaica.
+Q266	392	I was born in Japan.
+Q266	398	I was born in Kazakhstan.
+Q266	400	I was born in Jordan.
+Q266	404	I was born in Kenya.
+Q266	408	I was born in North Korea.
+Q266	410	I was born in South Korea.
+Q266	417	I was born in Kyrgyzstan.
+Q266	418	I was born in Laos.
+Q266	422	I was born in Lebanon.
+Q266	428	I was born in Latvia.
+Q266	430	I was born in Liberia.
+Q266	434	I was born in Libya.
+Q266	438	I was born in Liechtenstein.
+Q266	440	I was born in Lithuania.
+Q266	442	I was born in Luxembourg.
+Q266	446	I was born in Macau SAR.
+Q266	454	I was born in Malawi.
+Q266	458	I was born in Malaysia.
+Q266	466	I was born in Mali.
+Q266	470	I was born in Malta.
+Q266	474	I was born in Martinique.
+Q266	480	I was born in Mauritius.
+Q266	484	I was born in Mexico.
+Q266	496	I was born in Mongolia.
+Q266	498	I was born in Moldova.
+Q266	499	I was born in Montenegro.
+Q266	504	I was born in Morocco.
+Q266	508	I was born in Mozambique.
+Q266	524	I was born in Nepal.
+Q266	528	I was born in Netherlands.
+Q266	533	I was born in Aruba.
+Q266	554	I was born in New Zealand.
+Q266	558	I was born in Nicaragua.
+Q266	566	I was born in Nigeria.
+Q266	578	I was born in Norway.
+Q266	586	I was born in Pakistan.
+Q266	591	I was born in Panama.
+Q266	600	I was born in Paraguay.
+Q266	604	I was born in Peru.
+Q266	608	I was born in Philippines.
+Q266	616	I was born in Poland.
+Q266	620	I was born in Portugal.
+Q266	626	I was born in Timor-Leste.
+Q266	630	I was born in Puerto Rico.
+Q266	634	I was born in Qatar.
+Q266	642	I was born in Romania.
+Q266	643	I was born in Russia.
+Q266	660	I was born in Anguilla.
+Q266	688	I was born in Serbia.
+Q266	702	I was born in Singapore.
+Q266	703	I was born in Slovakia.
+Q266	704	I was born in Vietnam.
+Q266	705	I was born in Slovenia.
+Q266	706	I was born in Somalia.
+Q266	710	I was born in South Africa.
+Q266	716	I was born in Zimbabwe.
+Q266	724	I was born in Spain.
+Q266	736	I was born in Sudan.
+Q266	752	I was born in Sweden.
+Q266	756	I was born in Switzerland.
+Q266	760	I was born in Syria.
+Q266	762	I was born in Tajikistan.
+Q266	764	I was born in Thailand.
+Q266	768	I was born in Togo.
+Q266	780	I was born in Trinidad and Tobago.
+Q266	784	I was born in United Arab Emirates.
+Q266	788	I was born in Tunisia.
+Q266	792	I was born in Turkey.
+Q266	795	I was born in Turkmenistan.
+Q266	804	I was born in Ukraine.
+Q266	807	I was born in North Macedonia.
+Q266	818	I was born in Egypt.
+Q266	826	I was born in United Kingdom.
+Q266	834	I was born in Tanzania.
+Q266	840	I was born in United States.
+Q266	854	I was born in Burkina Faso.
+Q266	858	I was born in Uruguay.
+Q266	860	I was born in Uzbekistan.
+Q266	862	I was born in Venezuela.
+Q266	887	I was born in Yemen.
+Q266	891	I was born in Serbia and Montenegro.
+Q266	894	I was born in Zambia.
+Q266	915	I was born in Kosovo.
+Q266	9999	I was born in Other.
+Q267	4	My mother was born in Afghanistan.
+Q267	8	My mother was born in Albania.
+Q267	12	My mother was born in Algeria.
+Q267	16	My mother was born in American Samoa.
+Q267	20	My mother was born in Andorra.
+Q267	24	My mother was born in Angola.
+Q267	28	My mother was born in Antigua.
+Q267	31	My mother was born in Azerbaijan.
+Q267	32	My mother was born in Argentina.
+Q267	36	My mother was born in Australia.
+Q267	40	My mother was born in Austria.
+Q267	44	My mother was born in Bahamas.
+Q267	48	My mother was born in Bahrain.
+Q267	50	My mother was born in Bangladesh.
+Q267	51	My mother was born in Armenia.
+Q267	52	My mother was born in Barbados.
+Q267	56	My mother was born in Belgium.
+Q267	68	My mother was born in Bolivia.
+Q267	70	My mother was born in Bosnia Herzegovina.
+Q267	76	My mother was born in Brazil.
+Q267	92	My mother was born in Virgin Islands (British).
+Q267	100	My mother was born in Bulgaria.
+Q267	104	My mother was born in Myanmar.
+Q267	108	My mother was born in Burundi.
+Q267	112	My mother was born in Belarus.
+Q267	116	My mother was born in Cambodia.
+Q267	124	My mother was born in Canada.
+Q267	144	My mother was born in Sri Lanka.
+Q267	148	My mother was born in Chad.
+Q267	152	My mother was born in Chile.
+Q267	156	My mother was born in China.
+Q267	158	My mother was born in Taiwan ROC.
+Q267	170	My mother was born in Colombia.
+Q267	184	My mother was born in Cook Islands.
+Q267	188	My mother was born in Costa Rica.
+Q267	191	My mother was born in Croatia.
+Q267	192	My mother was born in Cuba.
+Q267	196	My mother was born in Cyprus.
+Q267	203	My mother was born in Czech Rep..
+Q267	208	My mother was born in Denmark.
+Q267	212	My mother was born in Dominica.
+Q267	214	My mother was born in Dominican Rep..
+Q267	218	My mother was born in Ecuador.
+Q267	222	My mother was born in El Salvador.
+Q267	231	My mother was born in Ethiopia.
+Q267	233	My mother was born in Estonia.
+Q267	234	My mother was born in Faroe Islands.
+Q267	238	My mother was born in Falkland Islands (Malvinas).
+Q267	246	My mother was born in Finland.
+Q267	250	My mother was born in France.
+Q267	268	My mother was born in Georgia.
+Q267	270	My mother was born in Gambia.
+Q267	275	My mother was born in Palestine.
+Q267	276	My mother was born in Germany.
+Q267	278	My mother was born in German Democratic Republic (former country).
+Q267	288	My mother was born in Ghana.
+Q267	292	My mother was born in Gibraltar.
+Q267	300	My mother was born in Greece.
+Q267	304	My mother was born in Greenland.
+Q267	316	My mother was born in Guam.
+Q267	320	My mother was born in Guatemala.
+Q267	324	My mother was born in Guinea.
+Q267	328	My mother was born in Guyana.
+Q267	332	My mother was born in Haiti.
+Q267	340	My mother was born in Honduras.
+Q267	344	My mother was born in Hong Kong SAR.
+Q267	348	My mother was born in Hungary.
+Q267	352	My mother was born in Iceland.
+Q267	356	My mother was born in India.
+Q267	360	My mother was born in Indonesia.
+Q267	364	My mother was born in Iran.
+Q267	368	My mother was born in Iraq.
+Q267	372	My mother was born in Ireland.
+Q267	376	My mother was born in Israel.
+Q267	380	My mother was born in Italy.
+Q267	384	My mother was born in Côte d'Ivoire.
+Q267	388	My mother was born in Jamaica.
+Q267	392	My mother was born in Japan.
+Q267	398	My mother was born in Kazakhstan.
+Q267	400	My mother was born in Jordan.
+Q267	404	My mother was born in Kenya.
+Q267	408	My mother was born in North Korea.
+Q267	410	My mother was born in South Korea.
+Q267	417	My mother was born in Kyrgyzstan.
+Q267	418	My mother was born in Laos.
+Q267	422	My mother was born in Lebanon.
+Q267	428	My mother was born in Latvia.
+Q267	430	My mother was born in Liberia.
+Q267	434	My mother was born in Libya.
+Q267	438	My mother was born in Liechtenstein.
+Q267	440	My mother was born in Lithuania.
+Q267	442	My mother was born in Luxembourg.
+Q267	446	My mother was born in Macau SAR.
+Q267	454	My mother was born in Malawi.
+Q267	458	My mother was born in Malaysia.
+Q267	466	My mother was born in Mali.
+Q267	470	My mother was born in Malta.
+Q267	474	My mother was born in Martinique.
+Q267	480	My mother was born in Mauritius.
+Q267	484	My mother was born in Mexico.
+Q267	496	My mother was born in Mongolia.
+Q267	498	My mother was born in Moldova.
+Q267	499	My mother was born in Montenegro.
+Q267	504	My mother was born in Morocco.
+Q267	508	My mother was born in Mozambique.
+Q267	524	My mother was born in Nepal.
+Q267	528	My mother was born in Netherlands.
+Q267	533	My mother was born in Aruba.
+Q267	554	My mother was born in New Zealand.
+Q267	558	My mother was born in Nicaragua.
+Q267	566	My mother was born in Nigeria.
+Q267	578	My mother was born in Norway.
+Q267	586	My mother was born in Pakistan.
+Q267	591	My mother was born in Panama.
+Q267	600	My mother was born in Paraguay.
+Q267	604	My mother was born in Peru.
+Q267	608	My mother was born in Philippines.
+Q267	616	My mother was born in Poland.
+Q267	620	My mother was born in Portugal.
+Q267	626	My mother was born in Timor-Leste.
+Q267	630	My mother was born in Puerto Rico.
+Q267	634	My mother was born in Qatar.
+Q267	642	My mother was born in Romania.
+Q267	643	My mother was born in Russia.
+Q267	660	My mother was born in Anguilla.
+Q267	688	My mother was born in Serbia.
+Q267	702	My mother was born in Singapore.
+Q267	703	My mother was born in Slovakia.
+Q267	704	My mother was born in Vietnam.
+Q267	705	My mother was born in Slovenia.
+Q267	706	My mother was born in Somalia.
+Q267	710	My mother was born in South Africa.
+Q267	716	My mother was born in Zimbabwe.
+Q267	724	My mother was born in Spain.
+Q267	736	My mother was born in Sudan.
+Q267	752	My mother was born in Sweden.
+Q267	756	My mother was born in Switzerland.
+Q267	760	My mother was born in Syria.
+Q267	762	My mother was born in Tajikistan.
+Q267	764	My mother was born in Thailand.
+Q267	768	My mother was born in Togo.
+Q267	780	My mother was born in Trinidad and Tobago.
+Q267	784	My mother was born in United Arab Emirates.
+Q267	788	My mother was born in Tunisia.
+Q267	792	My mother was born in Turkey.
+Q267	795	My mother was born in Turkmenistan.
+Q267	804	My mother was born in Ukraine.
+Q267	807	My mother was born in North Macedonia.
+Q267	818	My mother was born in Egypt.
+Q267	826	My mother was born in United Kingdom.
+Q267	834	My mother was born in Tanzania.
+Q267	840	My mother was born in United States.
+Q267	854	My mother was born in Burkina Faso.
+Q267	858	My mother was born in Uruguay.
+Q267	860	My mother was born in Uzbekistan.
+Q267	862	My mother was born in Venezuela.
+Q267	887	My mother was born in Yemen.
+Q267	891	My mother was born in Serbia and Montenegro.
+Q267	894	My mother was born in Zambia.
+Q267	915	My mother was born in Kosovo.
+Q267	9999	My mother was born in Other.
+Q268	4	My father was born in Afghanistan.
+Q268	8	My father was born in Albania.
+Q268	12	My father was born in Algeria.
+Q268	16	My father was born in American Samoa.
+Q268	20	My father was born in Andorra.
+Q268	24	My father was born in Angola.
+Q268	28	My father was born in Antigua.
+Q268	31	My father was born in Azerbaijan.
+Q268	32	My father was born in Argentina.
+Q268	36	My father was born in Australia.
+Q268	40	My father was born in Austria.
+Q268	44	My father was born in Bahamas.
+Q268	48	My father was born in Bahrain.
+Q268	50	My father was born in Bangladesh.
+Q268	51	My father was born in Armenia.
+Q268	52	My father was born in Barbados.
+Q268	56	My father was born in Belgium.
+Q268	68	My father was born in Bolivia.
+Q268	70	My father was born in Bosnia Herzegovina.
+Q268	76	My father was born in Brazil.
+Q268	92	My father was born in Virgin Islands (British).
+Q268	100	My father was born in Bulgaria.
+Q268	104	My father was born in Myanmar.
+Q268	108	My father was born in Burundi.
+Q268	112	My father was born in Belarus.
+Q268	116	My father was born in Cambodia.
+Q268	124	My father was born in Canada.
+Q268	144	My father was born in Sri Lanka.
+Q268	148	My father was born in Chad.
+Q268	152	My father was born in Chile.
+Q268	156	My father was born in China.
+Q268	158	My father was born in Taiwan ROC.
+Q268	170	My father was born in Colombia.
+Q268	184	My father was born in Cook Islands.
+Q268	188	My father was born in Costa Rica.
+Q268	191	My father was born in Croatia.
+Q268	192	My father was born in Cuba.
+Q268	196	My father was born in Cyprus.
+Q268	203	My father was born in Czech Rep..
+Q268	208	My father was born in Denmark.
+Q268	212	My father was born in Dominica.
+Q268	214	My father was born in Dominican Rep..
+Q268	218	My father was born in Ecuador.
+Q268	222	My father was born in El Salvador.
+Q268	231	My father was born in Ethiopia.
+Q268	233	My father was born in Estonia.
+Q268	234	My father was born in Faroe Islands.
+Q268	238	My father was born in Falkland Islands (Malvinas).
+Q268	246	My father was born in Finland.
+Q268	250	My father was born in France.
+Q268	268	My father was born in Georgia.
+Q268	270	My father was born in Gambia.
+Q268	275	My father was born in Palestine.
+Q268	276	My father was born in Germany.
+Q268	278	My father was born in German Democratic Republic (former country).
+Q268	288	My father was born in Ghana.
+Q268	292	My father was born in Gibraltar.
+Q268	300	My father was born in Greece.
+Q268	304	My father was born in Greenland.
+Q268	316	My father was born in Guam.
+Q268	320	My father was born in Guatemala.
+Q268	324	My father was born in Guinea.
+Q268	328	My father was born in Guyana.
+Q268	332	My father was born in Haiti.
+Q268	340	My father was born in Honduras.
+Q268	344	My father was born in Hong Kong SAR.
+Q268	348	My father was born in Hungary.
+Q268	352	My father was born in Iceland.
+Q268	356	My father was born in India.
+Q268	360	My father was born in Indonesia.
+Q268	364	My father was born in Iran.
+Q268	368	My father was born in Iraq.
+Q268	372	My father was born in Ireland.
+Q268	376	My father was born in Israel.
+Q268	380	My father was born in Italy.
+Q268	384	My father was born in Côte d'Ivoire.
+Q268	388	My father was born in Jamaica.
+Q268	392	My father was born in Japan.
+Q268	398	My father was born in Kazakhstan.
+Q268	400	My father was born in Jordan.
+Q268	404	My father was born in Kenya.
+Q268	408	My father was born in North Korea.
+Q268	410	My father was born in South Korea.
+Q268	417	My father was born in Kyrgyzstan.
+Q268	418	My father was born in Laos.
+Q268	422	My father was born in Lebanon.
+Q268	428	My father was born in Latvia.
+Q268	430	My father was born in Liberia.
+Q268	434	My father was born in Libya.
+Q268	438	My father was born in Liechtenstein.
+Q268	440	My father was born in Lithuania.
+Q268	442	My father was born in Luxembourg.
+Q268	446	My father was born in Macau SAR.
+Q268	454	My father was born in Malawi.
+Q268	458	My father was born in Malaysia.
+Q268	466	My father was born in Mali.
+Q268	470	My father was born in Malta.
+Q268	474	My father was born in Martinique.
+Q268	480	My father was born in Mauritius.
+Q268	484	My father was born in Mexico.
+Q268	496	My father was born in Mongolia.
+Q268	498	My father was born in Moldova.
+Q268	499	My father was born in Montenegro.
+Q268	504	My father was born in Morocco.
+Q268	508	My father was born in Mozambique.
+Q268	524	My father was born in Nepal.
+Q268	528	My father was born in Netherlands.
+Q268	533	My father was born in Aruba.
+Q268	554	My father was born in New Zealand.
+Q268	558	My father was born in Nicaragua.
+Q268	566	My father was born in Nigeria.
+Q268	578	My father was born in Norway.
+Q268	586	My father was born in Pakistan.
+Q268	591	My father was born in Panama.
+Q268	600	My father was born in Paraguay.
+Q268	604	My father was born in Peru.
+Q268	608	My father was born in Philippines.
+Q268	616	My father was born in Poland.
+Q268	620	My father was born in Portugal.
+Q268	626	My father was born in Timor-Leste.
+Q268	630	My father was born in Puerto Rico.
+Q268	634	My father was born in Qatar.
+Q268	642	My father was born in Romania.
+Q268	643	My father was born in Russia.
+Q268	660	My father was born in Anguilla.
+Q268	688	My father was born in Serbia.
+Q268	702	My father was born in Singapore.
+Q268	703	My father was born in Slovakia.
+Q268	704	My father was born in Vietnam.
+Q268	705	My father was born in Slovenia.
+Q268	706	My father was born in Somalia.
+Q268	710	My father was born in South Africa.
+Q268	716	My father was born in Zimbabwe.
+Q268	724	My father was born in Spain.
+Q268	736	My father was born in Sudan.
+Q268	752	My father was born in Sweden.
+Q268	756	My father was born in Switzerland.
+Q268	760	My father was born in Syria.
+Q268	762	My father was born in Tajikistan.
+Q268	764	My father was born in Thailand.
+Q268	768	My father was born in Togo.
+Q268	780	My father was born in Trinidad and Tobago.
+Q268	784	My father was born in United Arab Emirates.
+Q268	788	My father was born in Tunisia.
+Q268	792	My father was born in Turkey.
+Q268	795	My father was born in Turkmenistan.
+Q268	804	My father was born in Ukraine.
+Q268	807	My father was born in North Macedonia.
+Q268	818	My father was born in Egypt.
+Q268	826	My father was born in United Kingdom.
+Q268	834	My father was born in Tanzania.
+Q268	840	My father was born in United States.
+Q268	854	My father was born in Burkina Faso.
+Q268	858	My father was born in Uruguay.
+Q268	860	My father was born in Uzbekistan.
+Q268	862	My father was born in Venezuela.
+Q268	887	My father was born in Yemen.
+Q268	891	My father was born in Serbia and Montenegro.
+Q268	894	My father was born in Zambia.
+Q268	915	My father was born in Kosovo.
+Q268	9999	My father was born in Other.
+Q269	1	I am a citizen of this country
+Q269	2	I am not a citizen
+Q269	3	I've applied for citizenship
+Q270	1	I live alone in my household.
+Q270	2	There are two of us in my household.
+Q270	3	I have two others in my household with me.
+Q270	4	There are four people in my household.
+Q270	5	My household has five people total.
+Q270	6	I live with five others in my household.
+Q270	7-89	There are seven or more people in my household.
+Q271	1	I don't live with my parents.
+Q271	2	I live with my own parents.
+Q271	3	I live with my in-laws.
+Q271	4	I live with both my parents and in-laws.
+Q272	30	My primary language spoken at home is Afar.
+Q272	40	My primary language spoken at home is Afrikaans.
+Q272	100	My primary language spoken at home is Albanian.
+Q272	140	My primary language spoken at home is Amharic.
+Q272	170	My primary language spoken at home is Arabic.
+Q272	200	My primary language spoken at home is Armenian; Hayeren.
+Q272	230	My primary language spoken at home is Assyrian Neo-Aramaic.
+Q272	245	My primary language spoken at home is Auslan.
+Q272	250	My primary language spoken at home is Avar; Avaric.
+Q272	290	My primary language spoken at home is Aymara.
+Q272	310	My primary language spoken at home is Azerbaijani; Azeri.
+Q272	350	My primary language spoken at home is Balinese.
+Q272	370	My primary language spoken at home is Balochi.
+Q272	410	My primary language spoken at home is Banjar.
+Q272	460	My primary language spoken at home is Batak.
+Q272	490	My primary language spoken at home is Bengali; Bangla.
+Q272	500	My primary language spoken at home is Berber; Amazigh; Tamaziɣt.
+Q272	520	My primary language spoken at home is Betawi.
+Q272	550	My primary language spoken at home is Bikol; Bicolano.
+Q272	610	My primary language spoken at home is Romblomanon.
+Q272	630	My primary language spoken at home is Blaan.
+Q272	680	My primary language spoken at home is Brahui.
+Q272	710	My primary language spoken at home is Buginese/Bugis.
+Q272	720	My primary language spoken at home is Bulgarian.
+Q272	740	My primary language spoken at home is Burmese.
+Q272	790	My primary language spoken at home is Cantonese.
+Q272	810	My primary language spoken at home is Catalan; Valencian.
+Q272	820	My primary language spoken at home is Cebuano; Bisaya; Binisaya.
+Q272	850	My primary language spoken at home is Chavacano; Chabacano.
+Q272	860	My primary language spoken at home is Chechen.
+Q272	890	My primary language spoken at home is Karanga; Korekore.
+Q272	910	My primary language spoken at home is Ndau; chiNdau.
+Q272	950	My primary language spoken at home is Chitoko.
+Q272	1030	My primary language spoken at home is Croatian.
+Q272	1040	My primary language spoken at home is Czech.
+Q272	1100	My primary language spoken at home is Danish.
+Q272	1240	My primary language spoken at home is English.
+Q272	1260	My primary language spoken at home is Esan.
+Q272	1270	My primary language spoken at home is Spanish; Castilian.
+Q272	1290	My primary language spoken at home is Estonian.
+Q272	1360	My primary language spoken at home is Filipino; Pilipino.
+Q272	1400	My primary language spoken at home is French.
+Q272	1490	My primary language spoken at home is Garifuna.
+Q272	1530	My primary language spoken at home is German.
+Q272	1540	My primary language spoken at home is Gilaki.
+Q272	1580	My primary language spoken at home is Greek, Modern.
+Q272	1600	My primary language spoken at home is Guarani.
+Q272	1610	My primary language spoken at home is Gujarati.
+Q272	1670	My primary language spoken at home is Hakka Chinese.
+Q272	1695	My primary language spoken at home is Hassaniyya, Klem El Bithan.
+Q272	1700	My primary language spoken at home is Hausa.
+Q272	1730	My primary language spoken at home is Hiligaynon; Ilonggo.
+Q272	1740	My primary language spoken at home is Hindi.
+Q272	1770	My primary language spoken at home is Hungarian.
+Q272	1850	My primary language spoken at home is Igbo.
+Q272	1880	My primary language spoken at home is Ilocano; Ilokano; Iloko.
+Q272	1890	My primary language spoken at home is Indonesian.
+Q272	1930	My primary language spoken at home is Pamiri languages.
+Q272	1980	My primary language spoken at home is Isoko.
+Q272	1990	My primary language spoken at home is Italian.
+Q272	2000	My primary language spoken at home is Itneg.
+Q272	2020	My primary language spoken at home is Japanese.
+Q272	2030	My primary language spoken at home is Javanese.
+Q272	2100	My primary language spoken at home is Kalanga.
+Q272	2103	My primary language spoken at home is Kalenjin.
+Q272	2120	My primary language spoken at home is Kamayo.
+Q272	2126	My primary language spoken at home is Kamba.
+Q272	2170	My primary language spoken at home is Kapampangan.
+Q272	2180	My primary language spoken at home is Kaqchikel.
+Q272	2210	My primary language spoken at home is Kashmiri.
+Q272	2220	My primary language spoken at home is Sgaw Karen; Sgaw Kayin; Karen.
+Q272	2230	My primary language spoken at home is Kazakh.
+Q272	2270	My primary language spoken at home is Central Khmer.
+Q272	2280	My primary language spoken at home is Kikuyu; Gikuyu.
+Q272	2310	My primary language spoken at home is Kirghiz; Kyrgyz.
+Q272	2316	My primary language spoken at home is Kisii.
+Q272	2390	My primary language spoken at home is Korean.
+Q272	2420	My primary language spoken at home is Kurdish; Yezidi.
+Q272	2480	My primary language spoken at home is Lampung.
+Q272	2500	My primary language spoken at home is Lao.
+Q272	2530	My primary language spoken at home is Mayan languages.
+Q272	2560	My primary language spoken at home is Lezgian; Lezgi; Lezgin.
+Q272	2657	My primary language spoken at home is Luhya.
+Q272	2670	My primary language spoken at home is Lurish; Luri; Bakhtiari.
+Q272	2720	My primary language spoken at home is Luo, Lwo; Lwoian.
+Q272	2740	My primary language spoken at home is Madurese.
+Q272	2760	My primary language spoken at home is Maguindanao.
+Q272	2790	My primary language spoken at home is Makassarese.
+Q272	2810	My primary language spoken at home is Malay; Malaysian.
+Q272	2820	My primary language spoken at home is Malayalam.
+Q272	2840	My primary language spoken at home is Maltese.
+Q272	2870	My primary language spoken at home is Standard Chinese; Mandarin; Putonghua; Guoyu.
+Q272	2920	My primary language spoken at home is Maori.
+Q272	2930	My primary language spoken at home is Maranao.
+Q272	2940	My primary language spoken at home is Marathi.
+Q272	2969	My primary language spoken at home is Maasai.
+Q272	2981	My primary language spoken at home is Meru.
+Q272	2987	My primary language spoken at home is Mijikenda.
+Q272	3020	My primary language spoken at home is Mon.
+Q272	3030	My primary language spoken at home is Mongolian.
+Q272	3100	My primary language spoken at home is Muong.
+Q272	3200	My primary language spoken at home is North Ndebele.
+Q272	3234	My primary language spoken at home is Northern Thai; Lanna.
+Q272	3390	My primary language spoken at home is Oromo.
+Q272	3420	My primary language spoken at home is Palembang.
+Q272	3490	My primary language spoken at home is Persian; Farsi; Dari.
+Q272	3510	My primary language spoken at home is Nigerian Pidgin.
+Q272	3520	My primary language spoken at home is Polish.
+Q272	3530	My primary language spoken at home is Portuguese.
+Q272	3540	My primary language spoken at home is Punjabi, Panjabi.
+Q272	3550	My primary language spoken at home is Pashto, Pushto.
+Q272	3570	My primary language spoken at home is Quechua.
+Q272	3580	My primary language spoken at home is Romanian, Moldavian, Moldovan.
+Q272	3600	My primary language spoken at home is Romansh.
+Q272	3610	My primary language spoken at home is Romani; Romany.
+Q272	3630	My primary language spoken at home is Russian.
+Q272	3670	My primary language spoken at home is Sama-Bajaw.
+Q272	3720	My primary language spoken at home is Saraiki.
+Q272	3780	My primary language spoken at home is Serbian.
+Q272	3810	My primary language spoken at home is Shan.
+Q272	3830	My primary language spoken at home is Shona; chiShona.
+Q272	3840	My primary language spoken at home is Sidamo; Sidaama; Sidaamu Afoo.
+Q272	3860	My primary language spoken at home is Sindhi.
+Q272	3870	My primary language spoken at home is Sinhala, Sinhalese.
+Q272	3890	My primary language spoken at home is Slovak.
+Q272	3920	My primary language spoken at home is Somali.
+Q272	3992	My primary language spoken at home is Southern Thai; Dambro; Pak Thai.
+Q272	4040	My primary language spoken at home is Sundanese.
+Q272	4060	My primary language spoken at home is Surigaonon.
+Q272	4075	My primary language spoken at home is Swahili.
+Q272	4110	My primary language spoken at home is Swedish.
+Q272	4130	My primary language spoken at home is Tagalog.
+Q272	4150	My primary language spoken at home is Hokkien; Minnan.
+Q272	4160	My primary language spoken at home is Tajik.
+Q272	4190	My primary language spoken at home is Tamil.
+Q272	4200	My primary language spoken at home is Tatar.
+Q272	4210	My primary language spoken at home is Tausug.
+Q272	4220	My primary language spoken at home is Telugu.
+Q272	4230	My primary language spoken at home is Thai; Central Thai.
+Q272	4260	My primary language spoken at home is Tigrinya.
+Q272	4280	My primary language spoken at home is Tiv.
+Q272	4295	My primary language spoken at home is Tonga.
+Q272	4310	My primary language spoken at home is Toraja-Saʼdan.
+Q272	4360	My primary language spoken at home is Tunisian Arabic; Tunisian.
+Q272	4365	My primary language spoken at home is Turkana.
+Q272	4370	My primary language spoken at home is Turkish.
+Q272	4380	My primary language spoken at home is Turkmen.
+Q272	4400	My primary language spoken at home is Uighur, Uyghur.
+Q272	4410	My primary language spoken at home is Ukrainian.
+Q272	4420	My primary language spoken at home is Urdu.
+Q272	4430	My primary language spoken at home is Urhobo.
+Q272	4450	My primary language spoken at home is Uzbek.
+Q272	4460	My primary language spoken at home is Venda; Tshivenda.
+Q272	4470	My primary language spoken at home is Vietnamese.
+Q272	4520	My primary language spoken at home is Waray.
+Q272	4580	My primary language spoken at home is Yakan.
+Q272	4610	My primary language spoken at home is Yiddish.
+Q272	4620	My primary language spoken at home is Yoruba.
+Q272	9000	My primary language spoken at home is Other.
+Q272	9040	My primary language spoken at home is Other European.
+Q272	9060	My primary language spoken at home is Other Chinese dialects.
+Q272	9900	My primary language spoken at home is Other local; aboriginal; tribal, community.
+Q273	1	I am married.
+Q273	2	I live with my partner as married.
+Q273	3	I am divorced.
+Q273	4	I am separated.
+Q273	5	I am widowed.
+Q273	6	I am single.
+Q274	0	I don't have children
+Q274	1	I have 1 child
+Q274	2	I have 2 children
+Q274	3	I have 3 children
+Q274	4	I have 4 children
+Q274	5	I have 5 children
+Q274	6	I have 6 children
+Q274	7-25	I have 7 or more children
+Q275	0	I have no education or early childhood education.
+Q275	1	I completed primary education.
+Q275	2	I finished lower secondary education.
+Q275	3	I attained upper secondary education.
+Q275	4	I have post-secondary non-tertiary education.
+Q275	5	I completed short-cycle tertiary education.
+Q275	6	I hold a Bachelor's degree or equivalent.
+Q275	7	I have a Master's degree or equivalent.
+Q275	8	I hold a Doctoral degree or equivalent.
+Q276	0	I have no education or early childhood education.
+Q276	1	I completed primary education.
+Q276	2	I finished lower secondary education.
+Q276	3	I have upper secondary education.
+Q276	4	I completed post-secondary non-tertiary education.
+Q276	5	I have short-cycle tertiary education.
+Q276	6	I hold a Bachelor's degree or equivalent.
+Q276	7	I have a Master's degree or equivalent.
+Q276	8	I hold a Doctoral degree or equivalent.
+Q277	0	My mother has no education or early childhood education.
+Q277	1	My mother completed primary education.
+Q277	2	My mother finished lower secondary education.
+Q277	3	My mother attained upper secondary education.
+Q277	4	My mother has post-secondary non-tertiary education.
+Q277	5	My mother completed short-cycle tertiary education.
+Q277	6	My mother holds a Bachelor's degree or equivalent.
+Q277	7	My mother has a Master's degree or equivalent.
+Q277	8	My mother holds a Doctoral degree or equivalent.
+Q278	0	My father has no education or early childhood education.
+Q278	1	My father completed primary education.
+Q278	2	My father finished lower secondary education.
+Q278	3	My father attained upper secondary education.
+Q278	4	My father has post-secondary non-tertiary education.
+Q278	5	My father completed short-cycle tertiary education.
+Q278	6	My father holds a bachelor's degree or equivalent.
+Q278	7	My father has a master's degree or equivalent.
+Q278	8	My father holds a doctoral degree or equivalent.
+Q279	1	I work full time, 30 hours a week or more.
+Q279	2	I work part time, less than 30 hours a week.
+Q279	3	I am self employed.
+Q279	4	I am retired or pensioned.
+Q279	5	I am a housewife, not otherwise employed.
+Q279	6	I am a student.
+Q279	7	I am unemployed.
+Q279	8	My employment status is other.
+Q280	1	I am employed full time.
+Q280	2	I am employed part time.
+Q280	3	I am self employed.
+Q280	4	I am retired or pensioned.
+Q280	5	I am a housewife.
+Q280	6	I am a student.
+Q280	7	I am unemployed.
+Q280	8	My spouse's employment is other.
+Q281	0	I have never had a job.
+Q281	1	I am a professional or technician.
+Q281	2	I am a higher administrative official.
+Q281	3	I work in a clerical role.
+Q281	4	I have a job in sales.
+Q281	5	I work in the service industry.
+Q281	6	I am a skilled worker.
+Q281	7	I am a semi-skilled worker.
+Q281	8	I am an unskilled worker.
+Q281	9	I work as a farm worker.
+Q281	10	I am a farm owner or manager.
+Q281	11	I have a different occupation.
+Q282	0	My spouse has never had a job.
+Q282	1	My spouse is a professional or technician.
+Q282	2	My spouse is a higher administrator.
+Q282	3	My spouse works in a clerical role.
+Q282	4	My spouse is in sales.
+Q282	5	My spouse works in a service role.
+Q282	6	My spouse is a skilled worker.
+Q282	7	My spouse is a semi-skilled worker.
+Q282	8	My spouse is an unskilled worker.
+Q282	9	My spouse is a farm worker.
+Q282	10	My spouse owns or manages a farm.
+Q282	11	My spouse's job is other.
+Q283	0	My father never had a job.
+Q283	1	My father was a professional.
+Q283	2	My father was a high administrator.
+Q283	3	My father worked in clerical roles.
+Q283	4	My father was in sales.
+Q283	5	My father worked in services.
+Q283	6	My father was a skilled worker.
+Q283	7	My father was a semi-skilled worker.
+Q283	8	My father was an unskilled worker.
+Q283	9	My father was a farm worker.
+Q283	10	My father owned or managed a farm.
+Q283	11	My father's job was something else.
+Q284	1	I work for a government or public institution.
+Q284	2	I work for private business or industry.
+Q284	3	I work for a private non-profit organization.
+Q285	1	I am the chief wage earner
+Q285	2	I am not the chief wage earner
+Q286	1	I saved money
+Q286	2	I just got by
+Q286	3	I spent savings and borrowed
+Q286	4	I spent savings and borrowed
+Q287	1	I belong to the upper class.
+Q287	2	I'm part of the upper middle class.
+Q287	3	I'm in the lower middle class.
+Q287	4	I identify as working class.
+Q287	5	I belong to the lower class.
+Q288	1	My household income is at the lower step.
+Q288	2	My household income is at the second step.
+Q288	3	My household income is at the third step.
+Q288	4	My household income is at the fourth step.
+Q288	5	My household income is at the fifth step.
+Q288	6	My household income is at the sixth step.
+Q288	7	My household income is at the seventh step.
+Q288	8	My household income is at the eighth step.
+Q288	9	My household income is at the ninth step.
+Q288	10	My household income is at the tenth step.
+Q289CS9	10000000	I belong to the Catholic, nfd religion or religious denomination.
+Q289CS9	10100000	I belong to the Roman Catholic; Latin Church religion or religious denomination.
+Q289CS9	10203000	I belong to the Byzantine Rite religion or religious denomination.
+Q289CS9	10203050	I belong to the Greek Byzantine Catholic Church religion or religious denomination.
+Q289CS9	10203130	I belong to the Slovak Greek Catholic Church religion or religious denomination.
+Q289CS9	10205010	I belong to the Maronite Church religion or religious denomination.
+Q289CS9	20000000	I belong to the Protestant; nfd religion or religious denomination.
+Q289CS9	20110000	I belong to the Hussites religion or religious denomination.
+Q289CS9	20200000	I belong to the Lutheran; nfd religion or religious denomination.
+Q289CS9	20206022	I belong to the Protestant Free Church of Germany religion or religious denomination.
+Q289CS9	20211000	I belong to the Evangelical Lutheran Church in the Kingdom of the Netherlands religion or religious denomination.
+Q289CS9	20213020	I belong to the Evangelical Lutheran Church of Brazil religion or religious denomination.
+Q289CS9	20222040	I belong to the Church of Denmark religion or religious denomination.
+Q289CS9	20222060	I belong to the Evangelical Lutheran Church of Iceland religion or religious denomination.
+Q289CS9	20222070	I belong to the Church of Norway religion or religious denomination.
+Q289CS9	20222080	I belong to the Church of Sweden religion or religious denomination.
+Q289CS9	20222100	I belong to the Evangelical Church of the Augsburg Confession in Slovakia religion or religious denomination.
+Q289CS9	20222105	I belong to the Evangelical Church of the Augsburg Confession in Austria religion or religious denomination.
+Q289CS9	20222107	I belong to the Evangelical Church of the Augsburg and Helvetic Confessions religion or religious denomination.
+Q289CS9	20222125	I belong to the Evangelical Church in the Republic of Croatia religion or religious denomination.
+Q289CS9	20222217	I belong to the Lutheran Free Church in Reykjavik (Iceland) religion or religious denomination.
+Q289CS9	20222218	I belong to the Lutheran Free Church in Hafnarfjordur (Iceland) religion or religious denomination.
+Q289CS9	20222219	I belong to the Independent Lutheran Congregation (Iceland) religion or religious denomination.
+Q289CS9	20222370	I belong to the Evangelical Lutheran Church in Russia, Ukraine, Kazakhstan and Central Asia religion or religious denomination.
+Q289CS9	20301110	I belong to the Dutch Reformed Church religion or religious denomination.
+Q289CS9	20301250	I belong to the Netherlands Reformed Churches religion or religious denomination.
+Q289CS9	20301260	I belong to the Netherlands Reformed Congregations religion or religious denomination.
+Q289CS9	20301300	I belong to the Protestant Church in the Netherlands religion or religious denomination.
+Q289CS9	20301370	I belong to the Reformed Church in Austria religion or religious denomination.
+Q289CS9	20301460	I belong to the Reformed Churches in the Netherlands religion or religious denomination.
+Q289CS9	20301530	I belong to the United Reformed Church religion or religious denomination.
+Q289CS9	20302000	I belong to the Presbyterianism religion or religious denomination.
+Q289CS9	20302060	I belong to the Church of Scotland religion or religious denomination.
+Q289CS9	20302260	I belong to the Free Presbyterian Church of Ulster religion or religious denomination.
+Q289CS9	20302610	I belong to the Presbyterian Church of Wales religion or religious denomination.
+Q289CS9	20400000	I belong to the Anglican; nfd religion or religious denomination.
+Q289CS9	20401190	I belong to the Church of England religion or religious denomination.
+Q289CS9	20401200	I belong to the Church of Ireland religion or religious denomination.
+Q289CS9	20401280	I belong to the Episcopal Church (United States) religion or religious denomination.
+Q289CS9	20401344	I belong to the Parish Church of England religion or religious denomination.
+Q289CS9	20402020	I belong to the Anglican Catholic Church religion or religious denomination.
+Q289CS9	20507160	I belong to the Mennonite Brethren Churches religion or religious denomination.
+Q289CS9	20600000	I belong to the Baptist; nfd religion or religious denomination.
+Q289CS9	20619005	I belong to the Baptist Union of Wales religion or religious denomination.
+Q289CS9	20636010	I belong to the Evangelical Baptist Union of Ukraine religion or religious denomination.
+Q289CS9	20688000	I belong to the Spiritual Baptists religion or religious denomination.
+Q289CS9	20700000	I belong to the Methodist; nfd religion or religious denomination.
+Q289CS9	20720060	I belong to the The Salvation Army religion or religious denomination.
+Q289CS9	20790000	I belong to the Free Church; nfd religion or religious denomination.
+Q289CS9	20804000	I belong to the Adventist movement (Sunday observing) religion or religious denomination.
+Q289CS9	20805000	I belong to the Adventist movement (Seventh Day Sabbath/Saturday observing) religion or religious denomination.
+Q289CS9	20805020	I belong to the Seventh-day Adventist Church religion or religious denomination.
+Q289CS9	20900000	I belong to the Quaker; nfd religion or religious denomination.
+Q289CS9	21000000	I belong to the Plymouth Brethren; nfd religion or religious denomination.
+Q289CS9	21101010	I belong to the New Apostolic Church religion or religious denomination.
+Q289CS9	21200000	I belong to the Pentecostal and Charismatic; nfd religion or religious denomination.
+Q289CS9	21207001	I belong to the Faith Church of Hungary religion or religious denomination.
+Q289CS9	21212050	I belong to the Australian Christian Church (Assemblies of God) religion or religious denomination.
+Q289CS9	21218000	I belong to the Celestial Church of Christ religion or religious denomination.
+Q289CS9	21226000	I belong to the Church of the Foursquare Gospel religion or religious denomination.
+Q289CS9	21261000	I belong to the International Pentecostal Church of Christ religion or religious denomination.
+Q289CS9	21266001	I belong to the Pentecostal Assembly of Iceland religion or religious denomination.
+Q289CS9	21269000	I belong to the Pentecostal Church of God religion or religious denomination.
+Q289CS9	21283005	I belong to the Churches of Christ in Australia religion or religious denomination.
+Q289CS9	21285030	I belong to the Born Again Movement religion or religious denomination.
+Q289CS9	21309000	I belong to the Evangelical Church of Czech Brethren religion or religious denomination.
+Q289CS9	21311000	I belong to the Protestant Church in the Netherlands religion or religious denomination.
+Q289CS9	21319000	I belong to the United Church of Christ in the Philippines religion or religious denomination.
+Q289CS9	21320000	I belong to the Uniting Church in Australia religion or religious denomination.
+Q289CS9	21321050	I belong to the United Evangelical Church in Nigeria religion or religious denomination.
+Q289CS9	21400000	I belong to the Evangelical; nfd religion or religious denomination.
+Q289CS9	21401250	I belong to the Assembly of God religion or religious denomination.
+Q289CS9	21603100	I belong to the Brotherhood of the Cross and Star religion or religious denomination.
+Q289CS9	21621100	I belong to the Protestant Churches without free churches (Germany) religion or religious denomination.
+Q289CS9	30000000	I belong to the Orthodox; nfd religion or religious denomination.
+Q289CS9	30100000	I belong to the Eastern Orthodox; nfd religion or religious denomination.
+Q289CS9	30101000	I belong to the Ecumenical Patriarchate of Constantinople religion or religious denomination.
+Q289CS9	30106000	I belong to the Russian Orthodox Church religion or religious denomination.
+Q289CS9	30108000	I belong to the Serbian Orthodox Church religion or religious denomination.
+Q289CS9	30109000	I belong to the Romanian Orthodox Church religion or religious denomination.
+Q289CS9	30110000	I belong to the Bulgarian Orthodox Church religion or religious denomination.
+Q289CS9	30111000	I belong to the Cypriot Orthodox Church religion or religious denomination.
+Q289CS9	30112000	I belong to the Orthodox Church of Greece religion or religious denomination.
+Q289CS9	30113000	I belong to the Albanian Orthodox Church religion or religious denomination.
+Q289CS9	30114000	I belong to the Polish Orthodox Church religion or religious denomination.
+Q289CS9	30117000	I belong to the Orthodox Church of Ukraine religion or religious denomination.
+Q289CS9	30202001	I belong to the Armenian Apostolic Church religion or religious denomination.
+Q289CS9	30202009	I belong to the Ethiopian Orthodox Tewahedo Church religion or religious denomination.
+Q289CS9	40000000	I belong to the Judaism religion or religious denomination.
+Q289CS9	50000000	I belong to the Islam; nfd religion or religious denomination.
+Q289CS9	50101000	I belong to the Sunni religion or religious denomination.
+Q289CS9	50202000	I belong to the Shia religion or religious denomination.
+Q289CS9	50203000	I belong to the Alevism religion or religious denomination.
+Q289CS9	50302000	I belong to the Ibadi religion or religious denomination.
+Q289CS9	50305000	I belong to the Bekrathi religion or religious denomination.
+Q289CS9	50400000	I belong to the Non-denominational Muslims religion or religious denomination.
+Q289CS9	50500010	I belong to the Druze religion or religious denomination.
+Q289CS9	50500060	I belong to the Bahai Faith religion or religious denomination.
+Q289CS9	50500080	I belong to the Second Advent; Parousia religion or religious denomination.
+Q289CS9	60000000	I belong to the Hindu religion or religious denomination.
+Q289CS9	70000000	I belong to the Buddhist religion or religious denomination.
+Q289CS9	70200000	I belong to the Hoahaoism religion or religious denomination.
+Q289CS9	80000000	I belong to the Other Christian; nfd religion or religious denomination.
+Q289CS9	90000000	I belong to the Other; nfd religion or religious denomination.
+Q289CS9	100000000	I belong to the Secular /Nonreligious /Agnostic/Atheist; nfd religion or religious denomination.
+Q289CS9	100000020	I belong to the Non-religious religion or religious denomination.
+Q289CS9	100000030	I belong to the Agnostic religion or religious denomination.
+Q289CS9	100000040	I belong to the Atheist religion or religious denomination.
