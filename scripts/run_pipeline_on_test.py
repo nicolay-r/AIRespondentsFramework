@@ -15,7 +15,7 @@ from src.workflow import run
 if __name__ == "__main__":
     load_dotenv(PROJECT_ROOT / ".env")
 
-    _, pipeline, items, results, model = run(split="test", limit=5)
+    _, pipeline, items, results, model = run(split="test")
     prompts = example_prompts_for(pipeline, items)
 
     written = write_submission(

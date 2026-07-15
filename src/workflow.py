@@ -26,18 +26,27 @@ def _predict_job(job: tuple[ZeroShotPipeline, PipelineItem]) -> dict[str, object
     return result
 
 
-def run(*, split: Literal["train", "test"] = "test", limit: int | None = None, workers: int = 100):
-    data = dataset.load()
+def run_on_items(
+    items: list[PipelineItem],
+    *,
+    workers: int = 32,
+    desc: str = "predicting",
+):
     client = OpenAIClient()
     pipeline = ZeroShotPipeline(client)
 
-    items = list(dataset.iter_pipeline_items(data, split=split))[:limit]
     jobs = [(pipeline, item) for item in items]
-    desc = f"predicting (limit: {limit})" if limit else "predicting"
-
     with ThreadPoolExecutor(workers) as pool:
         results = list(
             tqdm(pool.map(_predict_job, jobs), total=len(jobs), desc=desc)
         )
 
-    return data, pipeline, items, results, client.model
+    return pipeline, items, results, client.model
+
+
+def run(*, split: Literal["train", "test"] = "test", limit: int | None = None, workers: int = 32):
+    data = dataset.load()
+    items = list(dataset.iter_pipeline_items(data, split=split))[:limit]
+    desc = f"predicting (limit: {limit})" if limit else "predicting"
+    pipeline, items, results, model = run_on_items(items, workers=workers, desc=desc)
+    return data, pipeline, items, results, model
