@@ -24,7 +24,7 @@ if __name__ == "__main__":
     data = dataset.load()
     items = dev_pipeline_items(data, examples)
 
-    pipeline, _, results, model = run_on_items(items, desc="predicting dev")
+    pipeline, _, results, model = run_on_items(items, pipeline_name="prompt-based", desc="predicting dev")
     prompts = example_prompts_for(pipeline, items)
 
     written, scores = write_dev_eval(

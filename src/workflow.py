@@ -46,16 +46,21 @@ def _run_jobs(
 
 def run_on_items(
     items: list[PipelineItem],
+    pipeline_name: str,
     *,
     workers: int = 32,
     desc: str = "predicting",
 ):
-    client = OpenAIClient(
-        model="meta-llama/Llama-3.3-70B-Instruct", 
-        base_url="https://api.studio.nebius.com/v1/"
-    )
+    pipelines = {
+        "prompt-based": PromptBasedPipeline(
+            OpenAIClient(
+                model="Qwen/Qwen3-32B", 
+                base_url="https://api.studio.nebius.com/v1/"
+            )
+        )
+    }
 
-    pipeline = PromptBasedPipeline(client)
+    pipeline = pipelines[pipeline_name]
 
     jobs = [(pipeline, item) for item in items]
     results = _run_jobs(jobs, workers=workers, desc=desc)
