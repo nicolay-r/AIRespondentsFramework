@@ -1,0 +1,531 @@
+{
+  "seed": 42,
+  "num_respondents": 10,
+  "num_questions": 10,
+  "respondent_ids": [
+    "R170070418",
+    "R300070107",
+    "R320070354",
+    "R32070125",
+    "R360071564",
+    "R434070247",
+    "R462070051",
+    "R496070816",
+    "R818070835",
+    "R862070416"
+  ],
+  "question_ids": [
+    "Q148",
+    "Q17",
+    "Q186",
+    "Q201",
+    "Q209",
+    "Q227",
+    "Q242",
+    "Q33",
+    "Q73",
+    "Q73"
+  ],
+  "cases": [
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q148",
+      "answer": "Not much"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q186",
+      "answer": "Never justifiable"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q201",
+      "answer": "Never"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q209",
+      "answer": "Have done"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q227",
+      "answer": "Very often"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q242",
+      "answer": "It is against democracy"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q33",
+      "answer": "Disagree"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R170070418",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q148",
+      "answer": "Not at all"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q186",
+      "answer": "Always justifiable"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q201",
+      "answer": "Never"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q209",
+      "answer": "Would never do"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q227",
+      "answer": "Not at all often"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q242",
+      "answer": null
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q33",
+      "answer": "Neither agree nor disagree"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q73",
+      "answer": "Not very much"
+    },
+    {
+      "respondent_id": "R300070107",
+      "question_id": "Q73",
+      "answer": "Not very much"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q148",
+      "answer": "Very much"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q17",
+      "answer": null
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q186",
+      "answer": null
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q201",
+      "answer": "Never"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q209",
+      "answer": "Have done"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q227",
+      "answer": "Very often"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q242",
+      "answer": "It is against democracy"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q33",
+      "answer": "Disagree"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R320070354",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q148",
+      "answer": "Not at all"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q186",
+      "answer": "Never justifiable"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q201",
+      "answer": "Daily"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q209",
+      "answer": "Would never do"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q227",
+      "answer": "Not at all often"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q242",
+      "answer": null
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q33",
+      "answer": "Disagree"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q73",
+      "answer": "Quite a lot"
+    },
+    {
+      "respondent_id": "R32070125",
+      "question_id": "Q73",
+      "answer": "Quite a lot"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q148",
+      "answer": "A great deal"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q186",
+      "answer": "Never justifiable"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q201",
+      "answer": "Less than monthly"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q209",
+      "answer": "Would never do"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q227",
+      "answer": "Very often"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q242",
+      "answer": "Essential"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q33",
+      "answer": "Agree"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q73",
+      "answer": "Quite a lot"
+    },
+    {
+      "respondent_id": "R360071564",
+      "question_id": "Q73",
+      "answer": "Quite a lot"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q148",
+      "answer": "Very much"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q186",
+      "answer": "Rarely justifiable"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q201",
+      "answer": "Never"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q209",
+      "answer": "Would never do"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q227",
+      "answer": null
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q242",
+      "answer": null
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q33",
+      "answer": "Agree strongly"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q73",
+      "answer": "Quite a lot"
+    },
+    {
+      "respondent_id": "R434070247",
+      "question_id": "Q73",
+      "answer": "Quite a lot"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q148",
+      "answer": "Very much"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q186",
+      "answer": "Never justifiable"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q201",
+      "answer": "Daily"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q209",
+      "answer": "Have done"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q227",
+      "answer": "Fairly often"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q242",
+      "answer": null
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q33",
+      "answer": "Disagree"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q73",
+      "answer": "Not very much"
+    },
+    {
+      "respondent_id": "R462070051",
+      "question_id": "Q73",
+      "answer": "Not very much"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q148",
+      "answer": "Not at all"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q17",
+      "answer": "Not so important"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q186",
+      "answer": "Rarely justifiable"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q201",
+      "answer": "Monthly"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q209",
+      "answer": "Would never do"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q227",
+      "answer": "Fairly often"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q242",
+      "answer": "Essential"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q33",
+      "answer": "Neither agree nor disagree"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R496070816",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q148",
+      "answer": null
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q17",
+      "answer": "Important"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q186",
+      "answer": null
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q201",
+      "answer": "Never"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q209",
+      "answer": "Have done"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q227",
+      "answer": "Very often"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q242",
+      "answer": "Very essential"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q33",
+      "answer": "Agree strongly"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q73",
+      "answer": "Not very much"
+    },
+    {
+      "respondent_id": "R818070835",
+      "question_id": "Q73",
+      "answer": "Not very much"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q148",
+      "answer": "A great deal"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q17",
+      "answer": "Important"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q186",
+      "answer": "Always justifiable"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q201",
+      "answer": "Less than monthly"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q209",
+      "answer": "Might do"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q227",
+      "answer": "Very often"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q242",
+      "answer": "Essential"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q33",
+      "answer": "Disagree strongly"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q73",
+      "answer": "None at all"
+    },
+    {
+      "respondent_id": "R862070416",
+      "question_id": "Q73",
+      "answer": "None at all"
+    }
+  ]
+}
