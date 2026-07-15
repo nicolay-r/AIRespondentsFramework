@@ -1,6 +1,6 @@
 import importlib
-from concurrent.futures import ThreadPoolExecutor
-from typing import Literal
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Literal, cast
 
 from tqdm import tqdm
 
@@ -26,20 +26,39 @@ def _predict_job(job: tuple[ZeroShotPipeline, PipelineItem]) -> dict[str, object
     return result
 
 
+def _run_jobs(
+    jobs: list[tuple[ZeroShotPipeline, PipelineItem]],
+    *,
+    workers: int,
+    desc: str,
+) -> list[dict[str, object]]:
+    results: list[dict[str, object] | None] = [None] * len(jobs)
+    with ThreadPoolExecutor(workers) as pool:
+        future_to_index = {
+            pool.submit(_predict_job, job): index for index, job in enumerate(jobs)
+        }
+        with tqdm(total=len(jobs), desc=desc) as progress:
+            for future in as_completed(future_to_index):
+                results[future_to_index[future]] = future.result()
+                progress.update(1)
+    return cast(list[dict[str, object]], results)
+
+
 def run_on_items(
     items: list[PipelineItem],
     *,
     workers: int = 32,
     desc: str = "predicting",
 ):
-    client = OpenAIClient()
+    client = OpenAIClient(
+        model="meta-llama/Llama-3.3-70B-Instruct", 
+        base_url="https://api.studio.nebius.com/v1/"
+    )
+
     pipeline = ZeroShotPipeline(client)
 
     jobs = [(pipeline, item) for item in items]
-    with ThreadPoolExecutor(workers) as pool:
-        results = list(
-            tqdm(pool.map(_predict_job, jobs), total=len(jobs), desc=desc)
-        )
+    results = _run_jobs(jobs, workers=workers, desc=desc)
 
     return pipeline, items, results, client.model
 
