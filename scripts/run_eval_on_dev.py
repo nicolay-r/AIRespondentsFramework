@@ -1,5 +1,6 @@
 """Run the pipeline on the dev dataset and write predictions with scores."""
 
+import argparse
 import importlib
 import sys
 from pathlib import Path
@@ -18,9 +19,21 @@ from src.workflow import run_on_items
 dataset = importlib.import_module("src.import")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Run the pipeline on the dev dataset and write predictions with scores.",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        help="Evaluate only the first N examples.",
+    )
+    args = parser.parse_args()
+
     load_dotenv(PROJECT_ROOT / ".env")
 
     examples = load_dev_dataset(DEV_DATASET_PATH)
+    if args.limit is not None:
+        examples = examples[: args.limit]
     data = dataset.load()
     items = dev_pipeline_items(data, examples)
 
