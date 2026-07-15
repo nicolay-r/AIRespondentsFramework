@@ -8,6 +8,7 @@ class OpenAIClient:
     def __init__(
         self,
         *,
+        max_retries: int = 20,
         model: str = "meta-llama/Llama-3.3-70B-Instruct",
         base_url: str = "https://api.studio.nebius.com/v1/",
     ) -> None:
@@ -16,7 +17,11 @@ class OpenAIClient:
             raise ValueError("NEBIUS_API_KEY is not set. Add it to .env")
 
         self.model = model
-        self._client = OpenAI(base_url=base_url, api_key=api_key)
+        self._client = OpenAI(
+            base_url=base_url,
+            api_key=api_key,
+            max_retries=max_retries,
+        )
 
     def infer(self, prompt: str) -> str:
         response = self._client.chat.completions.create(
