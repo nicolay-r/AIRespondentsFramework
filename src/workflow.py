@@ -4,7 +4,7 @@ from typing import Literal, cast
 
 from tqdm import tqdm
 
-from src.pipelines import PromptBasedPipeline
+from src.pipelines import GroupedPromptBasedPipeline, PromptBasedPipeline
 from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
 
@@ -51,13 +51,22 @@ def run_on_items(
     workers: int = 32,
     desc: str = "predicting",
 ):
+
+    model = "Qwen/Qwen3-32B"
+
     pipelines = {
         "prompt-based": PromptBasedPipeline(
             OpenAIClient(
-                model="Qwen/Qwen3-32B", 
-                base_url="https://api.studio.nebius.com/v1/"
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
             )
-        )
+        ),
+        "grouped-prompt-based": GroupedPromptBasedPipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            )
+        ),
     }
 
     pipeline = pipelines[pipeline_name]
@@ -65,12 +74,23 @@ def run_on_items(
     jobs = [(pipeline, item) for item in items]
     results = _run_jobs(jobs, workers=workers, desc=desc)
 
-    return pipeline, items, results, client.model
+    return pipeline, items, results, model
 
 
-def run(*, split: Literal["train", "test"] = "test", limit: int | None = None, workers: int = 32):
+def run(
+    *,
+    pipeline_name: str,
+    split: Literal["train", "test"] = "test",
+    limit: int | None = None,
+    workers: int = 32,
+):
     data = dataset.load()
     items = list(dataset.iter_pipeline_items(data, split=split))[:limit]
     desc = f"predicting (limit: {limit})" if limit else "predicting"
-    pipeline, items, results, model = run_on_items(items, workers=workers, desc=desc)
+    pipeline, items, results, model = run_on_items(
+        items,
+        pipeline_name,
+        workers=workers,
+        desc=desc,
+    )
     return data, pipeline, items, results, model
