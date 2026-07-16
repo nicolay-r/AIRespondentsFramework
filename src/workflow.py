@@ -5,7 +5,7 @@ from typing import Literal, cast
 from tqdm import tqdm
 
 from src.pipelines import (
-    CatBoostStatementsPipeline,
+    # CatBoostStatementsPipeline,
     GroupedPromptBasedPipeline,
     PromptBasedPipeline,
     PromptBasedStatementsPipeline,
@@ -102,12 +102,12 @@ def run_on_items(
                 base_url="https://api.studio.nebius.com/v1/",
             )
         ),
-        "catboost-statements": CatBoostStatementsPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            )
-        ),
+        # "catboost-statements": CatBoostStatementsPipeline(
+        #     OpenAIClient(
+        #         model=model,
+        #         base_url="https://api.studio.nebius.com/v1/",
+        #     )
+        # ),
         "retriever-based": RetrieverBasedPipeline(
             OpenAIClient(
                 model=model,
@@ -116,8 +116,10 @@ def run_on_items(
         ),
     }
 
+    print("Create pipeline ...")
     pipeline = pipelines[pipeline_name]
-
+    
+    print("Pipeline created ... run jobs")
     jobs = [(pipeline, item) for item in items]
     results = _run_jobs(jobs, workers=workers, desc=desc)
 
@@ -131,8 +133,11 @@ def run(
     limit: int | None = None,
     workers: int = 32,
 ):
+    print("Loading data...")
     data = dataset.load()
+    print("Perparing items...")
     items = list(dataset.iter_pipeline_items(data, split=split))[:limit]
+    print(f"Starting the pipeline {pipeline_name}...")
     desc = f"predicting (limit: {limit})" if limit else "predicting"
     pipeline, items, results, model = run_on_items(
         items,
