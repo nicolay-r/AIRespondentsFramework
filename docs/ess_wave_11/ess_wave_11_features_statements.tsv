@@ -1,116 +1,83 @@
 # code	response_code	statement
-netusoft	1	I never use the internet.
-netusoft	2	I use the internet occasionally.
-netusoft	3	I use the internet a few times a week.
-netusoft	4	I use the internet most days.
-netusoft	5	I use the internet every day.
-ppltrst	0	I'm very cautious around people.
-ppltrst	1	I'm very cautious around people.
-ppltrst	2	I'm somewhat cautious around people.
-ppltrst	3	I'm somewhat cautious around people.
-ppltrst	4	I'm neutral about trusting people.
-ppltrst	5	I'm neutral about trusting people.
-ppltrst	6	I'm neutral about trusting people.
-ppltrst	7	I somewhat trust people.
-ppltrst	8	I somewhat trust people.
-ppltrst	9	I trust most people.
-ppltrst	10	I trust most people.
-pplfair	0	I strongly think people will take advantage of me.
-pplfair	1	I strongly think people will take advantage of me.
-pplfair	2	I somewhat think people will take advantage of me.
-pplfair	3	I somewhat think people will take advantage of me.
-pplfair	4	I expect neither fairness nor advantage from people.
-pplfair	5	I expect neither fairness nor advantage from people.
-pplfair	6	I expect neither fairness nor advantage from people.
-pplfair	7	I somewhat think people will be fair to me.
-pplfair	8	I somewhat think people will be fair to me.
-pplfair	9	I strongly think people will be fair to me.
-pplfair	10	I strongly think people will be fair to me.
-pplhlp	0	I think people mostly look out for themselves
-pplhlp	1	I think people mostly look out for themselves
-pplhlp	2	I believe people somewhat look out for themselves
-pplhlp	3	I believe people somewhat look out for themselves
-pplhlp	4	I don't think people try to be helpful or selfish
-pplhlp	5	I don't think people try to be helpful or selfish
-pplhlp	6	I don't think people try to be helpful or selfish
-pplhlp	7	I think people somewhat try to be helpful
-pplhlp	8	I think people somewhat try to be helpful
-pplhlp	9	I believe people mostly try to be helpful
-pplhlp	10	I believe people mostly try to be helpful
+pbldmna	1	I participated in a public demo
+pbldmna	2	I didn't participate in a demo
+bctprd	1	I boycotted products to improve things.
+bctprd	2	I did not boycott any products.
+badge	1	I wore a campaign badge or sticker.
+badge	2	I did not wear a campaign badge.
+pstplonl	1	I posted about politics online.
+pstplonl	2	I didn't post about politics online.
+contplt	1	I contacted a politician or government official.
+contplt	2	I did not contact any government official.
+clsprty	1	I feel closer to one political party.
+clsprty	2	I don't feel closer to any party.
+donprty	1	I donated to or participated in a political party.
+donprty	2	I did not donate or participate.
+volunfp	1	I volunteered for a charity in the last 12 months.
+volunfp	2	I didn't volunteer for a charity.
+sgnptit	1	I signed a petition in the last 12 months.
+sgnptit	2	I didn't sign a petition in the last 12 months.
+vote	1	I voted in the last national election.
+vote	2	I did not vote.
+vote	3	I'm not eligible to vote.
 polintr	1	I'm very interested in politics.
 polintr	2	I'm quite interested in politics.
 polintr	3	I'm hardly interested in politics.
 polintr	4	I'm not at all interested in politics.
-psppsgva	1	I have no say in government.
-psppsgva	2	I have very little say.
-psppsgva	3	I have some say.
-psppsgva	4	I have a lot of say.
-psppsgva	5	I have a great deal of say.
-actrolga	1	I'm not able to take an active role.
-actrolga	2	I'm a little able to contribute.
-actrolga	3	I'm quite able to participate.
-actrolga	4	I'm very able to take part.
-actrolga	5	I'm completely able to lead.
+freehms	1	I strongly support gay rights.
+freehms	2	I support gay rights.
+freehms	3	I'm neutral on gay rights.
+freehms	4	I oppose gay rights.
+freehms	5	I strongly oppose gay rights.
 cptppola	1	I'm not at all confident
 cptppola	2	I'm a little confident
 cptppola	3	I'm quite confident
 cptppola	4	I'm very confident
 cptppola	5	I'm completely confident
-trstprl	0	I don't trust my country's parliament at all.
-trstprl	1	I don't trust my country's parliament at all.
-trstprl	2	I slightly trust my country's parliament.
-trstprl	3	I slightly trust my country's parliament.
-trstprl	4	I somewhat trust my country's parliament.
-trstprl	5	I somewhat trust my country's parliament.
-trstprl	6	I somewhat trust my country's parliament.
-trstprl	7	I mostly trust my country's parliament.
-trstprl	8	I mostly trust my country's parliament.
-trstprl	9	I completely trust my country's parliament.
-trstprl	10	I completely trust my country's parliament.
-trstlgl	0	I have no trust in the legal system.
-trstlgl	1	I have no trust in the legal system.
-trstlgl	2	I slightly trust the legal system.
-trstlgl	3	I slightly trust the legal system.
-trstlgl	4	I somewhat trust the legal system.
-trstlgl	5	I somewhat trust the legal system.
-trstlgl	6	I somewhat trust the legal system.
-trstlgl	7	I mostly trust the legal system.
-trstlgl	8	I mostly trust the legal system.
-trstlgl	9	I have complete trust in the system.
-trstlgl	10	I have complete trust in the system.
-trstplt	0	I don't trust politicians at all
-trstplt	1	I don't trust politicians at all
-trstplt	2	I slightly trust politicians
-trstplt	3	I slightly trust politicians
-trstplt	4	I somewhat trust politicians
-trstplt	5	I somewhat trust politicians
-trstplt	6	I somewhat trust politicians
-trstplt	7	I mostly trust politicians
-trstplt	8	I mostly trust politicians
-trstplt	9	I completely trust politicians
-trstplt	10	I completely trust politicians
-trstprt	0	I don't trust political parties at all
-trstprt	1	I don't trust political parties at all
-trstprt	2	I slightly trust political parties
-trstprt	3	I slightly trust political parties
-trstprt	4	I somewhat trust political parties
-trstprt	5	I somewhat trust political parties
-trstprt	6	I somewhat trust political parties
-trstprt	7	I mostly trust political parties
-trstprt	8	I mostly trust political parties
-trstprt	9	I completely trust political parties
-trstprt	10	I completely trust political parties
-trstep	0	I have no trust at all
-trstep	1	I have no trust at all
-trstep	2	I slightly trust
-trstep	3	I slightly trust
-trstep	4	I somewhat trust
-trstep	5	I somewhat trust
-trstep	6	I somewhat trust
-trstep	7	I mostly trust
-trstep	8	I mostly trust
-trstep	9	I have complete trust
-trstep	10	I have complete trust
+netusoft	1	I never use the internet.
+netusoft	2	I use the internet occasionally.
+netusoft	3	I use the internet a few times a week.
+netusoft	4	I use the internet most days.
+netusoft	5	I use the internet every day.
+gincdif	1	I strongly support reducing income inequality.
+gincdif	2	I support reducing income inequality.
+gincdif	3	I'm neutral on income inequality.
+gincdif	4	I oppose reducing income inequality.
+gincdif	5	I strongly oppose reducing income inequality.
+actrolga	1	I'm not able to take an active role.
+actrolga	2	I'm a little able to contribute.
+actrolga	3	I'm quite able to participate.
+actrolga	4	I'm very able to take part.
+actrolga	5	I'm completely able to lead.
+psppsgva	1	I have no say in government.
+psppsgva	2	I have very little say.
+psppsgva	3	I have some say.
+psppsgva	4	I have a lot of say.
+psppsgva	5	I have a great deal of say.
+imsmetn	1	I welcome many from my ethnic group.
+imsmetn	2	I'm open to some from my group.
+imsmetn	3	I'd accept a few from my group.
+imsmetn	4	I don't want any from my group.
+imdfetn	1	I welcome many immigrants from diverse backgrounds.
+imdfetn	2	I'm open to some immigrants.
+imdfetn	3	I accept a few immigrants.
+imdfetn	4	I don't want any immigrants.
+crmvct	1	I've been a victim of burglary or assault.
+crmvct	2	I haven't been a victim.
+impcntr	1	I welcome many immigrants from poorer countries.
+impcntr	2	I support some immigration from poorer countries.
+impcntr	3	I accept a few immigrants from poorer countries.
+impcntr	4	I don't support any immigration from poorer countries.
+loylead	1	I strongly believe in loyalty to leaders.
+loylead	2	I believe in loyalty to leaders.
+loylead	3	I'm neutral on leader loyalty.
+loylead	4	I don't believe in loyalty to leaders.
+loylead	5	I strongly oppose loyalty to leaders.
+lrnobed	1	I strongly value obedience and respect for authority.
+lrnobed	2	I value obedience and respect for authority.
+lrnobed	3	I'm neutral on obedience and authority.
+lrnobed	4	I don't prioritize obedience and authority.
+lrnobed	5	I strongly reject obedience and authority.
 trstun	0	I have no trust at all
 trstun	1	I have no trust at all
 trstun	2	I slightly trust
@@ -122,27 +89,44 @@ trstun	7	I mostly trust
 trstun	8	I mostly trust
 trstun	9	I have complete trust
 trstun	10	I have complete trust
-vote	1	I voted in the last national election.
-vote	2	I did not vote.
-vote	3	I'm not eligible to vote.
-contplt	1	I contacted a politician or government official.
-contplt	2	I did not contact any government official.
-donprty	1	I donated to or participated in a political party.
-donprty	2	I did not donate or participate.
-badge	1	I wore a campaign badge or sticker.
-badge	2	I did not wear a campaign badge.
-sgnptit	1	I signed a petition in the last 12 months.
-sgnptit	2	I didn't sign a petition in the last 12 months.
-pbldmna	1	I participated in a public demo
-pbldmna	2	I didn't participate in a demo
-bctprd	1	I boycotted products to improve things.
-bctprd	2	I did not boycott any products.
-pstplonl	1	I posted about politics online.
-pstplonl	2	I didn't post about politics online.
-volunfp	1	I volunteered for a charity in the last 12 months.
-volunfp	2	I didn't volunteer for a charity.
-clsprty	1	I feel closer to one political party.
-clsprty	2	I don't feel closer to any party.
+hmsfmlsh	1	I'd feel ashamed if a family member were gay.
+hmsfmlsh	2	I'd feel somewhat ashamed if a family member were gay.
+hmsfmlsh	3	I'm neutral about a gay family member.
+hmsfmlsh	4	I wouldn't feel ashamed of a gay family member.
+hmsfmlsh	5	I'd never feel ashamed of a gay family member.
+aesfdrk	1	I feel very safe walking alone at night.
+aesfdrk	2	I feel safe walking alone at night.
+aesfdrk	3	I feel unsafe walking alone at night.
+aesfdrk	4	I feel very unsafe walking alone at night.
+health	1	I'm in very good health.
+health	2	I'm in good health.
+health	3	My health is fair.
+health	4	I'm in bad health.
+health	5	I'm in very bad health.
+trstep	0	I have no trust at all
+trstep	1	I have no trust at all
+trstep	2	I slightly trust
+trstep	3	I slightly trust
+trstep	4	I somewhat trust
+trstep	5	I somewhat trust
+trstep	6	I somewhat trust
+trstep	7	I mostly trust
+trstep	8	I mostly trust
+trstep	9	I have complete trust
+trstep	10	I have complete trust
+rlgblg	1	I am a member of a particular religion
+rlgblg	2	I am not religious
+trstplt	0	I don't trust politicians at all
+trstplt	1	I don't trust politicians at all
+trstplt	2	I slightly trust politicians
+trstplt	3	I slightly trust politicians
+trstplt	4	I somewhat trust politicians
+trstplt	5	I somewhat trust politicians
+trstplt	6	I somewhat trust politicians
+trstplt	7	I mostly trust politicians
+trstplt	8	I mostly trust politicians
+trstplt	9	I completely trust politicians
+trstplt	10	I completely trust politicians
 lrscale	0	I am on the far left politically.
 lrscale	1	I identify as far left.
 lrscale	2	I lean left politically.
@@ -154,39 +138,20 @@ lrscale	7	I lean right politically.
 lrscale	8	My views are right-leaning.
 lrscale	9	I identify as far right.
 lrscale	10	I am on the far right politically.
-stfeco	0	I'm extremely dissatisfied with the economy.
-stfeco	1	I'm extremely dissatisfied with the economy.
-stfeco	2	I'm somewhat dissatisfied with the economy.
-stfeco	3	I'm somewhat dissatisfied with the economy.
-stfeco	4	I'm neutral about the economy.
-stfeco	5	I'm neutral about the economy.
-stfeco	6	I'm neutral about the economy.
-stfeco	7	I'm somewhat satisfied with the economy.
-stfeco	8	I'm somewhat satisfied with the economy.
-stfeco	9	I'm extremely satisfied with the economy.
-stfeco	10	I'm extremely satisfied with the economy.
-stfgov	0	I'm extremely dissatisfied with the government.
-stfgov	1	I'm extremely dissatisfied with the government.
-stfgov	2	I'm somewhat dissatisfied with the government.
-stfgov	3	I'm somewhat dissatisfied with the government.
-stfgov	4	I'm neutral about the government.
-stfgov	5	I'm neutral about the government.
-stfgov	6	I'm neutral about the government.
-stfgov	7	I'm somewhat satisfied with the government.
-stfgov	8	I'm somewhat satisfied with the government.
-stfgov	9	I'm extremely satisfied with the government.
-stfgov	10	I'm extremely satisfied with the government.
-stfdem	0	I'm extremely dissatisfied with democracy here.
-stfdem	1	I'm extremely dissatisfied with democracy here.
-stfdem	2	I'm somewhat dissatisfied with democracy.
-stfdem	3	I'm somewhat dissatisfied with democracy.
-stfdem	4	I'm neutral about democracy here.
-stfdem	5	I'm neutral about democracy here.
-stfdem	6	I'm neutral about democracy here.
-stfdem	7	I'm somewhat satisfied with democracy.
-stfdem	8	I'm somewhat satisfied with democracy.
-stfdem	9	I'm extremely satisfied with democracy.
-stfdem	10	I'm extremely satisfied with democracy.
+ppltrst	0	I'm very cautious around people.
+ppltrst	1	I'm very cautious around people.
+ppltrst	2	I'm somewhat cautious around people.
+ppltrst	3	I'm somewhat cautious around people.
+ppltrst	4	I'm neutral about trusting people.
+ppltrst	5	I'm neutral about trusting people.
+ppltrst	6	I'm neutral about trusting people.
+ppltrst	7	I somewhat trust people.
+ppltrst	8	I somewhat trust people.
+ppltrst	9	I trust most people.
+ppltrst	10	I trust most people.
+hlthhmp	1	I'm heavily limited by a health issue.
+hlthhmp	2	I'm somewhat limited by a health issue.
+hlthhmp	3	I'm not limited by a health issue.
 stfedu	0	I think education is extremely bad.
 stfedu	1	I think education is extremely bad.
 stfedu	2	I think education is somewhat bad.
@@ -198,6 +163,78 @@ stfedu	7	I think education is somewhat good.
 stfedu	8	I think education is somewhat good.
 stfedu	9	I think education is extremely good.
 stfedu	10	I think education is extremely good.
+trstprt	0	I don't trust political parties at all
+trstprt	1	I don't trust political parties at all
+trstprt	2	I slightly trust political parties
+trstprt	3	I slightly trust political parties
+trstprt	4	I somewhat trust political parties
+trstprt	5	I somewhat trust political parties
+trstprt	6	I somewhat trust political parties
+trstprt	7	I mostly trust political parties
+trstprt	8	I mostly trust political parties
+trstprt	9	I completely trust political parties
+trstprt	10	I completely trust political parties
+dscrgrp	1	I face discrimination in this country.
+dscrgrp	2	I don't face discrimination.
+dscrntn	0	I don't face nationality-based discrimination
+dscrntn	1	I experience discrimination due to nationality
+dscretn	0	I don't face ethnic discrimination
+dscretn	1	I face ethnic discrimination
+trstlgl	0	I have no trust in the legal system.
+trstlgl	1	I have no trust in the legal system.
+trstlgl	2	I slightly trust the legal system.
+trstlgl	3	I slightly trust the legal system.
+trstlgl	4	I somewhat trust the legal system.
+trstlgl	5	I somewhat trust the legal system.
+trstlgl	6	I somewhat trust the legal system.
+trstlgl	7	I mostly trust the legal system.
+trstlgl	8	I mostly trust the legal system.
+trstlgl	9	I have complete trust in the system.
+trstlgl	10	I have complete trust in the system.
+dscrlng	0	I don't face language discrimination.
+dscrlng	1	I face discrimination due to language.
+stfdem	0	I'm extremely dissatisfied with democracy here.
+stfdem	1	I'm extremely dissatisfied with democracy here.
+stfdem	2	I'm somewhat dissatisfied with democracy.
+stfdem	3	I'm somewhat dissatisfied with democracy.
+stfdem	4	I'm neutral about democracy here.
+stfdem	5	I'm neutral about democracy here.
+stfdem	6	I'm neutral about democracy here.
+stfdem	7	I'm somewhat satisfied with democracy.
+stfdem	8	I'm somewhat satisfied with democracy.
+stfdem	9	I'm extremely satisfied with democracy.
+stfdem	10	I'm extremely satisfied with democracy.
+dscrrlg	0	I don't face discrimination due to my religion
+dscrrlg	1	I face discrimination because of my religion
+stfgov	0	I'm extremely dissatisfied with the government.
+stfgov	1	I'm extremely dissatisfied with the government.
+stfgov	2	I'm somewhat dissatisfied with the government.
+stfgov	3	I'm somewhat dissatisfied with the government.
+stfgov	4	I'm neutral about the government.
+stfgov	5	I'm neutral about the government.
+stfgov	6	I'm neutral about the government.
+stfgov	7	I'm somewhat satisfied with the government.
+stfgov	8	I'm somewhat satisfied with the government.
+stfgov	9	I'm extremely satisfied with the government.
+stfgov	10	I'm extremely satisfied with the government.
+sclact	1	I socialize much less than my peers.
+sclact	2	I socialize less than most people my age.
+sclact	3	I socialize about the same as others.
+sclact	4	I socialize more than most people my age.
+sclact	5	I socialize much more than my peers.
+trstprl	0	I don't trust my country's parliament at all.
+trstprl	1	I don't trust my country's parliament at all.
+trstprl	2	I slightly trust my country's parliament.
+trstprl	3	I slightly trust my country's parliament.
+trstprl	4	I somewhat trust my country's parliament.
+trstprl	5	I somewhat trust my country's parliament.
+trstprl	6	I somewhat trust my country's parliament.
+trstprl	7	I mostly trust my country's parliament.
+trstprl	8	I mostly trust my country's parliament.
+trstprl	9	I completely trust my country's parliament.
+trstprl	10	I completely trust my country's parliament.
+dscrsex	0	I don't face sexuality-based discrimination
+dscrsex	1	I face discrimination due to my sexuality
 stfhlth	0	I think health services are extremely bad.
 stfhlth	1	I think health services are extremely bad.
 stfhlth	2	I think health services are somewhat bad.
@@ -209,105 +246,23 @@ stfhlth	7	I think health services are somewhat good.
 stfhlth	8	I think health services are somewhat good.
 stfhlth	9	I think health services are extremely good.
 stfhlth	10	I think health services are extremely good.
-gincdif	1	I strongly support reducing income inequality.
-gincdif	2	I support reducing income inequality.
-gincdif	3	I'm neutral on income inequality.
-gincdif	4	I oppose reducing income inequality.
-gincdif	5	I strongly oppose reducing income inequality.
-freehms	1	I strongly support gay rights.
-freehms	2	I support gay rights.
-freehms	3	I'm neutral on gay rights.
-freehms	4	I oppose gay rights.
-freehms	5	I strongly oppose gay rights.
-hmsfmlsh	1	I'd feel ashamed if a family member were gay.
-hmsfmlsh	2	I'd feel somewhat ashamed if a family member were gay.
-hmsfmlsh	3	I'm neutral about a gay family member.
-hmsfmlsh	4	I wouldn't feel ashamed of a gay family member.
-hmsfmlsh	5	I'd never feel ashamed of a gay family member.
-euftf	0	I think unification has already gone too far.
-euftf	1	I think unification has already gone too far.
-euftf	2	I think unification has somewhat gone too far.
-euftf	3	I think unification has somewhat gone too far.
-euftf	4	Unification is about right as it is.
-euftf	5	Unification is about right as it is.
-euftf	6	Unification is about right as it is.
-euftf	7	I think unification should go somewhat further.
-euftf	8	I think unification should go somewhat further.
-euftf	9	I think unification should go further.
-euftf	10	I think unification should go further.
-lrnobed	1	I strongly value obedience and respect for authority.
-lrnobed	2	I value obedience and respect for authority.
-lrnobed	3	I'm neutral on obedience and authority.
-lrnobed	4	I don't prioritize obedience and authority.
-lrnobed	5	I strongly reject obedience and authority.
-loylead	1	I strongly believe in loyalty to leaders.
-loylead	2	I believe in loyalty to leaders.
-loylead	3	I'm neutral on leader loyalty.
-loylead	4	I don't believe in loyalty to leaders.
-loylead	5	I strongly oppose loyalty to leaders.
-imsmetn	1	I welcome many from my ethnic group.
-imsmetn	2	I'm open to some from my group.
-imsmetn	3	I'd accept a few from my group.
-imsmetn	4	I don't want any from my group.
-imdfetn	1	I welcome many immigrants from diverse backgrounds.
-imdfetn	2	I'm open to some immigrants.
-imdfetn	3	I accept a few immigrants.
-imdfetn	4	I don't want any immigrants.
-impcntr	1	I welcome many immigrants from poorer countries.
-impcntr	2	I support some immigration from poorer countries.
-impcntr	3	I accept a few immigrants from poorer countries.
-impcntr	4	I don't support any immigration from poorer countries.
-imbgeco	0	I think immigration is very bad for the economy.
-imbgeco	1	I think immigration is very bad for the economy.
-imbgeco	2	I think immigration is somewhat bad for the economy.
-imbgeco	3	I think immigration is somewhat bad for the economy.
-imbgeco	4	I think immigration is neither bad nor good for the economy.
-imbgeco	5	I think immigration is neither bad nor good for the economy.
-imbgeco	6	I think immigration is neither bad nor good for the economy.
-imbgeco	7	I think immigration is somewhat good for the economy.
-imbgeco	8	I think immigration is somewhat good for the economy.
-imbgeco	9	I think immigration is very good for the economy.
-imbgeco	10	I think immigration is very good for the economy.
-imueclt	0	I think immigrants strongly undermine our culture.
-imueclt	1	I think immigrants strongly undermine our culture.
-imueclt	2	I think immigrants somewhat undermine our culture.
-imueclt	3	I think immigrants somewhat undermine our culture.
-imueclt	4	I think immigrants have no cultural impact.
-imueclt	5	I think immigrants have no cultural impact.
-imueclt	6	I think immigrants have no cultural impact.
-imueclt	7	I think immigrants somewhat enrich our culture.
-imueclt	8	I think immigrants somewhat enrich our culture.
-imueclt	9	I think immigrants strongly enrich our culture.
-imueclt	10	I think immigrants strongly enrich our culture.
-imwbcnt	0	I think immigrants make it much worse here.
-imwbcnt	1	I think immigrants make it much worse here.
-imwbcnt	2	I think immigrants make it somewhat worse here.
-imwbcnt	3	I think immigrants make it somewhat worse here.
-imwbcnt	4	I think immigrants don't change it much.
-imwbcnt	5	I think immigrants don't change it much.
-imwbcnt	6	I think immigrants don't change it much.
-imwbcnt	7	I think immigrants make it somewhat better here.
-imwbcnt	8	I think immigrants make it somewhat better here.
-imwbcnt	9	I think immigrants make it much better here.
-imwbcnt	10	I think immigrants make it much better here.
-happy	0	I'm extremely unhappy.
-happy	1	I'm extremely unhappy.
-happy	2	I'm somewhat unhappy.
-happy	3	I'm somewhat unhappy.
-happy	4	I'm neither happy nor unhappy.
-happy	5	I'm neither happy nor unhappy.
-happy	6	I'm neither happy nor unhappy.
-happy	7	I'm somewhat happy.
-happy	8	I'm somewhat happy.
-happy	9	I'm extremely happy.
-happy	10	I'm extremely happy.
-sclmeet	1	I never meet socially with others.
-sclmeet	2	I meet socially less than once a month.
-sclmeet	3	I meet socially once a month.
-sclmeet	4	I meet socially several times a month.
-sclmeet	5	I meet socially once a week.
-sclmeet	6	I meet socially several times a week.
-sclmeet	7	I meet socially every day.
+dscrrce	0	I don't face race-based discrimination
+dscrrce	1	I face discrimination due to my race
+dscrage	0	I don't face age discrimination
+dscrage	1	I face age discrimination
+dscroth	0	I face no discrimination
+dscroth	1	I face discrimination
+stfeco	0	I'm extremely dissatisfied with the economy.
+stfeco	1	I'm extremely dissatisfied with the economy.
+stfeco	2	I'm somewhat dissatisfied with the economy.
+stfeco	3	I'm somewhat dissatisfied with the economy.
+stfeco	4	I'm neutral about the economy.
+stfeco	5	I'm neutral about the economy.
+stfeco	6	I'm neutral about the economy.
+stfeco	7	I'm somewhat satisfied with the economy.
+stfeco	8	I'm somewhat satisfied with the economy.
+stfeco	9	I'm extremely satisfied with the economy.
+stfeco	10	I'm extremely satisfied with the economy.
 inprdsc	0	I have no one to discuss personal matters with.
 inprdsc	1	I can discuss personal matters with one person.
 inprdsc	2	I can discuss personal matters with two people.
@@ -315,580 +270,15 @@ inprdsc	3	I can discuss personal matters with three people.
 inprdsc	4	I can discuss personal matters with a few people.
 inprdsc	5	I can discuss personal matters with several people.
 inprdsc	6	I can discuss personal matters with many people.
-sclact	1	I socialize much less than my peers.
-sclact	2	I socialize less than most people my age.
-sclact	3	I socialize about the same as others.
-sclact	4	I socialize more than most people my age.
-sclact	5	I socialize much more than my peers.
-crmvct	1	I've been a victim of burglary or assault.
-crmvct	2	I haven't been a victim.
-aesfdrk	1	I feel very safe walking alone at night.
-aesfdrk	2	I feel safe walking alone at night.
-aesfdrk	3	I feel unsafe walking alone at night.
-aesfdrk	4	I feel very unsafe walking alone at night.
-health	1	I'm in very good health.
-health	2	I'm in good health.
-health	3	My health is fair.
-health	4	I'm in bad health.
-health	5	I'm in very bad health.
-hlthhmp	1	I'm heavily limited by a health issue.
-hlthhmp	2	I'm somewhat limited by a health issue.
-hlthhmp	3	I'm not limited by a health issue.
-atchctr	0	I'm not emotionally attached to this country.
-atchctr	1	I'm not emotionally attached to this country.
-atchctr	2	I'm slightly emotionally attached here.
-atchctr	3	I feel a slight emotional attachment.
-atchctr	4	I'm somewhat emotionally attached.
-atchctr	5	I have some emotional attachment.
-atchctr	6	I feel somewhat attached emotionally.
-atchctr	7	I'm mostly emotionally attached.
-atchctr	8	Mostly, I feel emotionally attached.
-atchctr	9	I'm very emotionally attached.
-atchctr	10	I feel very emotionally attached.
-atcherp	0	I'm not emotionally attached to Europe
-atcherp	1	I'm not emotionally attached to Europe
-atcherp	2	I'm slightly attached to Europe
-atcherp	3	I'm slightly attached to Europe
-atcherp	4	I'm somewhat attached to Europe
-atcherp	5	I'm somewhat attached to Europe
-atcherp	6	I'm somewhat attached to Europe
-atcherp	7	I'm mostly attached to Europe
-atcherp	8	I'm mostly attached to Europe
-atcherp	9	I'm very emotionally attached to Europe
-atcherp	10	I'm very emotionally attached to Europe
-rlgblg	1	I am a member of a particular religion
-rlgblg	2	I am not religious
-rlgdgr	0	I am not religious at all.
-rlgdgr	1	I am not religious at all.
-rlgdgr	2	I am slightly religious.
-rlgdgr	3	I am slightly religious.
-rlgdgr	4	I am somewhat religious.
-rlgdgr	5	I am somewhat religious.
-rlgdgr	6	I am somewhat religious.
-rlgdgr	7	I am mostly religious.
-rlgdgr	8	I am mostly religious.
-rlgdgr	9	I am very religious.
-rlgdgr	10	I am very religious.
-rlgatnd	1	I attend religious services every day.
-rlgatnd	2	I attend religious services more than once a week.
-rlgatnd	3	I attend religious services once a week.
-rlgatnd	4	I attend religious services at least once a month.
-rlgatnd	5	I attend only on special holy days.
-rlgatnd	6	I attend religious services less often.
-rlgatnd	7	I never attend religious services.
-dscrgrp	1	I face discrimination in this country.
-dscrgrp	2	I don't face discrimination.
-dscrrce	0	I don't face race-based discrimination
-dscrrce	1	I face discrimination due to my race
-dscrntn	0	I don't face nationality-based discrimination
-dscrntn	1	I experience discrimination due to nationality
-dscrrlg	0	I don't face discrimination due to my religion
-dscrrlg	1	I face discrimination because of my religion
-dscrlng	0	I don't face language discrimination.
-dscrlng	1	I face discrimination due to language.
-dscretn	0	I don't face ethnic discrimination
-dscretn	1	I face ethnic discrimination
-dscrage	0	I don't face age discrimination
-dscrage	1	I face age discrimination
+sclmeet	1	I never meet socially with others.
+sclmeet	2	I meet socially less than once a month.
+sclmeet	3	I meet socially once a month.
+sclmeet	4	I meet socially several times a month.
+sclmeet	5	I meet socially once a week.
+sclmeet	6	I meet socially several times a week.
+sclmeet	7	I meet socially every day.
 dscrgnd	0	I don't face gender discrimination
 dscrgnd	1	I face gender discrimination
-dscrsex	0	I don't face sexuality-based discrimination
-dscrsex	1	I face discrimination due to my sexuality
-dscrdsb	0	I don't face disability discrimination
-dscrdsb	1	I face discrimination due to disability
-dscroth	0	I face no discrimination
-dscroth	1	I face discrimination
-ctzcntr	1	I am a citizen of this country.
-ctzcntr	2	I am not a citizen.
-brncntr	1	I was born in this country.
-brncntr	2	I was not born in this country.
-lnghom1	AAR	I speak Afar most often at home.
-lnghom1	ABK	I speak Abkhazian most often at home.
-lnghom1	ACE	I speak Achinese most often at home.
-lnghom1	ACH	I speak Acoli most often at home.
-lnghom1	ADA	I speak Adangme most often at home.
-lnghom1	ADY	I speak Adyghe, Adygei most often at home.
-lnghom1	AFA	I speak Afro-Asiatic (Other) most often at home.
-lnghom1	AFH	I speak Afrihili most often at home.
-lnghom1	AFR	I speak Afrikaans most often at home.
-lnghom1	AIN	I speak Ainu most often at home.
-lnghom1	AKA	I speak Akan most often at home.
-lnghom1	AKK	I speak Akkadian most often at home.
-lnghom1	ALB	I speak Albanian most often at home.
-lnghom1	ALE	I speak Aleut most often at home.
-lnghom1	ALG	I speak Algonquian languages most often at home.
-lnghom1	ALT	I speak Southern Altai most often at home.
-lnghom1	AMH	I speak Amharic most often at home.
-lnghom1	ANG	I speak English, Old (ca.450-1100) most often at home.
-lnghom1	ANP	I speak Angika most often at home.
-lnghom1	APA	I speak Apache languages most often at home.
-lnghom1	ARA	I speak Arabic most often at home.
-lnghom1	ARC	I speak Aramaic most often at home.
-lnghom1	ARG	I speak Aragonese most often at home.
-lnghom1	ARM	I speak Armenian most often at home.
-lnghom1	ARN	I speak Mapudungun, Mapuche most often at home.
-lnghom1	ARP	I speak Arapaho most often at home.
-lnghom1	ART	I speak Artificial (Other) most often at home.
-lnghom1	ARW	I speak Arawak most often at home.
-lnghom1	ASM	I speak Assamese most often at home.
-lnghom1	AST	I speak Asturian, Bable most often at home.
-lnghom1	ATH	I speak Athapascan languages most often at home.
-lnghom1	AUS	I speak Australian languages most often at home.
-lnghom1	AVA	I speak Avaric most often at home.
-lnghom1	AVE	I speak Avestan most often at home.
-lnghom1	AWA	I speak Awadhi most often at home.
-lnghom1	AYM	I speak Aymara most often at home.
-lnghom1	AZE	I speak Azerbaijani most often at home.
-lnghom1	BAD	I speak Banda most often at home.
-lnghom1	BAI	I speak Bamileke languages most often at home.
-lnghom1	BAK	I speak Bashkir most often at home.
-lnghom1	BAL	I speak Baluchi most often at home.
-lnghom1	BAM	I speak Bambara most often at home.
-lnghom1	BAN	I speak Balinese most often at home.
-lnghom1	BAQ	I speak Basque most often at home.
-lnghom1	BAS	I speak Basa most often at home.
-lnghom1	BAT	I speak Baltic (Other) most often at home.
-lnghom1	BEJ	I speak Beja most often at home.
-lnghom1	BEL	I speak Belarusian most often at home.
-lnghom1	BEM	I speak Bemba most often at home.
-lnghom1	BEN	I speak Bengali most often at home.
-lnghom1	BER	I speak Berber (Other) most often at home.
-lnghom1	BHO	I speak Bhojpuri most often at home.
-lnghom1	BIH	I speak Bihari most often at home.
-lnghom1	BIK	I speak Bikol most often at home.
-lnghom1	BIN	I speak Bini most often at home.
-lnghom1	BIS	I speak Bislama most often at home.
-lnghom1	BLA	I speak Siksika most often at home.
-lnghom1	BNT	I speak Bantu (Other) most often at home.
-lnghom1	BOS	I speak Bosnian most often at home.
-lnghom1	BRA	I speak Braj most often at home.
-lnghom1	BRE	I speak Breton most often at home.
-lnghom1	BTK	I speak Batak (Indonesia) most often at home.
-lnghom1	BUA	I speak Buriat most often at home.
-lnghom1	BUG	I speak Buginese most often at home.
-lnghom1	BUL	I speak Bulgarian most often at home.
-lnghom1	BUR	I speak Burmese most often at home.
-lnghom1	BYN	I speak Blin, Bilin most often at home.
-lnghom1	CAD	I speak Caddo most often at home.
-lnghom1	CAI	I speak Central American Indian (Other) most often at home.
-lnghom1	CAR	I speak Galibi Carib most often at home.
-lnghom1	CAT	I speak Catalan most often at home.
-lnghom1	CAU	I speak Caucasian (Other) most often at home.
-lnghom1	CEB	I speak Cebuano most often at home.
-lnghom1	CEL	I speak Celtic (Other) most often at home.
-lnghom1	CHA	I speak Chamorro most often at home.
-lnghom1	CHB	I speak Chibcha most often at home.
-lnghom1	CHE	I speak Chechen most often at home.
-lnghom1	CHG	I speak Chagatai most often at home.
-lnghom1	CHI	I speak Chinese most often at home.
-lnghom1	CHK	I speak Chuukese most often at home.
-lnghom1	CHM	I speak Mari most often at home.
-lnghom1	CHN	I speak Chinook jargon most often at home.
-lnghom1	CHO	I speak Choctaw most often at home.
-lnghom1	CHP	I speak Chipewyan most often at home.
-lnghom1	CHR	I speak Cherokee most often at home.
-lnghom1	CHU	I speak Old/Church Slavic, Slavonic, Bulgarian most often at home.
-lnghom1	CHV	I speak Chuvash most often at home.
-lnghom1	CHY	I speak Cheyenne most often at home.
-lnghom1	CMC	I speak Chamic languages most often at home.
-lnghom1	CNR	I speak Montenegrin most often at home.
-lnghom1	COP	I speak Coptic most often at home.
-lnghom1	COR	I speak Cornish most often at home.
-lnghom1	COS	I speak Corsican most often at home.
-lnghom1	CPE	I speak Creoles and pidgins, English-based (Other) most often at home.
-lnghom1	CPF	I speak Creoles and pidgins, French-based (Other) most often at home.
-lnghom1	CPP	I speak Creoles and pidgins, Portuguese-based (Other) most often at home.
-lnghom1	CRE	I speak Cree most often at home.
-lnghom1	CRH	I speak Crimean Tatar, Crimean Turkish most often at home.
-lnghom1	CRP	I speak Creoles and pidgins(Other) most often at home.
-lnghom1	CSB	I speak Kashubian most often at home.
-lnghom1	CUS	I speak Cushitic (Other) most often at home.
-lnghom1	CZE	I speak Czech most often at home.
-lnghom1	DAK	I speak Dakota most often at home.
-lnghom1	DAN	I speak Danish most often at home.
-lnghom1	DAR	I speak Dargwa most often at home.
-lnghom1	DAY	I speak Dayak most often at home.
-lnghom1	DEL	I speak Delaware most often at home.
-lnghom1	DEN	I speak Slave (Athapascan) most often at home.
-lnghom1	DGR	I speak Dogrib most often at home.
-lnghom1	DIN	I speak Dinka most often at home.
-lnghom1	DIV	I speak Divehi most often at home.
-lnghom1	DOI	I speak Dogri most often at home.
-lnghom1	DRA	I speak Dravidian (Other) most often at home.
-lnghom1	DSB	I speak Lower Sorbian most often at home.
-lnghom1	DUA	I speak Duala most often at home.
-lnghom1	DUM	I speak Dutch, Middle (ca. 1050-1350) most often at home.
-lnghom1	DUT	I speak Dutch most often at home.
-lnghom1	DYU	I speak Dyula most often at home.
-lnghom1	DZO	I speak Dzongkha most often at home.
-lnghom1	EFI	I speak Efik most often at home.
-lnghom1	EGY	I speak Egyptian (Ancient) most often at home.
-lnghom1	EKA	I speak Ekajuk most often at home.
-lnghom1	ELX	I speak Elamite most often at home.
-lnghom1	ENG	I speak English most often at home.
-lnghom1	ENM	I speak English, Middle (1100-1500) most often at home.
-lnghom1	EPO	I speak Esperanto most often at home.
-lnghom1	EST	I speak Estonian most often at home.
-lnghom1	EWE	I speak Ewe most often at home.
-lnghom1	EWO	I speak Ewondo most often at home.
-lnghom1	FAN	I speak Fang most often at home.
-lnghom1	FAO	I speak Faroese most often at home.
-lnghom1	FAT	I speak Fanti most often at home.
-lnghom1	FIJ	I speak Fijian most often at home.
-lnghom1	FIL	I speak Filipino, Pilipino most often at home.
-lnghom1	FIN	I speak Finnish most often at home.
-lnghom1	FIU	I speak Finno-Ugrian (Other) most often at home.
-lnghom1	FON	I speak Fon most often at home.
-lnghom1	FRE	I speak French most often at home.
-lnghom1	FRM	I speak French, Middle (ca.1400-1600) most often at home.
-lnghom1	FRO	I speak French, Old (842-ca.1400) most often at home.
-lnghom1	FRR	I speak Northern Frisian most often at home.
-lnghom1	FRS	I speak Eastern Frisian most often at home.
-lnghom1	FRY	I speak Western Frisian most often at home.
-lnghom1	FUL	I speak Fulah most often at home.
-lnghom1	FUR	I speak Friulian most often at home.
-lnghom1	GAA	I speak Ga most often at home.
-lnghom1	GAY	I speak Gayo most often at home.
-lnghom1	GBA	I speak Gbaya most often at home.
-lnghom1	GEM	I speak Germanic (Other) most often at home.
-lnghom1	GEO	I speak Georgian most often at home.
-lnghom1	GER	I speak German most often at home.
-lnghom1	GEZ	I speak Geez most often at home.
-lnghom1	GIL	I speak Gilbertese most often at home.
-lnghom1	GLA	I speak Gaelic Scottish most often at home.
-lnghom1	GLE	I speak Irish most often at home.
-lnghom1	GLG	I speak Gallegan most often at home.
-lnghom1	GLV	I speak Manx most often at home.
-lnghom1	GMH	I speak German, Middle High (ca.1050-1500) most often at home.
-lnghom1	GOH	I speak German, Old High (ca.750-1050) most often at home.
-lnghom1	GON	I speak Gondi most often at home.
-lnghom1	GOR	I speak Gorontalo most often at home.
-lnghom1	GOT	I speak Gothic most often at home.
-lnghom1	GRB	I speak Grebo most often at home.
-lnghom1	GRC	I speak Greek, Ancient (to 1453) most often at home.
-lnghom1	GRE	I speak Greek, Modern (1453-) most often at home.
-lnghom1	GRN	I speak Guarani most often at home.
-lnghom1	GSW	I speak Swiss German, Alemannic, Alsatian most often at home.
-lnghom1	GUJ	I speak Gujarati most often at home.
-lnghom1	GWI	I speak Gwich'in most often at home.
-lnghom1	HAI	I speak Haida most often at home.
-lnghom1	HAT	I speak Haitian, Haitian Creole most often at home.
-lnghom1	HAU	I speak Hausa most often at home.
-lnghom1	HAW	I speak Hawaiian most often at home.
-lnghom1	HEB	I speak Hebrew most often at home.
-lnghom1	HER	I speak Herero most often at home.
-lnghom1	HIL	I speak Hiligaynon most often at home.
-lnghom1	HIM	I speak Himachali languages, Western Pahari languages most often at home.
-lnghom1	HIN	I speak Hindi most often at home.
-lnghom1	HIT	I speak Hittite most often at home.
-lnghom1	HMN	I speak Hmong, Mong most often at home.
-lnghom1	HMO	I speak Hiri Motu most often at home.
-lnghom1	HRV	I speak Croatian most often at home.
-lnghom1	HSB	I speak Upper Sorbian most often at home.
-lnghom1	HUN	I speak Hungarian most often at home.
-lnghom1	HUP	I speak Hupa most often at home.
-lnghom1	IBA	I speak Iban most often at home.
-lnghom1	IBO	I speak Igbo most often at home.
-lnghom1	ICE	I speak Icelandic most often at home.
-lnghom1	IDO	I speak Ido most often at home.
-lnghom1	III	I speak Sichuan Yi, Nuosu most often at home.
-lnghom1	IJO	I speak Ijo most often at home.
-lnghom1	IKU	I speak Inuktitut most often at home.
-lnghom1	ILE	I speak Interlingue most often at home.
-lnghom1	ILO	I speak Iloko most often at home.
-lnghom1	INA	I speak Interlingua (International Auxiliary Language Association) most often at home.
-lnghom1	INC	I speak Indic (Other) most often at home.
-lnghom1	IND	I speak Indonesian most often at home.
-lnghom1	INE	I speak Indo-European (Other) most often at home.
-lnghom1	INH	I speak Ingush most often at home.
-lnghom1	IPK	I speak Inupiaq most often at home.
-lnghom1	IRA	I speak Iranian (Other) most often at home.
-lnghom1	IRO	I speak Iroquoian languages most often at home.
-lnghom1	ITA	I speak Italian most often at home.
-lnghom1	JAV	I speak Javanese most often at home.
-lnghom1	JBO	I speak Lojban most often at home.
-lnghom1	JPN	I speak Japanese most often at home.
-lnghom1	JPR	I speak Judeo-Persian most often at home.
-lnghom1	JRB	I speak Judeo-Arabic most often at home.
-lnghom1	KAA	I speak Kara-Kalpak most often at home.
-lnghom1	KAB	I speak Kabyle most often at home.
-lnghom1	KAC	I speak Kachin most often at home.
-lnghom1	KAL	I speak Kalaallisut most often at home.
-lnghom1	KAM	I speak Kamba most often at home.
-lnghom1	KAN	I speak Kannada most often at home.
-lnghom1	KAR	I speak Karen most often at home.
-lnghom1	KAS	I speak Kashmiri most often at home.
-lnghom1	KAU	I speak Kanuri most often at home.
-lnghom1	KAW	I speak Kawi most often at home.
-lnghom1	KAZ	I speak Kazakh most often at home.
-lnghom1	KBD	I speak Kabardian most often at home.
-lnghom1	KHA	I speak Khasi most often at home.
-lnghom1	KHI	I speak Khoisan (Other) most often at home.
-lnghom1	KHM	I speak Central Khmer most often at home.
-lnghom1	KHO	I speak Khotanese most often at home.
-lnghom1	KIK	I speak Kikuyu most often at home.
-lnghom1	KIN	I speak Kinyarwanda most often at home.
-lnghom1	KIR	I speak Kirghiz most often at home.
-lnghom1	KMB	I speak Kimbundu most often at home.
-lnghom1	KOK	I speak Konkani most often at home.
-lnghom1	KOM	I speak Komi most often at home.
-lnghom1	KON	I speak Kongo most often at home.
-lnghom1	KOR	I speak Korean most often at home.
-lnghom1	KOS	I speak Kosraean most often at home.
-lnghom1	KPE	I speak Kpelle most often at home.
-lnghom1	KRC	I speak Karachay-Balkar most often at home.
-lnghom1	KRL	I speak Karelian most often at home.
-lnghom1	KRO	I speak Kru most often at home.
-lnghom1	KRU	I speak Kurukh most often at home.
-lnghom1	KUA	I speak Kuanyama most often at home.
-lnghom1	KUM	I speak Kumyk most often at home.
-lnghom1	KUR	I speak Kurdish most often at home.
-lnghom1	KUT	I speak Kutenai most often at home.
-lnghom1	LAD	I speak Ladino most often at home.
-lnghom1	LAH	I speak Lahnda most often at home.
-lnghom1	LAM	I speak Lamba most often at home.
-lnghom1	LAO	I speak Lao most often at home.
-lnghom1	LAT	I speak Latin most often at home.
-lnghom1	LAV	I speak Latvian most often at home.
-lnghom1	LEZ	I speak Lezghian most often at home.
-lnghom1	LIM	I speak Limburgan, Limburger, Limburgish most often at home.
-lnghom1	LIN	I speak Lingala most often at home.
-lnghom1	LIT	I speak Lithuanian most often at home.
-lnghom1	LOL	I speak Mongo most often at home.
-lnghom1	LOZ	I speak Lozi most often at home.
-lnghom1	LTZ	I speak Luxembourgish, Letzeburgesch most often at home.
-lnghom1	LUA	I speak Luba-Lulua most often at home.
-lnghom1	LUB	I speak Luba-Katanga most often at home.
-lnghom1	LUG	I speak Ganda most often at home.
-lnghom1	LUI	I speak Luiseno most often at home.
-lnghom1	LUN	I speak Lunda most often at home.
-lnghom1	LUO	I speak Luo (Kenya and Tanzania) most often at home.
-lnghom1	LUS	I speak Lushai most often at home.
-lnghom1	MAC	I speak Macedonian most often at home.
-lnghom1	MAD	I speak Madurese most often at home.
-lnghom1	MAG	I speak Magahi most often at home.
-lnghom1	MAH	I speak Marshallese most often at home.
-lnghom1	MAI	I speak Maithili most often at home.
-lnghom1	MAK	I speak Makasar most often at home.
-lnghom1	MAL	I speak Malayalam most often at home.
-lnghom1	MAN	I speak Mandingo most often at home.
-lnghom1	MAO	I speak Maori most often at home.
-lnghom1	MAP	I speak Austronesian (Other) most often at home.
-lnghom1	MAR	I speak Marathi most often at home.
-lnghom1	MAS	I speak Masai most often at home.
-lnghom1	MAY	I speak Malay most often at home.
-lnghom1	MDF	I speak Moksha most often at home.
-lnghom1	MDR	I speak Mandar most often at home.
-lnghom1	MEN	I speak Mende most often at home.
-lnghom1	MGA	I speak Irish, Middle (900-1200) most often at home.
-lnghom1	MIC	I speak Micmac, Mi'kmaq most often at home.
-lnghom1	MIN	I speak Minangkabau most often at home.
-lnghom1	MIS	I speak Uncoded languages most often at home.
-lnghom1	MKH	I speak Mon-Khmer (Other) most often at home.
-lnghom1	MLG	I speak Malagasy most often at home.
-lnghom1	MLT	I speak Maltese most often at home.
-lnghom1	MNC	I speak Manchu most often at home.
-lnghom1	MNI	I speak Manipuri most often at home.
-lnghom1	MNO	I speak Manobo languages most often at home.
-lnghom1	MOH	I speak Mohawk most often at home.
-lnghom1	MON	I speak Mongolian most often at home.
-lnghom1	MOS	I speak Mossi most often at home.
-lnghom1	MUL	I speak Multiple languages most often at home.
-lnghom1	MUN	I speak Munda languages most often at home.
-lnghom1	MUS	I speak Creek most often at home.
-lnghom1	MWL	I speak Mirandese most often at home.
-lnghom1	MWR	I speak Marwari most often at home.
-lnghom1	MYN	I speak Mayan languages most often at home.
-lnghom1	MYV	I speak Erzya most often at home.
-lnghom1	NAH	I speak Nahuatl most often at home.
-lnghom1	NAI	I speak North American Indian (Other) most often at home.
-lnghom1	NAP	I speak Neapolitan most often at home.
-lnghom1	NAU	I speak Nauru most often at home.
-lnghom1	NAV	I speak Navaho most often at home.
-lnghom1	NBL	I speak Ndebele, South most often at home.
-lnghom1	NDE	I speak Ndebele, North most often at home.
-lnghom1	NDO	I speak Ndonga most often at home.
-lnghom1	NDS	I speak Low German, Saxon most often at home.
-lnghom1	NEP	I speak Nepali most often at home.
-lnghom1	NEW	I speak Newari most often at home.
-lnghom1	NIA	I speak Nias most often at home.
-lnghom1	NIC	I speak Niger-Kordofanian (Other) most often at home.
-lnghom1	NIU	I speak Niuean most often at home.
-lnghom1	NNO	I speak Norwegian Nynorsk most often at home.
-lnghom1	NOB	I speak Norwegian Bokmål most often at home.
-lnghom1	NOG	I speak Nogai most often at home.
-lnghom1	NON	I speak Norse, Old most often at home.
-lnghom1	NOR	I speak Norwegian most often at home.
-lnghom1	NQO	I speak N'Ko most often at home.
-lnghom1	NSO	I speak Nothern Sotho, Pedi, Sepedi most often at home.
-lnghom1	NUB	I speak Nubian languages most often at home.
-lnghom1	NWC	I speak Classical Newari, Old Newari, Classical Nepal Bhasa most often at home.
-lnghom1	NYA	I speak Chewa, Chichewa, Nyanja most often at home.
-lnghom1	NYM	I speak Nyamwezi most often at home.
-lnghom1	NYN	I speak Nyankole most often at home.
-lnghom1	NYO	I speak Nyoro most often at home.
-lnghom1	NZI	I speak Nzima most often at home.
-lnghom1	OCI	I speak Occitan (post 1500) most often at home.
-lnghom1	OJI	I speak Ojibwa most often at home.
-lnghom1	ORI	I speak Oriya most often at home.
-lnghom1	ORM	I speak Oromo most often at home.
-lnghom1	OSA	I speak Osage most often at home.
-lnghom1	OSS	I speak Ossetian most often at home.
-lnghom1	OTA	I speak Turkish, Ottoman (1500-1928) most often at home.
-lnghom1	OTO	I speak Otomian languages most often at home.
-lnghom1	PAA	I speak Papuan (Other) most often at home.
-lnghom1	PAG	I speak Pangasinan most often at home.
-lnghom1	PAL	I speak Pahlavi most often at home.
-lnghom1	PAM	I speak Pampanga most often at home.
-lnghom1	PAN	I speak Panjabi most often at home.
-lnghom1	PAP	I speak Papiamento most often at home.
-lnghom1	PAU	I speak Palauan most often at home.
-lnghom1	PEO	I speak Persian, Old (ca.600-400) most often at home.
-lnghom1	PER	I speak Persian most often at home.
-lnghom1	PHI	I speak Philippine (Other) most often at home.
-lnghom1	PHN	I speak Phoenician most often at home.
-lnghom1	PLI	I speak Pali most often at home.
-lnghom1	POL	I speak Polish most often at home.
-lnghom1	PON	I speak Pohnpeian most often at home.
-lnghom1	POR	I speak Portuguese most often at home.
-lnghom1	PRA	I speak Prakrit languages most often at home.
-lnghom1	PRO	I speak Provençal, Old (to 1500) most often at home.
-lnghom1	PUS	I speak Pushto most often at home.
-lnghom1	QAA	I speak Local language, Italy most often at home.
-lnghom1	QPL	I speak Local language, Poland most often at home.
-lnghom1	QUE	I speak Quechua most often at home.
-lnghom1	RAJ	I speak Rajasthani most often at home.
-lnghom1	RAP	I speak Rapanui most often at home.
-lnghom1	RAR	I speak Rarotongan most often at home.
-lnghom1	ROA	I speak Romance (Other) most often at home.
-lnghom1	ROH	I speak Romansh most often at home.
-lnghom1	ROM	I speak Romany most often at home.
-lnghom1	RUM	I speak Romanian most often at home.
-lnghom1	RUN	I speak Rundi most often at home.
-lnghom1	RUP	I speak Aromanian, Arumanian, Macedo-Romanian most often at home.
-lnghom1	RUS	I speak Russian most often at home.
-lnghom1	SAD	I speak Sandawe most often at home.
-lnghom1	SAG	I speak Sango most often at home.
-lnghom1	SAH	I speak Yakut most often at home.
-lnghom1	SAI	I speak South American Indian (Other) most often at home.
-lnghom1	SAL	I speak Salishan languages most often at home.
-lnghom1	SAM	I speak Samaritan Aramaic most often at home.
-lnghom1	SAN	I speak Sanskrit most often at home.
-lnghom1	SAS	I speak Sasak most often at home.
-lnghom1	SAT	I speak Santali most often at home.
-lnghom1	SCN	I speak Sicilian most often at home.
-lnghom1	SCO	I speak Scots most often at home.
-lnghom1	SEL	I speak Selkup most often at home.
-lnghom1	SEM	I speak Semitic (Other) most often at home.
-lnghom1	SGA	I speak Irish, Old (to 900) most often at home.
-lnghom1	SGN	I speak Sign languages most often at home.
-lnghom1	SHN	I speak Shan most often at home.
-lnghom1	SID	I speak Sidamo most often at home.
-lnghom1	SIN	I speak Sinhalese, Sinhala most often at home.
-lnghom1	SIO	I speak Siouan languages most often at home.
-lnghom1	SIT	I speak Sino-Tibetan (Other) most often at home.
-lnghom1	SLA	I speak Slavic (Other) most often at home.
-lnghom1	SLO	I speak Slovak most often at home.
-lnghom1	SLV	I speak Slovenian most often at home.
-lnghom1	SMA	I speak Southern Sami most often at home.
-lnghom1	SME	I speak Northern Sami most often at home.
-lnghom1	SMI	I speak Sami languages (Other) most often at home.
-lnghom1	SMJ	I speak Lule Sami most often at home.
-lnghom1	SMN	I speak Inari Sami most often at home.
-lnghom1	SMO	I speak Samoan most often at home.
-lnghom1	SMS	I speak Skolt Sami most often at home.
-lnghom1	SNA	I speak Shona most often at home.
-lnghom1	SND	I speak Sindhi most often at home.
-lnghom1	SNK	I speak Soninke most often at home.
-lnghom1	SOG	I speak Sogdian most often at home.
-lnghom1	SOM	I speak Somali most often at home.
-lnghom1	SON	I speak Songhai most often at home.
-lnghom1	SOT	I speak Sotho, Southern most often at home.
-lnghom1	SPA	I speak Spanish, Castilian most often at home.
-lnghom1	SRD	I speak Sardinian most often at home.
-lnghom1	SRN	I speak Sranan Tongo most often at home.
-lnghom1	SRP	I speak Serbian most often at home.
-lnghom1	SRR	I speak Serer most often at home.
-lnghom1	SSA	I speak Nilo-Saharan (Other) most often at home.
-lnghom1	SSW	I speak Swati most often at home.
-lnghom1	SUK	I speak Sukuma most often at home.
-lnghom1	SUN	I speak Sundanese most often at home.
-lnghom1	SUS	I speak Susu most often at home.
-lnghom1	SUX	I speak Sumerian most often at home.
-lnghom1	SWA	I speak Swahili most often at home.
-lnghom1	SWE	I speak Swedish most often at home.
-lnghom1	SYC	I speak Classical Syriac most often at home.
-lnghom1	SYR	I speak Syriac most often at home.
-lnghom1	TAH	I speak Tahitian most often at home.
-lnghom1	TAI	I speak Tai (Other) most often at home.
-lnghom1	TAM	I speak Tamil most often at home.
-lnghom1	TAT	I speak Tatar most often at home.
-lnghom1	TEL	I speak Telugu most often at home.
-lnghom1	TEM	I speak Timne most often at home.
-lnghom1	TER	I speak Tereno most often at home.
-lnghom1	TET	I speak Tetum most often at home.
-lnghom1	TGK	I speak Tajik most often at home.
-lnghom1	TGL	I speak Tagalog most often at home.
-lnghom1	THA	I speak Thai most often at home.
-lnghom1	TIB	I speak Tibetan most often at home.
-lnghom1	TIG	I speak Tigre most often at home.
-lnghom1	TIR	I speak Tigrinya most often at home.
-lnghom1	TIV	I speak Tiv most often at home.
-lnghom1	TKL	I speak Tokelau most often at home.
-lnghom1	TLH	I speak Klingon, tlhIngan-Hol most often at home.
-lnghom1	TLI	I speak Tlingit most often at home.
-lnghom1	TMH	I speak Tamashek most often at home.
-lnghom1	TOG	I speak Tonga (Nyasa) most often at home.
-lnghom1	TON	I speak Tonga (Tonga Islands) most often at home.
-lnghom1	TPI	I speak Tok Pisin most often at home.
-lnghom1	TSI	I speak Tsimshian most often at home.
-lnghom1	TSN	I speak Tswana most often at home.
-lnghom1	TSO	I speak Tsonga most often at home.
-lnghom1	TUK	I speak Turkmen most often at home.
-lnghom1	TUM	I speak Tumbuka most often at home.
-lnghom1	TUP	I speak Tupi languages most often at home.
-lnghom1	TUR	I speak Turkish most often at home.
-lnghom1	TUT	I speak Altaic (Other) most often at home.
-lnghom1	TVL	I speak Tuvalu most often at home.
-lnghom1	TWI	I speak Twi most often at home.
-lnghom1	TYV	I speak Tuvinian most often at home.
-lnghom1	UDM	I speak Udmurt most often at home.
-lnghom1	UGA	I speak Ugaritic most often at home.
-lnghom1	UIG	I speak Uighur most often at home.
-lnghom1	UKR	I speak Ukrainian most often at home.
-lnghom1	UMB	I speak Umbundu most often at home.
-lnghom1	UND	I speak Undetermined most often at home.
-lnghom1	URD	I speak Urdu most often at home.
-lnghom1	UZB	I speak Uzbek most often at home.
-lnghom1	VAI	I speak Vai most often at home.
-lnghom1	VEN	I speak Venda most often at home.
-lnghom1	VIE	I speak Vietnamese most often at home.
-lnghom1	VOL	I speak Volapük most often at home.
-lnghom1	VOT	I speak Votic most often at home.
-lnghom1	WAK	I speak Wakashan languages most often at home.
-lnghom1	WAL	I speak Wolaitta, Wolaytta most often at home.
-lnghom1	WAR	I speak Waray most often at home.
-lnghom1	WAS	I speak Washo most often at home.
-lnghom1	WEL	I speak Welsh most often at home.
-lnghom1	WEN	I speak Sorbian languages most often at home.
-lnghom1	WLN	I speak Walloon most often at home.
-lnghom1	WOL	I speak Wolof most often at home.
-lnghom1	XAL	I speak Kalmyk, Oriat most often at home.
-lnghom1	XHO	I speak Xhosa most often at home.
-lnghom1	YAO	I speak Yao most often at home.
-lnghom1	YAP	I speak Yapese most often at home.
-lnghom1	YID	I speak Yiddish most often at home.
-lnghom1	YOR	I speak Yoruba most often at home.
-lnghom1	YPK	I speak Yupik languages most often at home.
-lnghom1	ZAP	I speak Zapotec most often at home.
-lnghom1	ZBL	I speak Blissymbols, Blissymbolics, Bliss most often at home.
-lnghom1	ZEN	I speak Zenaga most often at home.
-lnghom1	ZGH	I speak Standard Moroccan Tamazight most often at home.
-lnghom1	ZHA	I speak Zhuang, Chuang most often at home.
-lnghom1	ZND	I speak Zande most often at home.
-lnghom1	ZUL	I speak Zulu most often at home.
-lnghom1	ZUN	I speak Zuni most often at home.
-lnghom1	ZZA	I speak Zaza, Dimili, Dimli, Kirdki, Kirmanjki, Zazaki most often at home.
 lnghom2	000	I speak No second language mentioned* most often at home.
 lnghom2	AAR	I speak Afar most often at home.
 lnghom2	ABK	I speak Abkhazian most often at home.
@@ -1377,34 +767,586 @@ lnghom2	ZND	I speak Zande most often at home.
 lnghom2	ZUL	I speak Zulu most often at home.
 lnghom2	ZUN	I speak Zuni most often at home.
 lnghom2	ZZA	I speak Zaza, Dimili, Dimli, Kirdki, Kirmanjki, Zazaki most often at home.
+dscrdsb	0	I don't face disability discrimination
+dscrdsb	1	I face discrimination due to disability
+ctzcntr	1	I am a citizen of this country.
+ctzcntr	2	I am not a citizen.
+lnghom1	AAR	I speak Afar most often at home.
+lnghom1	ABK	I speak Abkhazian most often at home.
+lnghom1	ACE	I speak Achinese most often at home.
+lnghom1	ACH	I speak Acoli most often at home.
+lnghom1	ADA	I speak Adangme most often at home.
+lnghom1	ADY	I speak Adyghe, Adygei most often at home.
+lnghom1	AFA	I speak Afro-Asiatic (Other) most often at home.
+lnghom1	AFH	I speak Afrihili most often at home.
+lnghom1	AFR	I speak Afrikaans most often at home.
+lnghom1	AIN	I speak Ainu most often at home.
+lnghom1	AKA	I speak Akan most often at home.
+lnghom1	AKK	I speak Akkadian most often at home.
+lnghom1	ALB	I speak Albanian most often at home.
+lnghom1	ALE	I speak Aleut most often at home.
+lnghom1	ALG	I speak Algonquian languages most often at home.
+lnghom1	ALT	I speak Southern Altai most often at home.
+lnghom1	AMH	I speak Amharic most often at home.
+lnghom1	ANG	I speak English, Old (ca.450-1100) most often at home.
+lnghom1	ANP	I speak Angika most often at home.
+lnghom1	APA	I speak Apache languages most often at home.
+lnghom1	ARA	I speak Arabic most often at home.
+lnghom1	ARC	I speak Aramaic most often at home.
+lnghom1	ARG	I speak Aragonese most often at home.
+lnghom1	ARM	I speak Armenian most often at home.
+lnghom1	ARN	I speak Mapudungun, Mapuche most often at home.
+lnghom1	ARP	I speak Arapaho most often at home.
+lnghom1	ART	I speak Artificial (Other) most often at home.
+lnghom1	ARW	I speak Arawak most often at home.
+lnghom1	ASM	I speak Assamese most often at home.
+lnghom1	AST	I speak Asturian, Bable most often at home.
+lnghom1	ATH	I speak Athapascan languages most often at home.
+lnghom1	AUS	I speak Australian languages most often at home.
+lnghom1	AVA	I speak Avaric most often at home.
+lnghom1	AVE	I speak Avestan most often at home.
+lnghom1	AWA	I speak Awadhi most often at home.
+lnghom1	AYM	I speak Aymara most often at home.
+lnghom1	AZE	I speak Azerbaijani most often at home.
+lnghom1	BAD	I speak Banda most often at home.
+lnghom1	BAI	I speak Bamileke languages most often at home.
+lnghom1	BAK	I speak Bashkir most often at home.
+lnghom1	BAL	I speak Baluchi most often at home.
+lnghom1	BAM	I speak Bambara most often at home.
+lnghom1	BAN	I speak Balinese most often at home.
+lnghom1	BAQ	I speak Basque most often at home.
+lnghom1	BAS	I speak Basa most often at home.
+lnghom1	BAT	I speak Baltic (Other) most often at home.
+lnghom1	BEJ	I speak Beja most often at home.
+lnghom1	BEL	I speak Belarusian most often at home.
+lnghom1	BEM	I speak Bemba most often at home.
+lnghom1	BEN	I speak Bengali most often at home.
+lnghom1	BER	I speak Berber (Other) most often at home.
+lnghom1	BHO	I speak Bhojpuri most often at home.
+lnghom1	BIH	I speak Bihari most often at home.
+lnghom1	BIK	I speak Bikol most often at home.
+lnghom1	BIN	I speak Bini most often at home.
+lnghom1	BIS	I speak Bislama most often at home.
+lnghom1	BLA	I speak Siksika most often at home.
+lnghom1	BNT	I speak Bantu (Other) most often at home.
+lnghom1	BOS	I speak Bosnian most often at home.
+lnghom1	BRA	I speak Braj most often at home.
+lnghom1	BRE	I speak Breton most often at home.
+lnghom1	BTK	I speak Batak (Indonesia) most often at home.
+lnghom1	BUA	I speak Buriat most often at home.
+lnghom1	BUG	I speak Buginese most often at home.
+lnghom1	BUL	I speak Bulgarian most often at home.
+lnghom1	BUR	I speak Burmese most often at home.
+lnghom1	BYN	I speak Blin, Bilin most often at home.
+lnghom1	CAD	I speak Caddo most often at home.
+lnghom1	CAI	I speak Central American Indian (Other) most often at home.
+lnghom1	CAR	I speak Galibi Carib most often at home.
+lnghom1	CAT	I speak Catalan most often at home.
+lnghom1	CAU	I speak Caucasian (Other) most often at home.
+lnghom1	CEB	I speak Cebuano most often at home.
+lnghom1	CEL	I speak Celtic (Other) most often at home.
+lnghom1	CHA	I speak Chamorro most often at home.
+lnghom1	CHB	I speak Chibcha most often at home.
+lnghom1	CHE	I speak Chechen most often at home.
+lnghom1	CHG	I speak Chagatai most often at home.
+lnghom1	CHI	I speak Chinese most often at home.
+lnghom1	CHK	I speak Chuukese most often at home.
+lnghom1	CHM	I speak Mari most often at home.
+lnghom1	CHN	I speak Chinook jargon most often at home.
+lnghom1	CHO	I speak Choctaw most often at home.
+lnghom1	CHP	I speak Chipewyan most often at home.
+lnghom1	CHR	I speak Cherokee most often at home.
+lnghom1	CHU	I speak Old/Church Slavic, Slavonic, Bulgarian most often at home.
+lnghom1	CHV	I speak Chuvash most often at home.
+lnghom1	CHY	I speak Cheyenne most often at home.
+lnghom1	CMC	I speak Chamic languages most often at home.
+lnghom1	CNR	I speak Montenegrin most often at home.
+lnghom1	COP	I speak Coptic most often at home.
+lnghom1	COR	I speak Cornish most often at home.
+lnghom1	COS	I speak Corsican most often at home.
+lnghom1	CPE	I speak Creoles and pidgins, English-based (Other) most often at home.
+lnghom1	CPF	I speak Creoles and pidgins, French-based (Other) most often at home.
+lnghom1	CPP	I speak Creoles and pidgins, Portuguese-based (Other) most often at home.
+lnghom1	CRE	I speak Cree most often at home.
+lnghom1	CRH	I speak Crimean Tatar, Crimean Turkish most often at home.
+lnghom1	CRP	I speak Creoles and pidgins(Other) most often at home.
+lnghom1	CSB	I speak Kashubian most often at home.
+lnghom1	CUS	I speak Cushitic (Other) most often at home.
+lnghom1	CZE	I speak Czech most often at home.
+lnghom1	DAK	I speak Dakota most often at home.
+lnghom1	DAN	I speak Danish most often at home.
+lnghom1	DAR	I speak Dargwa most often at home.
+lnghom1	DAY	I speak Dayak most often at home.
+lnghom1	DEL	I speak Delaware most often at home.
+lnghom1	DEN	I speak Slave (Athapascan) most often at home.
+lnghom1	DGR	I speak Dogrib most often at home.
+lnghom1	DIN	I speak Dinka most often at home.
+lnghom1	DIV	I speak Divehi most often at home.
+lnghom1	DOI	I speak Dogri most often at home.
+lnghom1	DRA	I speak Dravidian (Other) most often at home.
+lnghom1	DSB	I speak Lower Sorbian most often at home.
+lnghom1	DUA	I speak Duala most often at home.
+lnghom1	DUM	I speak Dutch, Middle (ca. 1050-1350) most often at home.
+lnghom1	DUT	I speak Dutch most often at home.
+lnghom1	DYU	I speak Dyula most often at home.
+lnghom1	DZO	I speak Dzongkha most often at home.
+lnghom1	EFI	I speak Efik most often at home.
+lnghom1	EGY	I speak Egyptian (Ancient) most often at home.
+lnghom1	EKA	I speak Ekajuk most often at home.
+lnghom1	ELX	I speak Elamite most often at home.
+lnghom1	ENG	I speak English most often at home.
+lnghom1	ENM	I speak English, Middle (1100-1500) most often at home.
+lnghom1	EPO	I speak Esperanto most often at home.
+lnghom1	EST	I speak Estonian most often at home.
+lnghom1	EWE	I speak Ewe most often at home.
+lnghom1	EWO	I speak Ewondo most often at home.
+lnghom1	FAN	I speak Fang most often at home.
+lnghom1	FAO	I speak Faroese most often at home.
+lnghom1	FAT	I speak Fanti most often at home.
+lnghom1	FIJ	I speak Fijian most often at home.
+lnghom1	FIL	I speak Filipino, Pilipino most often at home.
+lnghom1	FIN	I speak Finnish most often at home.
+lnghom1	FIU	I speak Finno-Ugrian (Other) most often at home.
+lnghom1	FON	I speak Fon most often at home.
+lnghom1	FRE	I speak French most often at home.
+lnghom1	FRM	I speak French, Middle (ca.1400-1600) most often at home.
+lnghom1	FRO	I speak French, Old (842-ca.1400) most often at home.
+lnghom1	FRR	I speak Northern Frisian most often at home.
+lnghom1	FRS	I speak Eastern Frisian most often at home.
+lnghom1	FRY	I speak Western Frisian most often at home.
+lnghom1	FUL	I speak Fulah most often at home.
+lnghom1	FUR	I speak Friulian most often at home.
+lnghom1	GAA	I speak Ga most often at home.
+lnghom1	GAY	I speak Gayo most often at home.
+lnghom1	GBA	I speak Gbaya most often at home.
+lnghom1	GEM	I speak Germanic (Other) most often at home.
+lnghom1	GEO	I speak Georgian most often at home.
+lnghom1	GER	I speak German most often at home.
+lnghom1	GEZ	I speak Geez most often at home.
+lnghom1	GIL	I speak Gilbertese most often at home.
+lnghom1	GLA	I speak Gaelic Scottish most often at home.
+lnghom1	GLE	I speak Irish most often at home.
+lnghom1	GLG	I speak Gallegan most often at home.
+lnghom1	GLV	I speak Manx most often at home.
+lnghom1	GMH	I speak German, Middle High (ca.1050-1500) most often at home.
+lnghom1	GOH	I speak German, Old High (ca.750-1050) most often at home.
+lnghom1	GON	I speak Gondi most often at home.
+lnghom1	GOR	I speak Gorontalo most often at home.
+lnghom1	GOT	I speak Gothic most often at home.
+lnghom1	GRB	I speak Grebo most often at home.
+lnghom1	GRC	I speak Greek, Ancient (to 1453) most often at home.
+lnghom1	GRE	I speak Greek, Modern (1453-) most often at home.
+lnghom1	GRN	I speak Guarani most often at home.
+lnghom1	GSW	I speak Swiss German, Alemannic, Alsatian most often at home.
+lnghom1	GUJ	I speak Gujarati most often at home.
+lnghom1	GWI	I speak Gwich'in most often at home.
+lnghom1	HAI	I speak Haida most often at home.
+lnghom1	HAT	I speak Haitian, Haitian Creole most often at home.
+lnghom1	HAU	I speak Hausa most often at home.
+lnghom1	HAW	I speak Hawaiian most often at home.
+lnghom1	HEB	I speak Hebrew most often at home.
+lnghom1	HER	I speak Herero most often at home.
+lnghom1	HIL	I speak Hiligaynon most often at home.
+lnghom1	HIM	I speak Himachali languages, Western Pahari languages most often at home.
+lnghom1	HIN	I speak Hindi most often at home.
+lnghom1	HIT	I speak Hittite most often at home.
+lnghom1	HMN	I speak Hmong, Mong most often at home.
+lnghom1	HMO	I speak Hiri Motu most often at home.
+lnghom1	HRV	I speak Croatian most often at home.
+lnghom1	HSB	I speak Upper Sorbian most often at home.
+lnghom1	HUN	I speak Hungarian most often at home.
+lnghom1	HUP	I speak Hupa most often at home.
+lnghom1	IBA	I speak Iban most often at home.
+lnghom1	IBO	I speak Igbo most often at home.
+lnghom1	ICE	I speak Icelandic most often at home.
+lnghom1	IDO	I speak Ido most often at home.
+lnghom1	III	I speak Sichuan Yi, Nuosu most often at home.
+lnghom1	IJO	I speak Ijo most often at home.
+lnghom1	IKU	I speak Inuktitut most often at home.
+lnghom1	ILE	I speak Interlingue most often at home.
+lnghom1	ILO	I speak Iloko most often at home.
+lnghom1	INA	I speak Interlingua (International Auxiliary Language Association) most often at home.
+lnghom1	INC	I speak Indic (Other) most often at home.
+lnghom1	IND	I speak Indonesian most often at home.
+lnghom1	INE	I speak Indo-European (Other) most often at home.
+lnghom1	INH	I speak Ingush most often at home.
+lnghom1	IPK	I speak Inupiaq most often at home.
+lnghom1	IRA	I speak Iranian (Other) most often at home.
+lnghom1	IRO	I speak Iroquoian languages most often at home.
+lnghom1	ITA	I speak Italian most often at home.
+lnghom1	JAV	I speak Javanese most often at home.
+lnghom1	JBO	I speak Lojban most often at home.
+lnghom1	JPN	I speak Japanese most often at home.
+lnghom1	JPR	I speak Judeo-Persian most often at home.
+lnghom1	JRB	I speak Judeo-Arabic most often at home.
+lnghom1	KAA	I speak Kara-Kalpak most often at home.
+lnghom1	KAB	I speak Kabyle most often at home.
+lnghom1	KAC	I speak Kachin most often at home.
+lnghom1	KAL	I speak Kalaallisut most often at home.
+lnghom1	KAM	I speak Kamba most often at home.
+lnghom1	KAN	I speak Kannada most often at home.
+lnghom1	KAR	I speak Karen most often at home.
+lnghom1	KAS	I speak Kashmiri most often at home.
+lnghom1	KAU	I speak Kanuri most often at home.
+lnghom1	KAW	I speak Kawi most often at home.
+lnghom1	KAZ	I speak Kazakh most often at home.
+lnghom1	KBD	I speak Kabardian most often at home.
+lnghom1	KHA	I speak Khasi most often at home.
+lnghom1	KHI	I speak Khoisan (Other) most often at home.
+lnghom1	KHM	I speak Central Khmer most often at home.
+lnghom1	KHO	I speak Khotanese most often at home.
+lnghom1	KIK	I speak Kikuyu most often at home.
+lnghom1	KIN	I speak Kinyarwanda most often at home.
+lnghom1	KIR	I speak Kirghiz most often at home.
+lnghom1	KMB	I speak Kimbundu most often at home.
+lnghom1	KOK	I speak Konkani most often at home.
+lnghom1	KOM	I speak Komi most often at home.
+lnghom1	KON	I speak Kongo most often at home.
+lnghom1	KOR	I speak Korean most often at home.
+lnghom1	KOS	I speak Kosraean most often at home.
+lnghom1	KPE	I speak Kpelle most often at home.
+lnghom1	KRC	I speak Karachay-Balkar most often at home.
+lnghom1	KRL	I speak Karelian most often at home.
+lnghom1	KRO	I speak Kru most often at home.
+lnghom1	KRU	I speak Kurukh most often at home.
+lnghom1	KUA	I speak Kuanyama most often at home.
+lnghom1	KUM	I speak Kumyk most often at home.
+lnghom1	KUR	I speak Kurdish most often at home.
+lnghom1	KUT	I speak Kutenai most often at home.
+lnghom1	LAD	I speak Ladino most often at home.
+lnghom1	LAH	I speak Lahnda most often at home.
+lnghom1	LAM	I speak Lamba most often at home.
+lnghom1	LAO	I speak Lao most often at home.
+lnghom1	LAT	I speak Latin most often at home.
+lnghom1	LAV	I speak Latvian most often at home.
+lnghom1	LEZ	I speak Lezghian most often at home.
+lnghom1	LIM	I speak Limburgan, Limburger, Limburgish most often at home.
+lnghom1	LIN	I speak Lingala most often at home.
+lnghom1	LIT	I speak Lithuanian most often at home.
+lnghom1	LOL	I speak Mongo most often at home.
+lnghom1	LOZ	I speak Lozi most often at home.
+lnghom1	LTZ	I speak Luxembourgish, Letzeburgesch most often at home.
+lnghom1	LUA	I speak Luba-Lulua most often at home.
+lnghom1	LUB	I speak Luba-Katanga most often at home.
+lnghom1	LUG	I speak Ganda most often at home.
+lnghom1	LUI	I speak Luiseno most often at home.
+lnghom1	LUN	I speak Lunda most often at home.
+lnghom1	LUO	I speak Luo (Kenya and Tanzania) most often at home.
+lnghom1	LUS	I speak Lushai most often at home.
+lnghom1	MAC	I speak Macedonian most often at home.
+lnghom1	MAD	I speak Madurese most often at home.
+lnghom1	MAG	I speak Magahi most often at home.
+lnghom1	MAH	I speak Marshallese most often at home.
+lnghom1	MAI	I speak Maithili most often at home.
+lnghom1	MAK	I speak Makasar most often at home.
+lnghom1	MAL	I speak Malayalam most often at home.
+lnghom1	MAN	I speak Mandingo most often at home.
+lnghom1	MAO	I speak Maori most often at home.
+lnghom1	MAP	I speak Austronesian (Other) most often at home.
+lnghom1	MAR	I speak Marathi most often at home.
+lnghom1	MAS	I speak Masai most often at home.
+lnghom1	MAY	I speak Malay most often at home.
+lnghom1	MDF	I speak Moksha most often at home.
+lnghom1	MDR	I speak Mandar most often at home.
+lnghom1	MEN	I speak Mende most often at home.
+lnghom1	MGA	I speak Irish, Middle (900-1200) most often at home.
+lnghom1	MIC	I speak Micmac, Mi'kmaq most often at home.
+lnghom1	MIN	I speak Minangkabau most often at home.
+lnghom1	MIS	I speak Uncoded languages most often at home.
+lnghom1	MKH	I speak Mon-Khmer (Other) most often at home.
+lnghom1	MLG	I speak Malagasy most often at home.
+lnghom1	MLT	I speak Maltese most often at home.
+lnghom1	MNC	I speak Manchu most often at home.
+lnghom1	MNI	I speak Manipuri most often at home.
+lnghom1	MNO	I speak Manobo languages most often at home.
+lnghom1	MOH	I speak Mohawk most often at home.
+lnghom1	MON	I speak Mongolian most often at home.
+lnghom1	MOS	I speak Mossi most often at home.
+lnghom1	MUL	I speak Multiple languages most often at home.
+lnghom1	MUN	I speak Munda languages most often at home.
+lnghom1	MUS	I speak Creek most often at home.
+lnghom1	MWL	I speak Mirandese most often at home.
+lnghom1	MWR	I speak Marwari most often at home.
+lnghom1	MYN	I speak Mayan languages most often at home.
+lnghom1	MYV	I speak Erzya most often at home.
+lnghom1	NAH	I speak Nahuatl most often at home.
+lnghom1	NAI	I speak North American Indian (Other) most often at home.
+lnghom1	NAP	I speak Neapolitan most often at home.
+lnghom1	NAU	I speak Nauru most often at home.
+lnghom1	NAV	I speak Navaho most often at home.
+lnghom1	NBL	I speak Ndebele, South most often at home.
+lnghom1	NDE	I speak Ndebele, North most often at home.
+lnghom1	NDO	I speak Ndonga most often at home.
+lnghom1	NDS	I speak Low German, Saxon most often at home.
+lnghom1	NEP	I speak Nepali most often at home.
+lnghom1	NEW	I speak Newari most often at home.
+lnghom1	NIA	I speak Nias most often at home.
+lnghom1	NIC	I speak Niger-Kordofanian (Other) most often at home.
+lnghom1	NIU	I speak Niuean most often at home.
+lnghom1	NNO	I speak Norwegian Nynorsk most often at home.
+lnghom1	NOB	I speak Norwegian Bokmål most often at home.
+lnghom1	NOG	I speak Nogai most often at home.
+lnghom1	NON	I speak Norse, Old most often at home.
+lnghom1	NOR	I speak Norwegian most often at home.
+lnghom1	NQO	I speak N'Ko most often at home.
+lnghom1	NSO	I speak Nothern Sotho, Pedi, Sepedi most often at home.
+lnghom1	NUB	I speak Nubian languages most often at home.
+lnghom1	NWC	I speak Classical Newari, Old Newari, Classical Nepal Bhasa most often at home.
+lnghom1	NYA	I speak Chewa, Chichewa, Nyanja most often at home.
+lnghom1	NYM	I speak Nyamwezi most often at home.
+lnghom1	NYN	I speak Nyankole most often at home.
+lnghom1	NYO	I speak Nyoro most often at home.
+lnghom1	NZI	I speak Nzima most often at home.
+lnghom1	OCI	I speak Occitan (post 1500) most often at home.
+lnghom1	OJI	I speak Ojibwa most often at home.
+lnghom1	ORI	I speak Oriya most often at home.
+lnghom1	ORM	I speak Oromo most often at home.
+lnghom1	OSA	I speak Osage most often at home.
+lnghom1	OSS	I speak Ossetian most often at home.
+lnghom1	OTA	I speak Turkish, Ottoman (1500-1928) most often at home.
+lnghom1	OTO	I speak Otomian languages most often at home.
+lnghom1	PAA	I speak Papuan (Other) most often at home.
+lnghom1	PAG	I speak Pangasinan most often at home.
+lnghom1	PAL	I speak Pahlavi most often at home.
+lnghom1	PAM	I speak Pampanga most often at home.
+lnghom1	PAN	I speak Panjabi most often at home.
+lnghom1	PAP	I speak Papiamento most often at home.
+lnghom1	PAU	I speak Palauan most often at home.
+lnghom1	PEO	I speak Persian, Old (ca.600-400) most often at home.
+lnghom1	PER	I speak Persian most often at home.
+lnghom1	PHI	I speak Philippine (Other) most often at home.
+lnghom1	PHN	I speak Phoenician most often at home.
+lnghom1	PLI	I speak Pali most often at home.
+lnghom1	POL	I speak Polish most often at home.
+lnghom1	PON	I speak Pohnpeian most often at home.
+lnghom1	POR	I speak Portuguese most often at home.
+lnghom1	PRA	I speak Prakrit languages most often at home.
+lnghom1	PRO	I speak Provençal, Old (to 1500) most often at home.
+lnghom1	PUS	I speak Pushto most often at home.
+lnghom1	QAA	I speak Local language, Italy most often at home.
+lnghom1	QPL	I speak Local language, Poland most often at home.
+lnghom1	QUE	I speak Quechua most often at home.
+lnghom1	RAJ	I speak Rajasthani most often at home.
+lnghom1	RAP	I speak Rapanui most often at home.
+lnghom1	RAR	I speak Rarotongan most often at home.
+lnghom1	ROA	I speak Romance (Other) most often at home.
+lnghom1	ROH	I speak Romansh most often at home.
+lnghom1	ROM	I speak Romany most often at home.
+lnghom1	RUM	I speak Romanian most often at home.
+lnghom1	RUN	I speak Rundi most often at home.
+lnghom1	RUP	I speak Aromanian, Arumanian, Macedo-Romanian most often at home.
+lnghom1	RUS	I speak Russian most often at home.
+lnghom1	SAD	I speak Sandawe most often at home.
+lnghom1	SAG	I speak Sango most often at home.
+lnghom1	SAH	I speak Yakut most often at home.
+lnghom1	SAI	I speak South American Indian (Other) most often at home.
+lnghom1	SAL	I speak Salishan languages most often at home.
+lnghom1	SAM	I speak Samaritan Aramaic most often at home.
+lnghom1	SAN	I speak Sanskrit most often at home.
+lnghom1	SAS	I speak Sasak most often at home.
+lnghom1	SAT	I speak Santali most often at home.
+lnghom1	SCN	I speak Sicilian most often at home.
+lnghom1	SCO	I speak Scots most often at home.
+lnghom1	SEL	I speak Selkup most often at home.
+lnghom1	SEM	I speak Semitic (Other) most often at home.
+lnghom1	SGA	I speak Irish, Old (to 900) most often at home.
+lnghom1	SGN	I speak Sign languages most often at home.
+lnghom1	SHN	I speak Shan most often at home.
+lnghom1	SID	I speak Sidamo most often at home.
+lnghom1	SIN	I speak Sinhalese, Sinhala most often at home.
+lnghom1	SIO	I speak Siouan languages most often at home.
+lnghom1	SIT	I speak Sino-Tibetan (Other) most often at home.
+lnghom1	SLA	I speak Slavic (Other) most often at home.
+lnghom1	SLO	I speak Slovak most often at home.
+lnghom1	SLV	I speak Slovenian most often at home.
+lnghom1	SMA	I speak Southern Sami most often at home.
+lnghom1	SME	I speak Northern Sami most often at home.
+lnghom1	SMI	I speak Sami languages (Other) most often at home.
+lnghom1	SMJ	I speak Lule Sami most often at home.
+lnghom1	SMN	I speak Inari Sami most often at home.
+lnghom1	SMO	I speak Samoan most often at home.
+lnghom1	SMS	I speak Skolt Sami most often at home.
+lnghom1	SNA	I speak Shona most often at home.
+lnghom1	SND	I speak Sindhi most often at home.
+lnghom1	SNK	I speak Soninke most often at home.
+lnghom1	SOG	I speak Sogdian most often at home.
+lnghom1	SOM	I speak Somali most often at home.
+lnghom1	SON	I speak Songhai most often at home.
+lnghom1	SOT	I speak Sotho, Southern most often at home.
+lnghom1	SPA	I speak Spanish, Castilian most often at home.
+lnghom1	SRD	I speak Sardinian most often at home.
+lnghom1	SRN	I speak Sranan Tongo most often at home.
+lnghom1	SRP	I speak Serbian most often at home.
+lnghom1	SRR	I speak Serer most often at home.
+lnghom1	SSA	I speak Nilo-Saharan (Other) most often at home.
+lnghom1	SSW	I speak Swati most often at home.
+lnghom1	SUK	I speak Sukuma most often at home.
+lnghom1	SUN	I speak Sundanese most often at home.
+lnghom1	SUS	I speak Susu most often at home.
+lnghom1	SUX	I speak Sumerian most often at home.
+lnghom1	SWA	I speak Swahili most often at home.
+lnghom1	SWE	I speak Swedish most often at home.
+lnghom1	SYC	I speak Classical Syriac most often at home.
+lnghom1	SYR	I speak Syriac most often at home.
+lnghom1	TAH	I speak Tahitian most often at home.
+lnghom1	TAI	I speak Tai (Other) most often at home.
+lnghom1	TAM	I speak Tamil most often at home.
+lnghom1	TAT	I speak Tatar most often at home.
+lnghom1	TEL	I speak Telugu most often at home.
+lnghom1	TEM	I speak Timne most often at home.
+lnghom1	TER	I speak Tereno most often at home.
+lnghom1	TET	I speak Tetum most often at home.
+lnghom1	TGK	I speak Tajik most often at home.
+lnghom1	TGL	I speak Tagalog most often at home.
+lnghom1	THA	I speak Thai most often at home.
+lnghom1	TIB	I speak Tibetan most often at home.
+lnghom1	TIG	I speak Tigre most often at home.
+lnghom1	TIR	I speak Tigrinya most often at home.
+lnghom1	TIV	I speak Tiv most often at home.
+lnghom1	TKL	I speak Tokelau most often at home.
+lnghom1	TLH	I speak Klingon, tlhIngan-Hol most often at home.
+lnghom1	TLI	I speak Tlingit most often at home.
+lnghom1	TMH	I speak Tamashek most often at home.
+lnghom1	TOG	I speak Tonga (Nyasa) most often at home.
+lnghom1	TON	I speak Tonga (Tonga Islands) most often at home.
+lnghom1	TPI	I speak Tok Pisin most often at home.
+lnghom1	TSI	I speak Tsimshian most often at home.
+lnghom1	TSN	I speak Tswana most often at home.
+lnghom1	TSO	I speak Tsonga most often at home.
+lnghom1	TUK	I speak Turkmen most often at home.
+lnghom1	TUM	I speak Tumbuka most often at home.
+lnghom1	TUP	I speak Tupi languages most often at home.
+lnghom1	TUR	I speak Turkish most often at home.
+lnghom1	TUT	I speak Altaic (Other) most often at home.
+lnghom1	TVL	I speak Tuvalu most often at home.
+lnghom1	TWI	I speak Twi most often at home.
+lnghom1	TYV	I speak Tuvinian most often at home.
+lnghom1	UDM	I speak Udmurt most often at home.
+lnghom1	UGA	I speak Ugaritic most often at home.
+lnghom1	UIG	I speak Uighur most often at home.
+lnghom1	UKR	I speak Ukrainian most often at home.
+lnghom1	UMB	I speak Umbundu most often at home.
+lnghom1	UND	I speak Undetermined most often at home.
+lnghom1	URD	I speak Urdu most often at home.
+lnghom1	UZB	I speak Uzbek most often at home.
+lnghom1	VAI	I speak Vai most often at home.
+lnghom1	VEN	I speak Venda most often at home.
+lnghom1	VIE	I speak Vietnamese most often at home.
+lnghom1	VOL	I speak Volapük most often at home.
+lnghom1	VOT	I speak Votic most often at home.
+lnghom1	WAK	I speak Wakashan languages most often at home.
+lnghom1	WAL	I speak Wolaitta, Wolaytta most often at home.
+lnghom1	WAR	I speak Waray most often at home.
+lnghom1	WAS	I speak Washo most often at home.
+lnghom1	WEL	I speak Welsh most often at home.
+lnghom1	WEN	I speak Sorbian languages most often at home.
+lnghom1	WLN	I speak Walloon most often at home.
+lnghom1	WOL	I speak Wolof most often at home.
+lnghom1	XAL	I speak Kalmyk, Oriat most often at home.
+lnghom1	XHO	I speak Xhosa most often at home.
+lnghom1	YAO	I speak Yao most often at home.
+lnghom1	YAP	I speak Yapese most often at home.
+lnghom1	YID	I speak Yiddish most often at home.
+lnghom1	YOR	I speak Yoruba most often at home.
+lnghom1	YPK	I speak Yupik languages most often at home.
+lnghom1	ZAP	I speak Zapotec most often at home.
+lnghom1	ZBL	I speak Blissymbols, Blissymbolics, Bliss most often at home.
+lnghom1	ZEN	I speak Zenaga most often at home.
+lnghom1	ZGH	I speak Standard Moroccan Tamazight most often at home.
+lnghom1	ZHA	I speak Zhuang, Chuang most often at home.
+lnghom1	ZND	I speak Zande most often at home.
+lnghom1	ZUL	I speak Zulu most often at home.
+lnghom1	ZUN	I speak Zuni most often at home.
+lnghom1	ZZA	I speak Zaza, Dimili, Dimli, Kirdki, Kirmanjki, Zazaki most often at home.
+brncntr	1	I was born in this country.
+brncntr	2	I was not born in this country.
+pplhlp	0	I think people mostly look out for themselves
+pplhlp	1	I think people mostly look out for themselves
+pplhlp	2	I believe people somewhat look out for themselves
+pplhlp	3	I believe people somewhat look out for themselves
+pplhlp	4	I don't think people try to be helpful or selfish
+pplhlp	5	I don't think people try to be helpful or selfish
+pplhlp	6	I don't think people try to be helpful or selfish
+pplhlp	7	I think people somewhat try to be helpful
+pplhlp	8	I think people somewhat try to be helpful
+pplhlp	9	I believe people mostly try to be helpful
+pplhlp	10	I believe people mostly try to be helpful
+pplfair	0	I strongly think people will take advantage of me.
+pplfair	1	I strongly think people will take advantage of me.
+pplfair	2	I somewhat think people will take advantage of me.
+pplfair	3	I somewhat think people will take advantage of me.
+pplfair	4	I expect neither fairness nor advantage from people.
+pplfair	5	I expect neither fairness nor advantage from people.
+pplfair	6	I expect neither fairness nor advantage from people.
+pplfair	7	I somewhat think people will be fair to me.
+pplfair	8	I somewhat think people will be fair to me.
+pplfair	9	I strongly think people will be fair to me.
+pplfair	10	I strongly think people will be fair to me.
 feethngr	1	I am the same race as most people here.
 feethngr	2	I am a different race than most people here.
-facntr	1	My father was born in this country.
-facntr	2	My father was not born here.
-mocntr	1	My mother was born in this country.
-mocntr	2	My mother was not born here.
-ccnthum	1	I think climate change is entirely natural.
-ccnthum	2	I think climate change is mainly natural.
-ccnthum	3	I think climate change is equally natural and human-caused.
-ccnthum	4	I think climate change is mainly human-caused.
-ccnthum	5	I think climate change is entirely human-caused.
-ccnthum	55	I don't think climate change is happening.
+icgndra	1	I am male.
+icgndra	2	I am female.
+icgndra	9	My gender is not available.
+medtrnp	0	I could afford the medical consultation or treatment.
+medtrnp	1	I couldn't afford the medical consultation or treatment.
+happy	0	I'm extremely unhappy.
+happy	1	I'm extremely unhappy.
+happy	2	I'm somewhat unhappy.
+happy	3	I'm somewhat unhappy.
+happy	4	I'm neither happy nor unhappy.
+happy	5	I'm neither happy nor unhappy.
+happy	6	I'm neither happy nor unhappy.
+happy	7	I'm somewhat happy.
+happy	8	I'm somewhat happy.
+happy	9	I'm extremely happy.
+happy	10	I'm extremely happy.
+trhltcm	0	I haven't used Chinese medicine
+trhltcm	1	I've used Chinese medicine
+trhltht	0	I haven't used herbal treatments
+trhltht	1	I've used herbal treatments
+trhltacp	0	I haven't used acupressure for my health.
+trhltacp	1	I have used acupressure for my health.
+rlgatnd	1	I attend religious services every day.
+rlgatnd	2	I attend religious services more than once a week.
+rlgatnd	3	I attend religious services once a week.
+rlgatnd	4	I attend religious services at least once a month.
+rlgatnd	5	I attend only on special holy days.
+rlgatnd	6	I attend religious services less often.
+rlgatnd	7	I never attend religious services.
+trhltos	0	I haven't used osteopathy for my health.
+trhltos	1	I have used osteopathy for my health.
+trhltho	0	I haven't used homeopathy for my health.
+trhltho	1	I have used homeopathy for my health.
+trhlthy	0	I haven't used hypnotherapy for my health.
+trhlthy	1	I've used hypnotherapy for my health.
 wrclmch	1	I'm not at all worried about climate change.
 wrclmch	2	I'm not very worried about climate change.
 wrclmch	3	I'm somewhat worried about climate change.
 wrclmch	4	I'm very worried about climate change.
 wrclmch	5	I'm extremely worried about climate change.
-ctrlife	0	I have no control over my life.
-ctrlife	1	I have no control over my life.
-ctrlife	2	I have little control over my life.
-ctrlife	3	I have little control over my life.
-ctrlife	4	I have some control over my life.
-ctrlife	5	I have some control over my life.
-ctrlife	6	I have some control over my life.
-ctrlife	7	I have mostly control over my life.
-ctrlife	8	I have mostly control over my life.
-ctrlife	9	I have complete control over my life.
-ctrlife	10	I have complete control over my life.
+trhltmt	0	I haven't used massage therapy recently.
+trhltmt	1	I've used massage therapy recently.
+trhltpt	0	I haven't used physiotherapy
+trhltpt	1	I have used physiotherapy
+trhltacu	0	I haven't used acupuncture
+trhltacu	1	I've used acupuncture for my health
+atcherp	0	I'm not emotionally attached to Europe
+atcherp	1	I'm not emotionally attached to Europe
+atcherp	2	I'm slightly attached to Europe
+atcherp	3	I'm slightly attached to Europe
+atcherp	4	I'm somewhat attached to Europe
+atcherp	5	I'm somewhat attached to Europe
+atcherp	6	I'm somewhat attached to Europe
+atcherp	7	I'm mostly attached to Europe
+atcherp	8	I'm mostly attached to Europe
+atcherp	9	I'm very emotionally attached to Europe
+atcherp	10	I'm very emotionally attached to Europe
+cgtsmok	1	I smoke daily, 10 or more cigarettes
+cgtsmok	2	I smoke daily, fewer than 10 cigarettes
+cgtsmok	3	I smoke, but not every day
+cgtsmok	4	I'm a former smoker
+cgtsmok	5	I've only smoked a few times
+cgtsmok	6	I've never smoked
 etfruit	1	I eat fruit three or more times daily.
 etfruit	2	I eat fruit twice a day.
 etfruit	3	I eat fruit once a day.
@@ -1419,56 +1361,10 @@ eatveg	4	I eat vegetables at least four times a week.
 eatveg	5	I eat vegetables at least once a week.
 eatveg	6	I eat vegetables less than once a week.
 eatveg	7	I never eat vegetables.
-cgtsmok	1	I smoke daily, 10 or more cigarettes
-cgtsmok	2	I smoke daily, fewer than 10 cigarettes
-cgtsmok	3	I smoke, but not every day
-cgtsmok	4	I'm a former smoker
-cgtsmok	5	I've only smoked a few times
-cgtsmok	6	I've never smoked
-alcfreq	1	I drink alcohol every day.
-alcfreq	2	I drink several times a week.
-alcfreq	3	I drink once a week.
-alcfreq	4	I drink 2-3 times a month.
-alcfreq	5	I drink once a month.
-alcfreq	6	I drink less than once a month.
-alcfreq	7	I never drink alcohol.
-icgndra	1	I am male.
-icgndra	2	I am female.
-icgndra	9	My gender is not available.
-dshltgp	0	I haven't discussed health with a GP
-dshltgp	1	I've discussed health with a GP
-dshltms	0	I didn't discuss health with a specialist.
-dshltms	1	I discussed health with a medical specialist.
-medtrnp	0	I could afford the medical consultation or treatment.
-medtrnp	1	I couldn't afford the medical consultation or treatment.
-medtrnt	0	Work schedule didn't prevent my medical consultation.
-medtrnt	1	I couldn't take time off work.
-medtroc	0	I got the medical consultation or treatment.
-medtroc	1	Other commitments stopped me.
-trhltacu	0	I haven't used acupuncture
-trhltacu	1	I've used acupuncture for my health
-trhltacp	0	I haven't used acupressure for my health.
-trhltacp	1	I have used acupressure for my health.
-trhltcm	0	I haven't used Chinese medicine
-trhltcm	1	I've used Chinese medicine
-trhltch	0	I haven't received chiropractic treatment
-trhltch	1	I received chiropractic treatment
-trhltos	0	I haven't used osteopathy for my health.
-trhltos	1	I have used osteopathy for my health.
-trhltho	0	I haven't used homeopathy for my health.
-trhltho	1	I have used homeopathy for my health.
-trhltht	0	I haven't used herbal treatments
-trhltht	1	I've used herbal treatments
-trhlthy	0	I haven't used hypnotherapy for my health.
-trhlthy	1	I've used hypnotherapy for my health.
-trhltmt	0	I haven't used massage therapy recently.
-trhltmt	1	I've used massage therapy recently.
-trhltpt	0	I haven't used physiotherapy
-trhltpt	1	I have used physiotherapy
-trhltre	0	I haven't used reflexology for my health.
-trhltre	1	I've used reflexology for my health.
-trhltsh	0	I haven't used spiritual healing
-trhltsh	1	I've used spiritual healing
+wrhpp	1	I felt happy none of the time.
+wrhpp	2	I felt happy some of the time.
+wrhpp	3	I felt happy most of the time.
+wrhpp	4	I felt happy all the time.
 fltdpr	1	I felt depressed none or almost none of the time.
 fltdpr	2	I felt depressed some of the time.
 fltdpr	3	I felt depressed most of the time.
@@ -1477,52 +1373,26 @@ flteeff	1	I rarely felt everything was an effort.
 flteeff	2	I sometimes felt everything was an effort.
 flteeff	3	I mostly felt everything was an effort.
 flteeff	4	I almost always felt everything was an effort.
-slprl	1	I slept restlessly none of the time
-slprl	2	I slept restlessly some of the time
-slprl	3	I slept restlessly most of the time
-slprl	4	I slept restlessly all of the time
-wrhpp	1	I felt happy none of the time.
-wrhpp	2	I felt happy some of the time.
-wrhpp	3	I felt happy most of the time.
-wrhpp	4	I felt happy all the time.
 fltlnl	1	I felt lonely none or almost none of the time.
 fltlnl	2	I felt lonely some of the time.
 fltlnl	3	I felt lonely most of the time.
 fltlnl	4	I felt lonely all or almost all the time.
-enjlf	1	I enjoyed life none of the time.
-enjlf	2	I enjoyed life some of the time.
-enjlf	3	I enjoyed life most of the time.
-enjlf	4	I enjoyed life all the time.
-fltsd	1	I felt sad none or almost none of the time.
-fltsd	2	I felt sad some of the time.
-fltsd	3	I felt sad most of the time.
-fltsd	4	I felt sad all or almost all the time.
-cldgng	1	I felt motivated almost all the time.
-cldgng	2	I felt stuck some of the time.
-cldgng	3	I felt stuck most of the time.
-cldgng	4	I felt stuck almost all the time.
-hltprhc	0	I had no heart problems.
-hltprhc	1	I had a heart problem.
-hltprhb	0	I haven't had high blood pressure
-hltprhb	1	I've had high blood pressure
-hltprbp	0	I had no breathing problems.
-hltprbp	1	I had breathing problems.
 hltpral	0	I had no allergies in the last 12 months.
 hltpral	1	I had allergies in the last 12 months.
-hltprbn	0	I've had no back or neck pain
-hltprbn	1	I've had back or neck pain
 hltprpa	0	I've had no hand or arm pain.
 hltprpa	1	I've had hand or arm pain.
-hltprpf	0	I had no foot or leg pain.
-hltprpf	1	I had muscle or joint pain.
+hltprbn	0	I've had no back or neck pain
+hltprbn	1	I've had back or neck pain
 hltprsd	0	I had no stomach issues
 hltprsd	1	I had stomach or digestion problems
 hltprsc	0	I've had no skin problems.
 hltprsc	1	I've had skin problems recently.
-hltprsh	0	I haven't had severe headaches in the last 12 months.
-hltprsh	1	I've had severe headaches in the last 12 months.
+hltprpf	0	I had no foot or leg pain.
+hltprpf	1	I had muscle or joint pain.
 hltprdi	0	I haven't had diabetes.
 hltprdi	1	I have had diabetes.
+hltprsh	0	I haven't had severe headaches in the last 12 months.
+hltprsh	1	I've had severe headaches in the last 12 months.
 hltphhc	0	I wasn't limited by heart issues.
 hltphhc	1	Heart issues limited my daily activities.
 hltphhb	0	High blood pressure didn't interfere with my daily activities.
@@ -1535,52 +1405,109 @@ hltphbn	0	Back or neck pain didn't hamper my daily activities.
 hltphbn	1	Back or neck pain hampered my daily activities.
 hltphpa	0	I've had no hand/arm pain issues.
 hltphpa	1	Hand/arm pain hampers my daily activities.
-hltphpf	0	I had no foot/leg pain interference
-hltphpf	1	Foot/leg pain interfered with my daily activities
-hltphsd	0	Stomach issues didn't affect my daily life.
-hltphsd	1	Stomach issues interfered with my daily activities.
+facntr	1	My father was born in this country.
+facntr	2	My father was not born here.
 hltphsc	0	My skin didn't interfere with daily activities.
 hltphsc	1	My skin interfered with daily activities.
-hltphsh	0	Headaches didn't interfere with my daily activities.
-hltphsh	1	Severe headaches interfered with my daily activities.
+hltphsd	0	Stomach issues didn't affect my daily life.
+hltphsd	1	Stomach issues interfered with my daily activities.
 hltphdi	0	Diabetes didn't interfere with my daily activities.
 hltphdi	1	Diabetes interfered with my daily activities.
+hltphsh	0	Headaches didn't interfere with my daily activities.
+hltphsh	1	Severe headaches interfered with my daily activities.
 hltprca	1	I currently have cancer.
 hltprca	2	I had cancer previously.
 hltprca	3	I have never had cancer.
+mocntr	1	My mother was born in this country.
+mocntr	2	My mother was not born here.
+hltphpf	0	I had no foot/leg pain interference
+hltphpf	1	Foot/leg pain interfered with my daily activities
+jbexpmc	0	I never carried heavy loads at work.
+jbexpmc	1	I carried heavy loads at work.
+jbexpti	0	I never worked in tiring positions.
+jbexpti	1	I worked in tiring positions.
+jbexpvi	0	I've never been exposed to vibrations from tools or machinery.
+jbexpvi	1	I've been exposed to vibrations from tools or machinery.
+jbexevl	0	I've never been exposed to loud noise at work.
+jbexevl	1	I've been exposed to loud noise at work.
+jbexpml	0	I've never had to lift people at work.
+jbexpml	1	I've had to manually lift people at work.
 cnfpplh	1	I always experienced conflict at home.
 cnfpplh	2	I often saw conflict at home.
 cnfpplh	3	I sometimes saw conflict at home.
 cnfpplh	4	I hardly ever saw conflict at home.
 cnfpplh	5	I never saw conflict at home.
+jbexevc	0	I've never worked in very cold temperatures.
+jbexevc	1	I've worked in very cold temperatures.
 fnsdfml	1	I always faced financial difficulties growing up.
 fnsdfml	2	I often struggled with financial hardship.
 fnsdfml	3	I sometimes faced financial difficulties.
 fnsdfml	4	I hardly ever faced financial hardship.
 fnsdfml	5	I never faced financial difficulties.
-jbexpvi	0	I've never been exposed to vibrations from tools or machinery.
-jbexpvi	1	I've been exposed to vibrations from tools or machinery.
-jbexpti	0	I never worked in tiring positions.
-jbexpti	1	I worked in tiring positions.
-jbexpml	0	I've never had to lift people at work.
-jbexpml	1	I've had to manually lift people at work.
-jbexpmc	0	I never carried heavy loads at work.
-jbexpmc	1	I carried heavy loads at work.
-jbexevl	0	I've never been exposed to loud noise at work.
-jbexevl	1	I've been exposed to loud noise at work.
-jbexevh	0	I've never been exposed to very hot temperatures at work.
-jbexevh	1	I've been exposed to very hot temperatures in a job.
-jbexevc	0	I've never worked in very cold temperatures.
-jbexevc	1	I've worked in very cold temperatures.
-jbexera	0	I was not exposed to radiation
-jbexera	1	I was exposed to radiation
 jbexecp	0	I've never been exposed to chemicals at work.
 jbexecp	1	I've been exposed to chemicals at work.
-jbexebs	0	I never breathed in smoke or fumes at work.
-jbexebs	1	I breathed in smoke or fumes at work.
+jbexevh	0	I've never been exposed to very hot temperatures at work.
+jbexevh	1	I've been exposed to very hot temperatures in a job.
+dshltms	0	I didn't discuss health with a specialist.
+dshltms	1	I discussed health with a medical specialist.
+dshltgp	0	I haven't discussed health with a GP
+dshltgp	1	I've discussed health with a GP
+imueclt	0	I think immigrants strongly undermine our culture.
+imueclt	1	I think immigrants strongly undermine our culture.
+imueclt	2	I think immigrants somewhat undermine our culture.
+imueclt	3	I think immigrants somewhat undermine our culture.
+imueclt	4	I think immigrants have no cultural impact.
+imueclt	5	I think immigrants have no cultural impact.
+imueclt	6	I think immigrants have no cultural impact.
+imueclt	7	I think immigrants somewhat enrich our culture.
+imueclt	8	I think immigrants somewhat enrich our culture.
+imueclt	9	I think immigrants strongly enrich our culture.
+imueclt	10	I think immigrants strongly enrich our culture.
+medtroc	0	I got the medical consultation or treatment.
+medtroc	1	Other commitments stopped me.
+medtrnt	0	Work schedule didn't prevent my medical consultation.
+medtrnt	1	I couldn't take time off work.
+euftf	0	I think unification has already gone too far.
+euftf	1	I think unification has already gone too far.
+euftf	2	I think unification has somewhat gone too far.
+euftf	3	I think unification has somewhat gone too far.
+euftf	4	Unification is about right as it is.
+euftf	5	Unification is about right as it is.
+euftf	6	Unification is about right as it is.
+euftf	7	I think unification should go somewhat further.
+euftf	8	I think unification should go somewhat further.
+euftf	9	I think unification should go further.
+euftf	10	I think unification should go further.
+hltprbp	0	I had no breathing problems.
+hltprbp	1	I had breathing problems.
+trhltsh	0	I haven't used spiritual healing
+trhltsh	1	I've used spiritual healing
+hltprhc	0	I had no heart problems.
+hltprhc	1	I had a heart problem.
+trhltch	0	I haven't received chiropractic treatment
+trhltch	1	I received chiropractic treatment
+hltprhb	0	I haven't had high blood pressure
+hltprhb	1	I've had high blood pressure
+jbexera	0	I was not exposed to radiation
+jbexera	1	I was exposed to radiation
+imwbcnt	0	I think immigrants make it much worse here.
+imwbcnt	1	I think immigrants make it much worse here.
+imwbcnt	2	I think immigrants make it somewhat worse here.
+imwbcnt	3	I think immigrants make it somewhat worse here.
+imwbcnt	4	I think immigrants don't change it much.
+imwbcnt	5	I think immigrants don't change it much.
+imwbcnt	6	I think immigrants don't change it much.
+imwbcnt	7	I think immigrants make it somewhat better here.
+imwbcnt	8	I think immigrants make it somewhat better here.
+imwbcnt	9	I think immigrants make it much better here.
+imwbcnt	10	I think immigrants make it much better here.
+trhltre	0	I haven't used reflexology for my health.
+trhltre	1	I've used reflexology for my health.
 nobingnd	1	I am a man
 nobingnd	2	I am a woman
 nobingnd	3	I identify as other
+jbexebs	0	I never breathed in smoke or fumes at work.
+jbexebs	1	I breathed in smoke or fumes at work.
 likrisk	0	I don't like taking risks at all.
 likrisk	1	I take risks a little.
 likrisk	2	I take risks a little.
@@ -1588,6 +1515,17 @@ likrisk	3	I'm somewhat of a risk-taker.
 likrisk	4	I mostly take risks.
 likrisk	5	I mostly take risks.
 likrisk	6	I always take risks completely.
+imbgeco	0	I think immigration is very bad for the economy.
+imbgeco	1	I think immigration is very bad for the economy.
+imbgeco	2	I think immigration is somewhat bad for the economy.
+imbgeco	3	I think immigration is somewhat bad for the economy.
+imbgeco	4	I think immigration is neither bad nor good for the economy.
+imbgeco	5	I think immigration is neither bad nor good for the economy.
+imbgeco	6	I think immigration is neither bad nor good for the economy.
+imbgeco	7	I think immigration is somewhat good for the economy.
+imbgeco	8	I think immigration is somewhat good for the economy.
+imbgeco	9	I think immigration is very good for the economy.
+imbgeco	10	I think immigration is very good for the economy.
 liklead	0	I don't like to lead at all.
 liklead	1	I like to lead a little.
 liklead	2	I like to lead a little.
@@ -1595,6 +1533,60 @@ liklead	3	I like to lead somewhat.
 liklead	4	I mostly like to lead.
 liklead	5	I mostly like to lead.
 liklead	6	I completely like to lead.
+rlgdgr	0	I am not religious at all.
+rlgdgr	1	I am not religious at all.
+rlgdgr	2	I am slightly religious.
+rlgdgr	3	I am slightly religious.
+rlgdgr	4	I am somewhat religious.
+rlgdgr	5	I am somewhat religious.
+rlgdgr	6	I am somewhat religious.
+rlgdgr	7	I am mostly religious.
+rlgdgr	8	I am mostly religious.
+rlgdgr	9	I am very religious.
+rlgdgr	10	I am very religious.
+enjlf	1	I enjoyed life none of the time.
+enjlf	2	I enjoyed life some of the time.
+enjlf	3	I enjoyed life most of the time.
+enjlf	4	I enjoyed life all the time.
+cldgng	1	I felt motivated almost all the time.
+cldgng	2	I felt stuck some of the time.
+cldgng	3	I felt stuck most of the time.
+cldgng	4	I felt stuck almost all the time.
+slprl	1	I slept restlessly none of the time
+slprl	2	I slept restlessly some of the time
+slprl	3	I slept restlessly most of the time
+slprl	4	I slept restlessly all of the time
+fltsd	1	I felt sad none or almost none of the time.
+fltsd	2	I felt sad some of the time.
+fltsd	3	I felt sad most of the time.
+fltsd	4	I felt sad all or almost all the time.
+atchctr	0	I'm not emotionally attached to this country.
+atchctr	1	I'm not emotionally attached to this country.
+atchctr	2	I'm slightly emotionally attached here.
+atchctr	3	I feel a slight emotional attachment.
+atchctr	4	I'm somewhat emotionally attached.
+atchctr	5	I have some emotional attachment.
+atchctr	6	I feel somewhat attached emotionally.
+atchctr	7	I'm mostly emotionally attached.
+atchctr	8	Mostly, I feel emotionally attached.
+atchctr	9	I'm very emotionally attached.
+atchctr	10	I feel very emotionally attached.
+ccnthum	1	I think climate change is entirely natural.
+ccnthum	2	I think climate change is mainly natural.
+ccnthum	3	I think climate change is equally natural and human-caused.
+ccnthum	4	I think climate change is mainly human-caused.
+ccnthum	5	I think climate change is entirely human-caused.
+ccnthum	55	I don't think climate change is happening.
+trwkcnt	1	I think women are treated less fairly than men
+trwkcnt	2	I think men are treated less fairly than women
+trwkcnt	3	I think women and men are treated equally
+trmdcnt	1	I think women are treated less fairly than men.
+trmdcnt	2	I think men are treated less fairly than women.
+trmdcnt	3	I think women and men are treated equally.
+trplcnt	1	I think police treat women less fairly than men.
+trplcnt	2	I think police favor women over men.
+trplcnt	3	I think police treat women and men equally.
+agea	999	My age is not available.
 sothnds	0	I'm not sensitive to others' needs
 sothnds	1	I'm a little sensitive to others
 sothnds	2	I'm slightly sensitive to others
@@ -1602,6 +1594,19 @@ sothnds	3	I'm somewhat sensitive to others
 sothnds	4	I'm mostly sensitive to others
 sothnds	5	I'm mostly sensitive to others' needs
 sothnds	6	I'm completely sensitive to others
+gndr	1	I am male.
+gndr	2	I am female.
+alcfreq	1	I drink alcohol every day.
+alcfreq	2	I drink several times a week.
+alcfreq	3	I drink once a week.
+alcfreq	4	I drink 2-3 times a month.
+alcfreq	5	I drink once a month.
+alcfreq	6	I drink less than once a month.
+alcfreq	7	I never drink alcohol.
+trmedmw	1	I was treated unfairly by a doctor once.
+trmedmw	2	I've been treated unfairly by doctors multiple times.
+trmedmw	3	I've never been treated unfairly by a doctor.
+trmedmw	4	I've never visited a doctor.
 actcomp	0	I never act compassionately towards others
 actcomp	1	I act compassionately towards others a little
 actcomp	2	I act compassionately towards others a little
@@ -1609,6 +1614,12 @@ actcomp	3	I act somewhat compassionately towards others
 actcomp	4	I act mostly compassionately towards others
 actcomp	5	I act mostly compassionately towards others
 actcomp	6	I act completely compassionately towards others
+gndr2	1	The second person in my household is male.
+gndr2	2	The second person in my household is female.
+trplcmw	1	I was treated unfairly by police once due to my gender.
+trplcmw	2	I've been treated unfairly by police multiple times due to my gender.
+trplcmw	3	I've never been treated unfairly by police due to my gender.
+trplcmw	4	I've never had contact with the police.
 mascfel	0	I don't feel masculine at all.
 mascfel	1	I feel slightly masculine.
 mascfel	2	I feel slightly masculine.
@@ -1616,13 +1627,6 @@ mascfel	3	I feel somewhat masculine.
 mascfel	4	I feel somewhat masculine.
 mascfel	5	I feel mostly masculine.
 mascfel	6	I feel very masculine.
-femifel	0	I don't feel feminine at all.
-femifel	1	I don't feel feminine at all.
-femifel	2	I feel slightly feminine.
-femifel	3	I feel slightly feminine.
-femifel	4	I feel somewhat feminine.
-femifel	5	I feel mostly feminine.
-femifel	6	I feel very feminine.
 impbemw	0	My gender is not important to me.
 impbemw	1	My gender is slightly important.
 impbemw	2	My gender is slightly important.
@@ -1630,70 +1634,58 @@ impbemw	3	My gender is somewhat important.
 impbemw	4	My gender is somewhat important.
 impbemw	5	My gender is very important.
 impbemw	6	My gender is extremely important.
-trmedmw	1	I was treated unfairly by a doctor once.
-trmedmw	2	I've been treated unfairly by doctors multiple times.
-trmedmw	3	I've never been treated unfairly by a doctor.
-trmedmw	4	I've never visited a doctor.
 trwrkmw	1	I was treated unfairly at work once due to my gender.
 trwrkmw	2	I've been treated unfairly at work multiple times due to my gender.
 trwrkmw	3	I've never been treated unfairly at work due to my gender.
 trwrkmw	4	I've never had a job or applied for one.
-trplcmw	1	I was treated unfairly by police once due to my gender.
-trplcmw	2	I've been treated unfairly by police multiple times due to my gender.
-trplcmw	3	I've never been treated unfairly by police due to my gender.
-trplcmw	4	I've never had contact with the police.
-trmdcnt	1	I think women are treated less fairly than men.
-trmdcnt	2	I think men are treated less fairly than women.
-trmdcnt	3	I think women and men are treated equally.
-trwkcnt	1	I think women are treated less fairly than men
-trwkcnt	2	I think men are treated less fairly than women
-trwkcnt	3	I think women and men are treated equally
-trplcnt	1	I think police treat women less fairly than men.
-trplcnt	2	I think police favor women over men.
-trplcnt	3	I think police treat women and men equally.
-eqwrkbg	0	I think it's very bad for family life
-eqwrkbg	1	I think it's somewhat bad for family life
-eqwrkbg	2	I think it's somewhat bad for family life
-eqwrkbg	3	I think it's neither bad nor good
-eqwrkbg	4	I think it's somewhat good for family
-eqwrkbg	5	I think it's somewhat good for family
-eqwrkbg	6	I think it's very good for family life
-eqpolbg	0	I think equal representation would be very bad for politics.
-eqpolbg	1	I think equal representation would be somewhat bad for politics.
-eqpolbg	2	I think equal representation would be somewhat bad for politics.
-eqpolbg	3	I think equal representation would be neutral for politics.
-eqpolbg	4	I think equal representation would be somewhat good for politics.
-eqpolbg	5	I think equal representation would be somewhat good for politics.
-eqpolbg	6	I think equal representation would be very good for politics.
-eqmgmbg	0	I think equality in senior management would be very bad for businesses.
-eqmgmbg	1	I think equality in senior management would be somewhat bad for businesses.
-eqmgmbg	2	I think equality in senior management would be somewhat bad for businesses.
-eqmgmbg	3	I think equality in senior management would be neutral for businesses.
-eqmgmbg	4	I think equality in senior management would be somewhat good for businesses.
-eqmgmbg	5	I think equality in senior management would be somewhat good for businesses.
-eqmgmbg	6	I think equality in senior management would be very good for businesses.
-eqpaybg	0	I think equal pay would be very bad for the economy.
-eqpaybg	1	I think equal pay would be somewhat bad for the economy.
-eqpaybg	2	I think equal pay would be somewhat bad for the economy.
-eqpaybg	3	I think equal pay would be neutral for the economy.
-eqpaybg	4	I think equal pay would be somewhat good for the economy.
-eqpaybg	5	I think equal pay would be somewhat good for the economy.
-eqpaybg	6	I think equal pay would be very good for the economy.
+femifel	0	I don't feel feminine at all.
+femifel	1	I don't feel feminine at all.
+femifel	2	I feel slightly feminine.
+femifel	3	I feel slightly feminine.
+femifel	4	I feel somewhat feminine.
+femifel	5	I feel mostly feminine.
+femifel	6	I feel very feminine.
 eqparep	1	I strongly support equal seats for men and women.
 eqparep	2	I somewhat support equal seats for men and women.
 eqparep	3	I'm neutral on equal seats for men and women.
 eqparep	4	I somewhat oppose equal seats for men and women.
 eqparep	5	I strongly oppose equal seats for men and women.
+lvgptnea	1	I've lived with a partner without being married.
+lvgptnea	2	I've never lived with a partner unmarried.
+chldhhe	1	I have had children living with me.
+chldhhe	2	I haven't had children living with me.
+weasoff	1	I think women never get easily offended.
+weasoff	2	I think women rarely get easily offended.
+weasoff	3	I think women sometimes get easily offended.
+weasoff	4	I think women often get easily offended.
+weasoff	5	I think women always get easily offended.
+pacclift	0	I have an indoor flushing toilet
+pacclift	1	I lack an indoor flushing toilet
+dvrcdeva	1	I have been divorced or had a civil union dissolved.
+dvrcdeva	2	I have never been divorced.
 eqparlv	1	I strongly support equal paid leave for both parents.
 eqparlv	2	I somewhat favour equal paid leave for parents.
 eqparlv	3	I'm neutral on equal paid leave for parents.
 eqparlv	4	I'm somewhat opposed to equal paid leave.
 eqparlv	5	I strongly oppose mandatory equal paid leave.
+paccnbsh	0	I have a bath or shower
+paccnbsh	1	I have no bath or shower
 freinsw	1	I strongly support firing employees for sexist comments.
 freinsw	2	I somewhat support firing employees for sexist comments.
 freinsw	3	I'm neutral on firing employees for sexist comments.
 freinsw	4	I somewhat oppose firing employees for sexist comments.
 freinsw	5	I strongly oppose firing employees for sexist comments.
+paccdwlr	0	I have no damp walls or leaking roof.
+paccdwlr	1	I have damp walls or a leaking roof.
+paccmoro	0	I had no mould or rot in my accommodation.
+paccmoro	1	I had mould or rot in my accommodation.
+paccocrw	0	I haven't experienced overcrowding
+paccocrw	1	I have experienced overcrowding
+wlespdm	1	I never see women paid less than men.
+wlespdm	2	I rarely see women paid less than men.
+wlespdm	3	I sometimes see women paid less than men.
+wlespdm	4	I often see women paid less than men.
+wlespdm	5	I always see women paid less than men.
 fineqpy	1	I strongly favour fining businesses for unequal pay.
 fineqpy	2	I somewhat favour fining businesses for unequal pay.
 fineqpy	3	I'm neutral on fining businesses for unequal pay.
@@ -1704,276 +1696,74 @@ wsekpwr	2	I rarely think women seek power by controlling men.
 wsekpwr	3	I think women sometimes seek power by controlling men.
 wsekpwr	4	I think women often seek power by controlling men.
 wsekpwr	5	I think women always seek power by controlling men.
-weasoff	1	I think women never get easily offended.
-weasoff	2	I think women rarely get easily offended.
-weasoff	3	I think women sometimes get easily offended.
-weasoff	4	I think women often get easily offended.
-weasoff	5	I think women always get easily offended.
-wlespdm	1	I never see women paid less than men.
-wlespdm	2	I rarely see women paid less than men.
-wlespdm	3	I sometimes see women paid less than men.
-wlespdm	4	I often see women paid less than men.
-wlespdm	5	I always see women paid less than men.
-wexashr	1	I never think women exaggerate harassment claims.
-wexashr	2	I rarely think women exaggerate harassment claims.
-wexashr	3	I think women sometimes exaggerate harassment claims.
-wexashr	4	I think women often exaggerate harassment claims.
-wexashr	5	I think women always exaggerate harassment claims.
+paccnois	0	I had no noise problems
+paccnois	1	I had noise problems
 wprtbym	1	I strongly believe men should protect women.
 wprtbym	2	I believe men should protect women.
 wprtbym	3	I'm neutral on men protecting women.
 wprtbym	4	I don't think men should protect women.
 wprtbym	5	I strongly disagree men should protect women.
+paccinro	0	I have no insect or rodent problems
+paccinro	1	I have insect or rodent problems
 wbrgwrm	1	I strongly believe women have a better moral sense.
 wbrgwrm	2	I believe women have a better moral sense.
 wbrgwrm	3	I'm neutral on women's moral sense.
 wbrgwrm	4	I don't think women have a better moral sense.
 wbrgwrm	5	I strongly disagree women have a better moral sense.
-gndr	1	I am male.
-gndr	2	I am female.
-gndr2	1	The second person in my household is male.
-gndr2	2	The second person in my household is female.
-agea	999	My age is not available.
-agegroup	1	I'm between 15 and 24 years old.
-agegroup	2	I'm between 25 and 34 years old.
-agegroup	3	I'm between 35 and 44 years old.
-agegroup	4	I'm between 45 and 54 years old.
-agegroup	5	I'm between 55 and 64 years old.
-agegroup	6	I'm between 65 and 74 years old.
-agegroup	7	I'm 75 years old or more.
-agegroup	99	My age is not available.
-rshipa2	1	I am married or in a partnership.
-rshipa2	2	I have a child living with me.
-rshipa2	3	I live with a parent or parent-in-law.
-rshipa2	4	I have a sibling living with me.
-rshipa2	5	I live with another relative.
-rshipa2	6	I live with a non-relative.
-lvgptnea	1	I've lived with a partner without being married.
-lvgptnea	2	I've never lived with a partner unmarried.
-dvrcdeva	1	I have been divorced or had a civil union dissolved.
-dvrcdeva	2	I have never been divorced.
-maritalb	1	I am legally married.
-maritalb	2	I am in a civil union.
-maritalb	3	I am legally separated.
-maritalb	4	I am legally divorced.
-maritalb	5	I am widowed.
-maritalb	6	I have never been married.
-chldhhe	1	I have had children living with me.
-chldhhe	2	I haven't had children living with me.
+rtrd	0	I was not retired
+rtrd	1	I was retired
+paccxhoc	0	I had no issues with temperature
+paccxhoc	1	My accommodation was extremely hot or cold
+pdwrk	0	I did no paid work
+pdwrk	1	I did paid work
+uempli	0	I was not unemployed
+uempli	1	I was unemployed but not actively looking
+wexashr	1	I never think women exaggerate harassment claims.
+wexashr	2	I rarely think women exaggerate harassment claims.
+wexashr	3	I think women sometimes exaggerate harassment claims.
+wexashr	4	I think women often exaggerate harassment claims.
+wexashr	5	I think women always exaggerate harassment claims.
+uempla	0	I was not looking for a job.
+uempla	1	I was actively looking for a job.
+dsbld	0	I have not been sick or disabled.
+dsbld	1	I am permanently sick or disabled.
+eqwrkbg	0	I think it's very bad for family life
+eqwrkbg	1	I think it's somewhat bad for family life
+eqwrkbg	2	I think it's somewhat bad for family life
+eqwrkbg	3	I think it's neither bad nor good
+eqwrkbg	4	I think it's somewhat good for family
+eqwrkbg	5	I think it's somewhat good for family
+eqwrkbg	6	I think it's very good for family life
+ctrlife	0	I have no control over my life.
+ctrlife	1	I have no control over my life.
+ctrlife	2	I have little control over my life.
+ctrlife	3	I have little control over my life.
+ctrlife	4	I have some control over my life.
+ctrlife	5	I have some control over my life.
+ctrlife	6	I have some control over my life.
+ctrlife	7	I have mostly control over my life.
+ctrlife	8	I have mostly control over my life.
+ctrlife	9	I have complete control over my life.
+ctrlife	10	I have complete control over my life.
+cmsrv	0	I did no service activities
+cmsrv	1	I did community or military service
+wkhct	555	I do not have set contracted hours.
+edctn	0	I didn't attend unpaid education or training.
+edctn	1	I attended unpaid education or training.
 domicil	1	I live in a big city.
 domicil	2	I live in the suburbs.
 domicil	3	I live in a small city.
 domicil	4	I live in a country village.
 domicil	5	I live on a farm or countryside.
-paccmoro	0	I had no mould or rot in my accommodation.
-paccmoro	1	I had mould or rot in my accommodation.
-paccdwlr	0	I have no damp walls or leaking roof.
-paccdwlr	1	I have damp walls or a leaking roof.
-pacclift	0	I have an indoor flushing toilet
-pacclift	1	I lack an indoor flushing toilet
-paccnbsh	0	I have a bath or shower
-paccnbsh	1	I have no bath or shower
-paccocrw	0	I haven't experienced overcrowding
-paccocrw	1	I have experienced overcrowding
-paccxhoc	0	I had no issues with temperature
-paccxhoc	1	My accommodation was extremely hot or cold
-paccnois	0	I had no noise problems
-paccnois	1	I had noise problems
-paccinro	0	I have no insect or rodent problems
-paccinro	1	I have insect or rodent problems
-edulvlb	0	I haven't completed primary education.
-edulvlb	113	I completed primary education.
-edulvlb	129	I have vocational training below ISCED 3.
-edulvlb	212	I finished pre-vocational secondary education.
-edulvlb	213	I completed general secondary education.
-edulvlb	221	I have vocational training at ISCED 2 level.
-edulvlb	222	I finished vocational secondary education.
-edulvlb	223	I completed vocational secondary education.
-edulvlb	229	I have short vocational training at ISCED 3 level.
-edulvlb	311	I completed general secondary education.
-edulvlb	312	I finished upper secondary education.
-edulvlb	313	I completed general upper secondary education.
-edulvlb	321	I have long vocational training at ISCED 3 level.
-edulvlb	322	I finished vocational upper secondary education.
-edulvlb	323	I completed vocational upper secondary education.
-edulvlb	412	I have post-secondary education.
-edulvlb	413	I completed post-secondary education.
-edulvlb	421	I finished non-tertiary post-secondary education.
-edulvlb	422	I have vocational post-secondary education.
-edulvlb	423	I completed advanced vocational education.
-edulvlb	510	I have short tertiary education.
-edulvlb	520	I completed advanced vocational qualifications.
-edulvlb	610	I have a lower-tier bachelor's degree.
-edulvlb	620	I have a bachelor's degree.
-edulvlb	710	I have a lower-tier master's degree.
-edulvlb	720	I have a master's degree.
-edulvlb	800	I have a doctoral degree.
-edulvlb	5555	My education level is other.
-eisced	0	My education doesn't fit standard categories.
-eisced	1	I have less than lower secondary education.
-eisced	2	I completed lower secondary education.
-eisced	3	I have lower-tier upper secondary education.
-eisced	4	I completed upper-tier upper secondary education.
-eisced	5	I have advanced vocational training, no degree.
-eisced	6	I hold a Bachelor's degree or equivalent.
-eisced	7	I have a Master's degree or higher.
-eisced	55	My education is other.
-pdwrk	0	I did no paid work
-pdwrk	1	I did paid work
-edctn	0	I didn't attend unpaid education or training.
-edctn	1	I attended unpaid education or training.
-uempla	0	I was not looking for a job.
-uempla	1	I was actively looking for a job.
-uempli	0	I was not unemployed
-uempli	1	I was unemployed but not actively looking
-dsbld	0	I have not been sick or disabled.
-dsbld	1	I am permanently sick or disabled.
-rtrd	0	I was not retired
-rtrd	1	I was retired
-cmsrv	0	I did no service activities
-cmsrv	1	I did community or military service
 hswrk	0	I haven't done housework or cared for others.
 hswrk	1	I've done housework or cared for others.
-mnactic	1	I worked for pay.
-mnactic	2	I was in education.
-mnactic	3	I'm unemployed and job hunting.
-mnactic	4	I'm unemployed, not seeking work.
-mnactic	5	I'm permanently sick or disabled.
-mnactic	6	I'm retired.
-mnactic	7	I did community or military service.
-mnactic	8	I did housework or cared for others.
-mnactic	9	I did something else.
-emplrel	1	I work as an employee.
-emplrel	2	I am self-employed.
-emplrel	3	I work for my family's business.
-wrkctra	1	I have a work contract of unlimited duration.
-wrkctra	2	I have a limited duration work contract.
-wrkctra	3	I do not have a work contract.
-estsz	1	I work with fewer than 10 people.
-estsz	2	I work with 10 to 24 people.
-estsz	3	I work with 25 to 99 people.
-estsz	4	I work with 100 to 499 people.
-estsz	5	I work with 500 or more people.
-jbspv	1	I supervise the work of other employees.
-jbspv	2	I do not supervise other employees.
-wkdcorga	0	I have no influence on my daily work
-wkdcorga	1	I have no influence on my daily work
-wkdcorga	2	I have little influence on my work
-wkdcorga	3	I have little influence on my work
-wkdcorga	4	I have some influence on my work
-wkdcorga	5	I have some influence on my work
-wkdcorga	6	I have some influence on my work
-wkdcorga	7	I have high influence on my work
-wkdcorga	8	I have high influence on my work
-wkdcorga	9	I have complete control over my work
-wkdcorga	10	I have complete control over my work
-iorgact	0	I have no influence on policy decisions.
-iorgact	1	I have no influence on policy decisions.
-iorgact	2	I have little influence on policy decisions.
-iorgact	3	I have little influence on policy decisions.
-iorgact	4	I have some influence on policy decisions.
-iorgact	5	I have some influence on policy decisions.
-iorgact	6	I have some influence on policy decisions.
-iorgact	7	I have high influence on policy decisions.
-iorgact	8	I have high influence on policy decisions.
-iorgact	9	I have complete control over policy decisions.
-iorgact	10	I have complete control over policy decisions.
-wkhct	555	I do not have set contracted hours.
-wkhtot	0-168	I work this many hours per week in my main job.
-nacer2	1	I work or have worked for a firm or organisation that mainly makes or does Crop and animal production, hunting and related service activities.
-nacer2	2	I work or have worked for a firm or organisation that mainly makes or does Forestry and logging.
-nacer2	3	I work or have worked for a firm or organisation that mainly makes or does Fishing and aquaculture.
-nacer2	5	I work or have worked for a firm or organisation that mainly makes or does Mining of coal and lignite.
-nacer2	6	I work or have worked for a firm or organisation that mainly makes or does Extraction of crude petroleum and natural gas.
-nacer2	7	I work or have worked for a firm or organisation that mainly makes or does Mining of metal ores.
-nacer2	8	I work or have worked for a firm or organisation that mainly makes or does Other mining and quarrying.
-nacer2	9	I work or have worked for a firm or organisation that mainly makes or does Mining support service activities.
-nacer2	10	I work or have worked for a firm or organisation that mainly makes or does Manufacture of food products.
-nacer2	11	I work or have worked for a firm or organisation that mainly makes or does Manufacture of beverages.
-nacer2	12	I work or have worked for a firm or organisation that mainly makes or does Manufacture of tobacco products.
-nacer2	13	I work or have worked for a firm or organisation that mainly makes or does Manufacture of textiles.
-nacer2	14	I work or have worked for a firm or organisation that mainly makes or does Manufacture of wearing apparel.
-nacer2	15	I work or have worked for a firm or organisation that mainly makes or does Manufacture of leather and related products.
-nacer2	16	I work or have worked for a firm or organisation that mainly makes or does Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting ma.
-nacer2	17	I work or have worked for a firm or organisation that mainly makes or does Manufacture of paper and paper products.
-nacer2	18	I work or have worked for a firm or organisation that mainly makes or does Printing and reproduction of recorded media.
-nacer2	19	I work or have worked for a firm or organisation that mainly makes or does Manufacture of coke and refined petroleum products.
-nacer2	20	I work or have worked for a firm or organisation that mainly makes or does Manufacture of chemicals and chemical products.
-nacer2	21	I work or have worked for a firm or organisation that mainly makes or does Manufacture of basic pharmaceutical products and pharmaceutical preparations.
-nacer2	22	I work or have worked for a firm or organisation that mainly makes or does Manufacture of rubber and plastic products.
-nacer2	23	I work or have worked for a firm or organisation that mainly makes or does Manufacture of other non-metallic mineral products.
-nacer2	24	I work or have worked for a firm or organisation that mainly makes or does Manufacture of basic metals.
-nacer2	25	I work or have worked for a firm or organisation that mainly makes or does Manufacture of fabricated metal products, except machinery and equipment.
-nacer2	26	I work or have worked for a firm or organisation that mainly makes or does Manufacture of computer, electronic and optical products.
-nacer2	27	I work or have worked for a firm or organisation that mainly makes or does Manufacture of electrical equipment.
-nacer2	28	I work or have worked for a firm or organisation that mainly makes or does Manufacture of machinery and equipment n.e.c..
-nacer2	29	I work or have worked for a firm or organisation that mainly makes or does Manufacture of motor vehicles, trailers and semi-trailers.
-nacer2	30	I work or have worked for a firm or organisation that mainly makes or does Manufacture of other transport equipment.
-nacer2	31	I work or have worked for a firm or organisation that mainly makes or does Manufacture of furniture.
-nacer2	32	I work or have worked for a firm or organisation that mainly makes or does Other manufacturing.
-nacer2	33	I work or have worked for a firm or organisation that mainly makes or does Repair and installation of machinery and equipment.
-nacer2	35	I work or have worked for a firm or organisation that mainly makes or does Electricity, gas, steam and air conditioning supply.
-nacer2	36	I work or have worked for a firm or organisation that mainly makes or does Water collection, treatment and supply.
-nacer2	37	I work or have worked for a firm or organisation that mainly makes or does Sewerage.
-nacer2	38	I work or have worked for a firm or organisation that mainly makes or does Waste collection, treatment and disposal activities; materials recovery.
-nacer2	39	I work or have worked for a firm or organisation that mainly makes or does Remediation activities and other waste management services.
-nacer2	41	I work or have worked for a firm or organisation that mainly makes or does Construction of buildings.
-nacer2	42	I work or have worked for a firm or organisation that mainly makes or does Civil engineering.
-nacer2	43	I work or have worked for a firm or organisation that mainly makes or does Specialised construction activities.
-nacer2	45	I work or have worked for a firm or organisation that mainly makes or does Wholesale and retail trade and repair of motor vehicles and motorcycles.
-nacer2	46	I work or have worked for a firm or organisation that mainly makes or does Wholesale trade, except of motor vehicles and motorcycles.
-nacer2	47	I work or have worked for a firm or organisation that mainly makes or does Retail trade, except of motor vehicles and motorcycles.
-nacer2	49	I work or have worked for a firm or organisation that mainly makes or does Land transport and transport via pipelines.
-nacer2	50	I work or have worked for a firm or organisation that mainly makes or does Water transport.
-nacer2	51	I work or have worked for a firm or organisation that mainly makes or does Air transport.
-nacer2	52	I work or have worked for a firm or organisation that mainly makes or does Warehousing and support activities for transportation.
-nacer2	53	I work or have worked for a firm or organisation that mainly makes or does Postal and courier activities.
-nacer2	55	I work or have worked for a firm or organisation that mainly makes or does Accommodation.
-nacer2	56	I work or have worked for a firm or organisation that mainly makes or does Food and beverage service activities.
-nacer2	58	I work or have worked for a firm or organisation that mainly makes or does Publishing activities.
-nacer2	59	I work or have worked for a firm or organisation that mainly makes or does Motion picture, video and television programme production, sound recording and music publishing activities.
-nacer2	60	I work or have worked for a firm or organisation that mainly makes or does Programming and broadcasting activities.
-nacer2	61	I work or have worked for a firm or organisation that mainly makes or does Telecommunications.
-nacer2	62	I work or have worked for a firm or organisation that mainly makes or does Computer programming, consultancy and related activities.
-nacer2	63	I work or have worked for a firm or organisation that mainly makes or does Information service activities.
-nacer2	64	I work or have worked for a firm or organisation that mainly makes or does Financial service activities, except insurance and pension funding.
-nacer2	65	I work or have worked for a firm or organisation that mainly makes or does Insurance, reinsurance and pension funding, except compulsory social security.
-nacer2	66	I work or have worked for a firm or organisation that mainly makes or does Activities auxiliary to financial services and insurance activities.
-nacer2	68	I work or have worked for a firm or organisation that mainly makes or does Real estate activities.
-nacer2	69	I work or have worked for a firm or organisation that mainly makes or does Legal and accounting activities.
-nacer2	70	I work or have worked for a firm or organisation that mainly makes or does Activities of head offices; management consultancy activities.
-nacer2	71	I work or have worked for a firm or organisation that mainly makes or does Architectural and engineering activities; technical testing and analysis.
-nacer2	72	I work or have worked for a firm or organisation that mainly makes or does Scientific research and development.
-nacer2	73	I work or have worked for a firm or organisation that mainly makes or does Advertising and market research.
-nacer2	74	I work or have worked for a firm or organisation that mainly makes or does Other professional, scientific and technical activities.
-nacer2	75	I work or have worked for a firm or organisation that mainly makes or does Veterinary activities.
-nacer2	77	I work or have worked for a firm or organisation that mainly makes or does Rental and leasing activities.
-nacer2	78	I work or have worked for a firm or organisation that mainly makes or does Employment activities.
-nacer2	79	I work or have worked for a firm or organisation that mainly makes or does Travel agency, tour operator and other reservation service and related activities.
-nacer2	80	I work or have worked for a firm or organisation that mainly makes or does Security and investigation activities.
-nacer2	81	I work or have worked for a firm or organisation that mainly makes or does Services to buildings and landscape activities.
-nacer2	82	I work or have worked for a firm or organisation that mainly makes or does Office administrative, office support and other business support activities.
-nacer2	84	I work or have worked for a firm or organisation that mainly makes or does Public administration and defence; compulsory social security.
-nacer2	85	I work or have worked for a firm or organisation that mainly makes or does Education.
-nacer2	86	I work or have worked for a firm or organisation that mainly makes or does Human health activities.
-nacer2	87	I work or have worked for a firm or organisation that mainly makes or does Residential care activities.
-nacer2	88	I work or have worked for a firm or organisation that mainly makes or does Social work activities without accommodation.
-nacer2	90	I work or have worked for a firm or organisation that mainly makes or does Creative, arts and entertainment activities.
-nacer2	91	I work or have worked for a firm or organisation that mainly makes or does Libraries, archives, museums and other cultural activities.
-nacer2	92	I work or have worked for a firm or organisation that mainly makes or does Gambling and betting activities.
-nacer2	93	I work or have worked for a firm or organisation that mainly makes or does Sports activities and amusement and recreation activities.
-nacer2	94	I work or have worked for a firm or organisation that mainly makes or does Activities of membership organisations.
-nacer2	95	I work or have worked for a firm or organisation that mainly makes or does Repair of computers and personal and household goods.
-nacer2	96	I work or have worked for a firm or organisation that mainly makes or does Other personal service activities.
-nacer2	97	I work or have worked for a firm or organisation that mainly makes or does Activities of households as employers of domestic personnel.
-nacer2	98	I work or have worked for a firm or organisation that mainly makes or does Undifferentiated goods- and services-producing activities of private households for own use.
-nacer2	99	I work or have worked for a firm or organisation that mainly makes or does Activities of extraterritorial organisations and bodies.
-tporgwk	1	I work for central or local government.
-tporgwk	2	I work in the public sector.
-tporgwk	3	I work for a state owned enterprise.
-tporgwk	4	I work for a private firm.
-tporgwk	5	I am self employed.
-tporgwk	6	I work for another type of organization.
+eqpolbg	0	I think equal representation would be very bad for politics.
+eqpolbg	1	I think equal representation would be somewhat bad for politics.
+eqpolbg	2	I think equal representation would be somewhat bad for politics.
+eqpolbg	3	I think equal representation would be neutral for politics.
+eqpolbg	4	I think equal representation would be somewhat good for politics.
+eqpolbg	5	I think equal representation would be somewhat good for politics.
+eqpolbg	6	I think equal representation would be very good for politics.
 isco08	0	My main job title is Armed forces occupations.
 isco08	100	My main job title is Commissioned armed forces officers.
 isco08	110	My main job title is Commissioned armed forces officers.
@@ -2564,140 +2354,148 @@ isco08	9622	My main job title is Odd job persons.
 isco08	9623	My main job title is Meter readers and vending-machine collectors.
 isco08	9624	My main job title is Water and firewood collectors.
 isco08	9629	My main job title is Elementary workers not elsewhere classified.
-wrkac6m	1	I've worked abroad for six months or more.
-wrkac6m	2	I haven't worked abroad for six months or more.
+jbspv	1	I supervise the work of other employees.
+jbspv	2	I do not supervise other employees.
+maritalb	1	I am legally married.
+maritalb	2	I am in a civil union.
+maritalb	3	I am legally separated.
+maritalb	4	I am legally divorced.
+maritalb	5	I am widowed.
+maritalb	6	I have never been married.
+wkhtot	0-168	I work this many hours per week in my main job.
+uemplap	0	My partner was not unemployed
+uemplap	1	My partner was unemployed and looking
+nacer2	1	I work or have worked for a firm or organisation that mainly makes or does Crop and animal production, hunting and related service activities.
+nacer2	2	I work or have worked for a firm or organisation that mainly makes or does Forestry and logging.
+nacer2	3	I work or have worked for a firm or organisation that mainly makes or does Fishing and aquaculture.
+nacer2	5	I work or have worked for a firm or organisation that mainly makes or does Mining of coal and lignite.
+nacer2	6	I work or have worked for a firm or organisation that mainly makes or does Extraction of crude petroleum and natural gas.
+nacer2	7	I work or have worked for a firm or organisation that mainly makes or does Mining of metal ores.
+nacer2	8	I work or have worked for a firm or organisation that mainly makes or does Other mining and quarrying.
+nacer2	9	I work or have worked for a firm or organisation that mainly makes or does Mining support service activities.
+nacer2	10	I work or have worked for a firm or organisation that mainly makes or does Manufacture of food products.
+nacer2	11	I work or have worked for a firm or organisation that mainly makes or does Manufacture of beverages.
+nacer2	12	I work or have worked for a firm or organisation that mainly makes or does Manufacture of tobacco products.
+nacer2	13	I work or have worked for a firm or organisation that mainly makes or does Manufacture of textiles.
+nacer2	14	I work or have worked for a firm or organisation that mainly makes or does Manufacture of wearing apparel.
+nacer2	15	I work or have worked for a firm or organisation that mainly makes or does Manufacture of leather and related products.
+nacer2	16	I work or have worked for a firm or organisation that mainly makes or does Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting ma.
+nacer2	17	I work or have worked for a firm or organisation that mainly makes or does Manufacture of paper and paper products.
+nacer2	18	I work or have worked for a firm or organisation that mainly makes or does Printing and reproduction of recorded media.
+nacer2	19	I work or have worked for a firm or organisation that mainly makes or does Manufacture of coke and refined petroleum products.
+nacer2	20	I work or have worked for a firm or organisation that mainly makes or does Manufacture of chemicals and chemical products.
+nacer2	21	I work or have worked for a firm or organisation that mainly makes or does Manufacture of basic pharmaceutical products and pharmaceutical preparations.
+nacer2	22	I work or have worked for a firm or organisation that mainly makes or does Manufacture of rubber and plastic products.
+nacer2	23	I work or have worked for a firm or organisation that mainly makes or does Manufacture of other non-metallic mineral products.
+nacer2	24	I work or have worked for a firm or organisation that mainly makes or does Manufacture of basic metals.
+nacer2	25	I work or have worked for a firm or organisation that mainly makes or does Manufacture of fabricated metal products, except machinery and equipment.
+nacer2	26	I work or have worked for a firm or organisation that mainly makes or does Manufacture of computer, electronic and optical products.
+nacer2	27	I work or have worked for a firm or organisation that mainly makes or does Manufacture of electrical equipment.
+nacer2	28	I work or have worked for a firm or organisation that mainly makes or does Manufacture of machinery and equipment n.e.c..
+nacer2	29	I work or have worked for a firm or organisation that mainly makes or does Manufacture of motor vehicles, trailers and semi-trailers.
+nacer2	30	I work or have worked for a firm or organisation that mainly makes or does Manufacture of other transport equipment.
+nacer2	31	I work or have worked for a firm or organisation that mainly makes or does Manufacture of furniture.
+nacer2	32	I work or have worked for a firm or organisation that mainly makes or does Other manufacturing.
+nacer2	33	I work or have worked for a firm or organisation that mainly makes or does Repair and installation of machinery and equipment.
+nacer2	35	I work or have worked for a firm or organisation that mainly makes or does Electricity, gas, steam and air conditioning supply.
+nacer2	36	I work or have worked for a firm or organisation that mainly makes or does Water collection, treatment and supply.
+nacer2	37	I work or have worked for a firm or organisation that mainly makes or does Sewerage.
+nacer2	38	I work or have worked for a firm or organisation that mainly makes or does Waste collection, treatment and disposal activities; materials recovery.
+nacer2	39	I work or have worked for a firm or organisation that mainly makes or does Remediation activities and other waste management services.
+nacer2	41	I work or have worked for a firm or organisation that mainly makes or does Construction of buildings.
+nacer2	42	I work or have worked for a firm or organisation that mainly makes or does Civil engineering.
+nacer2	43	I work or have worked for a firm or organisation that mainly makes or does Specialised construction activities.
+nacer2	45	I work or have worked for a firm or organisation that mainly makes or does Wholesale and retail trade and repair of motor vehicles and motorcycles.
+nacer2	46	I work or have worked for a firm or organisation that mainly makes or does Wholesale trade, except of motor vehicles and motorcycles.
+nacer2	47	I work or have worked for a firm or organisation that mainly makes or does Retail trade, except of motor vehicles and motorcycles.
+nacer2	49	I work or have worked for a firm or organisation that mainly makes or does Land transport and transport via pipelines.
+nacer2	50	I work or have worked for a firm or organisation that mainly makes or does Water transport.
+nacer2	51	I work or have worked for a firm or organisation that mainly makes or does Air transport.
+nacer2	52	I work or have worked for a firm or organisation that mainly makes or does Warehousing and support activities for transportation.
+nacer2	53	I work or have worked for a firm or organisation that mainly makes or does Postal and courier activities.
+nacer2	55	I work or have worked for a firm or organisation that mainly makes or does Accommodation.
+nacer2	56	I work or have worked for a firm or organisation that mainly makes or does Food and beverage service activities.
+nacer2	58	I work or have worked for a firm or organisation that mainly makes or does Publishing activities.
+nacer2	59	I work or have worked for a firm or organisation that mainly makes or does Motion picture, video and television programme production, sound recording and music publishing activities.
+nacer2	60	I work or have worked for a firm or organisation that mainly makes or does Programming and broadcasting activities.
+nacer2	61	I work or have worked for a firm or organisation that mainly makes or does Telecommunications.
+nacer2	62	I work or have worked for a firm or organisation that mainly makes or does Computer programming, consultancy and related activities.
+nacer2	63	I work or have worked for a firm or organisation that mainly makes or does Information service activities.
+nacer2	64	I work or have worked for a firm or organisation that mainly makes or does Financial service activities, except insurance and pension funding.
+nacer2	65	I work or have worked for a firm or organisation that mainly makes or does Insurance, reinsurance and pension funding, except compulsory social security.
+nacer2	66	I work or have worked for a firm or organisation that mainly makes or does Activities auxiliary to financial services and insurance activities.
+nacer2	68	I work or have worked for a firm or organisation that mainly makes or does Real estate activities.
+nacer2	69	I work or have worked for a firm or organisation that mainly makes or does Legal and accounting activities.
+nacer2	70	I work or have worked for a firm or organisation that mainly makes or does Activities of head offices; management consultancy activities.
+nacer2	71	I work or have worked for a firm or organisation that mainly makes or does Architectural and engineering activities; technical testing and analysis.
+nacer2	72	I work or have worked for a firm or organisation that mainly makes or does Scientific research and development.
+nacer2	73	I work or have worked for a firm or organisation that mainly makes or does Advertising and market research.
+nacer2	74	I work or have worked for a firm or organisation that mainly makes or does Other professional, scientific and technical activities.
+nacer2	75	I work or have worked for a firm or organisation that mainly makes or does Veterinary activities.
+nacer2	77	I work or have worked for a firm or organisation that mainly makes or does Rental and leasing activities.
+nacer2	78	I work or have worked for a firm or organisation that mainly makes or does Employment activities.
+nacer2	79	I work or have worked for a firm or organisation that mainly makes or does Travel agency, tour operator and other reservation service and related activities.
+nacer2	80	I work or have worked for a firm or organisation that mainly makes or does Security and investigation activities.
+nacer2	81	I work or have worked for a firm or organisation that mainly makes or does Services to buildings and landscape activities.
+nacer2	82	I work or have worked for a firm or organisation that mainly makes or does Office administrative, office support and other business support activities.
+nacer2	84	I work or have worked for a firm or organisation that mainly makes or does Public administration and defence; compulsory social security.
+nacer2	85	I work or have worked for a firm or organisation that mainly makes or does Education.
+nacer2	86	I work or have worked for a firm or organisation that mainly makes or does Human health activities.
+nacer2	87	I work or have worked for a firm or organisation that mainly makes or does Residential care activities.
+nacer2	88	I work or have worked for a firm or organisation that mainly makes or does Social work activities without accommodation.
+nacer2	90	I work or have worked for a firm or organisation that mainly makes or does Creative, arts and entertainment activities.
+nacer2	91	I work or have worked for a firm or organisation that mainly makes or does Libraries, archives, museums and other cultural activities.
+nacer2	92	I work or have worked for a firm or organisation that mainly makes or does Gambling and betting activities.
+nacer2	93	I work or have worked for a firm or organisation that mainly makes or does Sports activities and amusement and recreation activities.
+nacer2	94	I work or have worked for a firm or organisation that mainly makes or does Activities of membership organisations.
+nacer2	95	I work or have worked for a firm or organisation that mainly makes or does Repair of computers and personal and household goods.
+nacer2	96	I work or have worked for a firm or organisation that mainly makes or does Other personal service activities.
+nacer2	97	I work or have worked for a firm or organisation that mainly makes or does Activities of households as employers of domestic personnel.
+nacer2	98	I work or have worked for a firm or organisation that mainly makes or does Undifferentiated goods- and services-producing activities of private households for own use.
+nacer2	99	I work or have worked for a firm or organisation that mainly makes or does Activities of extraterritorial organisations and bodies.
+wrkctra	1	I have a work contract of unlimited duration.
+wrkctra	2	I have a limited duration work contract.
+wrkctra	3	I do not have a work contract.
+eqpaybg	0	I think equal pay would be very bad for the economy.
+eqpaybg	1	I think equal pay would be somewhat bad for the economy.
+eqpaybg	2	I think equal pay would be somewhat bad for the economy.
+eqpaybg	3	I think equal pay would be neutral for the economy.
+eqpaybg	4	I think equal pay would be somewhat good for the economy.
+eqpaybg	5	I think equal pay would be somewhat good for the economy.
+eqpaybg	6	I think equal pay would be very good for the economy.
+emplrel	1	I work as an employee.
+emplrel	2	I am self-employed.
+emplrel	3	I work for my family's business.
 uemp3m	1	I've been unemployed over three months.
 uemp3m	2	I haven't been unemployed that long.
+pdwrkp	0	My partner did no paid work
+pdwrkp	1	My partner did paid work
+eqmgmbg	0	I think equality in senior management would be very bad for businesses.
+eqmgmbg	1	I think equality in senior management would be somewhat bad for businesses.
+eqmgmbg	2	I think equality in senior management would be somewhat bad for businesses.
+eqmgmbg	3	I think equality in senior management would be neutral for businesses.
+eqmgmbg	4	I think equality in senior management would be somewhat good for businesses.
+eqmgmbg	5	I think equality in senior management would be somewhat good for businesses.
+eqmgmbg	6	I think equality in senior management would be very good for businesses.
+rshipa2	1	I am married or in a partnership.
+rshipa2	2	I have a child living with me.
+rshipa2	3	I live with a parent or parent-in-law.
+rshipa2	4	I have a sibling living with me.
+rshipa2	5	I live with another relative.
+rshipa2	6	I live with a non-relative.
+edctnp	0	I didn't do educational activities
+edctnp	1	I did educational activities
+wrkac6m	1	I've worked abroad for six months or more.
+wrkac6m	2	I haven't worked abroad for six months or more.
+uemplip	0	My partner was not unemployed
+uemplip	1	My partner is unemployed but not looking
+rtrdp	0	My partner was not retired
+rtrdp	1	My partner was retired
+dsbldp	0	My partner is not permanently sick or disabled.
+dsbldp	1	My partner is permanently sick or disabled.
 mbtru	1	I'm currently a trade union member.
 mbtru	2	I've been a trade union member.
 mbtru	3	I've never been a union member.
-hincsrca	1	My household's main income comes from wages or salaries.
-hincsrca	2	I'm self-employed, excluding farming.
-hincsrca	3	Farming is my household's main income source.
-hincsrca	4	Pensions are my household's main income.
-hincsrca	5	I receive unemployment or redundancy benefits.
-hincsrca	6	My household relies on other social benefits.
-hincsrca	7	Investments and savings are my main income.
-hincsrca	8	My income comes from other sources.
-hinctnta	1	I have a low income
-hinctnta	2	I have a low income
-hinctnta	3	I'm lower-middle income
-hinctnta	4	I'm lower-middle income
-hinctnta	5	I have a middle income
-hinctnta	6	I have a middle income
-hinctnta	7	I'm upper-middle income
-hinctnta	8	I'm upper-middle income
-hinctnta	9	I have a high income
-hinctnta	10	I have a high income
-pdwrkp	0	My partner did no paid work
-pdwrkp	1	My partner did paid work
-edctnp	0	I didn't do educational activities
-edctnp	1	I did educational activities
-uemplap	0	My partner was not unemployed
-uemplap	1	My partner was unemployed and looking
-uemplip	0	My partner was not unemployed
-uemplip	1	My partner is unemployed but not looking
-dsbldp	0	My partner is not permanently sick or disabled.
-dsbldp	1	My partner is permanently sick or disabled.
-rtrdp	0	My partner was not retired
-rtrdp	1	My partner was retired
-cmsrvp	0	My partner hasn't done community service or served
-cmsrvp	1	My partner has done community service or served
-hswrkp	0	My partner hasn't helped with household tasks.
-hswrkp	1	My partner has helped with household tasks.
-edulvlfb	0	My father didn't complete primary education.
-edulvlfb	113	My father completed primary education.
-edulvlfb	129	My father had vocational training, less than 2 years.
-edulvlfb	212	My father finished general education, pre-vocational.
-edulvlfb	213	My father completed general education, access to higher.
-edulvlfb	221	My father had vocational training, 2 or more years.
-edulvlfb	222	My father had vocational training, access to higher vocational.
-edulvlfb	223	My father had vocational training, access to general higher.
-edulvlfb	229	My father had post-secondary vocational training, less than 2 years.
-edulvlfb	311	My father completed secondary education, general.
-edulvlfb	312	My father completed secondary education, access to some higher.
-edulvlfb	313	My father completed secondary education, access to all higher.
-edulvlfb	321	My father had post-secondary vocational training, 2 or more years.
-edulvlfb	322	My father had post-secondary vocational training, access to some higher.
-edulvlfb	323	My father had post-secondary vocational training, access to all higher.
-edulvlfb	412	My father completed post-secondary education, general, some access.
-edulvlfb	413	My father completed post-secondary education, general, full access.
-edulvlfb	421	My father had post-secondary education without higher access.
-edulvlfb	422	My father had post-secondary vocational education, some access.
-edulvlfb	423	My father had post-secondary vocational education, full access.
-edulvlfb	510	My father completed short-cycle tertiary education.
-edulvlfb	520	My father completed advanced vocational qualifications.
-edulvlfb	610	My father earned a lower-tier bachelor's degree.
-edulvlfb	620	My father earned a bachelor's degree.
-edulvlfb	710	My father earned a master's degree, lower tier.
-edulvlfb	720	My father earned a master's degree.
-edulvlfb	800	My father earned a doctoral degree.
-edulvlfb	5555	My father's education level is other.
-eiscedf	0	My father's education doesn't fit standard categories.
-eiscedf	1	My father didn't complete lower secondary education.
-eiscedf	2	My father completed lower secondary education.
-eiscedf	3	My father finished lower-tier upper secondary education.
-eiscedf	4	My father completed upper-tier upper secondary education.
-eiscedf	5	My father had advanced vocational training, no degree.
-eiscedf	6	My father has a Bachelor's degree or equivalent.
-eiscedf	7	My father has a Master's degree or higher.
-eiscedf	55	My father's education is other.
-emprf14	1	My father was an employee.
-emprf14	2	My father was self-employed.
-emprf14	3	My father wasn't working.
-emprf14	4	My father was dead or absent.
-occf14b	1	My father was a professional/technical expert.
-occf14b	2	My father was a high administrator.
-occf14b	3	My father had a clerical job.
-occf14b	4	My father worked in sales.
-occf14b	5	My father was in a service occupation.
-occf14b	6	My father was a skilled worker.
-occf14b	7	My father was a semi-skilled worker.
-occf14b	8	My father was an unskilled worker.
-occf14b	9	My father worked on a farm.
-edulvlmb	0	My mother didn't complete primary education.
-edulvlmb	113	My mother completed primary education.
-edulvlmb	129	My mother has vocational training, less than 2 years.
-edulvlmb	212	My mother has general/pre-vocational education, access to vocational.
-edulvlmb	213	My mother has general education, access to all higher levels.
-edulvlmb	221	My mother has vocational training, 2 or more years.
-edulvlmb	222	My mother has vocational education, access to higher vocational.
-edulvlmb	223	My mother has vocational education, access to all higher.
-edulvlmb	229	My mother has post-secondary vocational, less than 2 years.
-edulvlmb	311	My mother has general education, 2 or more years.
-edulvlmb	312	My mother has general education, access to lower tertiary.
-edulvlmb	313	My mother has general education, access to all tertiary.
-edulvlmb	321	My mother has post-secondary vocational, 2 or more years.
-edulvlmb	322	My mother has post-secondary vocational, access to lower tertiary.
-edulvlmb	323	My mother has post-secondary vocational, access to all tertiary.
-edulvlmb	412	My mother has pre-bachelor education, access to lower tertiary.
-edulvlmb	413	My mother has pre-bachelor education, access to all tertiary.
-edulvlmb	421	My mother has pre-bachelor education, no access to tertiary.
-edulvlmb	422	My mother has pre-bachelor vocational, access to lower tertiary.
-edulvlmb	423	My mother has pre-bachelor vocational, access to all tertiary.
-edulvlmb	510	My mother has short-cycle tertiary education.
-edulvlmb	520	My mother has advanced vocational qualifications.
-edulvlmb	610	My mother has a lower-tier bachelor's degree.
-edulvlmb	620	My mother has a bachelor's degree.
-edulvlmb	710	My mother has a lower-tier master's degree.
-edulvlmb	720	My mother has a master's degree.
-edulvlmb	800	My mother has a doctoral degree.
-edulvlmb	5555	My mother's education is other.
-eiscedm	0	My mother's education doesn't fit standard categories.
-eiscedm	1	My mother didn't complete lower secondary education.
-eiscedm	2	My mother completed lower secondary education.
-eiscedm	3	My mother completed lower-tier upper secondary education.
-eiscedm	4	My mother completed upper-tier upper secondary education.
-eiscedm	5	My mother had advanced vocational training, no degree.
-eiscedm	6	My mother has a Bachelor's degree or equivalent.
-eiscedm	7	My mother has a Master's degree or higher.
-eiscedm	55	My mother's education is other.
-emprm14	1	My mother was an employee when I was 14.
-emprm14	2	My mother was self-employed when I was 14.
-emprm14	3	My mother wasn't working when I was 14.
-emprm14	4	My mother was deceased or absent at 14.
-atncrse	1	I took a course to improve work skills.
-atncrse	2	I didn't take a work improvement course.
 anctrya1	10000	My ancestry is European.
 anctrya1	11000	My ancestry is West European.
 anctrya1	11010	My ancestry is Austrian nfs.
@@ -3171,6 +2969,10 @@ anctrya1	82070	My ancestry is Tahitian (and other French Polynesian).
 anctrya1	82080	My ancestry is Tongan.
 anctrya1	82990	My ancestry is Australasian nec.
 anctrya1	444444	My ancestry is Not classifiable.
+hswrkp	0	My partner hasn't helped with household tasks.
+hswrkp	1	My partner has helped with household tasks.
+cmsrvp	0	My partner hasn't done community service or served
+cmsrvp	1	My partner has done community service or served
 anctrya2	10000	My ancestry is European.
 anctrya2	11000	My ancestry is West European.
 anctrya2	11010	My ancestry is Austrian nfs.
@@ -5948,78 +5750,164 @@ region	XK004	I live in Prizren.
 region	XK005	I live in Ferizaj.
 region	XK006	I live in Gjilan.
 region	XK007	I live in Gjakovë.
-ipcrtiva	1	I'm very creative and think outside the box.
-ipcrtiva	2	I'm creative and like original approaches.
-ipcrtiva	3	I'm somewhat of a creative thinker.
-ipcrtiva	4	I'm a little creative at times.
-ipcrtiva	5	I'm not very creative.
-ipcrtiva	6	I'm not creative at all.
-impricha	1	Wealth is very important to me.
-impricha	2	Wealth is important to me.
-impricha	3	Wealth is somewhat important to me.
-impricha	4	Wealth is a little important to me.
-impricha	5	Wealth is not important to me.
-impricha	6	Wealth is not important to me at all.
-ipeqopta	1	I strongly believe in equal treatment
-ipeqopta	2	I believe in equal treatment
-ipeqopta	3	I somewhat believe in equality
-ipeqopta	4	I slightly believe in equality
-ipeqopta	5	I don't believe in equality
-ipeqopta	6	I don't believe in equality at all
-ipshabta	1	I want to impress others with my abilities.
-ipshabta	2	I like to impress others with my abilities.
-ipshabta	3	I somewhat want to impress others with my abilities.
-ipshabta	4	I slightly want to impress others with my abilities.
-ipshabta	5	I don't want to impress others with my abilities.
-ipshabta	6	I don't care about impressing others with my abilities.
-impsafea	1	I prioritize living in secure, safe surroundings.
-impsafea	2	I value living in safe surroundings.
-impsafea	3	I somewhat prioritize safe surroundings.
-impsafea	4	I slightly prefer safe surroundings.
-impsafea	5	Safety is not a priority for me.
-impsafea	6	Safety is not important to me.
-impdiffa	1	I love surprises and trying new things.
-impdiffa	2	I'm like that, enjoying new experiences.
-impdiffa	3	I'm somewhat adventurous and open.
-impdiffa	4	I'm a little spontaneous sometimes.
-impdiffa	5	I don't seek surprises or novelty.
-impdiffa	6	I dislike surprises and new things.
-ipfrulea	1	I always follow rules and do as I'm told.
-ipfrulea	2	I mostly follow rules and do as I'm told.
-ipfrulea	3	I somewhat follow rules and do as I'm told.
-ipfrulea	4	I rarely follow rules and do as I'm told.
-ipfrulea	5	I don't follow rules and do as I'm told.
-ipfrulea	6	I never follow rules and do as I'm told.
-ipudrsta	1	I always try to understand differing views.
-ipudrsta	2	I try to understand differing views.
-ipudrsta	3	I somewhat understand differing views.
-ipudrsta	4	I rarely understand differing views.
-ipudrsta	5	I don't usually understand differing views.
-ipudrsta	6	I never understand differing views.
+emprf14	1	My father was an employee.
+emprf14	2	My father was self-employed.
+emprf14	3	My father wasn't working.
+emprf14	4	My father was dead or absent.
+estsz	1	I work with fewer than 10 people.
+estsz	2	I work with 10 to 24 people.
+estsz	3	I work with 25 to 99 people.
+estsz	4	I work with 100 to 499 people.
+estsz	5	I work with 500 or more people.
+mnactic	1	I worked for pay.
+mnactic	2	I was in education.
+mnactic	3	I'm unemployed and job hunting.
+mnactic	4	I'm unemployed, not seeking work.
+mnactic	5	I'm permanently sick or disabled.
+mnactic	6	I'm retired.
+mnactic	7	I did community or military service.
+mnactic	8	I did housework or cared for others.
+mnactic	9	I did something else.
+atncrse	1	I took a course to improve work knowledge or skills.
+atncrse	2	I didn't take a course to improve work skills.
+eisced	0	My education doesn't fit standard categories.
+eisced	1	I have less than lower secondary education.
+eisced	2	I completed lower secondary education.
+eisced	3	I have lower-tier upper secondary education.
+eisced	4	I completed upper-tier upper secondary education.
+eisced	5	I have advanced vocational training, no degree.
+eisced	6	I hold a Bachelor's degree or equivalent.
+eisced	7	I have a Master's degree or higher.
+eisced	55	My education is other.
+agegroup	1	I'm between 15 and 24 years old.
+agegroup	2	I'm between 25 and 34 years old.
+agegroup	3	I'm between 35 and 44 years old.
+agegroup	4	I'm between 45 and 54 years old.
+agegroup	5	I'm between 55 and 64 years old.
+agegroup	6	I'm between 65 and 74 years old.
+agegroup	7	I'm 75 years old or more.
+agegroup	99	My age is not available.
 ipmodsta	1	I'm very humble and modest
 ipmodsta	2	I'm humble and modest
 ipmodsta	3	I'm somewhat humble
 ipmodsta	4	I'm a little humble
 ipmodsta	5	I'm not humble
 ipmodsta	6	I'm not humble at all
-ipgdtima	1	I value having a good time and treating myself.
-ipgdtima	2	I like to have a good time and treat myself.
-ipgdtima	3	I somewhat enjoy having a good time and treats.
-ipgdtima	4	I occasionally like to have a good time and treats.
-ipgdtima	5	I don't prioritize having a good time or treats.
-ipgdtima	6	I never prioritize having a good time or treats.
+ipeqopta	1	I strongly believe in equal treatment
+ipeqopta	2	I believe in equal treatment
+ipeqopta	3	I somewhat believe in equality
+ipeqopta	4	I slightly believe in equality
+ipeqopta	5	I don't believe in equality
+ipeqopta	6	I don't believe in equality at all
+hincsrca	1	My household's main income comes from wages or salaries.
+hincsrca	2	I'm self-employed, excluding farming.
+hincsrca	3	Farming is my household's main income source.
+hincsrca	4	Pensions are my household's main income.
+hincsrca	5	I receive unemployment or redundancy benefits.
+hincsrca	6	My household relies on other social benefits.
+hincsrca	7	Investments and savings are my main income.
+hincsrca	8	My income comes from other sources.
+impdiffa	1	I love surprises and trying new things.
+impdiffa	2	I'm like that, enjoying new experiences.
+impdiffa	3	I'm somewhat adventurous and open.
+impdiffa	4	I'm a little spontaneous sometimes.
+impdiffa	5	I don't seek surprises or novelty.
+impdiffa	6	I dislike surprises and new things.
+impricha	1	Wealth is very important to me.
+impricha	2	Wealth is important to me.
+impricha	3	Wealth is somewhat important to me.
+impricha	4	Wealth is a little important to me.
+impricha	5	Wealth is not important to me.
+impricha	6	Wealth is not important to me at all.
+hinctnta	1	I have a low income
+hinctnta	2	I have a low income
+hinctnta	3	I'm lower-middle income
+hinctnta	4	I'm lower-middle income
+hinctnta	5	I have a middle income
+hinctnta	6	I have a middle income
+hinctnta	7	I'm upper-middle income
+hinctnta	8	I'm upper-middle income
+hinctnta	9	I have a high income
+hinctnta	10	I have a high income
+tporgwk	1	I work for central or local government.
+tporgwk	2	I work in the public sector.
+tporgwk	3	I work for a state owned enterprise.
+tporgwk	4	I work for a private firm.
+tporgwk	5	I am self employed.
+tporgwk	6	I work for another type of organization.
+ipadvnta	1	I'm a thrill-seeker at heart.
+ipadvnta	2	I'm like a thrill-seeker.
+ipadvnta	3	I'm somewhat adventurous.
+ipadvnta	4	I'm a bit adventurous.
+ipadvnta	5	I'm not adventurous.
+ipadvnta	6	I'm not adventurous at all.
+ipfrulea	1	I always follow rules and do as I'm told.
+ipfrulea	2	I mostly follow rules and do as I'm told.
+ipfrulea	3	I somewhat follow rules and do as I'm told.
+ipfrulea	4	I rarely follow rules and do as I'm told.
+ipfrulea	5	I don't follow rules and do as I'm told.
+ipfrulea	6	I never follow rules and do as I'm told.
+occf14b	1	My father was a professional/technical expert.
+occf14b	2	My father was a high administrator.
+occf14b	3	My father had a clerical job.
+occf14b	4	My father worked in sales.
+occf14b	5	My father was in a service occupation.
+occf14b	6	My father was a skilled worker.
+occf14b	7	My father was a semi-skilled worker.
+occf14b	8	My father was an unskilled worker.
+occf14b	9	My father worked on a farm.
+emprm14	1	My mother was an employee when I was 14.
+emprm14	2	My mother was self-employed when I was 14.
+emprm14	3	My mother wasn't working when I was 14.
+emprm14	4	My mother was deceased or absent at 14.
+ipbhprpa	1	I always try to behave properly.
+ipbhprpa	2	I mostly try to behave properly.
+ipbhprpa	3	I somewhat try to behave properly.
+ipbhprpa	4	I slightly try to behave properly.
+ipbhprpa	5	I don't try to behave properly.
+ipbhprpa	6	I never try to behave properly.
+ipcrtiva	1	I'm very creative and think outside the box.
+ipcrtiva	2	I'm creative and like original approaches.
+ipcrtiva	3	I'm somewhat of a creative thinker.
+ipcrtiva	4	I'm a little creative at times.
+ipcrtiva	5	I'm not very creative.
+ipcrtiva	6	I'm not creative at all.
+impsafea	1	I prioritize living in secure, safe surroundings.
+impsafea	2	I value living in safe surroundings.
+impsafea	3	I somewhat prioritize safe surroundings.
+impsafea	4	I slightly prefer safe surroundings.
+impsafea	5	Safety is not a priority for me.
+impsafea	6	Safety is not important to me.
 impfreea	1	I'm very independent and self-driven.
 impfreea	2	I'm independent and self-driven.
 impfreea	3	I'm somewhat independent.
 impfreea	4	I'm a little independent.
 impfreea	5	I'm not independent.
 impfreea	6	I'm not independent at all.
+ipudrsta	1	I always try to understand differing views.
+ipudrsta	2	I try to understand differing views.
+ipudrsta	3	I somewhat understand differing views.
+ipudrsta	4	I rarely understand differing views.
+ipudrsta	5	I don't usually understand differing views.
+ipudrsta	6	I never understand differing views.
+ipshabta	1	I want to impress others with my abilities.
+ipshabta	2	I like to impress others with my abilities.
+ipshabta	3	I somewhat want to impress others with my abilities.
+ipshabta	4	I slightly want to impress others with my abilities.
+ipshabta	5	I don't want to impress others with my abilities.
+ipshabta	6	I don't care about impressing others with my abilities.
 iphlppla	1	I'm very caring towards those around me.
 iphlppla	2	I'm caring towards those around me.
 iphlppla	3	I'm somewhat caring towards others.
 iphlppla	4	I'm a little caring towards others.
 iphlppla	5	I'm not very caring towards others.
 iphlppla	6	I don't care about those around me.
+impenva	1	I strongly care for nature.
+impenva	2	I care for nature.
+impenva	3	I somewhat care for nature.
+impenva	4	I slightly care for nature.
+impenva	5	I don't care for nature.
+impenva	6	I don't care for nature at all.
 ipsucesa	1	Success is very important to me.
 ipsucesa	2	Success is important to me.
 ipsucesa	3	Success is somewhat important to me.
@@ -6032,45 +5920,157 @@ ipstrgva	3	I somewhat value state safety measures.
 ipstrgva	4	I slightly prefer a safe state.
 ipstrgva	5	I don't value state safety highly.
 ipstrgva	6	State safety doesn't matter to me.
-ipadvnta	1	I'm a thrill-seeker at heart.
-ipadvnta	2	I'm like a thrill-seeker.
-ipadvnta	3	I'm somewhat adventurous.
-ipadvnta	4	I'm a bit adventurous.
-ipadvnta	5	I'm not adventurous.
-ipadvnta	6	I'm not adventurous at all.
-ipbhprpa	1	I always try to behave properly.
-ipbhprpa	2	I mostly try to behave properly.
-ipbhprpa	3	I somewhat try to behave properly.
-ipbhprpa	4	I slightly try to behave properly.
-ipbhprpa	5	I don't try to behave properly.
-ipbhprpa	6	I never try to behave properly.
+wkdcorga	0	I have no influence on my daily work
+wkdcorga	1	I have no influence on my daily work
+wkdcorga	2	I have little influence on my work
+wkdcorga	3	I have little influence on my work
+wkdcorga	4	I have some influence on my work
+wkdcorga	5	I have some influence on my work
+wkdcorga	6	I have some influence on my work
+wkdcorga	7	I have high influence on my work
+wkdcorga	8	I have high influence on my work
+wkdcorga	9	I have complete control over my work
+wkdcorga	10	I have complete control over my work
+iorgact	0	I have no influence on policy decisions.
+iorgact	1	I have no influence on policy decisions.
+iorgact	2	I have little influence on policy decisions.
+iorgact	3	I have little influence on policy decisions.
+iorgact	4	I have some influence on policy decisions.
+iorgact	5	I have some influence on policy decisions.
+iorgact	6	I have some influence on policy decisions.
+iorgact	7	I have high influence on policy decisions.
+iorgact	8	I have high influence on policy decisions.
+iorgact	9	I have complete control over policy decisions.
+iorgact	10	I have complete control over policy decisions.
 iprspota	1	I crave respect and obedience from others.
 iprspota	2	I like being respected and obeyed.
 iprspota	3	I somewhat value respect from others.
 iprspota	4	I slightly desire respect from others.
 iprspota	5	I don't need respect from others.
 iprspota	6	I don't care about respect from others.
+ipgdtima	1	I value having a good time and treating myself.
+ipgdtima	2	I like to have a good time and treat myself.
+ipgdtima	3	I somewhat enjoy having a good time and treats.
+ipgdtima	4	I occasionally like to have a good time and treats.
+ipgdtima	5	I don't prioritize having a good time or treats.
+ipgdtima	6	I never prioritize having a good time or treats.
 iplylfra	1	Loyalty to friends is very important to me
 iplylfra	2	I am like someone loyal to friends
 iplylfra	3	I'm somewhat loyal to my friends
 iplylfra	4	I'm a little loyal to friends
 iplylfra	5	I'm not particularly loyal to friends
 iplylfra	6	Loyalty to friends means nothing to me
-impenva	1	I strongly care for nature.
-impenva	2	I care for nature.
-impenva	3	I somewhat care for nature.
-impenva	4	I slightly care for nature.
-impenva	5	I don't care for nature.
-impenva	6	I don't care for nature at all.
 imptrada	1	Tradition is very important to me.
 imptrada	2	Tradition is important to me.
 imptrada	3	Tradition is somewhat important to me.
 imptrada	4	Tradition is a little important to me.
 imptrada	5	Tradition is not important to me.
 imptrada	6	Tradition means nothing to me.
+eiscedf	0	My father's education doesn't fit standard categories.
+eiscedf	1	My father didn't complete lower secondary education.
+eiscedf	2	My father completed lower secondary education.
+eiscedf	3	My father finished lower-tier upper secondary education.
+eiscedf	4	My father completed upper-tier upper secondary education.
+eiscedf	5	My father had advanced vocational training, no degree.
+eiscedf	6	My father has a Bachelor's degree or equivalent.
+eiscedf	7	My father has a Master's degree or higher.
+eiscedf	55	My father's education is other.
+eiscedm	0	My mother's education doesn't fit standard categories.
+eiscedm	1	My mother didn't complete lower secondary education.
+eiscedm	2	My mother completed lower secondary education.
+eiscedm	3	My mother completed lower-tier upper secondary education.
+eiscedm	4	My mother completed upper-tier upper secondary education.
+eiscedm	5	My mother had advanced vocational training, no degree.
+eiscedm	6	My mother has a Bachelor's degree or equivalent.
+eiscedm	7	My mother has a Master's degree or higher.
+eiscedm	55	My mother's education is other.
 impfuna	1	I'm all about having fun and seeking pleasure.
 impfuna	2	I like to have fun and enjoy pleasurable activities.
 impfuna	3	I somewhat enjoy seeking fun and pleasurable experiences.
 impfuna	4	I occasionally seek fun and pleasurable things.
 impfuna	5	Fun isn't a priority for me.
 impfuna	6	I don't prioritize fun or pleasure.
+edulvlb	0	I haven't completed primary education.
+edulvlb	113	I completed primary education.
+edulvlb	129	I have vocational training below ISCED 3.
+edulvlb	212	I finished pre-vocational secondary education.
+edulvlb	213	I completed general secondary education.
+edulvlb	221	I have vocational training at ISCED 2 level.
+edulvlb	222	I finished vocational secondary education.
+edulvlb	223	I completed vocational secondary education.
+edulvlb	229	I have short vocational training at ISCED 3 level.
+edulvlb	311	I completed general secondary education.
+edulvlb	312	I finished upper secondary education.
+edulvlb	313	I completed general upper secondary education.
+edulvlb	321	I have long vocational training at ISCED 3 level.
+edulvlb	322	I finished vocational upper secondary education.
+edulvlb	323	I completed vocational upper secondary education.
+edulvlb	412	I have post-secondary education.
+edulvlb	413	I completed post-secondary education.
+edulvlb	421	I finished non-tertiary post-secondary education.
+edulvlb	422	I have vocational post-secondary education.
+edulvlb	423	I completed advanced vocational education.
+edulvlb	510	I have short tertiary education.
+edulvlb	520	I completed advanced vocational qualifications.
+edulvlb	610	I have a lower-tier bachelor's degree.
+edulvlb	620	I have a bachelor's degree.
+edulvlb	710	I have a lower-tier master's degree.
+edulvlb	720	I have a master's degree.
+edulvlb	800	I have a doctoral degree.
+edulvlb	5555	My education level is other.
+edulvlmb	0	My mother didn't complete primary education.
+edulvlmb	113	My mother completed primary education.
+edulvlmb	129	My mother has vocational training, less than 2 years.
+edulvlmb	212	My mother has general/pre-vocational education, access to vocational.
+edulvlmb	213	My mother has general education, access to all higher levels.
+edulvlmb	221	My mother has vocational training, 2 or more years.
+edulvlmb	222	My mother has vocational education, access to higher vocational.
+edulvlmb	223	My mother has vocational education, access to all higher.
+edulvlmb	229	My mother has post-secondary vocational, less than 2 years.
+edulvlmb	311	My mother has general education, 2 or more years.
+edulvlmb	312	My mother has general education, access to lower tertiary.
+edulvlmb	313	My mother has general education, access to all tertiary.
+edulvlmb	321	My mother has post-secondary vocational, 2 or more years.
+edulvlmb	322	My mother has post-secondary vocational, access to lower tertiary.
+edulvlmb	323	My mother has post-secondary vocational, access to all tertiary.
+edulvlmb	412	My mother has pre-bachelor education, access to lower tertiary.
+edulvlmb	413	My mother has pre-bachelor education, access to all tertiary.
+edulvlmb	421	My mother has pre-bachelor education, no access to tertiary.
+edulvlmb	422	My mother has pre-bachelor vocational, access to lower tertiary.
+edulvlmb	423	My mother has pre-bachelor vocational, access to all tertiary.
+edulvlmb	510	My mother has short-cycle tertiary education.
+edulvlmb	520	My mother has advanced vocational qualifications.
+edulvlmb	610	My mother has a lower-tier bachelor's degree.
+edulvlmb	620	My mother has a bachelor's degree.
+edulvlmb	710	My mother has a lower-tier master's degree.
+edulvlmb	720	My mother has a master's degree.
+edulvlmb	800	My mother has a doctoral degree.
+edulvlmb	5555	My mother's education is other.
+edulvlfb	0	My father didn't complete primary education.
+edulvlfb	113	My father completed primary education.
+edulvlfb	129	My father had vocational training, less than 2 years.
+edulvlfb	212	My father finished general education, pre-vocational.
+edulvlfb	213	My father completed general education, access to higher.
+edulvlfb	221	My father had vocational training, 2 or more years.
+edulvlfb	222	My father had vocational training, access to higher vocational.
+edulvlfb	223	My father had vocational training, access to general higher.
+edulvlfb	229	My father had post-secondary vocational training, less than 2 years.
+edulvlfb	311	My father completed secondary education, general.
+edulvlfb	312	My father completed secondary education, access to some higher.
+edulvlfb	313	My father completed secondary education, access to all higher.
+edulvlfb	321	My father had post-secondary vocational training, 2 or more years.
+edulvlfb	322	My father had post-secondary vocational training, access to some higher.
+edulvlfb	323	My father had post-secondary vocational training, access to all higher.
+edulvlfb	412	My father completed post-secondary education, general, some access.
+edulvlfb	413	My father completed post-secondary education, general, full access.
+edulvlfb	421	My father had post-secondary education without higher access.
+edulvlfb	422	My father had post-secondary vocational education, some access.
+edulvlfb	423	My father had post-secondary vocational education, full access.
+edulvlfb	510	My father completed short-cycle tertiary education.
+edulvlfb	520	My father completed advanced vocational qualifications.
+edulvlfb	610	My father earned a lower-tier bachelor's degree.
+edulvlfb	620	My father earned a bachelor's degree.
+edulvlfb	710	My father earned a master's degree, lower tier.
+edulvlfb	720	My father earned a master's degree.
+edulvlfb	800	My father earned a doctoral degree.
+edulvlfb	5555	My father's education level is other.
