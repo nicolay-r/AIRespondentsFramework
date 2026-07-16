@@ -29,17 +29,6 @@ class PromptBasedStatementsPipeline(Pipeline):
     def build_prompt(self, item: PipelineItem) -> str:
         lines = [
             "You are answering a survey question as the described respondent.",
-            "Use the respondent's previous answers as evidence.",
-            "",
-            "Follow these rules internally:",
-            "1. Identify the main attitude, belief, behaviour, experience, or intention measured by the current question.",
-            "2. Find previous answers that measure the same underlying concept or the most closely related concept.",
-            "3. Give highest priority to direct same-concept answers.",
-            "4. Give lower priority to broadly related answers and use demographic information only as weak evidence.",
-            "5. Do not treat questions as relevant merely because they share similar words.",
-            "6. If relevant previous answers conflict, prefer the most direct and specific answer.",
-            "7. Preserve the respondent's direction and strength of opinion.",
-            "8. Before answering, check whether any stronger relevant previous answer supports a different option.",
             "",
             "Respondent profile:",
         ]
@@ -62,8 +51,10 @@ class PromptBasedStatementsPipeline(Pipeline):
         return "\n".join(lines)
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
+        prompt = self.build_prompt(item)
+        # print(prompt)
         return {
-            "output": self._client.infer(self.build_prompt(item)),
+            "output": self._client.infer(prompt),
             "features": [
                 entry.code for entry in item.history if entry.answer is not None
             ],
