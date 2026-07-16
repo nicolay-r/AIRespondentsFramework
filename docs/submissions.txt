@@ -89,3 +89,20 @@ retriever
   alignment: 0.757
   f1_macro: 0.351
   accuracy: 41/91 (45.1%)
+
+----------------------------
+catboost-only on data been trained
+respondents: 1000
+training-acc: 70%
+----------------------------
+  skill: 0.406
+  alignment: 0.912
+  f1_macro: 0.501
+  accuracy: 61/91 (67.0%)
+
+But the problem is that just sorting wont' help.
+What essentially helps is filtering the survey
+
+Okay, let's generate new pipeline dubbed as 'catboost-as-judge' which essentially represent two-step Chain-of-Thought, where on steps:
+1. we ask LLM to simply explain and provider answer (explain in a single paragraph)
+2. on the second step augment for the purpose to judge for the given question and set of answers, result received from step 1 and result from catboost with its confidence. Request to make a decision by answering short.
