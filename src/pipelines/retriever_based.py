@@ -1,6 +1,5 @@
 import ast
 import csv
-import importlib.util
 import json
 from pathlib import Path
 
@@ -19,24 +18,59 @@ QUESTIONS_BY_TOPIC_PATH = (
     PROJECT_ROOT / "docs" / "dataset" / "retriever" / "questions_by_topic.json"
 )
 FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.txt"
-RETRIEVER_MODULE_PATH = PROJECT_ROOT / "docs" / "retreiver.py"
 
 
-def _load_retriever_module():
-    spec = importlib.util.spec_from_file_location(
-        "retreiver",
-        RETRIEVER_MODULE_PATH,
+def pre_retriever_prompt(
+    target: str,
+    topic_summaries: dict[str, str],
+) -> str:
+    return (
+        "You are an agent built to determine the relevance of a group of questions "
+        "based on their description.\n"
+        "- Each question is part of a survey\n"
+        "- Each question groups captures a part of a respondent's profile\n"
+        "- You have a target question based on which you determine relevance\n"
+        "- Your criteria is : How relevant is this group of questions to anwer "
+        "the target question.\n\n"
+        f"Your TARGET QUESTION is: {target}\n\n"
+        f"Groups of questions as: {topic_summaries}\n\n"
+        "Which of the following groups of questions is the most relevant?\n\n"
+        "Output format is a dictionary of type: {1:group label, 2: group label, ...}\n\n"
+        "Return the ranking of the groups' labels."
     )
-    if spec is None or spec.loader is None:
-        raise ImportError(f"cannot load retriever module from {RETRIEVER_MODULE_PATH}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
 
 
-_retriever = _load_retriever_module()
-pre_retriever_prompt = _retriever.pre_retriever_prompt
-retriver = _retriever.retriver
+def retriver(
+    target: str,
+    topics_ranking: dict[int, str],
+    top_n_topics: int,
+    qtext: dict[str, str],
+    questions_by_topic: dict[str, list[str]],
+) -> str:
+    top_n_dict = dict(list(topics_ranking.items())[:top_n_topics])
+    keys = list(top_n_dict.values())
+    subset = {k: questions_by_topic[k] for k in keys if k in questions_by_topic}
+
+    qtext_by_topic = {
+        category: {q: qtext.get(q, q) for q in questions}
+        for category, questions in subset.items()
+    }
+
+    return (
+        "You are an agent built to determine the order questions by relevance.\n"
+        "To do so, you are given 1. a TARGET question; 2. a list of questions.\n\n"
+        "- Each question is part of a survey\n"
+        "- Each question captures a part of a respondent's profile\n"
+        "- You determine RELEVANCE based on the TARGET question\n"
+        "- Your CRITERIA is : How relevant is the response to a question to "
+        "predict the anwers to the target question?\n\n"
+        f"Your TARGET QUESTION is: {target}\n\n"
+        f"The list of question is: {qtext_by_topic}\n\n"
+        "Your response MUST be formatted as a dictionary\n"
+        "Dictionary format is : {1:question number, 2: question number, etc.}\n"
+        "Do NOT report the text of the question\n Generate the FULL dictionary\n\n"
+        "Order the list of questions by their relevance to answer the target question."
+    )
 
 
 def load_topic_summaries(
@@ -200,9 +234,13 @@ class RetrieverBasedPipeline(Pipeline):
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
         topics_ranking = self._rank_topics(item)
+        print("topics_ranking: done")
         questions_ranking = self._rank_questions(item, topics_ranking)
+        print("questions_ranking: done")
         ordered = self._ordered_entries(item, questions_ranking)
+        print("ordered: done")
         answer = self._client.infer(self.build_answer_prompt(item, ordered))
+        print("answer: done")
         return {
             "output": answer,
             "features": [entry.code for entry in ordered],
