@@ -36,11 +36,38 @@ class CatBoostStatementsPipeline(Pipeline):
     def _history_by_code(self, item: PipelineItem) -> dict[str, FeatureEntry]:
         return {entry.code: entry for entry in item.history}
 
-    def _entry_line(self, entry: FeatureEntry) -> str:
+    def _entry_line(
+        self,
+        entry: FeatureEntry,
+        *,
+        relevance_percent: int | None = None,
+    ) -> str:
         statement = self._statement_for(entry)
         if statement is not None:
-            return f"- {statement}"
-        return f"- {entry.question}: {entry.answer}"
+            text = statement
+        else:
+            text = f"{entry.question}: {entry.answer}"
+        if relevance_percent is None:
+            return f"- {text}"
+        return f"- {text} {relevance_percent}%"
+
+    def _importance_percentages(self, item: PipelineItem) -> dict[str, int]:
+        if item.question_id not in self._recommender.models:
+            return {}
+
+        feature_count = len(self._recommender.feature_columns[item.question_id])
+        ranked = self._recommender.top_features(
+            item.question_id,
+            top_k=feature_count,
+        )
+        total = sum(score for _, score in ranked)
+        if total <= 0:
+            return {}
+
+        return {
+            code: round(score / total * 100)
+            for code, score in ranked
+        }
 
     def _answered_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
         return tuple(entry for entry in item.history if entry.answer is not None)
@@ -89,8 +116,19 @@ class CatBoostStatementsPipeline(Pipeline):
         top, rest = self._ranked_entry_groups(item)
         return top + rest
 
-    def _profile_lines(self, entries: tuple[FeatureEntry, ...]) -> list[str]:
-        return [self._entry_line(entry) for entry in entries]
+    def _profile_lines(
+        self,
+        item: PipelineItem,
+        entries: tuple[FeatureEntry, ...],
+    ) -> list[str]:
+        percentages = self._importance_percentages(item)
+        return [
+            self._entry_line(
+                entry,
+                relevance_percent=percentages.get(entry.code),
+            )
+            for entry in entries
+        ]
 
     def _respondent_frame(self, item: PipelineItem) -> pd.DataFrame:
         history_by_code = self._history_by_code(item)
@@ -119,26 +157,16 @@ class CatBoostStatementsPipeline(Pipeline):
             "",
             "Respondent profile:",
             "",
-            "Most relevant background:",
-            *self._profile_lines(top_entries),
+            "Most relevant background (most to least relevant):",
+            *self._profile_lines(item, top_entries),
         ]
 
         if rest_entries:
             lines.extend(
                 [
                     "",
-                    "Other background:",
-                    *self._profile_lines(rest_entries),
-                ]
-            )
-
-        catboost_prediction = self._catboost_prediction(item)
-        if catboost_prediction is not None:
-            lines.extend(
-                [
-                    "",
-                    "CatBoost model prediction for this question:",
-                    catboost_prediction,
+                    "Other background (most to least relevant):",
+                    *self._profile_lines(item, rest_entries),
                 ]
             )
 
@@ -154,9 +182,8 @@ class CatBoostStatementsPipeline(Pipeline):
     def apply(self, item: PipelineItem) -> dict[str, object]:
         ordered = self._ordered_entries(item)
         prompt = self.build_prompt(item)
-        output = self._client.infer(prompt)
         print("prompt: ", prompt)
-        print("output: ", output)
+        output = self._client.infer(prompt)
         return {
             "output": output,
             "features": [entry.code for entry in ordered],
