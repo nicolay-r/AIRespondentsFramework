@@ -13,7 +13,7 @@ dataset = importlib.import_module("src.import")
 
 def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
     text = raw.strip()
-    for label in labels:
+    for label in sorted(labels, key=len, reverse=True):
         if text == label or label.lower() in text.lower():
             return label
     return labels[0]
@@ -51,8 +51,13 @@ def run_on_items(
     workers: int = 32,
     desc: str = "predicting",
 ):
-
-    model = "Qwen/Qwen3-32B"
+    # model = "zai-org/GLM-5.2"
+    # model = "Qwen/Qwen3-32B"
+    # model = "Qwen/Qwen3-Next-80B-A3B-Thinking"
+    model = "meta-llama/Llama-3.3-70B-Instruct"
+     
+    print("Pipeline name:", pipeline_name)
+    print("Model: ", model)
 
     pipelines = {
         "prompt-based": PromptBasedPipeline(
