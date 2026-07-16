@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = PROJECT_ROOT / "output"
+STATEMENTS_PATH = PROJECT_ROOT / "docs" / "dataset" / "feature_statements.tsv"
+FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.csv"
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.utils import example_prompts_for, write_submission
@@ -46,6 +48,8 @@ if __name__ == "__main__":
         items,
         args.pipeline,
         desc=desc,
+        statements_path=STATEMENTS_PATH,
+        features_path=FEATURES_PATH,
     )
     prompts = example_prompts_for(pipeline, items)
 
