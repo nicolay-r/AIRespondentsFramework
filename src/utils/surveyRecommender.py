@@ -3,6 +3,16 @@ import json
 import numpy as np
 import pandas as pd
 from pathlib import Path
+from tqdm import tqdm
+
+
+class _IterationProgressCallback:
+    def __init__(self, pbar: tqdm) -> None:
+        self._pbar = pbar
+
+    def after_iteration(self, info) -> bool:
+        self._pbar.update(1)
+        return True
 
 
 class SurveyRecommender:
@@ -21,6 +31,7 @@ class SurveyRecommender:
         *,
         feature_columns: list[str] | None = None,
         target_columns: list[str] | None = None,
+        show_progress: bool = False,
     ):
         """
         Parameters
@@ -40,9 +51,12 @@ class SurveyRecommender:
         self.feature_columns.clear()
 
         if feature_columns is None and target_columns is None:
-            for target in X.columns:
+            targets = list(X.columns)
+            if show_progress:
+                targets = tqdm(targets, desc="Training targets")
+            for target in targets:
                 features = [column for column in X.columns if column != target]
-                self._fit_target(X, target, features)
+                self._fit_target(X, target, features, show_progress=show_progress)
             return self
 
         if target_columns is None:
@@ -56,10 +70,19 @@ class SurveyRecommender:
                 column for column in X.columns if column not in target_set
             ]
 
-        for target in target_columns:
+        targets = target_columns
+        if show_progress:
+            targets = tqdm(target_columns, desc="Training targets")
+
+        for target in targets:
             if target not in X.columns:
                 continue
-            self._fit_target(X, target, list(feature_columns))
+            self._fit_target(
+                X,
+                target,
+                list(feature_columns),
+                show_progress=show_progress,
+            )
 
         return self
 
@@ -68,6 +91,8 @@ class SurveyRecommender:
         X: pd.DataFrame,
         target: str,
         features: list[str],
+        *,
+        show_progress: bool = False,
     ) -> None:
         y = X[target]
         if y.nunique(dropna=True) < 2:
@@ -78,11 +103,23 @@ class SurveyRecommender:
         mask = y.notna()
 
         model = CatBoostClassifier(**self.catboost_params)
-        model.fit(
-            X_train.loc[mask],
-            y.loc[mask],
-            cat_features=cat_features,
-        )
+        callbacks = []
+        pbar: tqdm | None = None
+        if show_progress:
+            iterations = int(self.catboost_params.get("iterations", 1000))
+            pbar = tqdm(total=iterations, desc=f"  {target}", leave=False)
+            callbacks.append(_IterationProgressCallback(pbar))
+
+        try:
+            model.fit(
+                X_train.loc[mask],
+                y.loc[mask],
+                cat_features=cat_features,
+                callbacks=callbacks,
+            )
+        finally:
+            if pbar is not None:
+                pbar.close()
 
         self.models[target] = model
         self.feature_columns[target] = features
