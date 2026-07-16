@@ -75,9 +75,6 @@ def run_on_items(
     workers: int = 32,
     desc: str = "predicting",
 ):
-    # model = "zai-org/GLM-5.2"
-    # model = "Qwen/Qwen3-32B"
-    # model = "Qwen/Qwen3-Next-80B-A3B-Thinking"
     model = "meta-llama/Llama-3.3-70B-Instruct"
      
     print("Pipeline name:", pipeline_name)
