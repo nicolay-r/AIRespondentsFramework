@@ -9,6 +9,7 @@ from src.pipelines import (
     GroupedPromptBasedPipeline,
     PromptBasedPipeline,
     PromptBasedStatementsPipeline,
+    RetrieverBasedPipeline,
 )
 from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
@@ -102,6 +103,12 @@ def run_on_items(
             )
         ),
         "catboost-statements": CatBoostStatementsPipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            )
+        ),
+        "retriever-based": RetrieverBasedPipeline(
             OpenAIClient(
                 model=model,
                 base_url="https://api.studio.nebius.com/v1/",
