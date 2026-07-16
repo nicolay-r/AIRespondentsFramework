@@ -5,6 +5,7 @@ from typing import Literal, cast
 from tqdm import tqdm
 
 from src.pipelines import (
+    CatBoostStatementsPipeline,
     GroupedPromptBasedPipeline,
     PromptBasedPipeline,
     PromptBasedStatementsPipeline,
@@ -95,6 +96,12 @@ def run_on_items(
             )
         ),
         "grouped-prompt-based": GroupedPromptBasedPipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            )
+        ),
+        "catboost-statements": CatBoostStatementsPipeline(
             OpenAIClient(
                 model=model,
                 base_url="https://api.studio.nebius.com/v1/",
