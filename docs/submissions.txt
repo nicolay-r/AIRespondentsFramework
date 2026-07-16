@@ -130,3 +130,9 @@ accuracy: 49/91 (53.8%)
   method/prompts.jsonl
 
 So conclusion => delete catboost statements as it does not contribute to better support in gated approach.
+
+-- removing questions completely allows to boost skill and ACC for prompt-based-statements.
+  skill: -0.006
+  alignment: 0.846
+  f1_macro: 0.364
+  accuracy: 52/91 (57.1%)

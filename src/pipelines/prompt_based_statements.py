@@ -39,7 +39,7 @@ class PromptBasedStatementsPipeline(Pipeline):
             if statement is not None:
                 lines.append(f"- {statement}")
             else:
-                lines.append(f"- {entry.question}: {entry.answer}")
+                pass 
 
         lines.extend(
             [
