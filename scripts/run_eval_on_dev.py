@@ -16,7 +16,7 @@ from scripts.run_extract_pipeline_input import dev_pipeline_items, load_dev_data
 from scripts.utils import example_prompts_for, write_dev_eval
 from src.workflow import run_on_items
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

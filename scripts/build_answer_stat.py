@@ -14,7 +14,7 @@ DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "dataset" / "answer_stats.tsv"
 
 sys.path.insert(0, str(PROJECT_ROOT))
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 
 def _is_missing(value: object) -> bool:

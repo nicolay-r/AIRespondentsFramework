@@ -14,7 +14,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from scripts.utils import example_prompts_for, write_submission
 from src.workflow import run_on_items
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
