@@ -70,56 +70,51 @@ def run_on_items(
     *,
     workers: int = 32,
     desc: str = "predicting",
+    statements_path: Path,
+    features_path: Path,
 ):
     model = "meta-llama/Llama-3.3-70B-Instruct"
-     
+
     print("Pipeline name:", pipeline_name)
     print("Model: ", model)
 
     recommender_path = (
         Path(__file__).resolve().parents[1] / "models" / "CB_1000R_100I_9T"
     )
+    client = OpenAIClient(
+        model=model,
+        base_url="https://api.studio.nebius.com/v1/",
+    )
+    statement_pipeline_kwargs = {
+        "statements_path": statements_path,
+        "features_path": features_path,
+    }
     pipelines = {
-        "prompt-based": PromptBasedPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            )
-        ),
+        "prompt-based": PromptBasedPipeline(client),
         "prompt-based-statements": PromptBasedStatementsPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            )
+            client,
+            **statement_pipeline_kwargs,
         ),
         "grouped-prompt-based": GroupedPromptBasedPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            )
+            client,
+            **statement_pipeline_kwargs,
         ),
         "catboost-statements": CatBoostStatementsPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            ),
+            client,
             recommender_path=recommender_path,
+            **statement_pipeline_kwargs,
         ),
         "catboost-only": CatBoostOnlyPipeline(
             recommender_path=recommender_path,
         ),
         "catboost-gated": CatBoostGatedHybridPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            ),
+            client,
             recommender_path=recommender_path,
+            **statement_pipeline_kwargs,
         ),
         "retriever-based": RetrieverBasedPipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            )
+            client,
+            **statement_pipeline_kwargs,
         ),
     }
 

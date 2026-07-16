@@ -3,11 +3,10 @@ import csv
 import json
 from pathlib import Path
 
+import pandas as pd
+
 from src.pipelines.base import FeatureEntry, Pipeline, PipelineItem
-from src.pipelines.grouped_prompt_based import (
-    FEATURE_STATEMENTS_PATH,
-    load_feature_statements,
-)
+from src.pipelines.grouped_prompt_based import load_feature_statements
 from src.providers.openai_client import OpenAIClient
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -17,7 +16,6 @@ TOPIC_SUMMARIES_PATH = (
 QUESTIONS_BY_TOPIC_PATH = (
     PROJECT_ROOT / "docs" / "dataset" / "retriever" / "questions_by_topic.json"
 )
-FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.txt"
 
 
 def pre_retriever_prompt(
@@ -85,7 +83,12 @@ def load_questions_by_topic(
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_qtext(path: Path = FEATURES_PATH) -> dict[str, str]:
+def load_qtext(path: Path) -> dict[str, str]:
+    if path.suffix.lower() == ".csv":
+        features_df = pd.read_csv(path)
+        if {"variable", "question"}.issubset(features_df.columns):
+            return dict(zip(features_df.variable.astype(str), features_df.question))
+
     qtext: dict[str, str] = {}
     with path.open(newline="", encoding="utf-8") as handle:
         for row in csv.reader(handle):
@@ -123,10 +126,11 @@ class RetrieverBasedPipeline(Pipeline):
         *,
         top_n_topics: int = 3,
         top_k: int = 30,
-        statements_path: Path = FEATURE_STATEMENTS_PATH,
+        statements_path: Path,
+        features_path: Path,
         topic_summaries_path: Path = TOPIC_SUMMARIES_PATH,
         questions_by_topic_path: Path = QUESTIONS_BY_TOPIC_PATH,
-        qtext_path: Path = FEATURES_PATH,
+        qtext_path: Path | None = None,
     ) -> None:
         self._client = client
         self._topic_summaries = topic_summaries or load_topic_summaries(
@@ -135,10 +139,14 @@ class RetrieverBasedPipeline(Pipeline):
         self._questions_by_topic = questions_by_topic or load_questions_by_topic(
             questions_by_topic_path
         )
-        self._qtext = qtext or load_qtext(qtext_path)
+        resolved_qtext_path = features_path if qtext_path is None else qtext_path
+        self._qtext = qtext or load_qtext(resolved_qtext_path)
         self._top_n_topics = top_n_topics
         self._top_k = top_k
-        self._statements = load_feature_statements(statements_path)
+        self._statements = load_feature_statements(
+            statements_path,
+            features_path=features_path,
+        )
 
     def _statement_for(self, entry: FeatureEntry) -> str | None:
         if entry.answer is None:

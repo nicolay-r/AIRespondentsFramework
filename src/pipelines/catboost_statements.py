@@ -3,7 +3,6 @@ from pathlib import Path
 import pandas as pd
 
 from src.pipelines.base import FeatureEntry, PipelineItem
-from src.pipelines.grouped_prompt_based import FEATURE_STATEMENTS_PATH
 from src.pipelines.prompt_based_statements import PromptBasedStatementsPipeline
 from src.providers.openai_client import OpenAIClient
 from src.utils.surveyRecommender import SurveyRecommender
@@ -18,9 +17,14 @@ class CatBoostStatementsPipeline(PromptBasedStatementsPipeline):
         client: OpenAIClient,
         recommender_path,
         *,
-        statements_path: Path = FEATURE_STATEMENTS_PATH,
+        statements_path: Path,
+        features_path: Path,
     ) -> None:
-        super().__init__(client, statements_path=statements_path)
+        super().__init__(
+            client,
+            statements_path=statements_path,
+            features_path=features_path,
+        )
         self._recommender = SurveyRecommender.load(recommender_path)
 
     def _uses_catboost(self, item: PipelineItem) -> bool:

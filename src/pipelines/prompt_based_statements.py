@@ -2,7 +2,6 @@ from pathlib import Path
 
 from src.pipelines.base import FeatureEntry, Pipeline, PipelineItem
 from src.pipelines.grouped_prompt_based import (
-    FEATURE_STATEMENTS_PATH,
     load_feature_statements,
 )
 from src.providers.openai_client import OpenAIClient
@@ -13,10 +12,14 @@ class PromptBasedStatementsPipeline(Pipeline):
     def __init__(
         self,
         client: OpenAIClient,
-        statements_path: Path = FEATURE_STATEMENTS_PATH,
+        statements_path: Path,
+        features_path: Path,
     ) -> None:
         self._client = client
-        self._statements = load_feature_statements(statements_path)
+        self._statements = load_feature_statements(
+            statements_path,
+            features_path=features_path,
+        )
 
     def _statement_for(self, entry: FeatureEntry) -> str | None:
         if entry.answer is None:

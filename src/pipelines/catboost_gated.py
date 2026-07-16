@@ -1,7 +1,8 @@
+from pathlib import Path
+
 from src.pipelines.base import PipelineItem
 from src.pipelines.catboost_only import CatBoostOnlyPipeline
 from src.pipelines.catboost_statements import CatBoostStatementsPipeline
-from src.pipelines.grouped_prompt_based import FEATURE_STATEMENTS_PATH
 from src.providers.openai_client import OpenAIClient
 
 
@@ -14,13 +15,15 @@ class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
         client: OpenAIClient,
         recommender_path,
         *,
-        statements_path=FEATURE_STATEMENTS_PATH,
+        statements_path: Path,
+        features_path: Path,
         confidence_threshold: int = CONFIDENCE_THRESHOLD,
     ) -> None:
         super().__init__(
             client,
             recommender_path,
             statements_path=statements_path,
+            features_path=features_path,
         )
         self._confidence_threshold = confidence_threshold
         self._only = CatBoostOnlyPipeline(recommender_path=recommender_path)

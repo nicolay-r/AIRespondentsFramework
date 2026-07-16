@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEV_DATASET_PATH = PROJECT_ROOT / "docs" / "dev_dataset.json"
 OUTPUT_DIR = PROJECT_ROOT / "output" / "dev"
+STATEMENTS_PATH = PROJECT_ROOT / "docs" / "dataset" / "feature_statements.tsv"
+FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.txt"
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.run_extract_pipeline_input import dev_pipeline_items, load_dev_dataset
@@ -43,7 +45,13 @@ if __name__ == "__main__":
     data = dataset.load()
     items = dev_pipeline_items(data, examples)
 
-    pipeline, _, results, model = run_on_items(items, pipeline_name=args.pipeline, desc="predicting dev")
+    pipeline, _, results, model = run_on_items(
+        items,
+        args.pipeline,
+        desc="predicting dev",
+        statements_path=STATEMENTS_PATH,
+        features_path=FEATURES_PATH,
+    )
     prompts = example_prompts_for(pipeline, items)
 
     written, scores = write_dev_eval(

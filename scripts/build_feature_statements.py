@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = PROJECT_ROOT / "docs" / "dataset" / "features.txt"
-DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "dataset" / "feature_statements.tsv"
+DEFAULT_INPUT = PROJECT_ROOT / "docs" / "ess_wave_11" / "ess_wave_11_features.csv"
+DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "ess_wave_11" / "ess_wave_11_feature_statements.tsv"
 MODEL = "meta-llama/Llama-3.3-70B-Instruct"
 BASE_URL = "https://api.studio.nebius.com/v1/"
 MAX_DIRECT_OPTIONS = 30
