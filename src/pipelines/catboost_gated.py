@@ -53,21 +53,12 @@ class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
             and catboost_confidence > self._confidence_threshold
         )
 
-    def build_prompt(
-        self,
-        item: PipelineItem,
-        *,
-        catboost_prediction: str | None = None,
-    ) -> str:
-        if catboost_prediction is None:
-            catboost_prediction = self._catboost_prediction(item)
+    def build_prompt(self, item: PipelineItem) -> str:
+        catboost_prediction = self._catboost_prediction(item)
         catboost_confidence = self._catboost_confidence(item, catboost_prediction)
         if self._use_catboost_only(catboost_confidence):
             return self._only.build_prompt(item)
-        return super().build_prompt(
-            item,
-            catboost_prediction=catboost_prediction,
-        )
+        return super().build_prompt(item)
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
         catboost_prediction = self._catboost_prediction(item)
