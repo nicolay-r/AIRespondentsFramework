@@ -13,20 +13,19 @@ from src.utils.surveyRecommender import SurveyRecommender
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_RECOMMENDER_PATH = PROJECT_ROOT / "models" / "survey_recommender"
 
-
 class CatBoostStatementsPipeline(Pipeline):
+
+    TOP_RELEVANT_COUNT = 25
 
     def __init__(
         self,
         client: OpenAIClient,
         recommender_path: Path = DEFAULT_RECOMMENDER_PATH,
         *,
-        top_k: int = 30,
         statements_path: Path = FEATURE_STATEMENTS_PATH,
     ) -> None:
         self._client = client
         self._statements = load_feature_statements(statements_path)
-        self._top_k = top_k
         self._recommender = SurveyRecommender.load(recommender_path)
 
     def _statement_for(self, entry: FeatureEntry) -> str | None:
@@ -37,28 +36,61 @@ class CatBoostStatementsPipeline(Pipeline):
     def _history_by_code(self, item: PipelineItem) -> dict[str, FeatureEntry]:
         return {entry.code: entry for entry in item.history}
 
-    def _ordered_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
-        history_by_code = self._history_by_code(item)
+    def _entry_line(self, entry: FeatureEntry) -> str:
+        statement = self._statement_for(entry)
+        if statement is not None:
+            return f"- {statement}"
+        return f"- {entry.question}: {entry.answer}"
+
+    def _answered_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
+        return tuple(entry for entry in item.history if entry.answer is not None)
+
+    def _ranked_entry_groups(
+        self,
+        item: PipelineItem,
+    ) -> tuple[tuple[FeatureEntry, ...], tuple[FeatureEntry, ...]]:
+        answered = self._answered_entries(item)
         if item.question_id not in self._recommender.models:
-            return tuple(
-                entry
-                for entry in item.history
-                if entry.answer is not None
+            return (
+                answered[:self.TOP_RELEVANT_COUNT],
+                answered[self.TOP_RELEVANT_COUNT:],
             )
 
+        history_by_code = self._history_by_code(item)
+        feature_count = len(self._recommender.feature_columns[item.question_id])
         ranked_codes = [
             code
             for code, _ in self._recommender.top_features(
                 item.question_id,
-                top_k=self._top_k,
+                top_k=feature_count,
             )
         ]
+        ranked_set = set(ranked_codes)
         ordered: list[FeatureEntry] = []
+        seen: set[str] = set()
+
         for code in ranked_codes:
             entry = history_by_code.get(code)
-            if entry is not None and entry.answer is not None:
+            if entry is None or entry.answer is None or code in seen:
+                continue
+            ordered.append(entry)
+            seen.add(code)
+
+        for entry in answered:
+            if entry.code not in ranked_set:
                 ordered.append(entry)
-        return tuple(ordered)
+
+        return (
+            tuple(ordered[:self.TOP_RELEVANT_COUNT]),
+            tuple(ordered[self.TOP_RELEVANT_COUNT:]),
+        )
+
+    def _ordered_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
+        top, rest = self._ranked_entry_groups(item)
+        return top + rest
+
+    def _profile_lines(self, entries: tuple[FeatureEntry, ...]) -> list[str]:
+        return [self._entry_line(entry) for entry in entries]
 
     def _respondent_frame(self, item: PipelineItem) -> pd.DataFrame:
         history_by_code = self._history_by_code(item)
@@ -81,18 +113,24 @@ class CatBoostStatementsPipeline(Pipeline):
         return str(predictions[item.question_id].iloc[0])
 
     def build_prompt(self, item: PipelineItem) -> str:
+        top_entries, rest_entries = self._ranked_entry_groups(item)
         lines = [
             "You are answering a survey question as the described respondent.",
             "",
             "Respondent profile:",
+            "",
+            "Most relevant background:",
+            *self._profile_lines(top_entries),
         ]
 
-        for entry in self._ordered_entries(item):
-            statement = self._statement_for(entry)
-            if statement is not None:
-                lines.append(f"- {statement}")
-            else:
-                lines.append(f"- {entry.question}: {entry.answer}")
+        if rest_entries:
+            lines.extend(
+                [
+                    "",
+                    "Other background:",
+                    *self._profile_lines(rest_entries),
+                ]
+            )
 
         catboost_prediction = self._catboost_prediction(item)
         if catboost_prediction is not None:
@@ -115,8 +153,12 @@ class CatBoostStatementsPipeline(Pipeline):
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
         ordered = self._ordered_entries(item)
+        prompt = self.build_prompt(item)
+        output = self._client.infer(prompt)
+        print("prompt: ", prompt)
+        print("output: ", output)
         return {
-            "output": self._client.infer(self.build_prompt(item)),
+            "output": output,
             "features": [entry.code for entry in ordered],
             "catboost_prediction": self._catboost_prediction(item),
         }
