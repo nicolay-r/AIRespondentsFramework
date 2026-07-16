@@ -10,17 +10,15 @@ from src.pipelines.grouped_prompt_based import (
 from src.providers.openai_client import OpenAIClient
 from src.utils.surveyRecommender import SurveyRecommender
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_RECOMMENDER_PATH = PROJECT_ROOT / "models" / "survey_recommender"
 
 class CatBoostStatementsPipeline(Pipeline):
 
-    TOP_RELEVANT_COUNT = 25
+    TOP_RELEVANT_COUNT = 25 
 
     def __init__(
         self,
         client: OpenAIClient,
-        recommender_path: Path = DEFAULT_RECOMMENDER_PATH,
+        recommender_path,
         *,
         statements_path: Path = FEATURE_STATEMENTS_PATH,
     ) -> None:
@@ -72,16 +70,10 @@ class CatBoostStatementsPipeline(Pipeline):
     def _answered_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
         return tuple(entry for entry in item.history if entry.answer is not None)
 
-    def _ranked_entry_groups(
-        self,
-        item: PipelineItem,
-    ) -> tuple[tuple[FeatureEntry, ...], tuple[FeatureEntry, ...]]:
+    def _ranked_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
         answered = self._answered_entries(item)
         if item.question_id not in self._recommender.models:
-            return (
-                answered[:self.TOP_RELEVANT_COUNT],
-                answered[self.TOP_RELEVANT_COUNT:],
-            )
+            return answered[: self.TOP_RELEVANT_COUNT]
 
         history_by_code = self._history_by_code(item)
         feature_count = len(self._recommender.feature_columns[item.question_id])
@@ -107,14 +99,10 @@ class CatBoostStatementsPipeline(Pipeline):
             if entry.code not in ranked_set:
                 ordered.append(entry)
 
-        return (
-            tuple(ordered[:self.TOP_RELEVANT_COUNT]),
-            tuple(ordered[self.TOP_RELEVANT_COUNT:]),
-        )
+        return tuple(ordered[: self.TOP_RELEVANT_COUNT])
 
     def _ordered_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
-        top, rest = self._ranked_entry_groups(item)
-        return top + rest
+        return self._ranked_entries(item)
 
     def _profile_lines(
         self,
@@ -150,42 +138,74 @@ class CatBoostStatementsPipeline(Pipeline):
         )
         return str(predictions[item.question_id].iloc[0])
 
-    def build_prompt(self, item: PipelineItem) -> str:
-        top_entries, rest_entries = self._ranked_entry_groups(item)
+    def _prediction_index(
+        self,
+        labels: tuple[str, ...],
+        prediction: str,
+    ) -> int | None:
+        if prediction in labels:
+            return labels.index(prediction)
+        prediction_lower = prediction.lower()
+        for index, label in enumerate(labels):
+            if label.lower() == prediction_lower:
+                return index
+        return None
+
+    def _answer_labels(
+        self,
+        item: PipelineItem,
+        catboost_prediction: str | None = None,
+    ) -> tuple[str, ...]:
+        if catboost_prediction is None:
+            catboost_prediction = self._catboost_prediction(item)
+        if catboost_prediction is None:
+            return item.labels
+
+        index = self._prediction_index(item.labels, catboost_prediction)
+        if index is None:
+            return item.labels
+
+        start = max(0, index - 1)
+        end = min(len(item.labels) - 1, index + 1)
+        return item.labels[start : end + 1]
+
+    def build_prompt(
+        self,
+        item: PipelineItem,
+        *,
+        catboost_prediction: str | None = None,
+    ) -> str:
+        ranked_entries = self._ranked_entries(item)
         lines = [
             "You are answering a survey question as the described respondent.",
             "",
             "Respondent profile:",
             "",
             "Most relevant background (most to least relevant, relevance in percentages):",
-            *self._profile_lines(item, top_entries),
+            *self._profile_lines(item, ranked_entries),
         ]
 
-        if rest_entries:
-            lines.extend(
-                [
-                    "",
-                    "Other background (most to least relevant, relevance in percentages):",
-                    *self._profile_lines(item, rest_entries),
-                ]
-            )
+        answer_labels = self._answer_labels(item, catboost_prediction)
 
         lines.extend(
             [
                 "",
                 f"Question: {item.question}",
-                f"Answer with exactly one of: {', '.join(item.labels)}",
+                f"Answer with exactly one of: {', '.join(answer_labels)}",
             ]
         )
         return "\n".join(lines)
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
         ordered = self._ordered_entries(item)
-        prompt = self.build_prompt(item)
-        # print("prompt: ", prompt)
+        catboost_prediction = self._catboost_prediction(item)
+        prompt = self.build_prompt(item, catboost_prediction=catboost_prediction)
         output = self._client.infer(prompt)
         return {
             "output": output,
             "features": [entry.code for entry in ordered],
-            "catboost_prediction": self._catboost_prediction(item),
+            "catboost_prediction": catboost_prediction,
+            "answer_labels": list(
+                self._answer_labels(item, catboost_prediction)
+            ),
         }

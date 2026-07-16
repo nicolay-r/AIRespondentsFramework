@@ -6,6 +6,8 @@ from typing import Literal, cast
 from tqdm import tqdm
 
 from src.pipelines import (
+    CatBoostAsJudgePipeline,
+    CatBoostGatedHybridPipeline,
     CatBoostOnlyPipeline,
     CatBoostStatementsPipeline,
     GroupedPromptBasedPipeline,
@@ -35,10 +37,6 @@ def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
         if end > best_end:
             best_end = end
             best_label = label
-
-    print("--")
-    print(text)
-    print(best_label)
 
     if best_label is not None:
         return best_label
@@ -85,7 +83,9 @@ def run_on_items(
     print("Pipeline name:", pipeline_name)
     print("Model: ", model)
 
-    recommender_path = 
+    recommender_path = (
+        Path(__file__).resolve().parents[1] / "models" / "CB_1000R_100I_9T"
+    )
     pipelines = {
         "prompt-based": PromptBasedPipeline(
             OpenAIClient(
@@ -109,10 +109,25 @@ def run_on_items(
             OpenAIClient(
                 model=model,
                 base_url="https://api.studio.nebius.com/v1/",
-            )
+            ),
+            recommender_path=recommender_path,
         ),
         "catboost-only": CatBoostOnlyPipeline(
-            recommender_path= Path(__file__).resolve().parents[2] / "models" / "CB_1000R_250I_9T"
+            recommender_path=recommender_path,
+        ),
+        "catboost-as-judge": CatBoostAsJudgePipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            ),
+            recommender_path=recommender_path,
+        ),
+        "catboost-gated": CatBoostGatedHybridPipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            ),
+            recommender_path=recommender_path,
         ),
         "retriever-based": RetrieverBasedPipeline(
             OpenAIClient(
