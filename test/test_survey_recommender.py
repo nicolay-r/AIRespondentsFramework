@@ -14,7 +14,7 @@ from src.utils.train_survey import (
     survey_dataframe,
 )
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 
 def main() -> None:

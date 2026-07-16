@@ -12,7 +12,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from scripts.run_extract_pipeline_input import dev_pipeline_items, load_dev_dataset
 from src.pipelines.grouped_prompt_based import GroupedPromptBasedPipeline
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 
 class _PromptOnlyClient:

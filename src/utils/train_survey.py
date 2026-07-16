@@ -7,7 +7,7 @@ from typing import Iterable, Literal
 import pandas as pd
 from datasets import load_dataset
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 META_COLUMNS = frozenset({"respondent_id", "country"})
 

@@ -9,7 +9,7 @@ from sklearn.metrics import f1_score
 from src.utils.surveyRecommender import SurveyRecommender
 from src.utils.train_survey import feature_columns_for_test, survey_dataframe
 
-dataset = importlib.import_module("src.import")
+dataset = importlib.import_module("scripts.utils")
 
 
 def _majority_share(answer_counts: dict[str, int]) -> float:
