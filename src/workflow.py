@@ -4,7 +4,11 @@ from typing import Literal, cast
 
 from tqdm import tqdm
 
-from src.pipelines import GroupedPromptBasedPipeline, PromptBasedPipeline
+from src.pipelines import (
+    GroupedPromptBasedPipeline,
+    PromptBasedPipeline,
+    PromptBasedStatementsPipeline,
+)
 from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
 
@@ -13,10 +17,28 @@ dataset = importlib.import_module("src.import")
 
 def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
     text = raw.strip()
+    text_lower = text.lower()
+
+    best_label: str | None = None
+    best_end = -1
     for label in sorted(labels, key=len, reverse=True):
-        if text == label or label.lower() in text.lower():
+        if text == label:
             return label
-    return labels[0]
+        pos = text_lower.rfind(label.lower())
+        if pos == -1:
+            continue
+        end = pos + len(label)
+        if end > best_end:
+            best_end = end
+            best_label = label
+
+    print("--")
+    print(text)
+    print(best_label)
+
+    if best_label is not None:
+        return best_label
+    return labels[len(labels) // 2]
 
 
 def _predict_job(job: tuple[Pipeline, PipelineItem]) -> dict[str, object]:
@@ -61,6 +83,12 @@ def run_on_items(
 
     pipelines = {
         "prompt-based": PromptBasedPipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            )
+        ),
+        "prompt-based-statements": PromptBasedStatementsPipeline(
             OpenAIClient(
                 model=model,
                 base_url="https://api.studio.nebius.com/v1/",
