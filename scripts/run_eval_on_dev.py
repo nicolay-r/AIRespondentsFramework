@@ -33,6 +33,7 @@ if __name__ == "__main__":
         help="Evaluate only the first N examples.",
     )
     args = parser.parse_args()
+    assert args.limit is None or args.limit > 0, "--limit must be > 0"
 
     load_dotenv(PROJECT_ROOT / ".env")
 
