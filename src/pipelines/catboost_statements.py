@@ -2,18 +2,16 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.pipelines.base import FeatureEntry, Pipeline, PipelineItem
-from src.pipelines.grouped_prompt_based import (
-    FEATURE_STATEMENTS_PATH,
-    load_feature_statements,
-)
+from src.pipelines.base import FeatureEntry, PipelineItem
+from src.pipelines.grouped_prompt_based import FEATURE_STATEMENTS_PATH
+from src.pipelines.prompt_based_statements import PromptBasedStatementsPipeline
 from src.providers.openai_client import OpenAIClient
 from src.utils.surveyRecommender import SurveyRecommender
 
 
-class CatBoostStatementsPipeline(Pipeline):
+class CatBoostStatementsPipeline(PromptBasedStatementsPipeline):
 
-    TOP_RELEVANT_COUNT = 25 
+    TOP_RELEVANT_COUNT = 25
 
     def __init__(
         self,
@@ -22,14 +20,11 @@ class CatBoostStatementsPipeline(Pipeline):
         *,
         statements_path: Path = FEATURE_STATEMENTS_PATH,
     ) -> None:
-        self._client = client
-        self._statements = load_feature_statements(statements_path)
+        super().__init__(client, statements_path=statements_path)
         self._recommender = SurveyRecommender.load(recommender_path)
 
-    def _statement_for(self, entry: FeatureEntry) -> str | None:
-        if entry.answer is None:
-            return None
-        return self._statements.get((entry.code, entry.answer))
+    def _uses_catboost(self, item: PipelineItem) -> bool:
+        return item.question_id in self._recommender.models
 
     def _history_by_code(self, item: PipelineItem) -> dict[str, FeatureEntry]:
         return {entry.code: entry for entry in item.history}
@@ -72,9 +67,6 @@ class CatBoostStatementsPipeline(Pipeline):
 
     def _ranked_entries(self, item: PipelineItem) -> tuple[FeatureEntry, ...]:
         answered = self._answered_entries(item)
-        if item.question_id not in self._recommender.models:
-            return answered[: self.TOP_RELEVANT_COUNT]
-
         history_by_code = self._history_by_code(item)
         feature_count = len(self._recommender.feature_columns[item.question_id])
         ranked_codes = [
@@ -139,6 +131,9 @@ class CatBoostStatementsPipeline(Pipeline):
         return str(predictions[item.question_id].iloc[0])
 
     def build_prompt(self, item: PipelineItem) -> str:
+        if not self._uses_catboost(item):
+            return super().build_prompt(item)
+
         ranked_entries = self._ranked_entries(item)
         lines = [
             "You are answering a survey question as the described respondent.",
@@ -165,6 +160,9 @@ class CatBoostStatementsPipeline(Pipeline):
         return "\n".join(lines)
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
+        if not self._uses_catboost(item):
+            return super().apply(item)
+
         ordered = self._ordered_entries(item)
         return {
             "output": self._client.infer(self.build_prompt(item)),
