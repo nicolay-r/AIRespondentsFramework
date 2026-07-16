@@ -157,7 +157,7 @@ class CatBoostStatementsPipeline(Pipeline):
             "",
             "Respondent profile:",
             "",
-            "Most relevant background (most to least relevant):",
+            "Most relevant background (most to least relevant, relevance in percentages):",
             *self._profile_lines(item, top_entries),
         ]
 
@@ -165,7 +165,7 @@ class CatBoostStatementsPipeline(Pipeline):
             lines.extend(
                 [
                     "",
-                    "Other background (most to least relevant):",
+                    "Other background (most to least relevant, relevance in percentages):",
                     *self._profile_lines(item, rest_entries),
                 ]
             )
@@ -182,7 +182,7 @@ class CatBoostStatementsPipeline(Pipeline):
     def apply(self, item: PipelineItem) -> dict[str, object]:
         ordered = self._ordered_entries(item)
         prompt = self.build_prompt(item)
-        print("prompt: ", prompt)
+        # print("prompt: ", prompt)
         output = self._client.infer(prompt)
         return {
             "output": output,
