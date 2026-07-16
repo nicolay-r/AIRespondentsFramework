@@ -1,6 +1,8 @@
 from catboost import CatBoostClassifier
+import json
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
 
 class SurveyRecommender:
@@ -146,3 +148,35 @@ class SurveyRecommender:
         model = self.models[target]
         probabilities = model.predict_proba(self._feature_frame(X, target))
         return pd.DataFrame(probabilities, index=X.index, columns=model.classes_)
+
+    def save(self, path: Path | str) -> None:
+        directory = Path(path)
+        directory.mkdir(parents=True, exist_ok=True)
+
+        metadata = {
+            "catboost_params": self.catboost_params,
+            "feature_columns": self.feature_columns,
+            "targets": sorted(self.models),
+        }
+        (directory / "metadata.json").write_text(
+            json.dumps(metadata, indent=2),
+            encoding="utf-8",
+        )
+
+        for target, model in self.models.items():
+            model.save_model(directory / f"{target}.cbm")
+
+    @classmethod
+    def load(cls, path: Path | str) -> "SurveyRecommender":
+        directory = Path(path)
+        metadata = json.loads((directory / "metadata.json").read_text(encoding="utf-8"))
+
+        recommender = cls(**metadata["catboost_params"])
+        recommender.feature_columns = metadata["feature_columns"]
+
+        for target in metadata["targets"]:
+            model = CatBoostClassifier()
+            model.load_model(directory / f"{target}.cbm")
+            recommender.models[target] = model
+
+        return recommender
