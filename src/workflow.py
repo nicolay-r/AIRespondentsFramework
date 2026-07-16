@@ -1,5 +1,6 @@
 import importlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 from typing import Literal, cast
 
 from tqdm import tqdm
@@ -84,6 +85,7 @@ def run_on_items(
     print("Pipeline name:", pipeline_name)
     print("Model: ", model)
 
+    recommender_path = 
     pipelines = {
         "prompt-based": PromptBasedPipeline(
             OpenAIClient(
@@ -109,7 +111,9 @@ def run_on_items(
                 base_url="https://api.studio.nebius.com/v1/",
             )
         ),
-        "catboost-only": CatBoostOnlyPipeline(),
+        "catboost-only": CatBoostOnlyPipeline(
+            recommender_path= Path(__file__).resolve().parents[2] / "models" / "CB_1000R_250I_9T"
+        ),
         "retriever-based": RetrieverBasedPipeline(
             OpenAIClient(
                 model=model,

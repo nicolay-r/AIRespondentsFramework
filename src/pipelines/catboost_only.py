@@ -5,16 +5,13 @@ import pandas as pd
 from src.pipelines.base import Pipeline, PipelineItem
 from src.utils.surveyRecommender import SurveyRecommender
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_RECOMMENDER_PATH = PROJECT_ROOT / "models" / "survey_recommender"
-
 
 class CatBoostOnlyPipeline(Pipeline):
     model_name = "catboost-only"
 
     def __init__(
         self,
-        recommender_path: Path = DEFAULT_RECOMMENDER_PATH,
+        recommender_path,
         *,
         top_k: int = 30,
     ) -> None:
