@@ -8,8 +8,10 @@ from src.pipelines.grouped_prompt_based import (
     load_feature_statements,
 )
 from src.providers.openai_client import OpenAIClient
-from src.utils.fit_recommender import fit_survey_recommender
 from src.utils.surveyRecommender import SurveyRecommender
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_RECOMMENDER_PATH = PROJECT_ROOT / "models" / "survey_recommender"
 
 
 class CatBoostStatementsPipeline(Pipeline):
@@ -17,20 +19,15 @@ class CatBoostStatementsPipeline(Pipeline):
     def __init__(
         self,
         client: OpenAIClient,
-        recommender: SurveyRecommender | None = None,
+        recommender_path: Path = DEFAULT_RECOMMENDER_PATH,
         *,
         top_k: int = 30,
         statements_path: Path = FEATURE_STATEMENTS_PATH,
-        catboost_iterations: int = 100,
-        catboost_depth: int = 6,
     ) -> None:
         self._client = client
         self._statements = load_feature_statements(statements_path)
         self._top_k = top_k
-        self._recommender = recommender or fit_survey_recommender(
-            iterations=catboost_iterations,
-            depth=catboost_depth,
-        )
+        self._recommender = SurveyRecommender.load(recommender_path)
 
     def _statement_for(self, entry: FeatureEntry) -> str | None:
         if entry.answer is None:

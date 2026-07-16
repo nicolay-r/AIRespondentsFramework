@@ -11,8 +11,9 @@ dataset = importlib.import_module("src.import")
 def fit_survey_recommender(
     data: dataset.LoadedData | None = None,
     *,
-    iterations: int = 100,
-    depth: int = 6,
+    limit: int = 100,
+    iterations,
+    depth,
 ) -> SurveyRecommender:
     if data is None:
         data = dataset.load()
@@ -22,6 +23,7 @@ def fit_survey_recommender(
     train_survey = survey_dataframe(
         data,
         split="train",
+        limit=limit,
         questions=feature_columns + target_columns,
     )
 
