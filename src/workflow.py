@@ -1,7 +1,6 @@
-import importlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import Literal, cast
+from typing import cast
 
 from tqdm import tqdm
 
@@ -16,8 +15,6 @@ from src.pipelines import (
 )
 from src.pipelines.base import Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
-
-dataset = importlib.import_module("src.import")
 
 
 def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
@@ -135,25 +132,3 @@ def run_on_items(
 
     effective_model = getattr(pipeline, "model_name", model)
     return pipeline, items, results, effective_model
-
-
-def run(
-    *,
-    pipeline_name: str,
-    split: Literal["train", "test"] = "test",
-    limit: int | None = None,
-    workers: int = 32,
-):
-    print("Loading data...")
-    data = dataset.load()
-    print("Perparing items...")
-    items = list(dataset.iter_pipeline_items(data, split=split))[:limit]
-    print(f"Starting the pipeline {pipeline_name}...")
-    desc = f"predicting (limit: {limit})" if limit else "predicting"
-    pipeline, items, results, model = run_on_items(
-        items,
-        pipeline_name,
-        workers=workers,
-        desc=desc,
-    )
-    return data, pipeline, items, results, model

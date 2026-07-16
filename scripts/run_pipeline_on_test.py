@@ -1,6 +1,7 @@
 """Run the test-set workflow and write a submission bundle to output/."""
 
 import argparse
+import importlib
 import sys
 from pathlib import Path
 
@@ -11,7 +12,9 @@ OUTPUT_DIR = PROJECT_ROOT / "output"
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.utils import example_prompts_for, write_submission
-from src.workflow import run
+from src.workflow import run_on_items
+
+dataset = importlib.import_module("src.import")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -32,10 +35,17 @@ if __name__ == "__main__":
 
     load_dotenv(PROJECT_ROOT / ".env")
 
-    _, pipeline, items, results, model = run(
-        pipeline_name=args.pipeline,
-        split="test",
-        limit=args.limit,
+    print("Loading data...")
+    data = dataset.load()
+    print("Preparing items...")
+    items = list(dataset.iter_pipeline_items(data, split="test"))
+    if args.limit is not None:
+        items = items[: args.limit]
+    desc = f"predicting (limit: {args.limit})" if args.limit else "predicting"
+    pipeline, _, results, model = run_on_items(
+        items,
+        args.pipeline,
+        desc=desc,
     )
     prompts = example_prompts_for(pipeline, items)
 
