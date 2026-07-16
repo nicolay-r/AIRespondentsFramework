@@ -7,7 +7,7 @@ from src.providers.openai_client import OpenAIClient
 
 class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
     model_name = "catboost-gated-hybrid"
-    CONFIDENCE_THRESHOLD = 70
+    CONFIDENCE_THRESHOLD = 50
 
     def __init__(
         self,
