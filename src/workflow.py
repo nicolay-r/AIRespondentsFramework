@@ -7,7 +7,6 @@ from tqdm import tqdm
 from src.pipelines import (
     CatBoostGatedHybridPipeline,
     CatBoostOnlyPipeline,
-    CatBoostStatementsPipeline,
     GroupedPromptBasedPipeline,
     PromptBasedPipeline,
     PromptBasedStatementsPipeline,
@@ -97,11 +96,6 @@ def run_on_items(
         ),
         "grouped-prompt-based": GroupedPromptBasedPipeline(
             client,
-            **statement_pipeline_kwargs,
-        ),
-        "catboost-statements": CatBoostStatementsPipeline(
-            client,
-            recommender_path=recommender_path,
             **statement_pipeline_kwargs,
         ),
         "catboost-only": CatBoostOnlyPipeline(

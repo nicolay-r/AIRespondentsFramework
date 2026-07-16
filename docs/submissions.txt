@@ -106,3 +106,27 @@ What essentially helps is filtering the survey
 Okay, let's generate new pipeline dubbed as 'catboost-as-judge' which essentially represent two-step Chain-of-Thought, where on steps:
 1. we ask LLM to simply explain and provider answer (explain in a single paragraph)
 2. on the second step augment for the purpose to judge for the given question and set of answers, result received from step 1 and result from catboost with its confidence. Request to make a decision by answering short.
+
+
+-----
+catboost statements:
+skill: -0.250
+alignment: 0.780
+f1_macro: 0.311
+accuracy: 36/91 (39.6%)
+  predictions.csv
+  scores.json
+  method/method.md
+
+while prompt-based statements:
+
+skill: -0.048
+alignment: 0.860
+f1_macro: 0.368
+accuracy: 49/91 (53.8%)
+  predictions.csv
+  scores.json
+  method/method.md
+  method/prompts.jsonl
+
+So conclusion => delete catboost statements as it does not contribute to better support in gated approach.
