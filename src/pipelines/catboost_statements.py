@@ -138,43 +138,7 @@ class CatBoostStatementsPipeline(Pipeline):
         )
         return str(predictions[item.question_id].iloc[0])
 
-    def _prediction_index(
-        self,
-        labels: tuple[str, ...],
-        prediction: str,
-    ) -> int | None:
-        if prediction in labels:
-            return labels.index(prediction)
-        prediction_lower = prediction.lower()
-        for index, label in enumerate(labels):
-            if label.lower() == prediction_lower:
-                return index
-        return None
-
-    def _answer_labels(
-        self,
-        item: PipelineItem,
-        catboost_prediction: str | None = None,
-    ) -> tuple[str, ...]:
-        if catboost_prediction is None:
-            catboost_prediction = self._catboost_prediction(item)
-        if catboost_prediction is None:
-            return item.labels
-
-        index = self._prediction_index(item.labels, catboost_prediction)
-        if index is None:
-            return item.labels
-
-        start = max(0, index - 1)
-        end = min(len(item.labels) - 1, index + 1)
-        return item.labels[start : end + 1]
-
-    def build_prompt(
-        self,
-        item: PipelineItem,
-        *,
-        catboost_prediction: str | None = None,
-    ) -> str:
+    def build_prompt(self, item: PipelineItem) -> str:
         ranked_entries = self._ranked_entries(item)
         lines = [
             "You are answering a survey question as the described respondent.",
@@ -194,29 +158,15 @@ class CatBoostStatementsPipeline(Pipeline):
             "",
             "Most relevant background (most to least relevant, relevance in percentages):",
             *self._profile_lines(item, ranked_entries),
+            "",
+            f"Question: {item.question}",
+            f"Answer with exactly one of: {', '.join(item.labels)}",
         ]
-
-        answer_labels = self._answer_labels(item, catboost_prediction)
-
-        lines.extend(
-            [
-                "",
-                f"Question: {item.question}",
-                f"Answer with exactly one of: {', '.join(answer_labels)}",
-            ]
-        )
         return "\n".join(lines)
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
         ordered = self._ordered_entries(item)
-        catboost_prediction = self._catboost_prediction(item)
-        prompt = self.build_prompt(item, catboost_prediction=catboost_prediction)
-        output = self._client.infer(prompt)
         return {
-            "output": output,
+            "output": self._client.infer(self.build_prompt(item)),
             "features": [entry.code for entry in ordered],
-            "catboost_prediction": catboost_prediction,
-            "answer_labels": list(
-                self._answer_labels(item, catboost_prediction)
-            ),
         }
