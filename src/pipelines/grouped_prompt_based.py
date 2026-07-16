@@ -6,6 +6,7 @@ from src.pipelines.base import FeatureEntry, Pipeline, PipelineItem
 from src.providers.openai_client import OpenAIClient
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+# TODO. Fix interdependency of these files.
 FEATURE_STATEMENTS_PATH = PROJECT_ROOT / "docs" / "dataset" / "feature_statements.tsv"
 FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.txt"
 
