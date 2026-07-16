@@ -5,7 +5,8 @@ from typing import Literal, cast
 from tqdm import tqdm
 
 from src.pipelines import (
-    # CatBoostStatementsPipeline,
+    CatBoostOnlyPipeline,
+    CatBoostStatementsPipeline,
     GroupedPromptBasedPipeline,
     PromptBasedPipeline,
     PromptBasedStatementsPipeline,
@@ -102,12 +103,13 @@ def run_on_items(
                 base_url="https://api.studio.nebius.com/v1/",
             )
         ),
-        # "catboost-statements": CatBoostStatementsPipeline(
-        #     OpenAIClient(
-        #         model=model,
-        #         base_url="https://api.studio.nebius.com/v1/",
-        #     )
-        # ),
+        "catboost-statements": CatBoostStatementsPipeline(
+            OpenAIClient(
+                model=model,
+                base_url="https://api.studio.nebius.com/v1/",
+            )
+        ),
+        "catboost-only": CatBoostOnlyPipeline(),
         "retriever-based": RetrieverBasedPipeline(
             OpenAIClient(
                 model=model,
@@ -123,7 +125,8 @@ def run_on_items(
     jobs = [(pipeline, item) for item in items]
     results = _run_jobs(jobs, workers=workers, desc=desc)
 
-    return pipeline, items, results, model
+    effective_model = getattr(pipeline, "model_name", model)
+    return pipeline, items, results, effective_model
 
 
 def run(
