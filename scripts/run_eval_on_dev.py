@@ -11,7 +11,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEV_DATASET_PATH = PROJECT_ROOT / "docs" / "dev_dataset.json"
 OUTPUT_DIR = PROJECT_ROOT / "output" / "dev"
 STATEMENTS_PATH = PROJECT_ROOT / "docs" / "dataset" / "feature_statements.tsv"
-FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.txt"
+FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.csv"
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.run_extract_pipeline_input import dev_pipeline_items, load_dev_dataset
