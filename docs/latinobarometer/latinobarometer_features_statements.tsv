@@ -1,0 +1,763 @@
+P9STGBS	1	I trust most people
+P9STGBS	2	I'm cautious with others
+P4STGBS	1	I believe the most important problem currently facing the country is Low salaries.
+P4STGBS	2	I believe the most important problem currently facing the country is Employment instability.
+P4STGBS	3	I believe the most important problem currently facing the country is Poverty.
+P4STGBS	4	I believe the most important problem currently facing the country is Income inequality, social injustice.
+P4STGBS	5	I believe the most important problem currently facing the country is Economy/Economic problems/financial problems.
+P4STGBS	6	I believe the most important problem currently facing the country is Gas, fuel, scarcity, high prices.
+P4STGBS	7	I believe the most important problem currently facing the country is Food scarcity.
+P4STGBS	8	I believe the most important problem currently facing the country is Everything is very expensive.
+P4STGBS	9	I believe the most important problem currently facing the country is Unemployment.
+P4STGBS	10	I believe the most important problem currently facing the country is Inflation/rise in prices.
+P4STGBS	11	I believe the most important problem currently facing the country is Transportation.
+P4STGBS	12	I believe the most important problem currently facing the country is Energy problems.
+P4STGBS	13	I believe the most important problem currently facing the country is Poor basic services (water, electricity, etc.).
+P4STGBS	14	I believe the most important problem currently facing the country is Education problems.
+P4STGBS	15	I believe the most important problem currently facing the country is Housing problems.
+P4STGBS	16	I believe the most important problem currently facing the country is Health problems.
+P4STGBS	17	I believe the most important problem currently facing the country is Environmental problems.
+P4STGBS	18	I believe the most important problem currently facing the country is Global warming.
+P4STGBS	19	I believe the most important problem currently facing the country is Pollution.
+P4STGBS	20	I believe the most important problem currently facing the country is Lack of opportunities for youth.
+P4STGBS	21	I believe the most important problem currently facing the country is Human rights violations.
+P4STGBS	22	I believe the most important problem currently facing the country is Lack of freedom of expression.
+P4STGBS	23	I believe the most important problem currently facing the country is State violence, state repression.
+P4STGBS	24	I believe the most important problem currently facing the country is Terrorism.
+P4STGBS	25	I believe the most important problem currently facing the country is Guerrilla warfare.
+P4STGBS	26	I believe the most important problem currently facing the country is Crime/public security.
+P4STGBS	27	I believe the most important problem currently facing the country is Violence/gangs.
+P4STGBS	28	I believe the most important problem currently facing the country is Domestic violence.
+P4STGBS	29	I believe the most important problem currently facing the country is Verbal abuse.
+P4STGBS	30	I believe the most important problem currently facing the country is Drug trafficking.
+P4STGBS	31	I believe the most important problem currently facing the country is Drug use.
+P4STGBS	32	I believe the most important problem currently facing the country is Racial discrimination.
+P4STGBS	33	I believe the most important problem currently facing the country is Border issues.
+P4STGBS	34	I believe the most important problem currently facing the country is Conflicts with neighboring countries.
+P4STGBS	35	I believe the most important problem currently facing the country is Corruption.
+P4STGBS	36	I believe the most important problem currently facing the country is Political situation/political problems.
+P4STGBS	37	I believe the most important problem currently facing the country is Immigrants.
+P4STGBS	38	I believe the most important problem currently facing the country is Foreigners.
+P4STGBS	39	I believe the most important problem currently facing the country is Not being able to be in my country.
+P4STGBS	40	I believe the most important problem currently facing the country is Lack of concern for the elderly.
+P4STGBS	41	I believe the most important problem currently facing the country is Lack of parks, recreational areas.
+P4STGBS	42	I believe the most important problem currently facing the country is Dirtiness, lack of cleanliness.
+P4STGBS	43	I believe the most important problem currently facing the country is Infrastructure.
+P4STGBS	44	I believe the most important problem currently facing the country is Pandemic/Coronavirus/Covid-19.
+P4STGBS	45	I believe the most important problem currently facing the country is Judicial system/justice.
+P4STGBS	96	I believe the most important problem currently facing the country is Other.
+P4STGBS	97	I believe the most important problem currently facing the country is None.
+SEXO	1	I am a man.
+SEXO	2	I am a woman.
+P12ST	1	I think powerful groups govern for themselves.
+P12ST	2	I think the country is governed for all citizens.
+EDAD	20-21	I am between 20 and 21 years old.
+P10STGBS	1	I prefer democracy over any other government
+P10STGBS	2	I think authoritarian rule can be better sometimes
+P10STGBS	3	Government type doesn't matter to me
+P14ST.F	1	I trust banks a lot.
+P14ST.F	2	I trust banks some.
+P14ST.F	3	I trust banks little.
+P14ST.F	4	I trust banks not at all.
+P14ST.G	1	I trust radio a lot.
+P14ST.G	2	I trust radio somewhat.
+P14ST.G	3	I trust radio little.
+P14ST.G	4	I do not trust radio.
+P2ST	1	I think the country is progressing
+P2ST	2	I believe the country is at a standstill
+P14N.I	1	I trust social media a lot.
+P14N.I	2	I trust social media some.
+P14N.I	3	I trust social media little.
+P14N.I	4	I have no trust in social media.
+P13STGBS.B	1	I trust the police a lot.
+P13STGBS.B	2	I trust the police some.
+P13STGBS.B	3	I trust the police little.
+P13STGBS.B	4	I have no trust in police.
+P13ST.G	1	I trust political parties a lot.
+P13ST.G	2	I trust political parties some.
+P13ST.G	3	I trust political parties little.
+P13ST.G	4	I have no trust in political parties.
+P14ST.C	1	I trust trade unions a lot.
+P14ST.C	2	I trust trade unions some.
+P14ST.C	3	I trust trade unions little.
+P14ST.C	4	I have no trust in trade unions.
+P13ST.E	1	I trust the National Government a lot.
+P13ST.E	2	I trust the National Government some.
+P13ST.E	3	I trust the National Government little.
+P13ST.E	4	I have no trust in Government.
+P13ST.D	1	I trust the National Congress a lot.
+P13ST.D	2	I trust the National Congress somewhat.
+P13ST.D	3	I trust the National Congress very little.
+P13ST.D	4	I have no trust in the National Congress.
+P3N	1	I think society is all right as it is
+P3N	2	I believe small changes can improve society
+P3N	3	I think society needs deep reforms
+P3N	4	I believe society must change radically
+P14ST.H	1	I trust the printed press a lot.
+P14ST.H	2	I trust the printed press some.
+P14ST.H	3	I trust the printed press little.
+P14ST.H	4	I have no trust in the printed press.
+P13ST.H	1	I trust the electoral institution a lot.
+P13ST.H	2	I trust the electoral institution some.
+P13ST.H	3	I trust the electoral institution little.
+P13ST.H	4	I have no trust in the electoral institution.
+P14ST.E	1	I trust international companies a lot.
+P14ST.E	2	I trust international companies some.
+P14ST.E	3	I trust international companies little.
+P14ST.E	4	I have no trust in international companies.
+P14ST.D	1	I trust TV a lot.
+P14ST.D	2	I trust TV some.
+P14ST.D	3	I trust TV little.
+P14ST.D	4	I trust TV not at all.
+P13ST.F	1	I trust the Judiciary a lot.
+P13ST.F	2	I trust the Judiciary some.
+P13ST.F	3	I trust the Judiciary little.
+P13ST.F	4	I have no trust in the Judiciary.
+P14ST.B	1	I trust national companies a lot.
+P14ST.B	2	I trust national companies some.
+P14ST.B	3	I trust national companies little.
+P14ST.B	4	I have no trust in national companies.
+P7ST	1	I expect the economy to be much better.
+P7ST	2	I think the economy will be a little better.
+P7ST	3	I think the economy will stay the same.
+P7ST	4	I expect the economy to be a little worse.
+P7ST	5	I think the economy will be much worse.
+P13ST.C	1	I trust the Church a lot.
+P13ST.C	2	I trust the Church some.
+P13ST.C	3	I trust the Church little.
+P13ST.C	4	I have no trust in the Church.
+P13ST.I	1	I trust the President a lot.
+P13ST.I	2	I trust the President some.
+P13ST.I	3	I trust the President little.
+P13ST.I	4	I have no trust in the President.
+P6STGBS	1	I think the economy is much better now.
+P6STGBS	2	I think the economy is a little better.
+P6STGBS	3	The economy seems the same to me.
+P6STGBS	4	I think the economy is a little worse.
+P6STGBS	5	I think the economy is much worse now.
+P11STGBS.A	1	I'm very satisfied with democracy
+P11STGBS.A	2	I'm quite satisfied with democracy
+P11STGBS.A	3	I'm not very satisfied with democracy
+P11STGBS.A	4	I'm not at all satisfied with democracy
+P20STM	1	I support a military government in difficult times
+P20STM	2	I oppose a military government under any circumstance
+P8STGBS	1	I expect my economic situation to be much better
+P8STGBS	2	I expect my economic situation to be a little better
+P8STGBS	3	My economic situation will remain the same
+P8STGBS	4	I expect my economic situation to be a little worse
+P8STGBS	5	I expect my economic situation to be much worse
+P19N	1	I defend my society's traditions
+P19N	2	I welcome diverse traditions
+P21ST	1	I believe democracy needs political parties
+P21ST	2	I think democracy can work without parties
+P11STGBS.B	1	I'm very satisfied with my country's economy.
+P11STGBS.B	2	I'm quite satisfied with my country's economy.
+P11STGBS.B	3	I'm not very satisfied with my country's economy.
+P11STGBS.B	4	I'm not at all satisfied with my country's economy.
+P17ST	1	I think income distribution is very fair.
+P17ST	2	I think income distribution is fair.
+P17ST	3	I think income distribution is unfair.
+P17ST	4	I think income distribution is very unfair.
+P18STM.C	1	I strongly support presidential media control
+P18STM.C	2	I support presidential media control
+P18STM.C	3	I oppose presidential media control
+P18STM.C	4	I strongly oppose presidential media control
+P18ST.A	1	I strongly believe democracy is the best system.
+P18ST.A	2	I believe democracy is the best system.
+P18ST.A	3	I don't think democracy is the best system.
+P18ST.A	4	I strongly disagree democracy is the best system.
+P18N.F	1	I strongly agree parties work well
+P18N.F	2	I agree parties work well
+P18N.F	3	I disagree parties work well
+P18N.F	4	I strongly disagree parties work well
+P18N.E	1	I strongly believe in judicial independence.
+P18N.E	2	I believe in judicial independence.
+P18N.E	3	I don't believe in judicial independence.
+P18N.E	4	I strongly oppose judicial independence.
+P18STM.B	1	I accept undemocratic government if it solves problems.
+P18STM.B	2	I somewhat accept undemocratic government if it solves problems.
+P18STM.B	3	I don't accept undemocratic government.
+P18STM.B	4	I strongly reject undemocratic government.
+P18ST.I	1	I strongly believe democracy solves problems.
+P18ST.I	2	I believe democracy solves problems.
+P18ST.I	3	I don't think democracy solves problems.
+P18ST.I	4	I strongly doubt democracy solves problems.
+P23ST.B	1	I view Russia very favorably.
+P23ST.B	2	I view Russia somewhat favorably.
+P23ST.B	3	I view Russia somewhat unfavorably.
+P23ST.B	4	I view Russia very unfavorably.
+P23ST.A	1	I view the US very favorably
+P23ST.A	2	I view the US somewhat favorably
+P23ST.A	3	I view the US somewhat unfavorably
+P23ST.A	4	I view the US very unfavorably
+P23ST.C	1	I view China very favorably.
+P23ST.C	2	I view China somewhat favorably.
+P23ST.C	3	I view China somewhat unfavorably.
+P23ST.C	4	I view China very unfavorably.
+P23ST.E	1	I view Ukraine very favorably.
+P23ST.E	2	I view Ukraine somewhat favorably.
+P23ST.E	3	I view Ukraine somewhat unfavorably.
+P23ST.E	4	I view Ukraine very unfavorably.
+P18N.D	1	I strongly believe democracy needs diverse media sources.
+P18N.D	2	I believe democracy needs diverse media sources.
+P18N.D	3	I don't think democracy needs diverse media sources.
+P18N.D	4	I strongly doubt democracy needs diverse media sources.
+P5STGBS	1	I think the country's economy is very good.
+P5STGBS	2	I think the country's economy is good.
+P5STGBS	3	I think the country's economy is average.
+P5STGBS	4	I think the country's economy is bad.
+P5STGBS	5	I think the country's economy is very bad.
+P23ST.D	1	I view the EU very favorably.
+P23ST.D	2	I view the EU somewhat favorably.
+P23ST.D	3	I view the EU somewhat unfavorably.
+P23ST.D	4	I view the EU very unfavorably.
+P18N.G	1	I strongly believe a hard government can't solve issues.
+P18N.G	2	I think a hard government can't solve issues.
+P18N.G	3	I believe a hard government can solve issues.
+P18N.G	4	I strongly think a hard government can solve issues.
+P26SDN.A	1	I trust China as a reliable partner.
+P26SDN.A	2	I somewhat trust China.
+P26SDN.A	3	I barely trust China.
+P26SDN.A	4	I don't trust China.
+P23ST.F	1	I view Venezuela very favorably.
+P23ST.F	2	I view Venezuela somewhat favorably.
+P23ST.F	3	I view Venezuela somewhat unfavorably.
+P23ST.F	4	I view Venezuela very unfavorably.
+P26SDN.B	1	I think China interferes a great deal.
+P26SDN.B	2	I think China interferes a fair amount.
+P26SDN.B	3	I think China interferes only a little.
+P26SDN.B	4	I think China interferes not at all.
+P26SDN.C	1	I think China upholds its commitments a great deal.
+P26SDN.C	2	I think China upholds its commitments a fair amount.
+P26SDN.C	3	I think China upholds its commitments only a little.
+P26SDN.C	4	I think China upholds its commitments not at all.
+P25N.A	1	I think our economic ties with the US are very good.
+P25N.A	2	I think our economic ties with the US are fairly good.
+P25N.A	3	I think our economic ties with the US are fairly poor.
+P25N.A	4	I think our economic ties with the US are very poor.
+P27SDN	1	I prefer a closer relationship with the US.
+P27SDN	2	I prefer a closer relationship with China.
+P27SDN	3	I want closer relationships with both.
+P27SDN	4	I prefer neither relationship.
+P29STIN.B	1	I'm very much in favor of integration.
+P29STIN.B	2	I'm somewhat in favor of integration.
+P29STIN.B	3	I'm somewhat against integration.
+P29STIN.B	4	I'm very much against integration.
+P29STIN.A	1	I'm very much in favor of integration.
+P29STIN.A	2	I somewhat favor integration.
+P29STIN.A	3	I'm somewhat against integration.
+P29STIN.A	4	I'm very much against integration.
+P26SDN.E	1	I think China is a great political model.
+P26SDN.E	2	I think China is a fair political model.
+P26SDN.E	3	I think China is a poor political model.
+P26SDN.E	4	I don't think China is a political model.
+P24ST.D	1	I think my country's EU relationship is very good.
+P24ST.D	2	I think my country's EU relationship is fairly good.
+P24ST.D	3	I think my country's EU relationship is fairly poor.
+P24ST.D	4	I think my country's EU relationship is very poor.
+P28STIN	1	My country's regional integration has increased a lot.
+P28STIN	2	My country's regional integration has increased somewhat.
+P28STIN	3	My country's regional integration has decreased somewhat.
+P28STIN	4	My country's regional integration has decreased very much.
+P25N.C	1	I think our economic ties with China are very good.
+P25N.C	2	I think our economic ties with China are fairly good.
+P25N.C	3	I think our economic ties with China are fairly poor.
+P25N.C	4	I think our economic ties with China are very poor.
+P16ST	0	I am on the left.
+P16ST	1	I lean left.
+P16ST	2	I lean left.
+P16ST	3	I am moderately left.
+P16ST	4	I am center-left.
+P16ST	5	I am centrist.
+P16ST	6	I am center-right.
+P16ST	7	I am moderately right.
+P16ST	8	I lean right.
+P16ST	9	I lean right.
+P16ST	10	I am on the right.
+P16ST	97	I don't identify with either.
+P25N.B	1	I think our economic ties with Russia are very good.
+P25N.B	2	I think our economic ties with Russia are fairly good.
+P25N.B	3	I think our economic ties with Russia are fairly poor.
+P25N.B	4	I think our economic ties with Russia are very poor.
+P30INN.E	1	I strongly prefer products made by women.
+P30INN.E	2	I prefer products made by women.
+P30INN.E	3	I prefer products made by men.
+P30INN.E	4	I strongly prefer products made by men.
+P26SDN.F	1	I think China's economy is a great model.
+P26SDN.F	2	I think China's economy is a fair model.
+P26SDN.F	3	I think China's economy is a poor model.
+P26SDN.F	4	I don't think China's economy is a model.
+P30STIN.A	1	I think robots will take my job soon.
+P30STIN.A	2	I believe robots will take my job.
+P30STIN.A	3	I don't think robots will take my job.
+P30STIN.A	4	I'm sure robots won't take my job.
+P24ST.B	1	I think my country's relationship with Russia is very good.
+P24ST.B	2	I think my country's relationship with Russia is fairly good.
+P24ST.B	3	I think my country's relationship with Russia is fairly poor.
+P24ST.B	4	I think my country's relationship with Russia is very poor.
+P30INN.B	1	I strongly believe in balancing environment and growth.
+P30INN.B	2	I believe in balancing environment and growth.
+P30INN.B	3	I don't think environment and growth can coexist.
+P30INN.B	4	I strongly doubt environment and growth can coexist.
+P24ST.C	1	I think my country's relationship with China is very good.
+P24ST.C	2	I think my country's relationship with China is fairly good.
+P24ST.C	3	I think my country's relationship with China is fairly poor.
+P24ST.C	4	I think my country's relationship with China is very poor.
+P26SDN.D	1	I think China contributes a great deal to Latin America's stability.
+P26SDN.D	2	I believe China contributes a fair amount to Latin America's stability.
+P26SDN.D	3	I think China contributes only a little to Latin America's stability.
+P26SDN.D	4	I think China contributes not at all to Latin America's stability.
+P36ST	1	I prioritize fighting climate change over economic growth.
+P36ST	2	I prioritize economic growth over climate change.
+P30INN.D	1	I think men have a big advantage starting a business.
+P30INN.D	2	I believe men have an advantage starting a business.
+P30INN.D	3	I don't think men have an advantage starting a business.
+P30INN.D	4	I strongly believe men don't have an advantage starting a business.
+P34WVSNA	1	I prioritize maintaining order in the nation.
+P34WVSNA	2	I want more say in government decisions.
+P34WVSNA	3	I fight against rising prices.
+P34WVSNA	4	I protect freedom of speech.
+P33N.A	1	I strongly believe immigrants boost the economy.
+P33N.A	2	I think immigrants are good for economy.
+P33N.A	3	I believe immigrants harm the economy.
+P33N.A	4	I strongly think immigrants hurt economy.
+P35NA	1	I think one leader should hold all power.
+P35NA	2	I believe power should be distributed.
+P35NA	3	I think media should not question leaders.
+P35NA	4	I value guaranteed political liberties.
+P34WVSNB	1	I prioritize maintaining order in the nation.
+P34WVSNB	2	I want more say in government decisions.
+P34WVSNB	3	I fight against rising prices.
+P34WVSNB	4	I protect freedom of speech.
+P33ST.B	1	I strongly believe immigrants compete for jobs.
+P33ST.B	2	I think immigrants compete for jobs.
+P33ST.B	3	I don't think immigrants compete for jobs.
+P33ST.B	4	I strongly disagree immigrants compete for jobs.
+P33N.D	1	I strongly believe immigrants enrich our society.
+P33N.D	2	I think immigrants improve our society.
+P33N.D	3	I believe immigrants hurt our society.
+P33N.D	4	I strongly think immigrants harm our society.
+TAMCIUD	1	I live in a habitat under 5,000
+TAMCIUD	2	My habitat size is 5,001 to 10,000
+TAMCIUD	3	I inhabit 10,001 to 20,000 space
+TAMCIUD	4	My habitat is 20,001 to 40,000
+TAMCIUD	5	I live in a 40,001 to 50,000 habitat
+TAMCIUD	6	My habitat size is 50,001 to 100,000
+TAMCIUD	7	I inhabit over 100,000 space
+TAMCIUD	8	I live in the capital
+P30INN.F	1	I strongly believe math skills are key to a good job.
+P30INN.F	2	I think math skills are important for a good job.
+P30INN.F	3	I don't think math skills are important for a good job.
+P30INN.F	4	I strongly disagree math skills matter for a good job.
+P37STCS.E	1	I think unequal earnings cause problems
+P37STCS.E	2	I agree earnings imbalance causes issues
+P37STCS.E	3	I don't think it causes problems
+P37STCS.E	4	I strongly disagree it causes problems
+P37WVSSTCS.D	1	I think men are better leaders.
+P37WVSSTCS.D	2	I agree men lead better.
+P37WVSSTCS.D	3	I don't think men lead better.
+P37WVSSTCS.D	4	I strongly believe women lead equally or better.
+P31INN.1	1	I depend on international opportunities for study or work.
+P31INN.1	2	I benefit from cheaper foreign products.
+P31INN.1	3	My job creation depends on international integration.
+P31INN.1	4	My wage increase depends on international integration.
+P31INN.1	5	I access more goods through international trade.
+P31INN.1	6	I gain better technology through international integration.
+P37CSN.A	1	I strongly support same-sex couples adopting children.
+P37CSN.A	2	I agree same-sex couples should adopt children.
+P37CSN.A	3	I disagree with same-sex couples adopting children.
+P37CSN.A	4	I strongly oppose same-sex couples adopting children.
+P40STGBS	1	I'm very interested in politics.
+P40STGBS	2	I'm fairly interested in politics.
+P40STGBS	3	I'm a little interested in politics.
+P40STGBS	4	I'm not interested in politics.
+P35NB	1	I think one leader should hold all power.
+P35NB	2	I believe power should be distributed.
+P35NB	3	I think media should not question leaders.
+P35NB	4	I think citizens' liberties are crucial.
+P41ST.D	1	My private property is fully guaranteed.
+P41ST.D	2	My private property is somewhat guaranteed.
+P41ST.D	3	My private property is not guaranteed.
+P41ST.D	4	My private property is not guaranteed at all.
+P41ST.H	1	I feel free speech is always guaranteed
+P41ST.H	2	I feel free speech is somewhat guaranteed
+P41ST.H	3	I don't feel free speech is guaranteed
+P41ST.H	4	I feel free speech is never guaranteed
+P42STGBS	1	I feel close to a political party.
+P42STGBS	2	I don't feel close to any party.
+P41ST.A	1	I feel my political participation is fully guaranteed.
+P41ST.A	2	I think my political participation is somewhat guaranteed.
+P41ST.A	3	I don't think my political participation is guaranteed.
+P41ST.A	4	I feel my political participation is not guaranteed at all.
+P37STCS.C	1	I think women should focus on home, men on work.
+P37STCS.C	2	I agree women should focus on home, men on work.
+P37STCS.C	3	I don't think women should only focus on home.
+P37STCS.C	4	I strongly believe women shouldn't be limited to home.
+P41ST.J	1	I feel fully protected against crime
+P41ST.J	2	I feel somewhat protected against crime
+P41ST.J	3	I don't feel protected against crime
+P41ST.J	4	I feel no protection against crime
+P37CSN.B	1	I strongly support same-sex marriage.
+P37CSN.B	2	I support same-sex marriage.
+P37CSN.B	3	I oppose same-sex marriage.
+P37CSN.B	4	I strongly oppose same-sex marriage.
+P22ST	1	I never find tax evasion justifiable.
+P22ST	2	I never find tax evasion justifiable.
+P22ST	3	I find tax evasion slightly justifiable.
+P22ST	4	I find tax evasion slightly justifiable.
+P22ST	5	I find tax evasion moderately justifiable.
+P22ST	6	I find tax evasion moderately justifiable.
+P22ST	7	I find tax evasion very justifiable.
+P22ST	8	I find tax evasion very justifiable.
+P22ST	9	I completely justify tax evasion.
+P22ST	10	I completely justify tax evasion.
+P41ST.G	1	I think life chances are fully guaranteed regardless of origin
+P41ST.G	2	I think life chances are somewhat guaranteed regardless of origin
+P41ST.G	3	I think life chances are not guaranteed regardless of origin
+P41ST.G	4	I think life chances are not at all guaranteed regardless of origin
+P41ST.M	1	I'm fully guaranteed a job
+P41ST.M	2	I'm somewhat guaranteed a job
+P41ST.M	3	My job is not guaranteed
+P41ST.M	4	I'm not guaranteed a job
+P37CSN.F	1	I strongly support legal gender change recognition.
+P37CSN.F	2	I support legal gender change recognition.
+P37CSN.F	3	I oppose legal gender change recognition.
+P37CSN.F	4	I strongly oppose legal gender change recognition.
+P44ST.B	1	I work on problems very frequently.
+P44ST.B	2	I work on problems frequently.
+P44ST.B	3	I almost never work on problems.
+P44ST.B	4	I never work on problems.
+P46N	1	I prioritize freedom of expression over controlling fake news.
+P46N	2	I support controlling fake news over absolute freedom.
+P41ST.B	1	I feel free to choose my occupation.
+P41ST.B	2	I somewhat feel free to choose.
+P41ST.B	3	My occupation choice is not guaranteed.
+P41ST.B	4	I have no freedom to choose.
+P45S.B	1	I have taken part in a demonstration.
+P45S.B	2	I would participate in a demonstration.
+P45S.B	3	I would never demonstrate.
+P44ST.D	1	I work for a party very frequently.
+P44ST.D	2	I work for a party frequently.
+P44ST.D	3	I almost never work for a party.
+P44ST.D	4	I never work for a party.
+P44ST.C	1	I often try to convince others of my views.
+P44ST.C	2	I frequently try to convince others of my views.
+P44ST.C	3	I almost never convince others of my views.
+P44ST.C	4	I never convince others of my views.
+P41ST.I	1	My faith is fully guaranteed here.
+P41ST.I	2	My faith is somewhat guaranteed.
+P41ST.I	3	My faith is not guaranteed.
+P41ST.I	4	My faith is not guaranteed at all.
+P41ST.F	1	I think equality is fully guaranteed
+P41ST.F	2	I think equality is somewhat guaranteed
+P41ST.F	3	I don't think equality is guaranteed
+P41ST.F	4	I think equality is not guaranteed
+P45ST.C	1	I have taken part in a non-authorized demonstration.
+P45ST.C	2	I would participate in a non-authorized demonstration.
+P45ST.C	3	I would never participate in a non-authorized demonstration.
+P37WVSCS.G	1	I think men should get jobs first.
+P37WVSCS.G	2	I agree men should get jobs first.
+P37WVSCS.G	3	I don't think men should get jobs first.
+P37WVSCS.G	4	I strongly believe men shouldn't get jobs first.
+P41ST.C	1	I think environmental protection is fully guaranteed
+P41ST.C	2	I think it's somewhat guaranteed
+P41ST.C	3	I don't think it's guaranteed
+P41ST.C	4	I think it's not guaranteed at all
+P41ST.E	1	I think wealth is fairly distributed
+P41ST.E	2	I think wealth is somewhat fairly distributed
+P41ST.E	3	I'm unsure about fair wealth distribution
+P41ST.E	4	I think wealth is not fairly distributed
+P49ST	1	I fear speaking out may harm me.
+P49ST	2	I don't think speaking out will harm me.
+P48ST	1	I think people say what they think about politics
+P48ST	2	I think people usually don't say what they really think
+P41ST.K	1	I believe social security is fully guaranteed
+P41ST.K	2	I think social security is somewhat guaranteed
+P41ST.K	3	I don't think social security is guaranteed
+P41ST.K	4	I believe social security is not guaranteed
+P45STN.D	1	I have protested on social media.
+P45STN.D	2	I would protest on social media.
+P45STN.D	3	I would never protest on social media.
+P37WVSCS.H	1	I believe gay couples are equally good parents.
+P37WVSCS.H	2	I think gay couples are good parents.
+P37WVSCS.H	3	I don't think gay couples are good parents.
+P37WVSCS.H	4	I strongly believe gay couples are not good parents.
+P43STGBS.A	94	I'd vote for another party.
+P43STGBS.A	95	I'd cast a blank vote.
+P43STGBS.A	96	I don't vote.
+P43STGBS.A	97	I'm not registered.
+P44ST.A	1	I talk about politics with friends very frequently.
+P44ST.A	2	I frequently discuss politics with friends.
+P44ST.A	3	I almost never discuss politics with friends.
+P44ST.A	4	I never talk politics with friends.
+P52N	1	I think social media reflects the general public's views.
+P52N	2	I don't think social media reflects the general public's views.
+P41ST.L	1	I feel solidarity with the poor is fully guaranteed here.
+P41ST.L	2	I think solidarity with the poor is somewhat guaranteed.
+P41ST.L	3	I don't think solidarity with the poor is guaranteed.
+P41ST.L	4	I feel solidarity with the poor is not guaranteed at all.
+P51N	1	Social media makes politics better for me.
+P51N	2	Social media has no effect on politics for me.
+P51N	3	Social media makes politics worse for me.
+P50ST	1	I express opinions on social media
+P50ST	2	I protest to express opinions
+P50ST	3	I discuss with friends
+P50ST	4	I share with family
+P50ST	5	I don't usually express opinions
+P53N.D	1	I think a lot of false info circulates
+P53N.D	2	I see some false info in print
+P53N.D	3	I believe little false info is printed
+P53N.D	4	I think no false info is printed
+P53N.B	1	I think a lot of false info circulates on TV.
+P53N.B	2	I believe some false info circulates on TV.
+P53N.B	3	I think little false info circulates on TV.
+P53N.B	4	I think no false info circulates on TV.
+P47ST	1	I always vote to help my country.
+P47ST	2	I vote and protest for change.
+P47ST	3	I protest, voting is ineffective for me.
+P47ST	4	I do nothing, no voting or protesting.
+S9	1	I'm the main contributor to my family's income.
+S9	2	I'm not the main contributor.
+P53N.A	1	I think a lot of false info circulates on social media.
+P53N.A	2	I believe some false info circulates on social media.
+P53N.A	3	I think little false info circulates on social media.
+P53N.A	4	I see no false info on social media.
+S10	96	I did not pursue formal education.
+S10	97	I am still a student.
+P59ST	1	I worry about crime all the time.
+P59ST	2	I worry about crime some of the time.
+P59ST	3	I worry about crime just occasionally.
+P59ST	4	I never worry about crime.
+S6	1	I receive government support
+S6	2	A family member receives support
+S6	3	I and a family member receive support
+S6	4	I don't receive government support
+P55N	1	I make no digital purchases.
+P55N	2	Less than half my purchases are digital.
+P55N	3	About half my purchases are digital.
+P55N	4	More than half my purchases are digital.
+P55N	5	All my purchases are digital.
+P56N.B	1	I'm confident my data is secure when paying electronically.
+P56N.B	2	I think my data is secure when paying electronically.
+P56N.B	3	I doubt my data is secure when paying electronically.
+P56N.B	4	I'm sure my data is not secure when paying electronically.
+P61ST	1	I find current inequality completely unacceptable.
+P61ST	2	I think current inequality is unacceptable.
+P61ST	3	I'm neutral about current inequality.
+P61ST	4	I find current inequality acceptable.
+P61ST	5	I think current inequality is completely acceptable.
+S2	1	I belong to the upper class.
+S2	2	I'm part of the upper-middle class.
+S2	3	I identify as middle class.
+S2	4	I'm in the lower-middle class.
+S2	5	I belong to the lower class.
+S20.E	1	I have a car
+S20.E	2	I don't have a car
+S20.B	1	I own my home
+S20.B	2	I do not own my home
+P54N.A	1	I strongly believe protests are legitimate.
+P54N.A	2	I believe protests are legitimate.
+P54N.A	3	I don't think protests are legitimate.
+P54N.A	4	I strongly disagree protests are legitimate.
+S20.C	1	I have a washing machine
+S20.C	2	I don't have a washing machine
+S4	1	I'm very concerned about my job security.
+S4	2	I'm concerned about my job security.
+S4	3	I'm a little concerned about my job.
+S4	4	I'm not concerned about my job security.
+S4	5	I do not currently have a job.
+S15.A	1	My native language is Spanish.
+S15.A	2	My native language is Portuguese.
+S15.A	3	I speak an indigenous language natively.
+S15.A	4	My native language is other.
+S20.F	1	I have access to hot water at home.
+S20.F	2	I don't have hot water at home.
+S20.G	1	I have access to a sewage system
+S20.G	2	I don't have sewage system access
+S7	1	I identify as Asian.
+S7	2	I identify as Black.
+S7	3	I identify as Indigenous.
+S7	4	I identify as Mestizo.
+S7	5	I identify as Mulatto.
+S7	6	I identify as White.
+S7	7	I identify with another race.
+S20.I	1	I have access to drinking water
+S20.I	2	I lack access to drinking water
+S20.K	1	I have heating or air conditioning at home.
+S20.K	2	I don't have heating or air conditioning.
+S20.J	1	I have an internet connection at home.
+S20.J	2	I don't have an internet connection at home.
+PERPART	1	I support the government party.
+PERPART	2	I support the opposition party.
+PERPART	3	I support another party.
+PERPART	4	I didn't mention a party.
+P62ST.10	0	I think Donald Trump is very bad.
+P62ST.10	1	I think Donald Trump is very bad.
+P62ST.10	2	I think Donald Trump is bad.
+P62ST.10	3	I think Donald Trump is bad.
+P62ST.10	4	I'm neutral about Donald Trump.
+P62ST.10	5	I'm neutral about Donald Trump.
+P62ST.10	6	I'm neutral about Donald Trump.
+P62ST.10	7	I think Donald Trump is good.
+P62ST.10	8	I think Donald Trump is good.
+P62ST.10	9	I think Donald Trump is very good.
+P62ST.10	10	I think Donald Trump is very good.
+S18.A	1	I am my own boss, self-employed.
+S18.A	2	I work for a state-owned company.
+S18.A	3	I am employed by a private company.
+S18.A	4	I am temporarily out of work.
+S18.A	5	I am retired or a pensioner.
+S18.A	6	I manage the household.
+S18.A	7	I am a student.
+P56N.C	1	I prefer paying electronically over cash.
+P56N.C	2	I prefer electronic payments.
+P56N.C	3	I prefer using cash.
+P56N.C	4	I strongly prefer cash.
+S8	1	I've considered moving abroad
+S8	2	I haven't considered moving abroad
+S24	1	I have a very good socioeconomic status.
+S24	2	My socioeconomic status is good.
+S24	3	My socioeconomic status is average.
+S24	4	My socioeconomic status is bad.
+S24	5	My socioeconomic status is very bad.
+P53N.C	1	I think a lot of false info circulates on radio.
+P53N.C	2	I believe some false info circulates on radio.
+P53N.C	3	I think little false info circulates on radio.
+P53N.C	4	I think no false info circulates on radio.
+S1	1	I am Catholic.
+S1	2	I am Evangelical.
+S1	3	I am Evangelical Baptist.
+S1	4	I am Evangelical Methodist.
+S1	5	I am Evangelical Pentecostal.
+S1	6	I am Adventist.
+S1	7	I am a Jehovah's Witness.
+S1	8	I am Mormon.
+S1	9	I am Jewish.
+S1	10	I am Protestant.
+S1	11	I follow African American cults/Umbanda.
+S1	12	I believe, but am not church-affiliated.
+S1	13	I am Agnostic.
+S1	14	I am Atheist.
+S1	96	My religion is other.
+S1	97	I have no religion.
+P56N.A	1	I strongly prefer electronic payments over cash.
+P56N.A	2	I prefer electronic payments over cash.
+P56N.A	3	I prefer cash over electronic payments.
+P56N.A	4	I strongly prefer cash over electronic payments.
+S12	0	I don't have this data
+S12	1	My parents had no studies
+S12	2	My parents studied for 1 year
+S12	3	My parents studied for 2 years
+S12	4	My parents studied for 3 years
+S12	5	My parents studied for 4 years
+S12	6	My parents studied for 5 years
+S12	7	My parents studied for 6 years
+S12	8	My parents studied for 7 years
+S12	9	My parents studied for 8 years
+S12	10	My parents studied for 9 years
+S12	11	My parents studied for 10 years
+S12	12	My parents studied for 11 years
+S12	13	My parents studied for 12 years
+S12	14	My parents had incomplete university studies
+S12	15	My parents completed university studies
+S12	16	My parents had incomplete technical studies
+S12	17	My parents completed technical studies
+P54ST.B	1	I strongly believe in market economy for development.
+P54ST.B	2	I believe in market economy for development.
+P54ST.B	3	I don't believe in market economy for development.
+P54ST.B	4	I strongly reject market economy for development.
+S16	1	I am a citizen of this country.
+S16	2	I am not a citizen.
+P56N.D	1	I strongly prefer walking without cash.
+P56N.D	2	I prefer walking without cash.
+P56N.D	3	I disagree on walking without cash.
+P56N.D	4	I strongly disagree on walking without cash.
+P58ST	1	I was a victim of a crime
+P58ST	2	A relative was a victim
+P58ST	3	I and a relative were victims
+P58ST	4	Neither I nor a relative was
+S20.D	1	I have a mobile phone or smartphone.
+S20.D	2	I don't have a mobile phone.
+S20.A	1	I have a separate bedroom for parents and children.
+S20.A	2	I don't have separate bedrooms for parents and children.
+S3	1	I never went without food.
+S3	2	I rarely went without food.
+S3	3	I sometimes went without food.
+S3	4	I often went without food.
+S20.H	1	I have at least one meal a day.
+S20.H	2	I don't have a meal daily.
+S5	1	I can save after covering my needs
+S5	2	I cover my needs without major issues
+S5	3	I have problems covering my needs
+S5	4	I have major problems covering needs
+P60ST	1	I've seen a lot of progress in reducing corruption.
+P60ST	2	I've seen some progress in reducing corruption.
+P60ST	3	I've seen little progress in reducing corruption.
+P60ST	4	I've seen no progress in reducing corruption.
+P63ST	1	I think a coup is very likely
+P63ST	2	I think a coup is likely
+P63ST	3	I think a coup is a little likely
+P63ST	4	I think a coup is not likely
+REEDAD	1	I'm between 16 and 25 years old.
+REEDAD	2	I'm between 26 and 40 years old.
+REEDAD	3	I'm between 41 and 60 years old.
+REEDAD	4	I'm 61 years old or older.
+REEDUC.2	0	I don't have data on my parents' education
+REEDUC.2	1	My parents are illiterate
+REEDUC.2	2	My parents have incomplete basic education
+REEDUC.2	3	My parents have complete basic education
+REEDUC.2	4	My parents have incomplete secondary education
+REEDUC.2	5	My parents have complete secondary education
+REEDUC.2	6	My parents have incomplete university education
+REEDUC.2	7	My parents have complete university education
+P62ST.7	0	I think Pope Francis is very bad.
+P62ST.7	1	I think Pope Francis is very bad.
+P62ST.7	2	I think Pope Francis is bad.
+P62ST.7	3	I think Pope Francis is bad.
+P62ST.7	4	I'm neutral about Pope Francis.
+P62ST.7	5	I'm neutral about Pope Francis.
+P62ST.7	6	I'm neutral about Pope Francis.
+P62ST.7	7	I think Pope Francis is good.
+P62ST.7	8	I think Pope Francis is good.
+P62ST.7	9	I think Pope Francis is very good.
+P62ST.7	10	I think Pope Francis is very good.
+P62N.14	0	I think Vladimir Putin is very bad.
+P62N.14	1	I think Vladimir Putin is very bad.
+P62N.14	2	I think Vladimir Putin is bad.
+P62N.14	3	I think Vladimir Putin is bad.
+P62N.14	4	I'm neutral about Vladimir Putin.
+P62N.14	5	I'm neutral about Vladimir Putin.
+P62N.14	6	I'm neutral about Vladimir Putin.
+P62N.14	7	I think Vladimir Putin is good.
+P62N.14	8	I think Vladimir Putin is good.
+P62N.14	9	I think Vladimir Putin is very good.
+P62N.14	10	I think Vladimir Putin is very good.
+FAMPART	0	My family doesn't support any party
+FAMPART	10	My family supports Green parties
+FAMPART	20	My family supports Communist parties
+FAMPART	30	My family supports Social Democratic parties
+FAMPART	40	My family supports Liberal parties
+FAMPART	50	My family supports Christian Democratic parties
+FAMPART	60	My family supports Conservative parties
+FAMPART	70	My family supports Nationalist parties
+FAMPART	80	My family supports Agrarian parties
+FAMPART	90	My family supports Ethnic and regional parties
+FAMPART	95	My family supports parties with specific themes
+FAMPART	98	My family supports electoral alliances
+S11	1	I have not completed any studies.
+S11	2	I completed 1 year of studies.
+S11	3	I completed 2 years of studies.
+S11	4	I completed 3 years of studies.
+S11	5	I completed 4 years of studies.
+S11	6	I completed 5 years of studies.
+S11	7	I completed 6 years of studies.
+S11	8	I completed 7 years of studies.
+S11	9	I completed 8 years of studies.
+S11	10	I completed 9 years of studies.
+S11	11	I completed 10 years of studies.
+S11	12	I completed 11 years of studies.
+S11	13	I completed 12 years of studies.
+S11	14	I have incomplete university studies.
+S11	15	I have complete university studies.
+S11	16	I have incomplete higher technical studies.
+S11	17	I have complete higher technical studies.
