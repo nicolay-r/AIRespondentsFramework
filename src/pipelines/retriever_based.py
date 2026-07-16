@@ -234,13 +234,9 @@ class RetrieverBasedPipeline(Pipeline):
 
     def apply(self, item: PipelineItem) -> dict[str, object]:
         topics_ranking = self._rank_topics(item)
-        print("topics_ranking: done")
         questions_ranking = self._rank_questions(item, topics_ranking)
-        print("questions_ranking: done")
         ordered = self._ordered_entries(item, questions_ranking)
-        print("ordered: done")
         answer = self._client.infer(self.build_answer_prompt(item, ordered))
-        print("answer: done")
         return {
             "output": answer,
             "features": [entry.code for entry in ordered],
