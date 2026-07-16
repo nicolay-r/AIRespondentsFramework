@@ -2,11 +2,11 @@ from pathlib import Path
 
 from src.pipelines.base import PipelineItem
 from src.pipelines.catboost_only import CatBoostOnlyPipeline
-from src.pipelines.catboost_statements import CatBoostStatementsPipeline
+from src.pipelines.grouped_prompt_based import GroupedPromptBasedPipeline
 from src.providers.openai_client import OpenAIClient
 
 
-class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
+class CatBoostGatedHybridPipeline(GroupedPromptBasedPipeline):
     model_name = "catboost-gated-hybrid"
     CONFIDENCE_THRESHOLD = 50
 
@@ -21,12 +21,16 @@ class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
     ) -> None:
         super().__init__(
             client,
-            recommender_path,
             statements_path=statements_path,
             features_path=features_path,
         )
         self._confidence_threshold = confidence_threshold
         self._only = CatBoostOnlyPipeline(recommender_path=recommender_path)
+
+    def _catboost_prediction(self, item: PipelineItem) -> str | None:
+        if item.question_id not in self._only._recommender.models:
+            return None
+        return self._only._predict(item)
 
     def _catboost_confidence(
         self,
@@ -35,12 +39,12 @@ class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
     ) -> int | None:
         if (
             catboost_prediction is None
-            or item.question_id not in self._recommender.models
+            or item.question_id not in self._only._recommender.models
         ):
             return None
 
-        probabilities = self._recommender.predict_proba(
-            self._respondent_frame(item),
+        probabilities = self._only._recommender.predict_proba(
+            self._only._respondent_frame(item),
             item.question_id,
         )
         if catboost_prediction in probabilities.columns:
@@ -75,6 +79,6 @@ class CatBoostGatedHybridPipeline(CatBoostStatementsPipeline):
             return result
 
         result = super().apply(item)
-        result["route"] = "catboost-statements"
+        result["route"] = "grouped-prompt-based"
         result["catboost_confidence"] = catboost_confidence
         return result
