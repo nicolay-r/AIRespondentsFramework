@@ -1,0 +1,91 @@
+Approach 1. 14/07
+    - 6 features.
+    - Qwen3-32B
+    - Prompt-based approach
+Approach 1. 15/07
+    - all features.
+    - Qwen3-32B
+
+---------------------
+METHOD 1
+--------------------
+Qwen3/32B: Context + Profiles ALL + Questions
+    skill: -0.424
+    alignment: 0.572
+    f1_macro: 0.183
+    accuracy: 31/91 (34.1%)
+
+Model:  zai-org/GLM-5.2
+  wrote dev evaluation to /home/nicolay/proj/Team-5-Solution/output/dev/
+  skill: -0.600
+  alignment: 0.533
+  f1_macro: 0.080
+  accuracy: 2/5 (40.0%)
+
+
+Model:  meta-llama/Llama-3.3-70B-Instruct
+wrote dev evaluation to /home/nicolay/proj/Team-5-Solution/output/dev/
+skill: -0.222
+alignment: 0.724
+f1_macro: 0.291
+accuracy: 45/91 (49.5%)
+
+---------------------
+METHOD 2
+---------------------
+
+Model:  Qwen/Qwen3-32B
+skill: -0.719
+alignment: 0.583
+f1_macro: 0.201
+accuracy: 30/80 (37.5%)
+
+----------------------
+Model:  meta-llama/Llama-3.3-70B-Instruct
+skill: -0.607
+alignment: 0.725
+f1_macro: 0.258
+accuracy: 39/80 (48.8%)
+
+skill: -0.222
+alignment: 0.728
+f1_macro: 0.277
+accuracy: 45/91 (49.5%)
+
+skill: -0.167
+alignment: 0.772
+f1_macro: 0.308
+accuracy: 46/91 (50.5%)
+
+----------------------------
+- reasoning (reason first and then answer)
+----------------------------
+skill: -0.237
+alignment: 0.759
+f1_macro: 0.306
+accuracy: 42/91 (46.2%)
+
+----------------------------
+- prompt-based (just)
+----------------------------
+skill: -0.122
+alignment: 0.824
+f1_macro: 0.348
+accuracy: 48/91 (52.7%)
+
+----------------------------
+- prompt-based on statemens
+----------------------------
+skill: -0.048
+alignment: 0.860
+f1_macro: 0.368
+accuracy: 49/91 (53.8%)
+
+----------------------------
+retriever
+----------------------------
+(Non-optimized)
+  skill: -0.157
+  alignment: 0.757
+  f1_macro: 0.351
+  accuracy: 41/91 (45.1%)
