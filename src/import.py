@@ -2,6 +2,7 @@ import json
 import math
 from collections.abc import Iterator
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Literal
 
 import pandas as pd
@@ -10,6 +11,8 @@ from datasets import load_dataset
 from src.pipelines.base import FeatureEntry, PipelineItem
 
 REPO = "oxford-llms/ai-respondents-challenge"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+TARGETS_HIDDEN_PATH = PROJECT_ROOT / "docs" / "dataset" / "targets_hidden.csv"
 
 
 @dataclass(frozen=True)
@@ -29,18 +32,7 @@ class LoadedData:
     value_maps: dict[str, dict[str, str]]
 
 
-def load() -> LoadedData:
-    train_df = load_dataset(REPO, "train", split="train").to_pandas()
-    test_df = load_dataset(REPO, "test", split="train").to_pandas()
-    targets_df = load_dataset(REPO, "targets", split="train").to_pandas()
-    features_df = load_dataset(REPO, "features", split="train").to_pandas()
-
-    feature_questions = dict(zip(features_df.variable, features_df.question))
-    value_maps = {
-        variable: json.loads(values_json)
-        for variable, values_json in zip(features_df.variable, features_df.values_json)
-    }
-
+def _targets_from_df(targets_df: pd.DataFrame) -> dict[str, TargetQuestion]:
     targets: dict[str, TargetQuestion] = {}
     for question_id, group in targets_df.groupby("question_id"):
         row = group.iloc[0]
@@ -50,6 +42,28 @@ def load() -> LoadedData:
             theme=row.theme,
             labels=tuple(group.sort_values("option")["label"].tolist()),
         )
+    return targets
+
+
+def load() -> LoadedData:
+    train_df = load_dataset(REPO, "train", split="train").to_pandas()
+    test_df = load_dataset(REPO, "test", split="train").to_pandas()
+    targets_df = pd.concat(
+        [
+            load_dataset(REPO, "targets", split="train").to_pandas(),
+            pd.read_csv(TARGETS_HIDDEN_PATH),
+        ],
+        ignore_index=True,
+    ).drop_duplicates(subset=["question_id", "option"], keep="first")
+    features_df = load_dataset(REPO, "features", split="train").to_pandas()
+
+    feature_questions = dict(zip(features_df.variable, features_df.question))
+    value_maps = {
+        variable: json.loads(values_json)
+        for variable, values_json in zip(features_df.variable, features_df.values_json)
+    }
+
+    targets = _targets_from_df(targets_df)
 
     return LoadedData(
         train=_dataframe_to_respondents(train_df),
