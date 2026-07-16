@@ -7,7 +7,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = PROJECT_ROOT / "output"
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.utils import example_prompts_for, write_submission
@@ -52,6 +51,12 @@ if __name__ == "__main__":
         help="Feature statements TSV path.",
     )
     parser.add_argument(
+        "--output-dir",
+        type=Path,
+        required=True,
+        help="Directory to write the submission bundle to.",
+    )
+    parser.add_argument(
         "--limit",
         type=int,
         help="Run only the first N examples.",
@@ -85,7 +90,7 @@ if __name__ == "__main__":
     )
     prompts = example_prompts_for(pipeline, items)
 
-    output_dir = OUTPUT_DIR / f"test-local-{args.pipeline}"
+    output_dir = args.output_dir / args.pipeline
     written = write_submission(
         output_dir,
         items=items,
