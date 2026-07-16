@@ -6,7 +6,6 @@ from typing import Literal, cast
 from tqdm import tqdm
 
 from src.pipelines import (
-    CatBoostAsJudgePipeline,
     CatBoostGatedHybridPipeline,
     CatBoostOnlyPipeline,
     CatBoostStatementsPipeline,
@@ -110,13 +109,6 @@ def run_on_items(
             recommender_path=recommender_path,
         ),
         "catboost-only": CatBoostOnlyPipeline(
-            recommender_path=recommender_path,
-        ),
-        "catboost-as-judge": CatBoostAsJudgePipeline(
-            OpenAIClient(
-                model=model,
-                base_url="https://api.studio.nebius.com/v1/",
-            ),
             recommender_path=recommender_path,
         ),
         "catboost-gated": CatBoostGatedHybridPipeline(
