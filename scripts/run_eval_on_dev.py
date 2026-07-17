@@ -30,6 +30,12 @@ if __name__ == "__main__":
         help="Pipeline name.",
     )
     parser.add_argument(
+        "--dev-dataset",
+        type=Path,
+        default=DEV_DATASET_PATH,
+        help=f"Dev dataset JSON path (default: {DEV_DATASET_PATH}).",
+    )
+    parser.add_argument(
         "--limit",
         type=int,
         help="Evaluate only the first N examples.",
@@ -39,7 +45,7 @@ if __name__ == "__main__":
 
     load_dotenv(PROJECT_ROOT / ".env")
 
-    examples = load_dev_dataset(DEV_DATASET_PATH)
+    examples = load_dev_dataset(args.dev_dataset)
     if args.limit is not None:
         examples = examples[: args.limit]
     data = dataset.load()
