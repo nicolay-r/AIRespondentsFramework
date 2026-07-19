@@ -1,11 +1,15 @@
 """Build short first-person statements for survey features using an LLM."""
 
+from __future__ import annotations
+
 import argparse
 import csv
 import json
 import re
 import sys
+import threading
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -14,7 +18,7 @@ from tqdm import tqdm
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = PROJECT_ROOT / "docs" / "ess_wave_11" / "ess_wave_11_features.csv"
-DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "ess_wave_11" / "ess_wave_11_feature_statements.tsv"
+DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "ess_wave_11" / "ess_wave_11_features_statements.tsv"
 MODEL = "meta-llama/Llama-3.3-70B-Instruct"
 BASE_URL = "https://api.studio.nebius.com/v1/"
 MAX_DIRECT_OPTIONS = 30
@@ -156,10 +160,27 @@ def append_statements(
     *,
     code: str,
     statements: dict[str, str],
+    write_lock: threading.Lock | None = None,
 ) -> None:
-    with path.open("a", encoding="utf-8") as handle:
-        for response_code, statement in statements.items():
-            handle.write(f"{code}\t{response_code}\t{statement}\n")
+    lines = [
+        f"{code}\t{response_code}\t{statement}\n"
+        for response_code, statement in statements.items()
+    ]
+    if write_lock is None:
+        with path.open("a", encoding="utf-8") as handle:
+            handle.writelines(lines)
+        return
+
+    with write_lock:
+        with path.open("a", encoding="utf-8") as handle:
+            handle.writelines(lines)
+
+
+def _process_feature(
+    client: OpenAIClient,
+    feature: FeatureRow,
+) -> tuple[str, dict[str, str]]:
+    return feature.code, statements_for_feature(client, feature)
 
 
 def main() -> None:
@@ -178,7 +199,14 @@ def main() -> None:
         action="store_true",
         help="Overwrite the output file instead of continuing from saved progress.",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=32,
+        help="Number of parallel LLM requests (default: 32).",
+    )
     args = parser.parse_args()
+    assert args.workers > 0, "--workers must be > 0"
 
     load_dotenv(PROJECT_ROOT / ".env")
 
@@ -204,10 +232,23 @@ def main() -> None:
         return
 
     client = OpenAIClient(model=MODEL, base_url=BASE_URL)
+    write_lock = threading.Lock()
 
-    for feature in tqdm(pending, desc="building feature statements"):
-        statements = statements_for_feature(client, feature)
-        append_statements(args.output, code=feature.code, statements=statements)
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = [
+            pool.submit(_process_feature, client, feature)
+            for feature in pending
+        ]
+        with tqdm(total=len(futures), desc="building feature statements") as progress:
+            for future in as_completed(futures):
+                code, statements = future.result()
+                append_statements(
+                    args.output,
+                    code=code,
+                    statements=statements,
+                    write_lock=write_lock,
+                )
+                progress.update(1)
 
 
 if __name__ == "__main__":
