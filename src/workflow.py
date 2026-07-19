@@ -4,15 +4,8 @@ from typing import cast
 
 from tqdm import tqdm
 
-from src.pipelines import (
-    CatBoostGatedHybridPipeline,
-    CatBoostOnlyPipeline,
-    GroupedPromptBasedPipeline,
-    PromptBasedPipeline,
-    PromptBasedStatementsPipeline,
-    RetrieverBasedPipeline,
-)
 from src.pipelines.base import Pipeline, PipelineItem
+from src.pipelines.registry import create_pipeline
 from src.providers.openai_client import OpenAIClient
 
 
@@ -84,37 +77,15 @@ def run_on_items(
         model=model,
         base_url="https://api.studio.nebius.com/v1/",
     )
-    statement_pipeline_kwargs = {
-        "statements_path": statements_path,
-        "features_path": features_path,
-    }
-    pipelines = {
-        "prompt-based": PromptBasedPipeline(client),
-        "prompt-based-statements": PromptBasedStatementsPipeline(
-            client,
-            **statement_pipeline_kwargs,
-        ),
-        "grouped-prompt-based": GroupedPromptBasedPipeline(
-            client,
-            **statement_pipeline_kwargs,
-        ),
-        "catboost-only": CatBoostOnlyPipeline(
-            recommender_path=recommender_path,
-        ),
-        "catboost-gated": CatBoostGatedHybridPipeline(
-            client,
-            recommender_path=recommender_path,
-            **statement_pipeline_kwargs,
-        ),
-        "retriever-based": RetrieverBasedPipeline(
-            client,
-            **statement_pipeline_kwargs,
-        ),
-    }
-
     print("Create pipeline ...")
-    pipeline = pipelines[pipeline_name]
-    
+    pipeline = create_pipeline(
+        pipeline_name,
+        client=client,
+        recommender_path=recommender_path,
+        statements_path=statements_path,
+        features_path=features_path,
+    )
+
     print("Pipeline created ... run jobs")
     jobs = [(pipeline, item) for item in items]
     results = _run_jobs(jobs, workers=workers, desc=desc)
