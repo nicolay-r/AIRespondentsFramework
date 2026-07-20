@@ -15,8 +15,12 @@ STATEMENTS_PATH = DEFAULT_DATA_DIR / "feature_statements.tsv"
 FEATURES_PATH = DEFAULT_DATA_DIR / "features.csv"
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.run_extract_pipeline_input import dev_pipeline_items, load_dev_dataset
-from scripts.utils import example_prompts_for, write_dev_eval
+from scripts.utils import (
+    dev_pipeline_items,
+    example_prompts_for,
+    load_dev_dataset,
+    write_dev_eval,
+)
 from src.workflow import run_on_items
 
 dataset = importlib.import_module("scripts.utils")
@@ -52,7 +56,8 @@ if __name__ == "__main__":
     data = dataset.load_local(
         features_path=DEFAULT_DATA_DIR / "features.csv",
         targets_path=DEFAULT_DATA_DIR / "targets.csv",
-        train_respondents_path=DEFAULT_DATA_DIR / "train.csv",
+        respondents_path=DEFAULT_DATA_DIR / "train.csv",
+        targets_hidden_path=dataset.TARGETS_HIDDEN_PATH,
     )
     items = dev_pipeline_items(data, examples)
 

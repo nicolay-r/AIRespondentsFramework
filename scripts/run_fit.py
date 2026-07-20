@@ -71,13 +71,21 @@ def main() -> None:
     args = parser.parse_args()
 
     print("Start fitting recommender ...")
-    data = dataset.load_local(
+    train_data = dataset.load_local(
         features_path=DEFAULT_DATA_DIR / "features.csv",
         targets_path=DEFAULT_DATA_DIR / "targets.csv",
-        train_respondents_path=DEFAULT_DATA_DIR / "train.csv",
+        respondents_path=DEFAULT_DATA_DIR / "train.csv",
+        targets_hidden_path=dataset.TARGETS_HIDDEN_PATH,
+    )
+    test_data = dataset.load_local(
+        features_path=DEFAULT_DATA_DIR / "features.csv",
+        targets_path=DEFAULT_DATA_DIR / "targets.csv",
+        respondents_path=DEFAULT_DATA_DIR / "test.csv",
+        targets_hidden_path=dataset.TARGETS_HIDDEN_PATH,
     )
     recommender, train_survey = fit_survey_recommender(
-        data,
+        train_data,
+        test_data,
         limit=args.limit,
         iterations=args.iterations,
         depth=args.depth,

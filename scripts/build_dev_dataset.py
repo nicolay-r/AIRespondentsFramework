@@ -51,7 +51,7 @@ def build_dev_dataset(
     train_limit: int = DEFAULT_TRAIN_LIMIT,
     holdout_fraction: float = DEFAULT_HOLDOUT_FRACTION,
 ) -> dict[str, Any]:
-    train_ids = list(data.train.keys())
+    train_ids = list(data.respondents.keys())
     respondent_ids = holdout_respondent_ids(
         train_ids,
         train_limit=train_limit,
@@ -61,7 +61,7 @@ def build_dev_dataset(
 
     cases: list[dict[str, str]] = []
     for respondent_id in respondent_ids:
-        row = data.train[respondent_id]
+        row = data.respondents[respondent_id]
         for question_id in question_ids:
             answer = decode_answer(row, question_id, data, option_maps)
             if answer is None:
@@ -135,7 +135,8 @@ def main() -> None:
     data = dataset.load_local(
         features_path=DEFAULT_DATA_DIR / "features.csv",
         targets_path=DEFAULT_DATA_DIR / "targets.csv",
-        train_respondents_path=DEFAULT_DATA_DIR / "train.csv",
+        respondents_path=DEFAULT_DATA_DIR / "train.csv",
+        targets_hidden_path=dataset.TARGETS_HIDDEN_PATH,
     )
     payload = build_dev_dataset(
         data,

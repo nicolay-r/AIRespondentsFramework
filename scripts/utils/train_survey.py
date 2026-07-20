@@ -1,7 +1,7 @@
 """Convert challenge survey data into a SurveyRecommender-ready dataframe."""
 
 import math
-from typing import Iterable, Literal
+from typing import Iterable
 
 import pandas as pd
 from datasets import load_dataset
@@ -42,11 +42,8 @@ def build_target_option_maps(
 def question_columns(
     data: LoadedData,
     questions: Iterable[str] | None = None,
-    *,
-    split: Literal["train", "test"] = "train",
 ) -> list[str]:
-    respondents = data.train if split == "train" else data.test
-    sample = next(iter(respondents.values()))
+    sample = next(iter(data.respondents.values()))
     available = [column for column in sample if column not in META_COLUMNS]
     if questions is None:
         return available
@@ -55,8 +52,8 @@ def question_columns(
 
 
 def feature_columns_for_test(data: LoadedData) -> list[str]:
-    """Feature question ids available in the test split."""
-    return question_columns(data, split="test")
+    """Feature question ids available in a loaded respondent split."""
+    return question_columns(data)
 
 
 def decode_answer(
@@ -78,18 +75,16 @@ def decode_answer(
 def survey_dataframe(
     data: LoadedData,
     *,
-    split: Literal["train", "test"] = "train",
     limit: int | None = None,
     questions: Iterable[str] | None = None,
 ) -> pd.DataFrame:
-    """Build a decoded survey dataframe from the train or test split."""
+    """Build a decoded survey dataframe from a loaded respondent split."""
     target_option_maps = build_target_option_maps(data)
-    columns = question_columns(data, questions, split=split)
-    respondents = data.train if split == "train" else data.test
+    columns = question_columns(data, questions)
     records: list[dict[str, str | None]] = []
     index: list[str] = []
 
-    for respondent_index, (respondent_id, row) in enumerate(respondents.items()):
+    for respondent_index, (respondent_id, row) in enumerate(data.respondents.items()):
         if limit is not None and respondent_index >= limit:
             break
         index.append(respondent_id)
@@ -101,18 +96,3 @@ def survey_dataframe(
         )
 
     return pd.DataFrame(records, columns=columns, index=index)
-
-
-def train_survey_dataframe(
-    data: LoadedData,
-    *,
-    limit: int | None = None,
-    questions: Iterable[str] | None = None,
-) -> pd.DataFrame:
-    """Build a decoded survey dataframe from the train split."""
-    return survey_dataframe(
-        data,
-        split="train",
-        limit=limit,
-        questions=questions,
-    )

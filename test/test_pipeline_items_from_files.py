@@ -28,12 +28,12 @@ class PipelineItemsFromFilesTest(unittest.TestCase):
         )
 
     def test_respondent_and_target_counts(self) -> None:
-        self.assertEqual(len(self.data.test), 360)
+        self.assertEqual(len(self.data.respondents), 360)
         self.assertEqual(len(self.data.targets), 8)
         self.assertEqual(len(self.items), 360 * 8)
 
     def test_matches_iter_pipeline_items(self) -> None:
-        expected = list(dataset.iter_pipeline_items(self.data, split="test"))
+        expected = list(dataset.iter_pipeline_items(self.data))
         self.assertEqual(self.items, expected)
 
     def test_item_shape_for_first_respondent(self) -> None:

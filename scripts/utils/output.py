@@ -4,15 +4,12 @@ import json
 from collections import defaultdict
 from collections.abc import Iterable
 from pathlib import Path
-from typing import TYPE_CHECKING
 
 import pandas as pd
 from sklearn.metrics import f1_score
 
+from scripts.utils.survey import DevExample
 from src.pipelines.base import Pipeline, PipelineItem
-
-if TYPE_CHECKING:
-    from scripts.run_extract_pipeline_input import DevExample
 
 
 def write_submission(

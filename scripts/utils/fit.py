@@ -88,18 +88,18 @@ def evaluate_survey_recommender(
 
 
 def fit_survey_recommender(
-    data: dataset.LoadedData,
+    train_data: dataset.LoadedData,
+    test_data: dataset.LoadedData,
     *,
     limit: int = 100,
     iterations,
     depth,
     show_progress: bool = True,
 ) -> tuple[SurveyRecommender, pd.DataFrame]:
-    feature_columns = feature_columns_for_test(data)
-    target_columns = list(data.targets.keys())
+    feature_columns = feature_columns_for_test(test_data)
+    target_columns = list(train_data.targets.keys())
     train_survey = survey_dataframe(
-        data,
-        split="train",
+        train_data,
         limit=limit,
         questions=feature_columns + target_columns,
     )

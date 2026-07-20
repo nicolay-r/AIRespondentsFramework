@@ -3,7 +3,7 @@ import math
 from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Literal
+from typing import Any
 
 import pandas as pd
 
@@ -16,6 +16,13 @@ ESS_WAVE_11_DIR = PROJECT_ROOT / "docs" / "ess_wave_11"
 
 
 @dataclass(frozen=True)
+class DevExample:
+    respondent_id: str
+    question_id: str
+    answer: str | None
+
+
+@dataclass(frozen=True)
 class TargetQuestion:
     question_id: str
     question: str
@@ -25,8 +32,7 @@ class TargetQuestion:
 
 @dataclass(frozen=True)
 class LoadedData:
-    train: dict[str, dict[str, object]]
-    test: dict[str, dict[str, object]]
+    respondents: dict[str, dict[str, object]]
     targets: dict[str, TargetQuestion]
     feature_questions: dict[str, str]
     value_maps: dict[str, dict[str, str]]
@@ -56,21 +62,57 @@ def _features_metadata(
     return feature_questions, value_maps
 
 
+def load_dev_dataset(path: Path | str) -> tuple[DevExample, ...]:
+    payload: dict[str, Any] = json.loads(Path(path).read_text(encoding="utf-8"))
+    return tuple(
+        DevExample(
+            respondent_id=case["respondent_id"],
+            question_id=case["question_id"],
+            answer=case["answer"],
+        )
+        for case in payload["cases"]
+    )
+
+
+def dev_pipeline_items(
+    data: LoadedData,
+    examples: tuple[DevExample, ...],
+) -> list[PipelineItem]:
+    items: list[PipelineItem] = []
+    for example in examples:
+        try:
+            row = data.respondents[example.respondent_id]
+            target = data.targets[example.question_id]
+        except KeyError as exc:
+            raise KeyError(
+                f"no pipeline item for respondent_id={example.respondent_id!r} "
+                f"question_id={example.question_id!r}"
+            ) from exc
+        items.append(
+            PipelineItem(
+                respondent_id=example.respondent_id,
+                question_id=example.question_id,
+                question=target.question,
+                labels=target.labels,
+                history=_build_history(
+                    row,
+                    None,
+                    data.feature_questions,
+                    data.value_maps,
+                ),
+            )
+        )
+    return items
+
+
 def load_local(
     *,
     features_path: Path | str,
     targets_path: Path | str,
-    respondents_path: Path | str | None = None,
-    train_respondents_path: Path | str | None = None,
-    test_respondents_path: Path | str | None = None,
-    targets_hidden_path: Path | str | None = TARGETS_HIDDEN_PATH,
+    respondents_path: Path | str,
+    targets_hidden_path: Path | str | None = None,
 ) -> LoadedData:
     """Load a local survey bundle from features, targets, and respondent CSV files."""
-    if respondents_path is not None:
-        if test_respondents_path is not None:
-            raise ValueError("pass only one of respondents_path and test_respondents_path")
-        test_respondents_path = respondents_path
-
     features_df = pd.read_csv(features_path)
     targets_frames = [pd.read_csv(targets_path)]
     if targets_hidden_path is not None:
@@ -84,18 +126,10 @@ def load_local(
 
     feature_questions, value_maps = _features_metadata(features_df)
     targets = _targets_from_df(targets_df)
-
-    train: dict[str, dict[str, object]] = {}
-    if train_respondents_path is not None:
-        train = _dataframe_to_respondents(pd.read_csv(train_respondents_path))
-
-    test: dict[str, dict[str, object]] = {}
-    if test_respondents_path is not None:
-        test = _dataframe_to_respondents(pd.read_csv(test_respondents_path))
+    respondents = _dataframe_to_respondents(pd.read_csv(respondents_path))
 
     return LoadedData(
-        train=train,
-        test=test,
+        respondents=respondents,
         targets=targets,
         feature_questions=feature_questions,
         value_maps=value_maps,
@@ -114,16 +148,13 @@ def pipeline_items_from_files(
         targets_path=targets_path,
         respondents_path=respondents_path,
     )
-    return list(iter_pipeline_items(data, split="test"))
+    return list(iter_pipeline_items(data))
 
 
 def iter_pipeline_items(
     data: LoadedData,
-    *,
-    split: Literal["train", "test"] = "test",
 ) -> Iterator[PipelineItem]:
-    respondents = data.train if split == "train" else data.test
-    for respondent_id, row in respondents.items():
+    for respondent_id, row in data.respondents.items():
         for question_id, target in data.targets.items():
             history = _build_history(
                 row,
