@@ -12,7 +12,7 @@ from src.pipelines.base import FeatureEntry, PipelineItem
 
 REPO = "oxford-llms/ai-respondents-challenge"
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-TARGETS_HIDDEN_PATH = PROJECT_ROOT / "docs" / "dataset" / "targets_hidden.csv"
+TARGETS_HIDDEN_PATH = PROJECT_ROOT / "docs" / "default" / "targets_hidden.csv"
 ESS_WAVE_11_DIR = PROJECT_ROOT / "docs" / "ess_wave_11"
 
 

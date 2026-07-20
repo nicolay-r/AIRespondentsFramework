@@ -4,3 +4,9 @@ __pycache__
 output
 notes
 catboost_info
+models/
+
+# Local dataset CSV bundles (not versioned)
+docs/default/*.csv
+docs/ess_wave_11/*.csv
+docs/latinobarometer/*.csv

@@ -8,7 +8,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RECOMMENDER_PATH = PROJECT_ROOT / "models" / "survey_recommender"
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.fit_recommender import evaluate_survey_recommender, fit_survey_recommender
+from utils.fit import evaluate_survey_recommender, fit_survey_recommender
 
 
 def _print_scores(scores: dict[str, object]) -> None:

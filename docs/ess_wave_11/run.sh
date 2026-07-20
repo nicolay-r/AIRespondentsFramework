@@ -11,8 +11,10 @@ if [[ ! -x "$PYTHON" ]]; then
 fi
 
 exec "$PYTHON" scripts/run_pipeline_on_test_local.py \
+  --pipeline "prompt-based-statements" \
   --features "$SCRIPT_DIR/ess_wave_11_features.csv" \
   --targets "$SCRIPT_DIR/ess_wave_11_targets.csv" \
   --respondents "$SCRIPT_DIR/ess_wave_11_test.csv" \
-  --statements "$SCRIPT_DIR/ess_wave_11_feature_statements.tsv" \
+  --statements "$SCRIPT_DIR/ess_wave_11_features_statements.tsv" \
+  --output-dir "$SCRIPT_DIR/output" \
   "$@"
