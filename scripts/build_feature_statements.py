@@ -1,7 +1,5 @@
 """Build short first-person statements for survey features using an LLM."""
 
-from __future__ import annotations
-
 import argparse
 import csv
 import json

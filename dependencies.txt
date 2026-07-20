@@ -3,4 +3,3 @@ openai==2.45.0
 python-dotenv
 scikit-learn
 tqdm
-catboost
