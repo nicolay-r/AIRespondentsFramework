@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Literal
 
 import pandas as pd
-from datasets import load_dataset
 
 from src.pipelines.base import FeatureEntry, PipelineItem
 
@@ -57,47 +56,46 @@ def _features_metadata(
     return feature_questions, value_maps
 
 
-def load() -> LoadedData:
-    train_df = load_dataset(REPO, "train", split="train").to_pandas()
-    test_df = load_dataset(REPO, "test", split="train").to_pandas()
-    targets_df = pd.concat(
-        [
-            load_dataset(REPO, "targets", split="train").to_pandas(),
-            pd.read_csv(TARGETS_HIDDEN_PATH),
-        ],
-        ignore_index=True,
-    ).drop_duplicates(subset=["question_id", "option"], keep="first")
-    features_df = load_dataset(REPO, "features", split="train").to_pandas()
-
-    feature_questions, value_maps = _features_metadata(features_df)
-    targets = _targets_from_df(targets_df)
-
-    return LoadedData(
-        train=_dataframe_to_respondents(train_df),
-        test=_dataframe_to_respondents(test_df),
-        targets=targets,
-        feature_questions=feature_questions,
-        value_maps=value_maps,
-    )
-
-
 def load_local(
     *,
     features_path: Path | str,
     targets_path: Path | str,
-    respondents_path: Path | str,
+    respondents_path: Path | str | None = None,
+    train_respondents_path: Path | str | None = None,
+    test_respondents_path: Path | str | None = None,
+    targets_hidden_path: Path | str | None = TARGETS_HIDDEN_PATH,
 ) -> LoadedData:
     """Load a local survey bundle from features, targets, and respondent CSV files."""
+    if respondents_path is not None:
+        if test_respondents_path is not None:
+            raise ValueError("pass only one of respondents_path and test_respondents_path")
+        test_respondents_path = respondents_path
+
     features_df = pd.read_csv(features_path)
-    targets_df = pd.read_csv(targets_path)
-    respondents_df = pd.read_csv(respondents_path)
+    targets_frames = [pd.read_csv(targets_path)]
+    if targets_hidden_path is not None:
+        hidden_path = Path(targets_hidden_path)
+        if hidden_path.exists():
+            targets_frames.append(pd.read_csv(hidden_path))
+    targets_df = pd.concat(targets_frames, ignore_index=True).drop_duplicates(
+        subset=["question_id", "option"],
+        keep="first",
+    )
 
     feature_questions, value_maps = _features_metadata(features_df)
     targets = _targets_from_df(targets_df)
 
+    train: dict[str, dict[str, object]] = {}
+    if train_respondents_path is not None:
+        train = _dataframe_to_respondents(pd.read_csv(train_respondents_path))
+
+    test: dict[str, dict[str, object]] = {}
+    if test_respondents_path is not None:
+        test = _dataframe_to_respondents(pd.read_csv(test_respondents_path))
+
     return LoadedData(
-        train={},
-        test=_dataframe_to_respondents(respondents_df),
+        train=train,
+        test=test,
         targets=targets,
         feature_questions=feature_questions,
         value_maps=value_maps,

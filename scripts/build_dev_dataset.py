@@ -10,13 +10,14 @@ from typing import Any
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_DATA_DIR = PROJECT_ROOT / "docs" / "default"
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "docs" / "dev_dataset_holdout.json"
-DEFAULT_TARGETS_PATH = PROJECT_ROOT / "docs" / "dataset" / "targets.csv"
+DEFAULT_TARGETS_PATH = DEFAULT_DATA_DIR / "targets.csv"
 DEFAULT_TRAIN_LIMIT = 1000
 DEFAULT_HOLDOUT_FRACTION = 0.2
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.train_survey import build_target_option_maps, decode_answer
+from scripts.utils.train_survey import build_target_option_maps, decode_answer
 
 dataset = importlib.import_module("scripts.utils")
 
@@ -131,7 +132,11 @@ def main() -> None:
     args = parser.parse_args()
 
     question_ids = question_ids_from_targets(args.targets)
-    data = dataset.load()
+    data = dataset.load_local(
+        features_path=DEFAULT_DATA_DIR / "features.csv",
+        targets_path=DEFAULT_DATA_DIR / "targets.csv",
+        train_respondents_path=DEFAULT_DATA_DIR / "train.csv",
+    )
     payload = build_dev_dataset(
         data,
         question_ids=question_ids,

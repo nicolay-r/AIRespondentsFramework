@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.metrics import f1_score
 
 from src.utils.surveyRecommender import SurveyRecommender
-from src.utils.train_survey import feature_columns_for_test, survey_dataframe
+from scripts.utils.train_survey import feature_columns_for_test, survey_dataframe
 
 dataset = importlib.import_module("scripts.utils")
 
@@ -88,16 +88,13 @@ def evaluate_survey_recommender(
 
 
 def fit_survey_recommender(
-    data: dataset.LoadedData | None = None,
+    data: dataset.LoadedData,
     *,
     limit: int = 100,
     iterations,
     depth,
     show_progress: bool = True,
 ) -> tuple[SurveyRecommender, pd.DataFrame]:
-    if data is None:
-        data = dataset.load()
-
     feature_columns = feature_columns_for_test(data)
     target_columns = list(data.targets.keys())
     train_survey = survey_dataframe(

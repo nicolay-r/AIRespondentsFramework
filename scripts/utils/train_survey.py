@@ -1,13 +1,12 @@
 """Convert challenge survey data into a SurveyRecommender-ready dataframe."""
 
-import importlib
 import math
 from typing import Iterable, Literal
 
 import pandas as pd
 from datasets import load_dataset
 
-dataset = importlib.import_module("scripts.utils")
+from scripts.utils.survey import LoadedData, REPO, decode_feature
 
 META_COLUMNS = frozenset({"respondent_id", "country"})
 
@@ -27,9 +26,9 @@ def _option_key(value: object) -> str:
 
 
 def build_target_option_maps(
-    data: dataset.LoadedData,
+    data: LoadedData,
 ) -> dict[str, dict[str, str]]:
-    targets_df = load_dataset(dataset.REPO, "targets", split="train").to_pandas()
+    targets_df = load_dataset(REPO, "targets", split="train").to_pandas()
     option_maps: dict[str, dict[str, str]] = {
         question_id: {} for question_id in data.targets
     }
@@ -41,7 +40,7 @@ def build_target_option_maps(
 
 
 def question_columns(
-    data: dataset.LoadedData,
+    data: LoadedData,
     questions: Iterable[str] | None = None,
     *,
     split: Literal["train", "test"] = "train",
@@ -55,7 +54,7 @@ def question_columns(
     return [column for column in questions if column in available_set]
 
 
-def feature_columns_for_test(data: dataset.LoadedData) -> list[str]:
+def feature_columns_for_test(data: LoadedData) -> list[str]:
     """Feature question ids available in the test split."""
     return question_columns(data, split="test")
 
@@ -63,7 +62,7 @@ def feature_columns_for_test(data: dataset.LoadedData) -> list[str]:
 def decode_answer(
     row: dict[str, object],
     variable: str,
-    data: dataset.LoadedData,
+    data: LoadedData,
     target_option_maps: dict[str, dict[str, str]],
 ) -> str | None:
     value = row.get(variable)
@@ -72,12 +71,12 @@ def decode_answer(
     if variable in data.targets:
         return target_option_maps[variable].get(_option_key(value))
     if variable in data.value_maps:
-        return dataset.decode_feature(row, variable, data.value_maps)
+        return decode_feature(row, variable, data.value_maps)
     return str(value)
 
 
 def survey_dataframe(
-    data: dataset.LoadedData,
+    data: LoadedData,
     *,
     split: Literal["train", "test"] = "train",
     limit: int | None = None,
@@ -105,7 +104,7 @@ def survey_dataframe(
 
 
 def train_survey_dataframe(
-    data: dataset.LoadedData,
+    data: LoadedData,
     *,
     limit: int | None = None,
     questions: Iterable[str] | None = None,

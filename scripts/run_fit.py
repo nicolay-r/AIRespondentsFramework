@@ -1,14 +1,18 @@
 """Fit a SurveyRecommender on train data and save it for pipeline inference."""
 
 import argparse
+import importlib
 import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_DATA_DIR = PROJECT_ROOT / "docs" / "default"
 DEFAULT_RECOMMENDER_PATH = PROJECT_ROOT / "models" / "survey_recommender"
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from utils.fit import evaluate_survey_recommender, fit_survey_recommender
+from scripts.utils.fit import evaluate_survey_recommender, fit_survey_recommender
+
+dataset = importlib.import_module("scripts.utils")
 
 
 def _print_scores(scores: dict[str, object]) -> None:
@@ -67,7 +71,13 @@ def main() -> None:
     args = parser.parse_args()
 
     print("Start fitting recommender ...")
+    data = dataset.load_local(
+        features_path=DEFAULT_DATA_DIR / "features.csv",
+        targets_path=DEFAULT_DATA_DIR / "targets.csv",
+        train_respondents_path=DEFAULT_DATA_DIR / "train.csv",
+    )
     recommender, train_survey = fit_survey_recommender(
+        data,
         limit=args.limit,
         iterations=args.iterations,
         depth=args.depth,

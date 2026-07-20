@@ -18,7 +18,6 @@ from scripts.utils.survey import (
     TargetQuestion,
     decode_feature,
     iter_pipeline_items,
-    load,
     load_local,
     pipeline_items_from_files,
 )
@@ -34,7 +33,6 @@ __all__ = [
     "example_prompts_for",
     "iter_pipeline_items",
     "label_distribution",
-    "load",
     "load_local",
     "majority_share",
     "order_aware_distribution_distance",

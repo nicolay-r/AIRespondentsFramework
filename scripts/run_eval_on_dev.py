@@ -8,10 +8,11 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_DATA_DIR = PROJECT_ROOT / "docs" / "default"
 DEV_DATASET_PATH = PROJECT_ROOT / "docs" / "dev_dataset.json"
 OUTPUT_DIR = PROJECT_ROOT / "output" / "dev"
-STATEMENTS_PATH = PROJECT_ROOT / "docs" / "dataset" / "feature_statements.tsv"
-FEATURES_PATH = PROJECT_ROOT / "docs" / "dataset" / "features.csv"
+STATEMENTS_PATH = DEFAULT_DATA_DIR / "feature_statements.tsv"
+FEATURES_PATH = DEFAULT_DATA_DIR / "features.csv"
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.run_extract_pipeline_input import dev_pipeline_items, load_dev_dataset
@@ -48,7 +49,11 @@ if __name__ == "__main__":
     examples = load_dev_dataset(args.dev_dataset)
     if args.limit is not None:
         examples = examples[: args.limit]
-    data = dataset.load()
+    data = dataset.load_local(
+        features_path=DEFAULT_DATA_DIR / "features.csv",
+        targets_path=DEFAULT_DATA_DIR / "targets.csv",
+        train_respondents_path=DEFAULT_DATA_DIR / "train.csv",
+    )
     items = dev_pipeline_items(data, examples)
 
     pipeline, _, results, model = run_on_items(
