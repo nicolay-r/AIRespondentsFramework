@@ -1,12 +1,9 @@
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import cast
-
-from tqdm import tqdm
 
 from src.pipelines.base import Pipeline, PipelineItem
 from src.pipelines.registry import create_pipeline
 from src.providers.openai_client import OpenAIClient
+from src.utils.jobs import run_jobs
 
 
 def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
@@ -36,24 +33,6 @@ def _predict_job(job: tuple[Pipeline, PipelineItem]) -> dict[str, object]:
     result = pipeline.apply(item)
     result["output"] = parse_label(result["output"], item.labels)
     return result
-
-
-def _run_jobs(
-    jobs: list[tuple[Pipeline, PipelineItem]],
-    *,
-    workers: int,
-    desc: str,
-) -> list[dict[str, object]]:
-    results: list[dict[str, object] | None] = [None] * len(jobs)
-    with ThreadPoolExecutor(workers) as pool:
-        future_to_index = {
-            pool.submit(_predict_job, job): index for index, job in enumerate(jobs)
-        }
-        with tqdm(total=len(jobs), desc=desc) as progress:
-            for future in as_completed(future_to_index):
-                results[future_to_index[future]] = future.result()
-                progress.update(1)
-    return cast(list[dict[str, object]], results)
 
 
 def run_on_items(
@@ -88,7 +67,7 @@ def run_on_items(
 
     print("Pipeline created ... run jobs")
     jobs = [(pipeline, item) for item in items]
-    results = _run_jobs(jobs, workers=workers, desc=desc)
+    results = run_jobs(jobs, _predict_job, workers=workers, desc=desc)
 
     effective_model = getattr(pipeline, "model_name", model)
     return pipeline, items, results, effective_model

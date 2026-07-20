@@ -7,12 +7,10 @@ import re
 import sys
 import threading
 from collections import defaultdict
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 
 from dotenv import load_dotenv
-from tqdm import tqdm
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = PROJECT_ROOT / "docs" / "ess_wave_11" / "ess_wave_11_features.csv"
@@ -24,6 +22,7 @@ MAX_DIRECT_OPTIONS = 30
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.providers.openai_client import OpenAIClient
+from src.utils.jobs import run_jobs
 
 
 @dataclass(frozen=True)
@@ -158,7 +157,7 @@ def append_statements(
     *,
     code: str,
     statements: dict[str, str],
-    write_lock: threading.Lock | None = None,
+    write_lock: object | None = None,
 ) -> None:
     lines = [
         f"{code}\t{response_code}\t{statement}\n"
@@ -179,6 +178,19 @@ def _process_feature(
     feature: FeatureRow,
 ) -> tuple[str, dict[str, str]]:
     return feature.code, statements_for_feature(client, feature)
+
+
+def _process_feature_job(
+    job: tuple[OpenAIClient, FeatureRow, Path, object],
+) -> None:
+    client, feature, output_path, write_lock = job
+    code, statements = _process_feature(client, feature)
+    append_statements(
+        output_path,
+        code=code,
+        statements=statements,
+        write_lock=write_lock,
+    )
 
 
 def main() -> None:
@@ -231,22 +243,13 @@ def main() -> None:
 
     client = OpenAIClient(model=MODEL, base_url=BASE_URL)
     write_lock = threading.Lock()
-
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = [
-            pool.submit(_process_feature, client, feature)
-            for feature in pending
-        ]
-        with tqdm(total=len(futures), desc="building feature statements") as progress:
-            for future in as_completed(futures):
-                code, statements = future.result()
-                append_statements(
-                    args.output,
-                    code=code,
-                    statements=statements,
-                    write_lock=write_lock,
-                )
-                progress.update(1)
+    jobs = [(client, feature, args.output, write_lock) for feature in pending]
+    run_jobs(
+        jobs,
+        _process_feature_job,
+        workers=args.workers,
+        desc="building feature statements",
+    )
 
 
 if __name__ == "__main__":
