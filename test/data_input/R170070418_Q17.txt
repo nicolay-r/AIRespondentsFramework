@@ -1,0 +1,1402 @@
+{
+  "respondent_id": "R170070418",
+  "question_id": "Q17",
+  "question": "Do you consider obedience to be an especially important quality for children to learn at home?",
+  "labels": [
+    "Important",
+    "Not so important"
+  ],
+  "history": [
+    {
+      "code": "N_REGION_ISO",
+      "question": "Which region do you currently live in?",
+      "answer": "Distrito Capital de Bogotá"
+    },
+    {
+      "code": "Q1",
+      "question": "In your life, would you say family is very important, rather important, not very important or not important at all?",
+      "answer": "Very important"
+    },
+    {
+      "code": "Q2",
+      "question": "In your life, would you say friends is very important, rather important, not very important or not important at all?",
+      "answer": "Not very important"
+    },
+    {
+      "code": "Q3",
+      "question": "In your life, would you say leisure time is very important, rather important, not very important or not important at all?",
+      "answer": "Very important"
+    },
+    {
+      "code": "Q4",
+      "question": "In your life, would you say politics is very important, rather important, not very important or not important at all?",
+      "answer": "Not very important"
+    },
+    {
+      "code": "Q5",
+      "question": "In your life, would you say work is very important, rather important, not very important or not important at all?",
+      "answer": "Not at all important"
+    },
+    {
+      "code": "Q6",
+      "question": "In your life, would you say religion is very important, rather important, not very important or not important at all?",
+      "answer": "Very important"
+    },
+    {
+      "code": "Q7",
+      "question": "Do you consider good manners to be an especially important quality for children to learn at home?",
+      "answer": "Important"
+    },
+    {
+      "code": "Q8",
+      "question": "Do you consider independence to be an especially important quality for children to learn at home?",
+      "answer": "Important"
+    },
+    {
+      "code": "Q9",
+      "question": "Do you consider hard work to be an especially important quality for children to learn at home?",
+      "answer": "Not so important"
+    },
+    {
+      "code": "Q10",
+      "question": "Do you consider feeling of responsibility to be an especially important quality for children to learn at home?",
+      "answer": "Important"
+    },
+    {
+      "code": "Q11",
+      "question": "Do you consider imagination to be an especially important quality for children to learn at home?",
+      "answer": "Not so important"
+    },
+    {
+      "code": "Q12",
+      "question": "Do you consider tolerance and respect for other people to be an especially important quality for children to learn at home?",
+      "answer": "Important"
+    },
+    {
+      "code": "Q13",
+      "question": "Do you consider thrift saving money and things to be an especially important quality for children to learn at home?",
+      "answer": "Not so important"
+    },
+    {
+      "code": "Q14",
+      "question": "Do you consider determination perseverance to be an especially important quality for children to learn at home?",
+      "answer": "Not so important"
+    },
+    {
+      "code": "Q15",
+      "question": "Do you consider religious faith to be an especially important quality for children to learn at home?",
+      "answer": "Not so important"
+    },
+    {
+      "code": "Q16",
+      "question": "Do you consider unselfishness to be an especially important quality for children to learn at home?",
+      "answer": "Important"
+    },
+    {
+      "code": "Q18",
+      "question": "Would you prefer not to have drug addicts as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q19",
+      "question": "Would you prefer not to have people of a different race as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q20",
+      "question": "Would you prefer not to have people who have aids as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q21",
+      "question": "Would you prefer not to have immigrants/foreign workers as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q23",
+      "question": "Would you prefer not to have people of a different religion as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q24",
+      "question": "Would you prefer not to have heavy drinkers as neighbors?",
+      "answer": "Yes"
+    },
+    {
+      "code": "Q25",
+      "question": "Would you prefer not to have unmarried couples living together as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q26",
+      "question": "Would you prefer not to have people who speak a different language as neighbors?",
+      "answer": "No"
+    },
+    {
+      "code": "Q27",
+      "question": "How much do you agree or disagree with the following statement: 'One of your main goals in life has been to make your parents proud'?",
+      "answer": "Agree strongly"
+    },
+    {
+      "code": "Q28",
+      "question": "How much do you agree or disagree with the following statement: 'When a mother works for pay, the children suffer'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q29",
+      "question": "How much do you agree or disagree with the following statement: 'On the whole, men make better political leaders than women do'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q30",
+      "question": "How much do you agree or disagree with the following statement: 'A university education is more important for a boy than for a girl'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q31",
+      "question": "How much do you agree or disagree with the following statement: 'On the whole, men make better business executives than women do'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q32",
+      "question": "How much do you agree or disagree with the following statement: 'Being a housewife is just as fulfilling as working for pay'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q35",
+      "question": "Do you agree or disagree with the following statement 'If a woman earns more money than her husband, it's almost certain to cause problems'?",
+      "answer": "Neither agree nor disagree"
+    },
+    {
+      "code": "Q36",
+      "question": "Do you agree or disagree with the following statement: 'Homosexual couples are as good parents as other couples'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q37",
+      "question": "Do you agree or disagree with the following statement: 'It is a duty towards society to have children'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q38",
+      "question": "Do you agree or disagree with the following statement: 'Adult children have the duty to provide long-term care for their parents?'",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q39",
+      "question": "Do you agree or disagree with the following statement: 'People who don't work turn lazy'?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q40",
+      "question": "Do you agree or disagree with the following statement: 'Work is a duty towards society'?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q41",
+      "question": "Do you agree or disagree with the following statement: 'Work should always come first, even if it means less spare time'?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q42",
+      "question": "How would you describe your general outlook on how society should develop or respond to change?",
+      "answer": "Our society must be gradually improved by reforms"
+    },
+    {
+      "code": "Q43",
+      "question": "If work were to become less important in people's lives, would you see that as a good thing, a bad thing, or wouldn't you mind?",
+      "answer": "Good thing"
+    },
+    {
+      "code": "Q44",
+      "question": "If society placed more emphasis on developing technology in the future, would you consider that a good thing, a bad thing, or wouldn't you mind?",
+      "answer": "Good thing"
+    },
+    {
+      "code": "Q45",
+      "question": "If society placed more emphasis on developing technology in the future, would you consider that a good thing, a bad thing, or wouldn't you mind?",
+      "answer": "Good thing"
+    },
+    {
+      "code": "Q46",
+      "question": "Taking all things together, how happy are you?",
+      "answer": "Very happy"
+    },
+    {
+      "code": "Q47",
+      "question": "All in all, how would you describe your state of health these days?",
+      "answer": "Good"
+    },
+    {
+      "code": "Q48",
+      "question": "To what extent do you feel you have freedom of choice and control over the way your life turns out?",
+      "answer": "A great deal"
+    },
+    {
+      "code": "Q49",
+      "question": "All things considered, how satisfied are you with your life these days?",
+      "answer": "Very satisfied"
+    },
+    {
+      "code": "Q50",
+      "question": "How satisfied are you with your household's financial situation?",
+      "answer": "Completely Dissatisfied"
+    },
+    {
+      "code": "Q51",
+      "question": "In the last 12 months, how often have you or your family gone without enough food to eat?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q52",
+      "question": "In the last 12 months, how often have you or your family felt unsafe from crime in your own home?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q53",
+      "question": "In the last 12 months, how often have you or your family gone without needed medicine or treatment that you needed?",
+      "answer": "Sometimes"
+    },
+    {
+      "code": "Q54",
+      "question": "In the last 12 months, how often have you or your family gone without a cash income?",
+      "answer": "Rarely"
+    },
+    {
+      "code": "Q55",
+      "question": "In the last 12 months, how often have you or your family gone without a safe shelter over your head?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q56",
+      "question": "Comparing your standard of living with your parents' standard of living when they were about your age, would you say that you are better off, worse off or about the same?",
+      "answer": "Or about the same"
+    },
+    {
+      "code": "Q57",
+      "question": "Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?",
+      "answer": "Need to be very careful"
+    },
+    {
+      "code": "Q58",
+      "question": "How much do you trust Your family?",
+      "answer": "Trust somewhat"
+    },
+    {
+      "code": "Q59",
+      "question": "How much do you trust Your neighborhood?",
+      "answer": "Trust somewhat"
+    },
+    {
+      "code": "Q60",
+      "question": "How much do you trust People you know personally?",
+      "answer": "Trust somewhat"
+    },
+    {
+      "code": "Q61",
+      "question": "How much do you trust People you meet for the first time?",
+      "answer": "Do not trust at all"
+    },
+    {
+      "code": "Q62",
+      "question": "How much do you trust People of another religion?",
+      "answer": "Do not trust at all"
+    },
+    {
+      "code": "Q63",
+      "question": "How much do you trust People of another nationality?",
+      "answer": "Do not trust at all"
+    },
+    {
+      "code": "Q64",
+      "question": "How much confidence do you have in the churches?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q65",
+      "question": "How much confidence do you have in the armed forces?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q66",
+      "question": "How much confidence do you have in the press?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q67",
+      "question": "How much confidence do you have in television?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q68",
+      "question": "How much confidence do you have in labour unions?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q69",
+      "question": "How much confidence do you have in the police?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q70",
+      "question": "How much confidence do you have in the courts?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q71",
+      "question": "How much confidence do you have in the government?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q72",
+      "question": "How much confidence do you have in political parties?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q74",
+      "question": "How much confidence do you have in the civil services?",
+      "answer": "None at all"
+    },
+    {
+      "code": "Q75",
+      "question": "How much confidence do you have in universities?",
+      "answer": "A great deal"
+    },
+    {
+      "code": "Q76",
+      "question": "How much confidence do you have in elections?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q77",
+      "question": "How much confidence do you have in major companies?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q78",
+      "question": "How much confidence do you have in banks?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q79",
+      "question": "How much confidence do you have in environmental organizations?",
+      "answer": "A great deal"
+    },
+    {
+      "code": "Q80",
+      "question": "How much confidence do you have in women's organizations?",
+      "answer": "A great deal"
+    },
+    {
+      "code": "Q81",
+      "question": "How much confidence do you have in charitable or humanitarian organizations?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q82",
+      "question": "How much confidence do you have in <major regional organization>?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q83",
+      "question": "How much confidence do you have in the United Nations (UN)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q84",
+      "question": "How much confidence do you have in the International Monetary Fund (IMF)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q85",
+      "question": "How much confidence do you have in International Criminal Court (ICC)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q86",
+      "question": "How much confidence do you have in the North Atlantic Treaty Organization (NATO)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q87",
+      "question": "How much confidence do you have in the World Bank (WB)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q88",
+      "question": "How much confidence do you have in the World Health Organization (WHO)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q89",
+      "question": "How much confidence do you have in the World Trade Organization (WTO)?",
+      "answer": "Not very much"
+    },
+    {
+      "code": "Q90",
+      "question": "What should international organizations prioritize: being effective or being democratic?",
+      "answer": "Being effective"
+    },
+    {
+      "code": "Q91",
+      "question": "Which of the following countries does not have a permanent seat on the UN Security Council: France, China, India?",
+      "answer": "India"
+    },
+    {
+      "code": "Q92",
+      "question": "Where are the headquarters of the International Monetary Fund (IMF) located?",
+      "answer": "Geneva"
+    },
+    {
+      "code": "Q93",
+      "question": "Which of the following problems does the organization Amnesty International deal with?",
+      "answer": "Human rights"
+    },
+    {
+      "code": "Q94",
+      "question": "Are you a member of a church or religious organization?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q95",
+      "question": "Are you a member of a sport or recreational organization, football/baseball/rugby team?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q96",
+      "question": "Are you a member of a art, music or educational organization?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q97",
+      "question": "Are you a member of a labour union?",
+      "answer": "Not a member"
+    },
+    {
+      "code": "Q98",
+      "question": "Are you a member of a political party?",
+      "answer": "Not a member"
+    },
+    {
+      "code": "Q99",
+      "question": "Are you a member of a environmental organization?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q100",
+      "question": "Are you a member of a professional association?",
+      "answer": "Not a member"
+    },
+    {
+      "code": "Q101",
+      "question": "Are you a member of a humanitarian or charitable organization?",
+      "answer": "Not a member"
+    },
+    {
+      "code": "Q102",
+      "question": "Are you a member of a consumer organization?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q103",
+      "question": "Are you a member of a self-help group, mutual aid group?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q104",
+      "question": "Are you a member of a women's group?",
+      "answer": "Don't belong"
+    },
+    {
+      "code": "Q105",
+      "question": "Are you a member of a other organization?",
+      "answer": null
+    },
+    {
+      "code": "Q106",
+      "question": "Should incomes be made more equal, or should we allow larger differences as incentives for individual effort?",
+      "answer": "Balanced"
+    },
+    {
+      "code": "Q107",
+      "question": "Should private or government ownership of business and industry be increased?",
+      "answer": "Leaning toward private ownership"
+    },
+    {
+      "code": "Q108",
+      "question": "Should the government take more responsibility to ensure provision for all, or should individuals be more responsible for themselves?",
+      "answer": "People should take more responsibility to provide for themselves"
+    },
+    {
+      "code": "Q109",
+      "question": "Do you think competition is good because it stimulates effort and innovation, or harmful because it brings out the worst in people?",
+      "answer": "Balanced"
+    },
+    {
+      "code": "Q110",
+      "question": "Is success mainly the result of hard work, or more a matter of luck and connections?",
+      "answer": "Leaning toward hard work"
+    },
+    {
+      "code": "Q111",
+      "question": "Here are two statements people sometimes make when discussing the environment and economic growth. Which of them comes closer to your own point of view? A. Protecting the environment should be given priority, even if it causes slower economic growth and some loss of jobs B. Economic growth and creating jobs should be the top priority, even if the environment suffers to some extent",
+      "answer": "A: Protect environment"
+    },
+    {
+      "code": "Q113",
+      "question": "How many  state authorities do you believe are involved in corruption?",
+      "answer": "Most of them"
+    },
+    {
+      "code": "Q114",
+      "question": "How many  business executives do you believe are involved in corruption?",
+      "answer": "Few of them"
+    },
+    {
+      "code": "Q115",
+      "question": "How many  local authorities do you believe are involved in corruption?",
+      "answer": "Most of them"
+    },
+    {
+      "code": "Q116",
+      "question": "How many  civil service providers (police, judiciary, civil servants, doctors, teachers) do you believe are involved in corruption?",
+      "answer": "Few of them"
+    },
+    {
+      "code": "Q117",
+      "question": "How many  journalists and media do you believe are involved in corruption?",
+      "answer": "Few of them"
+    },
+    {
+      "code": "Q118",
+      "question": "We want to know about your experience with local officials and service providers, like police officers, lawyers, doctors, teachers and civil servants in your community. How often do you think ordinary people like yourself or people from your neighbourhood have to pay a bribe, give a gift or do a favor to these people in order to get the services you need?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q119",
+      "question": "Can you tell me how strongly you agree or disagree with the following statement: On the whole, women are less corrupt than men?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q120",
+      "question": "In your opinion, how high is the risk that someone will be held accountable for giving or receiving a bribe, gift, or favour in return for public service?",
+      "answer": "Very high risk"
+    },
+    {
+      "code": "Q121",
+      "question": "How do you evaluate the impact of immigrants on the development of this country?",
+      "answer": "Quite good"
+    },
+    {
+      "code": "Q122",
+      "question": "Do you agree that immigrants fill useful jobs in the workforce?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q123",
+      "question": "Do you agree that immigrants strengthen cultural diversity?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q124",
+      "question": "Do you agree that immigrants increase the crime rate?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q125",
+      "question": "Do you agree that the country should give asylum to political refugees?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q126",
+      "question": "Do you agree that immigrants increase the risks of terrorism?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q127",
+      "question": "Do you agree that the country should help poor people establish new lives?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q128",
+      "question": "Do you agree that immigrants increase unemployment?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q129",
+      "question": "Do you agree that immigrants lead to social conflict?",
+      "answer": "Agree"
+    },
+    {
+      "code": "Q130",
+      "question": "What do you think the government should do about people from other countries coming here to work?",
+      "answer": "Place strict limits on the number of foreigners who can come here"
+    },
+    {
+      "code": "Q131",
+      "question": "Could you tell me how secure do you feel these days in your neighborhood?",
+      "answer": "Not at all secure"
+    },
+    {
+      "code": "Q132",
+      "question": "How frequently does robberies occur in your neighborhood?",
+      "answer": "Quite frequently"
+    },
+    {
+      "code": "Q133",
+      "question": "How frequently does alcohol consumed in the streets occur in your neighborhood?",
+      "answer": "Quite frequently"
+    },
+    {
+      "code": "Q134",
+      "question": "How frequently does police or military interfere with people's private life occur in your neighborhood?",
+      "answer": "Not at all frequently"
+    },
+    {
+      "code": "Q135",
+      "question": "How frequently does racist behavior occur in your neighborhood?",
+      "answer": "Not at all frequently"
+    },
+    {
+      "code": "Q136",
+      "question": "How frequently does drug sale in streets occur in your neighborhood?",
+      "answer": "Quite frequently"
+    },
+    {
+      "code": "Q137",
+      "question": "How frequently does street violence and fights occur in your neighborhood?",
+      "answer": "Quite frequently"
+    },
+    {
+      "code": "Q138",
+      "question": "How frequently does sexual harassment occur in your neighborhood?",
+      "answer": "Not at all frequently"
+    },
+    {
+      "code": "Q139",
+      "question": "Have you ever avoided carrying much money for security reasons?",
+      "answer": "No"
+    },
+    {
+      "code": "Q140",
+      "question": "Have you preferred not to go out at night for reasons of security?",
+      "answer": "No"
+    },
+    {
+      "code": "Q141",
+      "question": "Have you ever carried a knife, gun or other weapon for reasons of security?",
+      "answer": "No"
+    },
+    {
+      "code": "Q142",
+      "question": "How worried are you about losing your job or not finding a job?",
+      "answer": "Not much"
+    },
+    {
+      "code": "Q143",
+      "question": "How worried are you about not being able to give your children a good education?",
+      "answer": "Not much"
+    },
+    {
+      "code": "Q144",
+      "question": "Have you been the victim of a crime during the past year?",
+      "answer": "No"
+    },
+    {
+      "code": "Q145",
+      "question": "And what about your immediate family, has someone in your family been the victim of a crime during the last year?",
+      "answer": "No"
+    },
+    {
+      "code": "Q146",
+      "question": "How worried are you about a war involving your country?",
+      "answer": "Not at all"
+    },
+    {
+      "code": "Q147",
+      "question": "How worried are you about a terrorist attack?",
+      "answer": "Not much"
+    },
+    {
+      "code": "Q149",
+      "question": "Most people consider both freedom and equality to be important, but if you had to choose between them, which one would you consider more important?",
+      "answer": "Freedom"
+    },
+    {
+      "code": "Q150",
+      "question": "Most people consider both freedom and security to be important, but if you had to choose between them, which one would you consider more important?",
+      "answer": "Security"
+    },
+    {
+      "code": "Q151",
+      "question": "Of course, we all hope that there will not be another war, but if it were to come to that, would you be willing to fight for your country?",
+      "answer": "Yes"
+    },
+    {
+      "code": "Q152",
+      "question": "What do you think should be the most important goal for this country over the next ten years? Economic growth, strong defence, public participation, or environmental improvement?",
+      "answer": "People have more say about how things are done"
+    },
+    {
+      "code": "Q153",
+      "question": "What do you think should be the second most important goal for this country over the next ten years? Economic growth, strong defence, public participation, or environmental improvement?",
+      "answer": "Making sure this country has strong defence forces"
+    },
+    {
+      "code": "Q154",
+      "question": "People may value different national goals. Which of these goals is most important to you personally: maintaining order in the nation, giving people more say in important government decisions, fighting rising prices, or protecting freedom of speech?",
+      "answer": "Giving people more say in important government decisions"
+    },
+    {
+      "code": "Q155",
+      "question": "People may value different national goals. Which of these goals is the second most important to you personally: maintaining order in the nation, giving people more say in important government decisions, fighting rising prices, or protecting freedom of speech?",
+      "answer": "Maintaining order in the nation"
+    },
+    {
+      "code": "Q156",
+      "question": "In your opinion, which of the following is most important: A stable economy; Progress toward a less impersonal and more humane society; Progress toward a society in which ideas count more than money; The fight against crime?",
+      "answer": "Progress toward a society in which Ideas count more than money"
+    },
+    {
+      "code": "Q157",
+      "question": "In your opinion, which of the following is the second most important: A stable economy; Progress toward a less impersonal and more humane society; Progress toward a society in which ideas count more than money; The fight against crime?",
+      "answer": "Progress toward a less impersonal and more humane  society"
+    },
+    {
+      "code": "Q158",
+      "question": "To what extent do you agree or disagree that science and technology are making our lives healthier, easier, and more comfortable?",
+      "answer": "Completely agree"
+    },
+    {
+      "code": "Q159",
+      "question": "To what extent do you agree or disagree that science and technology will create more opportunities for the next generation?",
+      "answer": "Completely agree"
+    },
+    {
+      "code": "Q160",
+      "question": "To what extent do you agree or disagree with the statement: 'We depend too much on science and not enough on faith'?",
+      "answer": "Completely agree"
+    },
+    {
+      "code": "Q161",
+      "question": "To what extent do you agree or disagree with the statement: 'One of the bad effects of science is that it breaks down people's ideas of right and wrong'?",
+      "answer": "Completely agree"
+    },
+    {
+      "code": "Q162",
+      "question": "To what extent do you agree or disagree with the statement: 'It is not important for me to know about science in my daily life'?",
+      "answer": "Completely agree"
+    },
+    {
+      "code": "Q163",
+      "question": "To what extent do you think the world is better or worse off because of science and technology?",
+      "answer": "Much better off"
+    },
+    {
+      "code": "Q164",
+      "question": "How important is God in your life?",
+      "answer": "Very important"
+    },
+    {
+      "code": "Q165",
+      "question": "Do you believe in God?",
+      "answer": "Yes"
+    },
+    {
+      "code": "Q166",
+      "question": "Do you believe in life after death?",
+      "answer": "No"
+    },
+    {
+      "code": "Q167",
+      "question": "Do you believe in Hell?",
+      "answer": "No"
+    },
+    {
+      "code": "Q168",
+      "question": "Do you believe in Heaven?",
+      "answer": "No"
+    },
+    {
+      "code": "Q169",
+      "question": "Whenever science and religion conflict, is religion always right?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q170",
+      "question": "Is the only acceptable religion your own religion?",
+      "answer": "Disagree"
+    },
+    {
+      "code": "Q171",
+      "question": "Apart from weddings, funerals and christenings, about how often do you attend religious services these days?",
+      "answer": "Once a week"
+    },
+    {
+      "code": "Q173",
+      "question": "Independently of whether you go to church or not, would you say you are a religious person?",
+      "answer": "A religious person"
+    },
+    {
+      "code": "Q174",
+      "question": "Is religion primarily about following religious norms and ceremonies, or about doing good to other people?",
+      "answer": "Do good to other people"
+    },
+    {
+      "code": "Q175",
+      "question": "Is religion primarily about making sense of life after death or life in this world?",
+      "answer": "Make sense of life in this world"
+    },
+    {
+      "code": "Q176",
+      "question": "Do you agree or disagree that it is difficult nowadays to decide which moral rules are the right ones to follow?",
+      "answer": "Somewhat disagree"
+    },
+    {
+      "code": "Q177",
+      "question": "Is it justifiable to claim government benefits to which you are not entitled?",
+      "answer": "Always justifiable"
+    },
+    {
+      "code": "Q178",
+      "question": "Is it justifiable to avoid paying a fare on public transport?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q179",
+      "question": "Is it justifiable to steal property?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q180",
+      "question": "Is it justifiable to cheat on taxes if you have the chance?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q181",
+      "question": "Is it justifiable for someone to accept a bribe in the course of their duties?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q182",
+      "question": "Is homosexuality justifiable, in your view?",
+      "answer": "Sometimes justifiable"
+    },
+    {
+      "code": "Q183",
+      "question": "Is prostitution justifiable, in your view?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q184",
+      "question": "Is abortion justifiable, in your view?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q185",
+      "question": "Is divorce justifiable, in your view?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q187",
+      "question": "How justifiable do you think suicide is?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q188",
+      "question": "How justifiable do you think euthanasia is?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q189",
+      "question": "How justifiable do you think it is for a man to beat his wife?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q190",
+      "question": "How justifiable do you think it is for parents to beat their children?",
+      "answer": "Rarely justifiable"
+    },
+    {
+      "code": "Q191",
+      "question": "How justifiable do you think it is to use violence against other people?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q192",
+      "question": "How justifiable do you think it is to use terrorism as a political, ideological or religious means?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q193",
+      "question": "How justifiable do you think it is to have casual sex?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q194",
+      "question": "How justifiable do you think it is to use political violence?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q195",
+      "question": "How justifiable do you think the death penalty is?",
+      "answer": "Never justifiable"
+    },
+    {
+      "code": "Q196",
+      "question": "Should the government have the right to keep people under video surveillance in public areas?",
+      "answer": "Definitely should not have the right"
+    },
+    {
+      "code": "Q197",
+      "question": "Should the government have the right to monitor all emails and other information exchanged on the Internet?",
+      "answer": "Definitely should not have the right"
+    },
+    {
+      "code": "Q198",
+      "question": "Should the government have the right to collect information about people living in this country without their knowledge?",
+      "answer": "Definitely should not have the right"
+    },
+    {
+      "code": "Q199",
+      "question": "How interested would you say you are in politics?",
+      "answer": "Not very interested"
+    },
+    {
+      "code": "Q200",
+      "question": "When you get together with your friends, how often do you discuss political matters?",
+      "answer": "Occasionally"
+    },
+    {
+      "code": "Q202",
+      "question": "How often do you use tv news to obtain information about this country and the world?",
+      "answer": "Daily"
+    },
+    {
+      "code": "Q203",
+      "question": "How often do you use radio news to obtain information about this country and the world?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q204",
+      "question": "How often do you use mobile phone to obtain information about this country and the world?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q205",
+      "question": "How often do you use email to obtain information about this country and the world?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q206",
+      "question": "How often do you use internet to obtain information about this country and the world?",
+      "answer": "Less than monthly"
+    },
+    {
+      "code": "Q207",
+      "question": "How often do you use social media (facebook, twitter, etc.) to obtain information about this country and the world?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q208",
+      "question": "How often do you use talk with friends or colleagues to obtain information about this country and the world?",
+      "answer": "Never"
+    },
+    {
+      "code": "Q210",
+      "question": "Have you ever joined a boycott, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q211",
+      "question": "Have you ever attended a peaceful demonstration, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q212",
+      "question": "Have you ever participated in an unofficial strike, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q213",
+      "question": "Have you ever donated to a political or activist group or campaign, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Have done"
+    },
+    {
+      "code": "Q214",
+      "question": "Have you ever contacted a government official, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q215",
+      "question": "Have you ever encouraged others to take political action, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q216",
+      "question": "Have you ever encouraged others to vote, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Have done"
+    },
+    {
+      "code": "Q217",
+      "question": "Have you ever used the internet or social media to search for information about politics and political events, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q218",
+      "question": "Have you ever signed a petition online using the internet or social media, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q219",
+      "question": "Have you ever encouraged others to take political action using the internet or social media, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q220",
+      "question": "Have you ever used the internet or social media to organize political activities, events, or protests, might you consider doing so, or would you never do so under any circumstances?",
+      "answer": "Would never do"
+    },
+    {
+      "code": "Q221",
+      "question": "How often do you vote in local elections?",
+      "answer": "Always"
+    },
+    {
+      "code": "Q222",
+      "question": "How often do you vote in national elections?",
+      "answer": "Always"
+    },
+    {
+      "code": "Q223",
+      "question": "If there were a national election tomorrow, for which party would you vote? If you do not know, which party appeals to you most?",
+      "answer": "COL: Green Alliance"
+    },
+    {
+      "code": "Q224",
+      "question": "In your view, how often are votes counted fairly in this country's elections?",
+      "answer": "Not often"
+    },
+    {
+      "code": "Q225",
+      "question": "In your view, how often are opposition candidates prevented from running in this country's elections?",
+      "answer": "Not often"
+    },
+    {
+      "code": "Q226",
+      "question": "In your view, how often is TV news favoring the governing party in this country's elections?",
+      "answer": "Very often"
+    },
+    {
+      "code": "Q228",
+      "question": "In your view, how often are journalists providing fair coverage of elections in this country's elections?",
+      "answer": "Not often"
+    },
+    {
+      "code": "Q229",
+      "question": "In your view, how often are election officials being fair in this country's elections?",
+      "answer": "Not often"
+    },
+    {
+      "code": "Q230",
+      "question": "In your view, how often are rich people buying elections in this country's elections?",
+      "answer": "Very often"
+    },
+    {
+      "code": "Q231",
+      "question": "In your view, how often are voters threatened with violence at the polls in this country's elections?",
+      "answer": "Not often"
+    },
+    {
+      "code": "Q232",
+      "question": "In your view, how often are voters offered a genuine choice in the elections in this country's elections?",
+      "answer": "Very often"
+    },
+    {
+      "code": "Q233",
+      "question": "In your view, how often do women have equal opportunities to run for the office in this country's elections?",
+      "answer": "Very often"
+    },
+    {
+      "code": "Q234",
+      "question": "Do you think that honest elections play an important role in deciding whether you and your family are able to make a good living?. How important would you say this is?",
+      "answer": "Very important"
+    },
+    {
+      "code": "Q234A",
+      "question": "How much would you say the political system in your country allows people like you to have a say in what the government does?",
+      "answer": "Very little"
+    },
+    {
+      "code": "Q235",
+      "question": "Do you think having a strong leader who does not have to consult parliament or hold elections is a good or bad way of governing this country?",
+      "answer": "Very good"
+    },
+    {
+      "code": "Q236",
+      "question": "Do you think having experts, rather than the government, make decisions based on what they think is best for the country is a good or bad way of governing?",
+      "answer": "Very good"
+    },
+    {
+      "code": "Q237",
+      "question": "Do you think having the army rule the country is a good or bad way of governing?",
+      "answer": "Very bad"
+    },
+    {
+      "code": "Q238",
+      "question": "Do you think having a democratic political system is a good or bad way of governing this country?",
+      "answer": "Very good"
+    },
+    {
+      "code": "Q239",
+      "question": "Do you think having a system governed by religious law, without political parties or elections, is a good or bad way of governing this country?",
+      "answer": "Very bad"
+    },
+    {
+      "code": "Q240",
+      "question": "In politics, people often describe their views as more left-wing or right-wing. Where would you place your own views on a scale from 1 to 10, where 1 means 'left' and 10 means 'right'?",
+      "answer": "Center"
+    },
+    {
+      "code": "Q241",
+      "question": "How essential is it for democracy that governments tax the rich and subsidize the poor? Please use a scale from 1 ('not at all essential') to 10 ('essential').",
+      "answer": "Moderately essential"
+    },
+    {
+      "code": "Q243",
+      "question": "How essential do you think it is for a democracy that people choose their leaders in free elections?",
+      "answer": "Absolutely essential"
+    },
+    {
+      "code": "Q244",
+      "question": "How essential do you think it is for a democracy that people receive state aid when they are unemployed?",
+      "answer": "Not essential at all"
+    },
+    {
+      "code": "Q245",
+      "question": "How essential do you think it is for a democracy that the army takes over when the government is incompetent?",
+      "answer": "Absolutely essential"
+    },
+    {
+      "code": "Q246",
+      "question": "How essential do you think it is for a democracy that civil rights protect people's liberty against state oppression?",
+      "answer": "Extremely important"
+    },
+    {
+      "code": "Q247",
+      "question": "How essential do you think it is for a democracy that the state makes people's incomes more equal?",
+      "answer": "Not very essential"
+    },
+    {
+      "code": "Q248",
+      "question": "How essential do you think it is for a democracy that people obey their rulers?",
+      "answer": "Important"
+    },
+    {
+      "code": "Q249",
+      "question": "How essential do you think it is for a democracy that women have the same rights as men?",
+      "answer": "Absolutely essential"
+    },
+    {
+      "code": "Q250",
+      "question": "How important is it for you to live in a country that is governed democratically?",
+      "answer": "Very important"
+    },
+    {
+      "code": "Q251",
+      "question": "In your view, how democratically is this country being governed today?",
+      "answer": "Neutral"
+    },
+    {
+      "code": "Q252",
+      "question": "How satisfied are you with the way the political system is functioning in your country these days?",
+      "answer": "Not satisfied"
+    },
+    {
+      "code": "Q253",
+      "question": "How much respect is there for individual human rights nowadays in this country?",
+      "answer": "Fairly much respect"
+    },
+    {
+      "code": "Q254",
+      "question": "How proud are you to be of nationality of this country?",
+      "answer": "Very proud"
+    },
+    {
+      "code": "Q255",
+      "question": "How close do you feel to your village, town or city?",
+      "answer": "Very close"
+    },
+    {
+      "code": "Q256",
+      "question": "How close do you feel to your region or district?",
+      "answer": "Very close"
+    },
+    {
+      "code": "Q257",
+      "question": "How close do you feel to your country?",
+      "answer": "Very close"
+    },
+    {
+      "code": "Q258",
+      "question": "How close do you feel to your continent?",
+      "answer": "Not close at all"
+    },
+    {
+      "code": "Q259",
+      "question": "How close do you feel to the World?",
+      "answer": "Not close at all"
+    },
+    {
+      "code": "Q260",
+      "question": "How do you identify your sex, male or female?",
+      "answer": "Male"
+    },
+    {
+      "code": "Q262",
+      "question": "How old are you?",
+      "answer": "68"
+    },
+    {
+      "code": "Q263",
+      "question": "Were you born in this country or are you an immigrant?",
+      "answer": "I am born in this country"
+    },
+    {
+      "code": "Q264",
+      "question": "Is your mother immigrant to this country or not?",
+      "answer": "Not an immigrant"
+    },
+    {
+      "code": "Q265",
+      "question": "Is your father immigrant to this country or not?",
+      "answer": "Not an immigrant"
+    },
+    {
+      "code": "Q266",
+      "question": "In which country were you born?",
+      "answer": "Colombia"
+    },
+    {
+      "code": "Q267",
+      "question": "In which country was your mother born?",
+      "answer": "Colombia"
+    },
+    {
+      "code": "Q268",
+      "question": "In which country was your father born? List of codes in Annex",
+      "answer": "Colombia"
+    },
+    {
+      "code": "Q269",
+      "question": "Are you a citizen of this country?",
+      "answer": "Yes, I am a citizen of this country"
+    },
+    {
+      "code": "Q270",
+      "question": "How many people are there in your household, including yourself and children?",
+      "answer": "3"
+    },
+    {
+      "code": "Q271",
+      "question": "Do you live with your parents?",
+      "answer": "No"
+    },
+    {
+      "code": "Q272",
+      "question": "What language do you normally speak at home?",
+      "answer": "Spanish; Castilian"
+    },
+    {
+      "code": "Q273",
+      "question": "What is your marital status?",
+      "answer": "Married"
+    },
+    {
+      "code": "Q274",
+      "question": "Have you had children? If yes, how many?",
+      "answer": "2 children"
+    },
+    {
+      "code": "Q275",
+      "question": "What is the highest educational level that you have attained?",
+      "answer": "Lower secondary education (ISCED 2)"
+    },
+    {
+      "code": "Q276",
+      "question": "What is the highest educational level that your spouse has attained?",
+      "answer": "Lower secondary education (ISCED 2)"
+    },
+    {
+      "code": "Q277",
+      "question": "What is the highest educational level that your mother has attained?",
+      "answer": null
+    },
+    {
+      "code": "Q278",
+      "question": "What is the highest educational level that your father has attained?",
+      "answer": null
+    },
+    {
+      "code": "Q279",
+      "question": "Are you employed now or not?",
+      "answer": "Retired/pensioned"
+    },
+    {
+      "code": "Q280",
+      "question": "Is your spouse employed?",
+      "answer": "Unemployed"
+    },
+    {
+      "code": "Q281",
+      "question": "To which occupational group do you belong?",
+      "answer": "Clerical (for example: secretary, clerk, office manager, civil servant, bookkeeper"
+    },
+    {
+      "code": "Q282",
+      "question": "To which occupational group does your spouse belong?",
+      "answer": "Never had a job"
+    },
+    {
+      "code": "Q283",
+      "question": "When you were 14, to which of the following occupational groups did your father belong?",
+      "answer": "Clerical (for example: secretary, clerk, office manager, civil servant, bookkeeper"
+    },
+    {
+      "code": "Q284",
+      "question": "Are you working for the government or public institution, for private business or industry, or for a private non-profit organization? If you do not work currently, characterize your major work in the past! Do you or did you work for?",
+      "answer": "Government or public institution"
+    },
+    {
+      "code": "Q285",
+      "question": "Are you the chief wage earner in your house?",
+      "answer": "Yes"
+    },
+    {
+      "code": "Q286",
+      "question": "During the past year, what was the situation with your family's savings?",
+      "answer": "Just get by"
+    },
+    {
+      "code": "Q287",
+      "question": "Which social class would you say you belong to?",
+      "answer": "Lower class"
+    },
+    {
+      "code": "Q288",
+      "question": "What is the level of your household's income counting all wages, salaries, pensions and other incomes on an income scale on which 'lowest' indicates the lowest income group and 'tenth step' the highest income group in your country?",
+      "answer": "Lower step"
+    },
+    {
+      "code": "Q289CS9",
+      "question": "Do you belong to a religion or religious denomination? If yes, which one?",
+      "answer": "Roman Catholic; Latin Church"
+    },
+    {
+      "code": "Q290",
+      "question": "How do you identify when it comes to Racial belonging/ ethnic group in your country?",
+      "answer": "CO: White"
+    }
+  ],
+  "answer": "Not so important"
+}
