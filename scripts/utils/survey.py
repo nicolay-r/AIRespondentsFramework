@@ -136,22 +136,7 @@ def load_local(
     )
 
 
-def pipeline_items_from_files(
-    *,
-    features_path: Path | str,
-    targets_path: Path | str,
-    respondents_path: Path | str,
-) -> list[PipelineItem]:
-    """Build pipeline items from local features, targets, and respondent CSV files."""
-    data = load_local(
-        features_path=features_path,
-        targets_path=targets_path,
-        respondents_path=respondents_path,
-    )
-    return list(iter_pipeline_items(data))
-
-
-def iter_pipeline_items(
+def __iter_pipeline_items(
     data: LoadedData,
 ) -> Iterator[PipelineItem]:
     for respondent_id, row in data.respondents.items():
@@ -169,6 +154,22 @@ def iter_pipeline_items(
                 labels=target.labels,
                 history=history,
             )
+
+
+def pipeline_items_from_files(
+    *,
+    features_path: Path | str,
+    targets_path: Path | str,
+    respondents_path: Path | str,
+) -> list[PipelineItem]:
+    """Build pipeline items from local features, targets, and respondent CSV files."""
+    data = load_local(
+        features_path=features_path,
+        targets_path=targets_path,
+        respondents_path=respondents_path,
+    )
+    return list(__iter_pipeline_items(data))
+
 
 
 def decode_feature(
