@@ -5,6 +5,10 @@ from src.pipelines.registry import create_pipeline
 from src.providers.openai_client import OpenAIClient
 from src.utils.jobs import run_jobs
 
+DEFAULT_RECOMMENDER_PATH = (
+    Path(__file__).resolve().parents[1] / "models" / "CB_1000R_100I_9T"
+)
+
 
 def parse_label(raw: str, labels: tuple[str, ...] | list[str]) -> str:
     text = raw.strip()
@@ -43,15 +47,13 @@ def run_on_items(
     desc: str = "predicting",
     statements_path: Path,
     features_path: Path,
+    **kwargs: object,
 ):
     model = "meta-llama/Llama-3.3-70B-Instruct"
 
     print("Pipeline name:", pipeline_name)
     print("Model: ", model)
 
-    recommender_path = (
-        Path(__file__).resolve().parents[1] / "models" / "CB_1000R_100I_9T"
-    )
     client = OpenAIClient(
         model=model,
         base_url="https://api.studio.nebius.com/v1/",
@@ -60,9 +62,10 @@ def run_on_items(
     pipeline = create_pipeline(
         pipeline_name,
         client=client,
-        recommender_path=recommender_path,
         statements_path=statements_path,
         features_path=features_path,
+        recommender_path=DEFAULT_RECOMMENDER_PATH,
+        **kwargs,
     )
 
     print("Pipeline created ... run jobs")

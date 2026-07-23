@@ -8,22 +8,21 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
 DEFAULT_DATA_DIR = PROJECT_ROOT / "docs" / "default"
 DEV_DATASET_PATH = PROJECT_ROOT / "docs" / "dev_dataset.json"
 OUTPUT_DIR = PROJECT_ROOT / "output" / "dev"
 STATEMENTS_PATH = DEFAULT_DATA_DIR / "feature_statements.tsv"
 FEATURES_PATH = DEFAULT_DATA_DIR / "features.csv"
+
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.utils import (
-    dev_pipeline_items,
-    example_prompts_for,
-    load_dev_dataset,
-    write_dev_eval,
-)
+from scripts.utils.output import example_prompts_for
+from scripts.utils.survey import TARGETS_HIDDEN_PATH, load_dev_dataset, pipeline_items_for_dev
+from scripts.utils.output import write_dev_eval
+from scripts.utils.survey import load_local
 from src.workflow import run_on_items
 
-dataset = importlib.import_module("scripts.utils")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -53,13 +52,13 @@ if __name__ == "__main__":
     examples = load_dev_dataset(args.dev_dataset)
     if args.limit is not None:
         examples = examples[: args.limit]
-    data = dataset.load_local(
+    data = load_local(
         features_path=DEFAULT_DATA_DIR / "features.csv",
         targets_path=DEFAULT_DATA_DIR / "targets.csv",
         respondents_path=DEFAULT_DATA_DIR / "train.csv",
-        targets_hidden_path=dataset.TARGETS_HIDDEN_PATH,
+        targets_hidden_path=TARGETS_HIDDEN_PATH,
     )
-    items = dev_pipeline_items(data, examples)
+    items = pipeline_items_for_dev(data, examples)
 
     pipeline, _, results, model = run_on_items(
         items,

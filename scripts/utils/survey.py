@@ -1,6 +1,6 @@
 import json
 import math
-from collections.abc import Iterator
+from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -74,35 +74,39 @@ def load_dev_dataset(path: Path | str) -> tuple[DevExample, ...]:
     )
 
 
-def dev_pipeline_items(
+def __iter_pipeline_items(
     data: LoadedData,
-    examples: tuple[DevExample, ...],
-) -> list[PipelineItem]:
-    items: list[PipelineItem] = []
-    for example in examples:
-        try:
-            row = data.respondents[example.respondent_id]
-            target = data.targets[example.question_id]
-        except KeyError as exc:
-            raise KeyError(
-                f"no pipeline item for respondent_id={example.respondent_id!r} "
-                f"question_id={example.question_id!r}"
-            ) from exc
-        items.append(
-            PipelineItem(
-                respondent_id=example.respondent_id,
-                question_id=example.question_id,
+) -> Iterator[PipelineItem]:
+    for respondent_id, row in data.respondents.items():
+        for question_id, target in data.targets.items():
+            history = _build_history(
+                row,
+                None,
+                data.feature_questions,
+                data.value_maps,
+            )
+            yield PipelineItem(
+                respondent_id=respondent_id,
+                question_id=question_id,
                 question=target.question,
                 labels=target.labels,
-                history=_build_history(
-                    row,
-                    None,
-                    data.feature_questions,
-                    data.value_maps,
-                ),
+                history=history,
             )
-        )
-    return items
+
+
+def _pipeline_items_lookup(
+    data_iter: Iterable[PipelineItem],
+    keys: set[tuple[str, str]],
+) -> dict[tuple[str, str], PipelineItem]:
+    lookup: dict[tuple[str, str], PipelineItem] = {}
+    for item in data_iter:
+        key = (item.respondent_id, item.question_id)
+        if key not in keys:
+            continue
+        lookup[key] = item
+        if len(lookup) == len(keys):
+            break
+    return lookup
 
 
 def load_local(
@@ -136,26 +140,6 @@ def load_local(
     )
 
 
-def __iter_pipeline_items(
-    data: LoadedData,
-) -> Iterator[PipelineItem]:
-    for respondent_id, row in data.respondents.items():
-        for question_id, target in data.targets.items():
-            history = _build_history(
-                row,
-                None,
-                data.feature_questions,
-                data.value_maps,
-            )
-            yield PipelineItem(
-                respondent_id=respondent_id,
-                question_id=question_id,
-                question=target.question,
-                labels=target.labels,
-                history=history,
-            )
-
-
 def pipeline_items_from_files(
     *,
     features_path: Path | str,
@@ -170,6 +154,25 @@ def pipeline_items_from_files(
     )
     return list(__iter_pipeline_items(data))
 
+
+def pipeline_items_for_dev(
+    data: LoadedData,
+    examples: tuple[DevExample, ...],
+) -> list[PipelineItem]:
+    needed = {(example.respondent_id, example.question_id) for example in examples}
+    lookup = _pipeline_items_lookup(__iter_pipeline_items(data), needed)
+
+    items: list[PipelineItem] = []
+    for example in examples:
+        key = (example.respondent_id, example.question_id)
+        try:
+            items.append(lookup[key])
+        except KeyError as exc:
+            raise KeyError(
+                f"no pipeline item for respondent_id={example.respondent_id!r} "
+                f"question_id={example.question_id!r}"
+            ) from exc
+    return items
 
 
 def decode_feature(
